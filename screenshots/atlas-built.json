@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/atlas",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Network atlas — The Names Robot and Robert",
+      "hasCanvas": false,
+      "bodyTextLen": 4812,
+      "bodyTextHash": "caef95ea78a38b752b6d8404491d78bf7acc1221bd289efc351f7ce19a4559e2",
+      "bodyTextPrefix": "ROBOTO SAI RESEARCH Onomastics · September 2026 Essay Network at",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/atlas-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Network atlas — The Names Robot and Robert",
+      "hasCanvas": false,
+      "bodyTextLen": 4812,
+      "bodyTextHash": "caef95ea78a38b752b6d8404491d78bf7acc1221bd289efc351f7ce19a4559e2",
+      "bodyTextPrefix": "ROBOTO SAI RESEARCH Onomastics · September 2026 Essay Network at",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/atlas-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/atlas-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

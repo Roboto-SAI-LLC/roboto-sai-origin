@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/dossier",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Dossier — The Names Robot and Robert",
+      "hasCanvas": false,
+      "bodyTextLen": 2509,
+      "bodyTextHash": "93971c4fffd40f457461dafe1225dd4840bf8e566791d14baa3524ae55aa895b",
+      "bodyTextPrefix": "ROBOTO SAI RESEARCH Onomastics · September 2026 Essay Network at",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/dossier-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Dossier — The Names Robot and Robert",
+      "hasCanvas": false,
+      "bodyTextLen": 2518,
+      "bodyTextHash": "0c519f73723d24709596be3f713fb84d539d183dcec6aa9313dc1aa65d7a5ab2",
+      "bodyTextPrefix": "ROBOTO SAI RESEARCH Onomastics · September 2026 Essay Network at",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/dossier-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/dossier-preview.json"
+}
