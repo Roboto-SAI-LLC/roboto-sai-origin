@@ -1,8 +1,9 @@
+import { c as TIMELINE } from "./research-BbnSBAkh.mjs";
 import { b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
-import { D as TIMELINE, N as useLang, j as CHROME } from "./router-CXAxw9mM.mjs";
-import { i as cn } from "./site-header-CC1S7zsx.mjs";
-import { t as InlineText } from "./table-of-contents-C-X6lr4Z.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/timeline-BQODARm-.js
+import { C as CHROME, T as useLang } from "./router-qoZEAWWR.mjs";
+import { i as cn } from "./site-header-D8A9BVRn.mjs";
+import { t as InlineText } from "./table-of-contents-hdSLyoTs.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/timeline-hv_0dsdu.js
 var import_jsx_runtime = require_jsx_runtime();
 function DataTable({ id, caption, headers, rows }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("figure", {

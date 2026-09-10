@@ -1,9 +1,10 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { b as require_jsx_runtime, v as Link, z as require_react } from "../_libs/@tanstack/react-router+[...].mjs";
-import { a as Pause, i as Play } from "../_libs/lucide-react.mjs";
-import { N as useLang, S as BRIEF_TAGS, j as CHROME, w as META, x as BRIEF_META } from "./router-CXAxw9mM.mjs";
-import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CC1S7zsx.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/brief-DUYgBWRB.js
+import { a as META, n as BRIEF_TAGS, t as BRIEF_META } from "./research-BbnSBAkh.mjs";
+import { B as require_react, b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { c as Pause, s as Play } from "../_libs/lucide-react.mjs";
+import { C as CHROME, T as useLang } from "./router-qoZEAWWR.mjs";
+import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/brief-Dl0QHk0b.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var SRC = {

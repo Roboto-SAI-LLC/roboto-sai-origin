@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { b as require_jsx_runtime, v as Link, z as require_react } from "../_libs/@tanstack/react-router+[...].mjs";
-import { N as useLang, j as CHROME } from "./router-CXAxw9mM.mjs";
-import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CC1S7zsx.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/dossier-BB036uP5.js
+import { B as require_react, b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { C as CHROME, T as useLang } from "./router-qoZEAWWR.mjs";
+import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/dossier-NiZF11jn.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var CLAIMS = [

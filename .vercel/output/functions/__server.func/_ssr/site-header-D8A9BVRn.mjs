@@ -1,10 +1,11 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { b as require_jsx_runtime, d as useRouterState, v as Link, z as require_react } from "../_libs/@tanstack/react-router+[...].mjs";
-import { n as Share2, o as Copy, s as Check } from "../_libs/lucide-react.mjs";
-import { C as CITATION, N as useLang, d as LION_CITATION, j as CHROME, k as GITHUB_URL, p as LION_META, r as TEMPLAR_META, w as META, x as BRIEF_META } from "./router-CXAxw9mM.mjs";
+import { a as META, r as CITATION, t as BRIEF_META } from "./research-BbnSBAkh.mjs";
+import { B as require_react, b as require_jsx_runtime, d as useRouterState, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { i as Share2, l as Copy, u as Check } from "../_libs/lucide-react.mjs";
+import { C as CHROME, T as useLang, d as LION_CITATION, p as LION_META, r as TEMPLAR_META, x as GITHUB_URL } from "./router-qoZEAWWR.mjs";
 import { t as clsx } from "../_libs/clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/site-header-CC1S7zsx.js
+//#region node_modules/.nitro/vite/services/ssr/assets/site-header-D8A9BVRn.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function cn(...inputs) {
@@ -108,6 +109,11 @@ function usePageShare() {
 			citation: CITATION
 		};
 	}
+	if (pathname === "/rovox") return {
+		title: chrome.rovox.title,
+		text: chrome.rovox.lead,
+		citation: CITATION
+	};
 	if (pathname === "/atlas") return {
 		title: chrome.atlas.title,
 		text: chrome.atlas.leadNetwork,

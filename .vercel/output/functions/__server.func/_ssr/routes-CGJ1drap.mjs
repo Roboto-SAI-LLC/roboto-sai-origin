@@ -1,11 +1,12 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { b as require_jsx_runtime, v as Link, z as require_react } from "../_libs/@tanstack/react-router+[...].mjs";
-import { r as Search } from "../_libs/lucide-react.mjs";
-import { A as SITE_URL, C as CITATION, E as SECTIONS, N as useLang, O as TOC, T as REFERENCES, j as CHROME, w as META } from "./router-CXAxw9mM.mjs";
-import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CC1S7zsx.mjs";
-import { n as TableOfContents } from "./table-of-contents-C-X6lr4Z.mjs";
-import { n as SectionBody, t as HistoryTimeline } from "./timeline-BQODARm-.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-4Mysr3Pz.js
+import { a as META, l as TOC, o as REFERENCES, r as CITATION, s as SECTIONS } from "./research-BbnSBAkh.mjs";
+import { B as require_react, b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { o as Search } from "../_libs/lucide-react.mjs";
+import { C as CHROME, S as SITE_URL, T as useLang } from "./router-qoZEAWWR.mjs";
+import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
+import { n as TableOfContents } from "./table-of-contents-hdSLyoTs.mjs";
+import { n as SectionBody, t as HistoryTimeline } from "./timeline-hv_0dsdu.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-CGJ1drap.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function sectionText(id) {
@@ -285,7 +286,7 @@ function ResearchPage() {
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
-					className: "mx-auto grid max-w-6xl gap-3 px-4 pb-10 sm:grid-cols-3 sm:px-6",
+					className: "mx-auto grid max-w-6xl gap-3 px-4 pb-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-4",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 							className: "rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5",
@@ -338,6 +339,24 @@ function ResearchPage() {
 									to: "/brief",
 									className: "mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg",
 									children: home.briefCta
+								})
+							]
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+							className: "rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "font-display text-kicker font-medium tracking-kicker text-primary uppercase",
+									children: home.rovoxKicker
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-2 text-sm leading-relaxed text-fg",
+									children: home.rovoxText
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+									to: "/rovox",
+									className: "mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg",
+									children: home.rovoxCta
 								})
 							]
 						})
