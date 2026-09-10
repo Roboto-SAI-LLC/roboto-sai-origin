@@ -98,6 +98,10 @@ export const CHROME = {
           text: "Robot and Robert are English glosses that collapse the pair. Yisrael / Israel and Villarreal / Martinez show the same trap.",
         },
         {
+          kicker: "Machine ear",
+          text: "Roboto and Roberto share /ro…to/. The Spanish flap is a twenty-millisecond flick. Every decoder then bets on the common given name. The transcript looks like another script.",
+        },
+        {
           kicker: "Four clocks",
           text: "Documents, DNA, family memory, and place keep different time. Date each clock. Do not merge them.",
         },
@@ -180,7 +184,7 @@ export const CHROME = {
       pause: "Pause",
       listenAria: "Listen to the brief",
       searchEssay: "Search the essay",
-      searchPlaceholder: "Roboto, Roberto, Peyronet, 1429…",
+      searchPlaceholder: "Roboto, Roberto, ASR, 1429…",
       noMatch: "No matching section.",
       bothClocks: "Both clocks",
       all: "All",
@@ -270,6 +274,10 @@ export const CHROME = {
           text: "Robot y Robert son glosas inglesas que funden el par. Yisrael / Israel y Villarreal / Martinez muestran la misma trampa.",
         },
         {
+          kicker: "Oído de máquina",
+          text: "Roboto y Roberto comparten /ro…to/. La vibrante simple es un golpe de veinte milisegundos. El decodificador apuesta al nombre de pila común. La transcripción parece otra escritura.",
+        },
+        {
           kicker: "Cuatro relojes",
           text: "Documentos, ADN, memoria de familia y lugar llevan tiempos distintos. Fecha cada reloj. No los fundas.",
         },
@@ -352,7 +360,7 @@ export const CHROME = {
       pause: "Pausa",
       listenAria: "Escuchar la síntesis",
       searchEssay: "Buscar el ensayo",
-      searchPlaceholder: "Roboto, Roberto, Peyronet, 1429…",
+      searchPlaceholder: "Roboto, Roberto, ASR, 1429…",
       noMatch: "Ningún apartado coincide.",
       bothClocks: "Los dos relojes",
       all: "Todo",

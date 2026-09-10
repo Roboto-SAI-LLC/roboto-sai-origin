@@ -360,8 +360,8 @@ export const CLAIMS: Claim[] = [
     ],
     adjacent: [
       {
-        text: "Homophony in English is exactly why the pair is worth an onomastic essay.",
-        source: "This report, parts I–II and VII."
+        text: "Homophony in English is exactly why the pair is worth an onomastic essay. Speech recognizers collapse it for the same reason: a short tap, a shared /ro…to/, and a massive prior for Roberto.",
+        source: "This report, parts I–II and VII. The machine ear is part VII.D.",
       }
     ],
     notInRecord: [

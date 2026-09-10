@@ -354,7 +354,7 @@ export const GLOSSARY: { term: string; text: string }[] = [
   },
   {
     term: "Homophony",
-    text: "Same or similar sound, different history. Robot / Robert and Yisrael / Israel are the working examples in this essay.",
+    text: "Same or similar sound, different history. Roboto / Roberto — and the English glosses Robot / Robert — and Yisrael / Israel are the working examples in this essay. Speech recognizers trip on the same near pair.",
   },
   {
     term: "Fuero of Aragon",

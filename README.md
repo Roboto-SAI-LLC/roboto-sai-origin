@@ -4,7 +4,7 @@ Canonical site: [https://roboto-sai.org](https://roboto-sai.org)
 
 Onomastic **methodology**, not mythology. The journal dates **four clocks** (documents, DNA, family memory, place), steelmans a claim before splitting it, and keeps record vs gap on the page. Gur Aryeh is the lion companion — Hebrew symbolism — not the name of the series.
 
-The names under study are **Roboto** and **Roberto**. Robot and Robert are English glosses that rhyme beside them.
+The names under study are **Roboto** and **Roberto**. Robot and Robert are English glosses that rhyme beside them. Speech recognizers collapse the same pair: a short Spanish flap, then a language-model bet on the common given name.
 
 Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com.
 

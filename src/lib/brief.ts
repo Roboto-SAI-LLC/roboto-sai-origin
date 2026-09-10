@@ -36,7 +36,7 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
       tag: "Essay",
       title: "Roboto and Roberto",
       href: "/",
-      body: "The real names are Roboto and Roberto. They rhyme. They are not kin. Robot and Robert are the English glosses that collapse the pair. Roboto sits next to robot / robota — Čapek’s Czech play R.U.R., Slavic forced labor. That is the house, not a diminutive of the given name. Roberto is the Iberian form of Robert: Proto-Germanic fame plus bright, carried by dukes, kings, and saints. Sound is not sense. Yisrael and Israel can look like twins and still keep different clocks. Villarreal and Martinez can share a street and not a root. The essay’s job is to keep the house, the given name, the crown, the surname, and the place from collapsing into one story.",
+      body: "The real names are Roboto and Roberto. They rhyme. They are not kin. Robot and Robert are the English glosses that collapse the pair. Roboto sits next to robot / robota — Čapek’s Czech play R.U.R., Slavic forced labor. That is the house, not a diminutive of the given name. Roberto is the Iberian form of Robert: Proto-Germanic fame plus bright, carried by dukes, kings, and saints. Sound is not sense. Speech recognizers trip on the same pair: the flap is short, the given name is common, and the transcript comes back looking like another script. Yisrael and Israel can look like twins and still keep different clocks. Villarreal and Martinez can share a street and not a root. The essay’s job is to keep the house, the given name, the crown, the surname, and the place from collapsing into one story.",
       sources: "Čapek, R.U.R.; Slavic etymology of robota; Proto-Germanic Hrōþiberhtaz; onomastic pairs in this journal.",
     },
     {
@@ -78,7 +78,7 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
       tag: "Ensayo",
       title: "Roboto y Roberto",
       href: "/",
-      body: "Los nombres reales son Roboto y Roberto. Riman. No son parientes. Robot y Robert son las glosas inglesas que funden el par. Roboto se sienta junto a robot / robota — la obra checa R.U.R. de Čapek, trabajo forzado eslavo. Es la casa, no un diminutivo del nombre de pila. Roberto es la forma ibérica de Robert: proto-germánico fama más brillante, llevado por duques, reyes y santos. El sonido no es el sentido. Yisrael e Israel pueden parecer gemelos y guardar relojes distintos. Villarreal y Martinez pueden compartir una calle y no una raíz. El oficio del ensayo es no dejar que la casa, el nombre de pila, la corona, el apellido y el lugar se vuelvan un solo relato.",
+      body: "Los nombres reales son Roboto y Roberto. Riman. No son parientes. Robot y Robert son las glosas inglesas que funden el par. Roboto se sienta junto a robot / robota — la obra checa R.U.R. de Čapek, trabajo forzado eslavo. Es la casa, no un diminutivo del nombre de pila. Roberto es la forma ibérica de Robert: proto-germánico fama más brillante, llevado por duques, reyes y santos. El sonido no es el sentido. Los reconocedores de voz tropiezan con el mismo par: la vibrante es breve, el nombre de pila es común, y la transcripción vuelve como si fuera otra escritura. Yisrael e Israel pueden parecer gemelos y guardar relojes distintos. Villarreal y Martinez pueden compartir una calle y no una raíz. El oficio del ensayo es no dejar que la casa, el nombre de pila, la corona, el apellido y el lugar se vuelvan un solo relato.",
       sources: "Čapek, R.U.R.; etimología eslava de robota; proto-germánico Hrōþiberhtaz; pares onomásticos de esta revista.",
     },
     {

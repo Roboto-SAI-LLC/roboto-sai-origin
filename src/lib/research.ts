@@ -20,8 +20,8 @@ export const META = {
   subtitle: "Linguistic Origins, Historical Usage, and Cultural Migrations",
   credit: "Roboto SAI research with a Copilot",
   date: "September 2026",
-  sourceCount: 41,
-  description: "A research essay on the names Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Traces Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, and a later Monterrey place clock."
+  sourceCount: 42,
+  description: "A research essay on the names Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Traces Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes why speech recognizers collapse the pair, a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, and a later Monterrey place clock."
 };
 export const FINDINGS = [
   {
@@ -39,6 +39,10 @@ export const FINDINGS = [
   {
     kicker: "Sound vs sense",
     text: "Robot and Robert are English glosses that collapse the pair. Yisrael / Israel and Villarreal / Martinez show the same trap."
+  },
+  {
+    kicker: "Machine ear",
+    text: "Roboto and Roberto share /ro…to/. The Spanish flap is a twenty-millisecond flick. Every decoder then bets on the common given name. The transcript looks like another script."
   },
   {
     kicker: "Four clocks",
@@ -692,6 +696,52 @@ export const SECTIONS: Section[] = [
       {
         type: "p",
         text: "Surnames carry cultural weight as markers of heritage, identity, and social status. In Hispanic cultures, surnames like Martinez can symbolize family honor, continuity, and resilience. Their widespread use across Spain, Latin America, and the United States reflects colonization, migration, and cultural adaptation.[5]"
+      },
+      {
+        type: "h3",
+        id: "soundalike-asr",
+        title: "D. The machine ear: Roboto and Roberto"
+      },
+      {
+        type: "p",
+        text: "They are not homophones. They are a near pair. In Spanish, Roberto is [roˈβeɾto] and Roboto is [roˈβoto]. Two differences carry the whole contrast: the second-syllable vowel /e/ versus /o/, and the alveolar tap /ɾ/ that sits between that vowel and the /t/. The tap is a single tongue flick, on the order of twenty milliseconds. Miss it, and the skeleton that remains is /ro…to/."
+      },
+      {
+        type: "p",
+        text: "Automatic speech recognition (ASR) is not a clerk taking dictation. It is an acoustic model plus a language model.[42] The acoustic model is asked to hear a tap that English barely owns, and that noise, telephone bandwidth, and fast speech all swallow. The language model is then asked to choose between a given name that fills Spanish civil registers and a house name that barely exists in training text. Frequency and context decide the bet.[12] The common name wins. That is why every system trips."
+      },
+      {
+        type: "p",
+        text: "English systems add a second collapse. They already know robot and Robert — the glosses this essay refuses. Say Roboto into an English decoder and the page comes back as Roberto, Robert, robot, or, in a tech register, a font. The writing is still Latin letters and still reads as if it had been copied from another script: the shapes are familiar and the sense has been stripped. Call that sanscript if you like. It is exaggeration, not a language. It is the same sound-versus-sense trap, now running in a machine that has never met the house."
+      },
+      {
+        type: "table",
+        id: "asr-pair",
+        caption: "What the ear keeps, and what the decoder prefers",
+        headers: [
+          "Name",
+          "IPA (es)",
+          "The contrast",
+          "Decoder prior"
+        ],
+        rows: [
+          [
+            "Roboto",
+            "[roˈβoto]",
+            "no tap; /o/ in the second syllable",
+            "rare house; English also offers robot"
+          ],
+          [
+            "Roberto",
+            "[roˈβeɾto]",
+            "tap /ɾ/ plus /e/",
+            "common given name"
+          ]
+        ]
+      },
+      {
+        type: "note",
+        text: "Sanscript here is a joke about a bad transcript, not a script to add. The names under study stay Roboto and Roberto, written as they are."
       }
     ]
   },
@@ -1311,7 +1361,7 @@ export const SECTIONS: Section[] = [
     blocks: [
       {
         type: "p",
-        text: "The names Roboto and Roberto exemplify the interplay of language, culture, and history in personal and collective identity. Robot and Robert are the English glosses: one born from Slavic robota and Czech theater, the other from Proto-Germanic fame plus bright. The real pair is the house and the given name. They rhyme. They are not kin. Date each clock. Do not wind them as one."
+        text: "The names Roboto and Roberto exemplify the interplay of language, culture, and history in personal and collective identity. Robot and Robert are the English glosses: one born from Slavic robota and Czech theater, the other from Proto-Germanic fame plus bright. The real pair is the house and the given name. They rhyme. They are not kin. Even a speech recognizer, given the same rhyme, will print the common given name and treat the house as a transcription error. Date each clock. Do not wind them as one."
       },
       {
         type: "p",
@@ -1722,6 +1772,12 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
     title: "Rising Lion / Am ke-lavi",
     source: "Numbers 23:24; Haaretz, 12 August 2025, on the IDF designation. Adjacent Hebrew lion language — not the Mexican toponym.",
     url: "https://www.haaretz.com/israel-news/2025-08-12/ty-article/rising-lion-how-an-ancient-blessing-became-modern-israels-battle-cry/00000198-9d9a-d50b-a398-9fba171c0000"
+  },
+  {
+    n: 42,
+    title: "Automatic Speech Recognition",
+    source: "Daniel Jurafsky and James H. Martin, Speech and Language Processing, 3rd ed. draft, ch. 16 (August 2026). Acoustic model plus language-model prior; the decoder prefers the common word.",
+    url: "https://web.stanford.edu/~jurafsky/slp3/16.pdf"
   }
 ];
 export const CITATION =

@@ -53,6 +53,8 @@ const jsonLd = {
     "Roberto",
     "Robot",
     "Robert",
+    "ASR",
+    "speech recognition",
     "onomastics",
     "anthroponymy",
     "prosopography",

@@ -309,7 +309,7 @@ export const LION_SECTIONS: LionSection[] = [
       },
       {
         type: "note",
-        text: "This sits beside the Robot / Robert essay as onomastics, not as theology. Ariel, Aryeh, and Leib are names. Judah is a name that became a people. The animal is how Hebrew said kingship out loud.",
+        text: "This sits beside the Roboto / Roberto essay as onomastics, not as theology. Ariel, Aryeh, and Leib are names. Judah is a name that became a people. The animal is how Hebrew said kingship out loud.",
       },
     ],
   },
