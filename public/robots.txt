@@ -7,4 +7,4 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
-Sitemap: /llms.txt
+Sitemap: https://roboto-sai.org/llms.txt

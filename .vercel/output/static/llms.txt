@@ -1,16 +1,27 @@
-# The Names Robot and Robert
+# Roboto SAI
+Canonical: https://roboto-sai.org
+Series: Methodology (not mythology)
+Install name: Roboto SAI
+Bibliographic journal: Roboto SAI Research
+Owner: Roberto@roboto-sai.com
+Source: https://github.com/Roboto-SAI-LLC/roboto-sai-origins
+
+# The Names Roboto and Roberto
 Linguistic Origins, Historical Usage, and Cultural Migrations
 
 Credit: Roboto SAI research with a Copilot
 Published: September 2026
 Type: Scholarly research essay + 1274 network atlas + Monterrey migration node + claim dossier
 
-This file is a machine-readable brief. The full illustrated essay, tables, timeline, and references live on the page at /. The clickable network, ledger, and register live at /atlas (two clocks: 1269–1274 and Monterrey). The claim inspector, carta pobla close reading, Plana chronicle, and DNA clocks live at /dossier.
+This file is a machine-readable brief. The full illustrated essay, tables, timeline, and references live on the page at /. The clickable network, ledger, and register live at /atlas (two clocks: 1269–1274 and Monterrey). The claim inspector, carta pobla close reading, Plana chronicle, and DNA clocks live at /dossier. Gur Aryeh (lion symbolism) lives at /lion. Templars live at /templars. A one-page bilingual brief, with audio, lives at /brief.
+
+Methodology, not mythology: documents, DNA, family memory, and place are four clocks. Steelman a claim, then split it. Keep record vs gap. Gur Aryeh is the companion essay on Hebrew lion language — not the name of this journal.
 
 ## Thesis
-Robot and Robert sound alike in English. They are not etymological kin.
-- Robot: 1920 Czech coinage from Slavic robota (forced labor), popularized by Karel Čapek’s play R.U.R. (word reportedly coined by Josef Čapek). PIE root *orbh-. Cognate with German Arbeit.
-- Robert: Proto-Germanic *Hrōþiberhtaz = *hruod (fame) + *berhta (bright) → “bright fame.” Norman given name; kings, saints, surnames (Robertson, Roberts, Robinson).
+The real names are Roboto and Roberto. They rhyme. They are not etymological kin. Robot and Robert are English glosses that collapse the pair.
+- Roboto: the house name, sitting next to robot / robota (1920 Czech coinage from Slavic forced labor, Čapek’s R.U.R.). Not a diminutive of Roberto.
+- Roberto: Iberian form of Robert. Proto-Germanic *Hrōþiberhtaz = *hruod (fame) + *berhta (bright) → “bright fame.” Norman given name; kings, saints, surnames (Robertson, Roberts, Robinson).
+- ASR trap: they are a near pair, not homophones. Spanish Roboto [roˈβoto] vs Roberto [roˈβeɾto]. The alveolar tap is tens of milliseconds; miss it and /ro…to/ remains. The decoder’s language model then prefers the common given name. English ASR adds robot / Robert. A mangled transcript (“sanscript”) is the same sound-vs-sense collapse, not a different script.
 
 ## Also treated
 - Onomastics / anthroponymy: name types, anthroponymization, deanthroponymization, transonymization.
@@ -23,10 +34,10 @@ Robot and Robert sound alike in English. They are not etymological kin.
 - Yisrael / Yisroel / Israel: Hebrew “one who wrestles with God” (Genesis 32:28); transliteration, not a different name.
 - Villarreal vs Martinez: toponymic “royal village” vs patronymic “son of Martin.”
 - Jamestown (1607) copies a given name; Vila-real copies an office.
-- Three clocks: documents, DNA, family memory. Ancestry markers are not narrative memory.
+- Four clocks: documents, DNA, family memory, and place. Ancestry markers are not narrative memory. A later map is not a founding.
 - Prosopography: factoid model, identity problem, charter co-witnessing.
 - Record vs gap: a family named Villarreal as 1274 naming agent is not in the published grants.
-- Monterrey (later clock): habitational density in Nuevo León; INEGI locality Los Villarreales (Salinas Victoria, 633 in 2020); Hotel La Mansión Villarreal occupying the 1893 Fábricas Apolo warehouse. No news cycle on the hotel node. “Villarreal de los Monterrey” is a disambiguator, not a municipality.
+- Place clock (Monterrey): habitational density in Nuevo León; INEGI locality Los Villarreales (Salinas Victoria, 633 in 2020); Hotel La Mansión Villarreal occupying the 1893 Fábricas Apolo warehouse. No news cycle on the hotel node. “Villarreal de los Monterrey” is a disambiguator, not a municipality.
 
 ## Named in the 1269–1274 cluster
 James I; Infant Pere (later Peter III); Simó de Sant Feliu (notary); Paris the silversmith; Ramon Escorna; Frey Petrus Peyronet (almoner; possible identity with Peter Peyronet, Templar commander at Burriana); Salomó Vidal; unnamed settlers; Templars of Xivert and Burriana; later aljama; charter witnesses as above.
@@ -54,7 +65,7 @@ James I; Infant Pere (later Peter III); Simó de Sant Feliu (notary); Paris the 
 - 2020: Los Villarreales census, 633 inhabitants
 
 ## Suggested citation
-Roboto SAI, with a Copilot. “The Names Robot and Robert: Linguistic Origins, Historical Usage, and Cultural Migrations.” Roboto SAI Research, September 2026.
+Roboto SAI, with a Copilot. “The Names Roboto and Roberto: Linguistic Origins, Historical Usage, and Cultural Migrations.” Roboto SAI Research, September 2026. https://roboto-sai.org
 
 ## Note
-All factual claims are grounded in the 37 references listed on the page. Where inscription content, a 1429 expulsion, a named Villarreal lineage in 1274, or a municipality called Villarreal de los Monterrey is not in the cited source, the gap is stated rather than filled.
+All factual claims are grounded in the 42 references listed on the page. Where inscription content, a 1429 expulsion, a named Villarreal lineage in 1274, or a municipality called Villarreal de los Monterrey is not in the cited source, the gap is stated rather than filled.

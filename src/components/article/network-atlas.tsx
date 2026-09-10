@@ -1,18 +1,20 @@
 import { useMemo, useState } from "react";
+import { CHROME, useLang } from "@/lib/i18n";
 import { EDGES, EDGE_COLORS, PEOPLE, type Person } from "@/lib/network";
 import { cn } from "@/lib/utils";
-
-const KIND_LABEL: Record<Person["kind"], string> = {
-  crown: "Crown",
-  named: "Named person",
-  office: "Office",
-  group: "Group",
-  community: "Community",
-};
 
 export function NetworkAtlas() {
   const [activeId, setActiveId] = useState("peyronet");
   const active = PEOPLE.find((person) => person.id === activeId) ?? PEOPLE[0];
+  const { lang } = useLang();
+  const ui = CHROME[lang].ui;
+  const kindLabel: Record<Person["kind"], string> = {
+    crown: ui.crown,
+    named: ui.named,
+    office: ui.office,
+    group: ui.group,
+    community: ui.community,
+  };
 
   const linked = useMemo(() => {
     const ids = new Set<string>();
@@ -29,7 +31,7 @@ export function NetworkAtlas() {
         <svg
           viewBox="0 0 900 490"
           role="img"
-          aria-label="Network of people around the 1274 foundation of Vila-real"
+          aria-label={ui.networkAria}
           className="h-auto w-full"
         >
           <rect width="900" height="490" fill="#faf6ee" />
@@ -84,14 +86,13 @@ export function NetworkAtlas() {
           })}
         </svg>
         <figcaption className="border-t border-border px-4 py-3 text-sm text-muted">
-          Click a node. Edges are grants, office, finance, recruitment, or neighboring lordship — not
-          kinship invented after the fact.
+          {ui.networkCaption}
         </figcaption>
       </figure>
 
       <aside className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
         <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-          {KIND_LABEL[active.kind]} · {active.year}
+          {kindLabel[active.kind]} · {active.year}
         </p>
         <h3 className="mt-2 font-display text-xl font-medium text-fg">{active.name}</h3>
         <p className="mt-1 text-sm text-muted">{active.role}</p>

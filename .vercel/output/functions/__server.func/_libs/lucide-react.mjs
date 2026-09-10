@@ -131,6 +131,16 @@ var Pause = createLucideIcon("pause", [["rect", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var Play = createLucideIcon("play", [["polygon", {
+	points: "6 3 20 12 6 21 6 3",
+	key: "1oa8hb"
+}]]);
+/**
+* @license lucide-react v0.510.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Search = createLucideIcon("search", [["path", {
 	d: "m21 21-4.34-4.34",
 	key: "14j7rj"
@@ -200,25 +210,5 @@ var TriangleAlert = createLucideIcon("triangle-alert", [
 		key: "p32p05"
 	}]
 ]);
-/**
-* @license lucide-react v0.510.0 - ISC
-*
-* This source code is licensed under the ISC license.
-* See the LICENSE file in the root directory of this source tree.
-*/
-var Volume2 = createLucideIcon("volume-2", [
-	["path", {
-		d: "M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z",
-		key: "uqj9uw"
-	}],
-	["path", {
-		d: "M16 9a5 5 0 0 1 0 6",
-		key: "1q6k2b"
-	}],
-	["path", {
-		d: "M19.364 18.364a9 9 0 0 0 0-12.728",
-		key: "ijwkga"
-	}]
-]);
 //#endregion
-export { Pause as a, Search as i, TriangleAlert as n, Copy as o, Share2 as r, Check as s, Volume2 as t };
+export { Pause as a, Play as i, Share2 as n, Copy as o, Search as r, Check as s, TriangleAlert as t };

@@ -1,22 +1,26 @@
 import { useMemo, useState } from "react";
+import { CHROME, useLang } from "@/lib/i18n";
 import {
-  KIND_LABEL,
   MODERN_EDGES,
   MODERN_EDGE_COLORS,
   MODERN_NODES,
   MONTERREY_LEDGER,
+  type ModernKind,
 } from "@/lib/monterrey";
 import { cn } from "@/lib/utils";
-
-const STATUS: Record<(typeof MONTERREY_LEDGER)[number]["status"], { label: string; className: string }> = {
-  "in-record": { label: "In the record", className: "bg-primary text-primary-fg" },
-  adjacent: { label: "Adjacent", className: "bg-wash text-fg" },
-  "not-in-record": { label: "Not in the record", className: "border border-border text-muted" },
-};
 
 export function MonterreyAtlas() {
   const [activeId, setActiveId] = useState("mansion");
   const active = MODERN_NODES.find((node) => node.id === activeId) ?? MODERN_NODES[0];
+  const { lang } = useLang();
+  const ui = CHROME[lang].ui;
+  const kindLabel: Record<ModernKind, string> = {
+    region: ui.state,
+    city: ui.city,
+    municipality: ui.municipality,
+    locality: ui.locality,
+    building: ui.building,
+  };
 
   const linked = useMemo(() => {
     const ids = new Set<string>();
@@ -34,7 +38,7 @@ export function MonterreyAtlas() {
           <svg
             viewBox="0 0 900 490"
             role="img"
-            aria-label="Modern Villarreal geography around Monterrey: the city, La Mansión Villarreal, and Los Villarreales in Salinas Victoria"
+            aria-label={ui.monterreyAria}
             className="h-auto w-full"
           >
             <rect width="900" height="490" fill="#faf6ee" />
@@ -115,7 +119,7 @@ export function MonterreyAtlas() {
 
         <aside className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
           <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-            {KIND_LABEL[active.kind]} · {active.year}
+            {kindLabel[active.kind]} · {active.year}
           </p>
           <h3 className="mt-2 font-display text-xl font-medium text-fg">{active.name}</h3>
           <p className="mt-1 text-sm text-muted">{active.role}</p>
@@ -146,6 +150,13 @@ export function MonterreyAtlas() {
 
 function LedgerPanel({ activeId }: { activeId: string }) {
   const related = useMemo(() => relatedIds(activeId), [activeId]);
+  const { lang } = useLang();
+  const ui = CHROME[lang].ui;
+  const status = {
+    "in-record": { label: ui.inRecord, className: "bg-primary text-primary-fg" },
+    adjacent: { label: ui.adjacent, className: "bg-wash text-fg" },
+    "not-in-record": { label: ui.notInRecord, className: "border border-border text-muted" },
+  };
 
   return (
     <div>
@@ -167,8 +178,8 @@ function LedgerPanel({ activeId }: { activeId: string }) {
             >
               <p className="flex flex-wrap items-center gap-2">
                 <span className="font-display text-xs tracking-kicker text-subtle uppercase">{row.id}</span>
-                <span className={cn("rounded-full px-2 py-0.5 text-xs font-medium", STATUS[row.status].className)}>
-                  {STATUS[row.status].label}
+                <span className={cn("rounded-full px-2 py-0.5 text-xs font-medium", status[row.status].className)}>
+                  {status[row.status].label}
                 </span>
               </p>
               <p className="mt-2 text-sm leading-relaxed text-fg sm:text-base">{row.claim}</p>

@@ -12,11 +12,13 @@ var install_page_default = "<!DOCTYPE html>\n<html lang=\"en\" class=\"device-de
 //#endregion
 //#region \0virtual:grok-og-identity
 var grokOgIdentity = { "site": {
-	"title": "Robot & Robert",
+	"title": "Roboto SAI",
+	"shortTitle": "Roboto SAI",
 	"card": "custom",
-	"color": "05080a",
-	"image": "/og.jpg",
-	"banner": "/x-banner.jpg"
+	"color": "3e534c",
+	"themeColor": "f3eee4",
+	"description": "Onomastic methodology from Roboto SAI: the names Roboto and Roberto, Vila-real 1274, four clocks, Gur Aryeh, and the Temple on the Plana. https://roboto-sai.org",
+	"image": "/og.jpg"
 } };
 //#endregion
 //#region scripts/grok-pwa-shared.mjs

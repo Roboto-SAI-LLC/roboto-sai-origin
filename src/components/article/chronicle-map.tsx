@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { CHROME, useLang } from "@/lib/i18n";
 import { CHRONICLE, PLANA_PLACES } from "@/lib/dossier";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +13,8 @@ export function ChronicleMap() {
   const [activeId, setActiveId] = useState("carta");
   const active = CHRONICLE.find((item) => item.id === activeId) ?? CHRONICLE[0];
   const hotPlace = active.place;
+  const { lang } = useLang();
+  const ui = CHROME[lang].ui;
 
   const statusClass =
     active.status === "in-record"
@@ -21,7 +24,7 @@ export function ChronicleMap() {
         : "bg-wash text-fg";
 
   const statusLabel =
-    active.status === "in-record" ? "In the record" : active.status === "gap" ? "Gap year" : "Adjacent";
+    active.status === "in-record" ? ui.inRecord : active.status === "gap" ? ui.gapYear : ui.adjacent;
 
   const linkedYears = useMemo(() => {
     return new Set(CHRONICLE.filter((item) => item.place === hotPlace).map((item) => item.id));
@@ -34,7 +37,7 @@ export function ChronicleMap() {
           <svg
             viewBox="0 0 640 360"
             role="img"
-            aria-label="Schematic of the Plana Baixa around Vila-real"
+            aria-label={ui.chronicleAria}
             className="h-auto w-full"
           >
             <rect width="640" height="360" fill={CREAM} />

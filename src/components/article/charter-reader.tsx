@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { CHROME, useLang } from "@/lib/i18n";
 import { CHARTER_CLAUSES, WITNESSES } from "@/lib/dossier";
 import { cn } from "@/lib/utils";
 
 export function CharterReader() {
   const [activeId, setActiveId] = useState(CHARTER_CLAUSES[2]?.id ?? CHARTER_CLAUSES[0].id);
   const active = CHARTER_CLAUSES.find((clause) => clause.id === activeId) ?? CHARTER_CLAUSES[0];
+  const { lang } = useLang();
+  const ui = CHROME[lang].ui;
 
   return (
     <div>
@@ -43,12 +46,12 @@ export function CharterReader() {
         <p className="mt-4 text-sm leading-relaxed text-fg sm:text-base">{active.english}</p>
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
           <section className="rounded-lg bg-bg px-4 py-4">
-            <h3 className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">Names</h3>
+            <h3 className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">{ui.names}</h3>
             <p className="mt-2 text-sm leading-relaxed text-fg">{active.names}</p>
           </section>
           <section className="rounded-lg bg-bg px-4 py-4">
             <h3 className="font-display text-kicker font-medium tracking-kicker text-muted uppercase">
-              Does not name
+              {ui.doesNotName}
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-fg">{active.doesNotName}</p>
           </section>
@@ -56,7 +59,7 @@ export function CharterReader() {
       </article>
 
       <section className="mt-8">
-        <h2 className="font-display text-xl font-medium text-fg">Witness bench</h2>
+        <h2 className="font-display text-xl font-medium text-fg">{ui.witnessBench}</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
           The men who stand in the room at Valencia. Sancho Martínez de Oblites is a control: a Martínez is
           already here in 1274, as a patronymic, not as a Villarreal.
