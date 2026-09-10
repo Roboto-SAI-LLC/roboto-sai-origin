@@ -11,48 +11,21 @@ export type BriefTag = {
 
 export const BRIEF_META: Record<
   Lang,
-  {
-    title: string;
-    subtitle: string;
-    kicker: string;
-    listen: string;
-    voice: string;
-    sources: string;
-    open: string;
-    tagListen: string;
-    tagStop: string;
-    live: string;
-    playing: string;
-    note: string;
-  }
+  { title: string; subtitle: string; kicker: string; sources: string; open: string }
 > = {
   en: {
     title: "Four clocks, and the Temple",
-    subtitle: "One page. No citation numbers. Five speech tags. Voice: Leo.",
-    kicker: "Spoken brief",
-    listen: "Listen",
-    voice: "Leo · multilingual",
+    subtitle: "One page. No citation numbers. Five tags. English and Spanish.",
+    kicker: "Brief",
     sources: "Sources",
     open: "Open the full page",
-    tagListen: "Speak this tag",
-    tagStop: "Stop",
-    live: "Live voice (this browser)",
-    playing: "Playing",
-    note: "Leo’s recording covers Essay, Atlas, Dossier, and Gur Aryeh. Live voice reads all five tags, including the Templars.",
   },
   es: {
     title: "Cuatro relojes, y el Templo",
-    subtitle: "Una página. Sin números de cita. Cinco etiquetas de voz. Voz: Leo.",
-    kicker: "Síntesis hablada",
-    listen: "Escuchar",
-    voice: "Leo · multilingüe",
+    subtitle: "Una página. Sin números de cita. Cinco etiquetas. Inglés y español.",
+    kicker: "Síntesis",
     sources: "Fuentes",
     open: "Abrir la página completa",
-    tagListen: "Hablar esta etiqueta",
-    tagStop: "Parar",
-    live: "Voz en vivo (este navegador)",
-    playing: "Reproduciendo",
-    note: "La grabación de Leo cubre Ensayo, Atlas, Dossier y Gur Aryeh. La voz en vivo lee las cinco etiquetas, incluidos los templarios.",
   },
 };
 
@@ -61,9 +34,9 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
     {
       id: "essay",
       tag: "Essay",
-      title: "Robot and Robert",
+      title: "Roboto and Roberto",
       href: "/",
-      body: "These two names rhyme in English. They are not kin. Robot entered world languages from Čapek’s Czech play R.U.R., from Slavic robota, forced labor. Robert is Proto-Germanic fame plus bright, carried by dukes, kings, and saints. Sound is not sense. Yisrael and Israel can look like twins and still keep different clocks. Villarreal and Martinez can share a street and not a root. The essay’s job is to keep the word, the crown, the surname, and the place from collapsing into one story.",
+      body: "The real names are Roboto and Roberto. They rhyme. They are not kin. Robot and Robert are the English glosses that collapse the pair. Roboto sits next to robot / robota — Čapek’s Czech play R.U.R., Slavic forced labor. That is the house, not a diminutive of the given name. Roberto is the Iberian form of Robert: Proto-Germanic fame plus bright, carried by dukes, kings, and saints. Sound is not sense. Yisrael and Israel can look like twins and still keep different clocks. Villarreal and Martinez can share a street and not a root. The essay’s job is to keep the house, the given name, the crown, the surname, and the place from collapsing into one story.",
       sources: "Čapek, R.U.R.; Slavic etymology of robota; Proto-Germanic Hrōþiberhtaz; onomastic pairs in this journal.",
     },
     {
@@ -77,9 +50,9 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
     {
       id: "dossier",
       tag: "Dossier",
-      title: "Three clocks, unmerged",
+      title: "Four clocks, unmerged",
       href: "/dossier",
-      body: "Steelman first. Then the charter, clause by clause. Then three clocks on the table: documents, family memory, genetic tests. A date on a charter is not a date on a cheek swab. Nuevo León means New Kingdom of León. An English tourism page once calqued it as New Lion and then took that line down. That calque is not Hebrew lion language, and it is not a founding of this Mexican state by the tribe of Judah.",
+      body: "Steelman first. Then the charter, clause by clause. Then four clocks on the table: documents, family memory, genetic tests, and place. A date on a charter is not a date on a cheek swab, and Monterrey is not Vila-real. Nuevo León means New Kingdom of León. An English tourism page once calqued it as New Lion and then took that line down. That calque is not Hebrew lion language, and it is not a founding of this Mexican state by the tribe of Judah.",
       sources: "VisitMexico English calque, later reverted; AM, Debate, Al Día; Numbers 23; INEGI census counts.",
     },
     {
@@ -103,9 +76,9 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
     {
       id: "essay",
       tag: "Ensayo",
-      title: "Robot y Robert",
+      title: "Roboto y Roberto",
       href: "/",
-      body: "Estos dos nombres riman en inglés. No son parientes. Robot entró a las lenguas del mundo desde la obra checa R.U.R. de Čapek, del eslavo robota, trabajo forzado. Robert viene del proto-germánico: fama más brillante, llevado por duques, reyes y santos. El sonido no es el sentido. Yisrael e Israel pueden parecer gemelos y guardar relojes distintos. Villarreal y Martinez pueden compartir una calle y no una raíz. El oficio del ensayo es no dejar que la palabra, la corona, el apellido y el lugar se vuelvan un solo relato.",
+      body: "Los nombres reales son Roboto y Roberto. Riman. No son parientes. Robot y Robert son las glosas inglesas que funden el par. Roboto se sienta junto a robot / robota — la obra checa R.U.R. de Čapek, trabajo forzado eslavo. Es la casa, no un diminutivo del nombre de pila. Roberto es la forma ibérica de Robert: proto-germánico fama más brillante, llevado por duques, reyes y santos. El sonido no es el sentido. Yisrael e Israel pueden parecer gemelos y guardar relojes distintos. Villarreal y Martinez pueden compartir una calle y no una raíz. El oficio del ensayo es no dejar que la casa, el nombre de pila, la corona, el apellido y el lugar se vuelvan un solo relato.",
       sources: "Čapek, R.U.R.; etimología eslava de robota; proto-germánico Hrōþiberhtaz; pares onomásticos de esta revista.",
     },
     {
@@ -119,9 +92,9 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
     {
       id: "dossier",
       tag: "Dossier",
-      title: "Tres relojes, sin fundir",
+      title: "Cuatro relojes, sin fundir",
       href: "/dossier",
-      body: "Primero el steelman. Luego la carta, cláusula por cláusula. Luego tres relojes sobre la mesa: documentos, memoria de familia, pruebas genéticas. La fecha de una carta no es la fecha de un hisopo. Nuevo León significa Nuevo Reino de León. Una página turística en inglés alguna vez lo calcó como New Lion y luego quitó esa línea. Ese calco no es la lengua hebrea del león, y no es una fundación de este estado mexicano por la tribu de Judá.",
+      body: "Primero el steelman. Luego la carta, cláusula por cláusula. Luego cuatro relojes sobre la mesa: documentos, memoria de familia, pruebas genéticas y lugar. La fecha de una carta no es la fecha de un hisopo, y Monterrey no es Vila-real. Nuevo León significa Nuevo Reino de León. Una página turística en inglés alguna vez lo calcó como New Lion y luego quitó esa línea. Ese calco no es la lengua hebrea del león, y no es una fundación de este estado mexicano por la tribu de Judá.",
       sources: "Calco inglés de VisitMexico, luego revertido; AM, Debate, Al Día; Números 23; conteos INEGI.",
     },
     {
@@ -142,20 +115,3 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
     },
   ],
 };
-
-export function briefNarration(lang: Lang): string {
-  const meta = BRIEF_META[lang];
-  const intro =
-    lang === "en"
-      ? `${meta.title}. A spoken brief from Roboto SAI Research.`
-      : `${meta.title}. Una síntesis hablada de Roboto SAI Research.`;
-  const parts = BRIEF_TAGS[lang].map((tag, index) => {
-    const n = lang === "en" ? `Speech tag ${index + 1}` : `Etiqueta de voz ${index + 1}`;
-    return `${n}. ${tag.tag}. ${tag.title}. ${tag.body}`;
-  });
-  return [intro, ...parts].join("\n\n");
-}
-
-export function tagNarration(lang: Lang, tag: BriefTag): string {
-  return `${tag.tag}. ${tag.title}. ${tag.body}`;
-}

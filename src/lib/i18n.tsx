@@ -76,30 +76,30 @@ export const CHROME = {
       { to: "/brief", label: "Brief" },
     ] satisfies NavItem[],
     home: {
-      title: "The Names Robot and Robert",
+      title: "The Names Roboto and Roberto",
       subtitle: "Linguistic origins, historical usage, and cultural migrations",
       kicker: "A static research page",
       sources: "sources",
       findings: [
         {
           kicker: "Not kin",
-          text: "Robot and Robert rhyme in English. They are not etymological relatives.",
+          text: "The real names are Roboto and Roberto. They rhyme. They are not etymological relatives.",
         },
         {
-          kicker: "1920 coinage",
-          text: "Robot entered world languages from Čapek’s Czech play R.U.R., from Slavic robota, forced labor.",
+          kicker: "House name",
+          text: "Roboto sits next to robot / robota — Čapek’s 1920 Czech coinage from Slavic forced labor. That is the house, not a diminutive of Roberto.",
         },
         {
-          kicker: "Bright fame",
-          text: "Robert is Proto-Germanic *Hrōþiberhtaz — fame + bright — carried by dukes, kings, and saints.",
+          kicker: "Given name",
+          text: "Roberto is the Iberian form of Robert: Proto-Germanic *Hrōþiberhtaz — fame + bright — carried by dukes, kings, and saints.",
         },
         {
           kicker: "Sound vs sense",
-          text: "Pairs like Yisrael / Israel and Villarreal / Martinez show how homophony can hide separate histories.",
+          text: "Robot and Robert are English glosses that collapse the pair. Yisrael / Israel and Villarreal / Martinez show the same trap.",
         },
         {
-          kicker: "Three clocks",
-          text: "Documents, DNA, and family memory keep different time. Date each clock. Do not merge them.",
+          kicker: "Four clocks",
+          text: "Documents, DNA, family memory, and place keep different time. Date each clock. Do not merge them.",
         },
       ],
       newKicker: "New in this edition",
@@ -119,7 +119,7 @@ export const CHROME = {
       briefCta: "Open the brief",
       chronology: "A brief chronology",
       chronologyLead:
-        "Selected dates that thread Robot, Robert, and the Iberian case studies through the same historical line.",
+        "Selected dates that thread Roboto, Roberto, and the Iberian case studies through the same historical line.",
       references: "References",
       llms: "Full text is on this page for human readers. A plain-text brief is also at",
     },
@@ -156,7 +156,7 @@ export const CHROME = {
         { id: "claims", label: "Claims" },
         { id: "charter", label: "Carta pobla" },
         { id: "chronicle", label: "Chronicle" },
-        { id: "dna", label: "Three clocks" },
+        { id: "dna", label: "Four clocks" },
       ],
     },
     lion: {
@@ -170,7 +170,7 @@ export const CHROME = {
       references: "References",
       cite: "Cite this page",
       companion: "Companion essay:",
-      companionTitle: "The Names Robot and Robert",
+      companionTitle: "The Names Roboto and Roberto",
     },
     ui: {
       by: "By",
@@ -180,7 +180,7 @@ export const CHROME = {
       pause: "Pause",
       listenAria: "Listen to the brief",
       searchEssay: "Search the essay",
-      searchPlaceholder: "Robot, Peyronet, 1429, carta pobla…",
+      searchPlaceholder: "Roboto, Roberto, Peyronet, 1429…",
       noMatch: "No matching section.",
       bothClocks: "Both clocks",
       all: "All",
@@ -248,30 +248,30 @@ export const CHROME = {
       { to: "/brief", label: "Síntesis" },
     ] satisfies NavItem[],
     home: {
-      title: "Los nombres Robot y Robert",
+      title: "Los nombres Roboto y Roberto",
       subtitle: "Orígenes lingüísticos, uso histórico y migraciones culturales",
       kicker: "Página de investigación",
       sources: "fuentes",
       findings: [
         {
           kicker: "No son parientes",
-          text: "Robot y Robert riman en inglés. No son parientes etimológicos.",
+          text: "Los nombres reales son Roboto y Roberto. Riman. No son parientes etimológicos.",
         },
         {
-          kicker: "Acuñación de 1920",
-          text: "Robot entró a las lenguas del mundo desde la obra checa R.U.R. de Čapek, del eslavo robota, trabajo forzado.",
+          kicker: "Nombre de casa",
+          text: "Roboto se sienta junto a robot / robota — la acuñación checa de 1920 de Čapek, del eslavo trabajo forzado. Es la casa, no un diminutivo de Roberto.",
         },
         {
-          kicker: "Fama brillante",
-          text: "Robert es proto-germánico *Hrōþiberhtaz — fama + brillante — llevado por duques, reyes y santos.",
+          kicker: "Nombre de pila",
+          text: "Roberto es la forma ibérica de Robert: proto-germánico *Hrōþiberhtaz — fama + brillante — llevado por duques, reyes y santos.",
         },
         {
           kicker: "Sonido y sentido",
-          text: "Pares como Yisrael / Israel y Villarreal / Martinez muestran cómo la homofonía esconde historias distintas.",
+          text: "Robot y Robert son glosas inglesas que funden el par. Yisrael / Israel y Villarreal / Martinez muestran la misma trampa.",
         },
         {
-          kicker: "Tres relojes",
-          text: "Documentos, ADN y memoria de familia llevan tiempos distintos. Fecha cada reloj. No los fundas.",
+          kicker: "Cuatro relojes",
+          text: "Documentos, ADN, memoria de familia y lugar llevan tiempos distintos. Fecha cada reloj. No los fundas.",
         },
       ],
       newKicker: "Nuevo en esta edición",
@@ -291,7 +291,7 @@ export const CHROME = {
       briefCta: "Abrir la síntesis",
       chronology: "Una cronología breve",
       chronologyLead:
-        "Fechas que atan Robot, Robert y los casos ibéricos a la misma línea histórica.",
+        "Fechas que atan Roboto, Roberto y los casos ibéricos a la misma línea histórica.",
       references: "Fuentes",
       llms: "El texto completo está en esta página para lectores humanos. Un breve en texto plano también está en",
     },
@@ -328,7 +328,7 @@ export const CHROME = {
         { id: "claims", label: "Afirmaciones" },
         { id: "charter", label: "Carta puebla" },
         { id: "chronicle", label: "Crónica" },
-        { id: "dna", label: "Tres relojes" },
+        { id: "dna", label: "Cuatro relojes" },
       ],
     },
     lion: {
@@ -342,7 +342,7 @@ export const CHROME = {
       references: "Fuentes",
       cite: "Citar esta página",
       companion: "Ensayo compañero:",
-      companionTitle: "Los nombres Robot y Robert",
+      companionTitle: "Los nombres Roboto y Roberto",
     },
     ui: {
       by: "Por",
@@ -352,7 +352,7 @@ export const CHROME = {
       pause: "Pausa",
       listenAria: "Escuchar la síntesis",
       searchEssay: "Buscar el ensayo",
-      searchPlaceholder: "Robot, Peyronet, 1429, carta puebla…",
+      searchPlaceholder: "Roboto, Roberto, Peyronet, 1429…",
       noMatch: "Ningún apartado coincide.",
       bothClocks: "Los dos relojes",
       all: "Todo",

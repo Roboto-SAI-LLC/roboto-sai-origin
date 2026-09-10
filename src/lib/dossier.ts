@@ -348,9 +348,9 @@ export const CLAIMS: Claim[] = [
   },
   {
     id: "robot-robert",
-    title: "Robot because someone was Robert",
-    stated: "R.U.R. was named from a Robert, which is why the words rhyme.",
-    steelman: "English rhyme is a fact of sound. Czech robota (forced labor) and Germanic Hrōþiberhtaz (bright fame) are not kin. The play’s word is Josef Čapek’s; the play’s characters are Domin, Helena, Radius, and others.",
+    title: "Roboto because someone was Roberto",
+    stated: "Roboto is named from Roberto, which is why the words rhyme.",
+    steelman: "The rhyme is a fact of sound. Roboto sits next to robot / robota (forced labor). Roberto is the Iberian form of Robert, from Germanic Hrōþiberhtaz (bright fame). They are not kin. Robot and Robert are the English glosses that collapse the pair. The play’s word is Josef Čapek’s; the play’s characters are Domin, Helena, Radius, and others.",
     verdict: "not-in-record",
     inRecord: [
       {
@@ -724,6 +724,13 @@ export const DNA_CLOCKS = [
     ticks: "Compressed generations",
     can: "Keep pressure, departure, a martial self-image, a sense of being from a royal place or a Jewish line.",
     cannot: "Be trusted, unaided, for the exact year (1429 vs 1391 vs 1492) or the legal cause (Temple bargain vs edict)."
+  },
+  {
+    id: "place",
+    title: "Place clock",
+    ticks: "Gazetteer and later maps",
+    can: "Name a later density: Monterrey, Los Villarreales, a warehouse hotel. Keep 1274 and Nuevo León on separate maps.",
+    cannot: "Glue a Catalan charter to a Mexican census and call that one origin."
   }
 ] as const;
 export const VERDICT_LABEL: Record<ClaimVerdict, string> = {

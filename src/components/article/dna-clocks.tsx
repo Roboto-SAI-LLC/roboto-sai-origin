@@ -1,14 +1,19 @@
+import { CHROME, useLang } from "@/lib/i18n";
 import { DNA_CLOCKS } from "@/lib/dossier";
 
 export function DnaClocks() {
+  const { lang } = useLang();
+  const ui = CHROME[lang].ui;
+
   return (
     <div>
       <p className="max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-        Three archives, three speeds. A genome can show that a living Villarreal line clusters with Sephardic
+        Four archives, four speeds. A genome can show that a living Villarreal line clusters with Sephardic
         or Levantine samples. It cannot remember a 1274 meeting. Family memory often keeps the pressure and
-        loses the year. Charters keep the year and lose the broker.
+        loses the year. Charters keep the year and lose the broker. Place keeps a later map and must not
+        steal the founding.
       </p>
-      <div className="mt-6 grid gap-3 lg:grid-cols-3">
+      <div className="mt-6 grid gap-3 sm:grid-cols-2">
         {DNA_CLOCKS.map((clock) => (
           <article key={clock.id} className="rounded-xl bg-surface px-4 py-5 shadow-paper sm:px-5">
             <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
@@ -16,11 +21,11 @@ export function DnaClocks() {
             </p>
             <h2 className="mt-2 font-display text-xl font-medium text-fg">{clock.title}</h2>
             <p className="mt-4 text-sm leading-relaxed text-fg">
-              <span className="font-medium">Can. </span>
+              <span className="font-medium">{ui.can} </span>
               {clock.can}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              <span className="font-medium text-fg">Cannot. </span>
+              <span className="font-medium text-fg">{ui.cannot} </span>
               {clock.cannot}
             </p>
           </article>

@@ -49,6 +49,8 @@ const jsonLd = {
   url: SITE_URL,
   creditText: META.credit,
   keywords: [
+    "Roboto",
+    "Roberto",
     "Robot",
     "Robert",
     "onomastics",

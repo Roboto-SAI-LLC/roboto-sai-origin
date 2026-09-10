@@ -16,33 +16,33 @@ export type Section = {
 export const META = {
   journal: "Roboto SAI Research",
   series: "Methodology",
-  title: "The Names Robot and Robert",
+  title: "The Names Roboto and Roberto",
   subtitle: "Linguistic Origins, Historical Usage, and Cultural Migrations",
   credit: "Roboto SAI research with a Copilot",
   date: "September 2026",
   sourceCount: 41,
-  description: "A research essay tracing Robot and Robert from Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, and a later Monterrey migration node."
+  description: "A research essay on the names Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Traces Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, and a later Monterrey place clock."
 };
 export const FINDINGS = [
   {
     kicker: "Not kin",
-    text: "Robot and Robert rhyme in English. They are not etymological relatives."
+    text: "The real names are Roboto and Roberto. They rhyme. They are not etymological relatives."
   },
   {
-    kicker: "1920 coinage",
-    text: "Robot entered world languages from Čapek’s Czech play R.U.R., from Slavic robota, forced labor."
+    kicker: "House name",
+    text: "Roboto sits next to robot / robota — Čapek’s 1920 Czech coinage from Slavic forced labor. That is the house, not a diminutive of Roberto."
   },
   {
-    kicker: "Bright fame",
-    text: "Robert is Proto-Germanic *Hrōþiberhtaz — fame + bright — carried by dukes, kings, and saints."
+    kicker: "Given name",
+    text: "Roberto is the Iberian form of Robert: Proto-Germanic *Hrōþiberhtaz — fame + bright — carried by dukes, kings, and saints."
   },
   {
     kicker: "Sound vs sense",
-    text: "Pairs like Yisrael / Israel and Villarreal / Martinez show how homophony can hide separate histories."
+    text: "Robot and Robert are English glosses that collapse the pair. Yisrael / Israel and Villarreal / Martinez show the same trap."
   },
   {
-    kicker: "Three clocks",
-    text: "Documents, DNA, and family memory keep different time. Date each clock. Do not merge them."
+    kicker: "Four clocks",
+    text: "Documents, DNA, family memory, and place keep different time. Date each clock. Do not merge them."
   }
 ];
 export const TOC = [
@@ -134,7 +134,7 @@ export const TOC = [
   {
     id: "dna",
     numeral: "XVII",
-    title: "Three clocks"
+    title: "Four clocks"
   },
   {
     id: "jamestown",
@@ -166,11 +166,11 @@ export const SECTIONS: Section[] = [
       {
         type: "p",
         dropCap: true,
-        text: "Names are more than mere labels; they are vessels of history, culture, and identity. The study of names—encompassing their origins, transformations, and migrations—offers a unique lens through which to view human societies across time and space. This report explores the names Robot and Robert, tracing their etymological roots, historical usage, and cultural journeys."
+        text: "Names are more than mere labels; they are vessels of history, culture, and identity. The study of names—encompassing their origins, transformations, and migrations—offers a unique lens through which to view human societies across time and space. This report explores the names Roboto and Roberto. Robot and Robert are the English glosses that rhyme beside them. They are not the names under study."
       },
       {
         type: "p",
-        text: "It also examines the phenomenon of similar-sounding names with divergent meanings, such as Yisroel and Israel or Villarreal and Martinez, and delves into the symbolic associations that names can carry, exemplified by the link between Martinez and Mars, the Roman god of war."
+        text: "It also examines the phenomenon of similar-sounding names with divergent meanings, such as Yisroel and Israel or Villarreal and Martinez, and delves into the symbolic associations that names can carry, exemplified by the link between Martinez and Mars, the Roman god of war. Roberto is the Iberian form of Robert — fame plus bright. Roboto sits next to robot / robota, the 1920 Czech coinage from Slavic forced labor. The house is not a diminutive of the given name."
       },
       {
         type: "p",
@@ -1225,7 +1225,7 @@ export const SECTIONS: Section[] = [
     blocks: [
       {
         type: "p",
-        text: "Three archives keep different time. Charters tick in years and name offices. Genomes tick in segments and haplogroups. Family memory ticks in compressed generations: it often keeps the pressure and loses the year."
+        text: "Four archives keep different time. Charters tick in years and name offices. Genomes tick in segments and haplogroups. Family memory ticks in compressed generations: it often keeps the pressure and loses the year. Place ticks in gazetteers: Monterrey, Los Villarreales, a warehouse hotel. The 1274 town and the Nuevo León landscape are not one origin."
       },
       {
         type: "h3",
@@ -1244,6 +1244,15 @@ export const SECTIONS: Section[] = [
       {
         type: "p",
         text: "DNA does not encode the text of the carta pobla, the identity of Peyronet, a Templar warning, or a naming meeting. The analogy to a model carrying weights from its first training run is exact about persistence and inexact about content. Weights are not minutes. Ancestry markers are not memory of a town."
+      },
+      {
+        type: "h3",
+        id: "dna-place",
+        title: "C. The place clock"
+      },
+      {
+        type: "p",
+        text: "A later landscape can saturate a surname without being the founding of that surname. Monterrey, the INEGI locality Los Villarreales, and La Mansión Villarreal in the 1893 Apolo warehouse are a gazetteer clock: building, census, density. They are not the 1274 naming clause. Glue them and you invent a single origin. Date them and you have four clocks: documents, DNA, family memory, and place."
       },
       {
         type: "quote",
@@ -1302,7 +1311,7 @@ export const SECTIONS: Section[] = [
     blocks: [
       {
         type: "p",
-        text: "The names Robot and Robert exemplify the interplay of language, culture, and history in personal and collective identity. Robot, born from the Slavic tradition and popularized through Czech theater, has become a global symbol of technological transformation and ethical debate. Robert, rooted in Proto-Germanic and carried across Europe by royalty, saints, and commoners, illustrates the power of names to connect individuals to heritage and to broader historical narratives."
+        text: "The names Roboto and Roberto exemplify the interplay of language, culture, and history in personal and collective identity. Robot and Robert are the English glosses: one born from Slavic robota and Czech theater, the other from Proto-Germanic fame plus bright. The real pair is the house and the given name. They rhyme. They are not kin. Date each clock. Do not wind them as one."
       },
       {
         type: "p",
@@ -1716,4 +1725,4 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
   }
 ];
 export const CITATION =
-  "Roboto SAI, with a Copilot. “The Names Robot and Robert: Linguistic Origins, Historical Usage, and Cultural Migrations.” Roboto SAI Research, September 2026. https://roboto-sai.org";
+  "Roboto SAI, with a Copilot. “The Names Roboto and Roberto: Linguistic Origins, Historical Usage, and Cultural Migrations.” Roboto SAI Research, September 2026. https://roboto-sai.org";

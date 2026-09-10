@@ -16,7 +16,7 @@ export const Route = createFileRoute("/brief")({
       {
         name: "description",
         content:
-          "One-page brief of five essays: Robot and Robert, the 1274 atlas, the dossier, Gur Aryeh, and the Templars. No citation numbers.",
+          "One-page brief of five essays: Roboto and Roberto, the 1274 atlas, the dossier, Gur Aryeh, and the Templars. No citation numbers.",
       },
     ],
   }),

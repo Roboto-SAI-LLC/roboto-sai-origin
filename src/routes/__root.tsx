@@ -6,7 +6,7 @@ import { APP_NAME, APP_SHORT_NAME, SITE_URL } from "@/lib/site";
 import appCss from "../styles.css?url";
 
 const DESCRIPTION =
-  "Onomastic methodology from Roboto SAI: the 1274 Vila-real network, the Villarreal name, three clocks, Gur Aryeh, and the Temple on the Plana.";
+  "Onomastic methodology from Roboto SAI: the names Roboto and Roberto, the 1274 Vila-real network, four clocks, Gur Aryeh, and the Temple on the Plana.";
 
 export const Route = createRootRoute({
   head: () => ({
