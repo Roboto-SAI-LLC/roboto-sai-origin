@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { b as require_jsx_runtime, z as require_react } from "../_libs/@tanstack/react-router+[...].mjs";
-import { N as useLang, O as TOC, j as CHROME } from "./router-CfRJCdvi.mjs";
-import { i as cn } from "./site-header-CGRf7y1D.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/table-of-contents-CipP05QY.js
+import { N as useLang, O as TOC, j as CHROME } from "./router-CXAxw9mM.mjs";
+import { i as cn } from "./site-header-CC1S7zsx.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/table-of-contents-C-X6lr4Z.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var TOKEN = /(\*\*[^*]+?\*\*|\*[^*]+?\*|\[\d+\])/g;

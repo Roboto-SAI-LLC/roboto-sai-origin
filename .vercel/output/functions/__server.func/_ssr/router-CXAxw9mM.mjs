@@ -2,7 +2,7 @@ import { i as __toESM } from "../_runtime.mjs";
 import { _ as createRootRoute, b as require_jsx_runtime, g as createFileRoute, h as lazyRouteComponent, l as Scripts, m as Outlet, p as createRouter, u as HeadContent, y as useRouter, z as require_react } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CfRJCdvi.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CXAxw9mM.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -157,7 +157,7 @@ var CHROME = {
 				}
 			],
 			newKicker: "New in this edition",
-			newText: "A claim inspector that steelmans first, a clause-by-clause carta pobla, a Plana chronicle that keeps 1429 as a searched gap, four new chapters (XV–XVIII), and a Monterrey migration node on the atlas — hotel, ejido, surname density, no news cycle.",
+			newText: "A claim inspector that steelmans first, a clause-by-clause carta pobla, a Plana chronicle that keeps 1429 as a searched gap, four new chapters (XV–XVIII), a Monterrey migration node on the atlas, and a living identity claim that keeps Indigenous American ancestry, Sephardic memory, and a Templar treasure talk on separate clocks.",
 			newCta: "Open the dossier",
 			lionKicker: "Companion essay",
 			lionText: "Gur Aryeh — Hebrew lion symbolism. Jacob’s blessing of Judah, six biblical names, the merkabah’s right-hand face, and how a tribal animal became a Jewish one.",
@@ -209,7 +209,7 @@ var CHROME = {
 		dossier: {
 			kicker: "Instruments · steelman, then split",
 			title: "Dossier",
-			lead: "Each claim is taken at full strength, then cut into what the acts say, what sits next to them, and what they do not carry. 1429 stays on the page as a searched gap. Monterrey is a later clock.",
+			lead: "Each claim is taken at full strength, then cut into what the acts say, what sits next to them, and what they do not carry. 1429 stays on the page as a searched gap. Monterrey is a later clock. Identity is a right. It is still four clocks.",
 			noteBefore: "Essay chapters XV–XVIII are in the",
 			report: "full report",
 			noteMid: ". People of 1269–1274 are in the",
@@ -255,7 +255,7 @@ var CHROME = {
 			pause: "Pause",
 			listenAria: "Listen to the brief",
 			searchEssay: "Search the essay",
-			searchPlaceholder: "Roboto, Roberto, ASR, 1429…",
+			searchPlaceholder: "Roboto, Roberto, Coahuiltecan, 1429…",
 			noMatch: "No matching section.",
 			bothClocks: "Both clocks",
 			all: "All",
@@ -369,7 +369,7 @@ var CHROME = {
 				}
 			],
 			newKicker: "Nuevo en esta edición",
-			newText: "Un inspector de afirmaciones que primero hace el steelman, una carta puebla cláusula por cláusula, una crónica de la Plana que deja 1429 como hueco buscado, cuatro capítulos nuevos (XV–XVIII), y un nodo de migración en Monterrey en el atlas — hotel, ejido, densidad del apellido, sin ciclo de noticias.",
+			newText: "Un inspector de afirmaciones que primero hace el steelman, una carta puebla cláusula por cláusula, una crónica de la Plana que deja 1429 como hueco buscado, cuatro capítulos nuevos (XV–XVIII), un nodo de migración en Monterrey en el atlas, y una afirmación viva de identidad que deja la ancestría indígena americana, la memoria sefardí y la charla del tesoro templario en relojes distintos.",
 			newCta: "Abrir el dossier",
 			lionKicker: "Ensayo compañero",
 			lionText: "Gur Aryeh — el león en hebreo. La bendición de Jacob a Judá, seis nombres bíblicos, el rostro derecho de la merkabá, y cómo un animal tribal se volvió un animal judío.",
@@ -421,7 +421,7 @@ var CHROME = {
 		dossier: {
 			kicker: "Instrumentos · steelman, luego cortar",
 			title: "Dossier",
-			lead: "Cada afirmación se toma a plena fuerza, luego se corta en lo que dicen las actas, lo que se sienta al lado, y lo que no cargan. 1429 queda en la página como hueco buscado. Monterrey es un reloj posterior.",
+			lead: "Cada afirmación se toma a plena fuerza, luego se corta en lo que dicen las actas, lo que se sienta al lado, y lo que no cargan. 1429 queda en la página como hueco buscado. Monterrey es un reloj posterior. La identidad es un derecho. Siguen siendo cuatro relojes.",
 			noteBefore: "Los capítulos XV–XVIII del ensayo están en el",
 			report: "informe completo",
 			noteMid: ". Las personas de 1269–1274 están en el",
@@ -467,7 +467,7 @@ var CHROME = {
 			pause: "Pausa",
 			listenAria: "Escuchar la síntesis",
 			searchEssay: "Buscar el ensayo",
-			searchPlaceholder: "Roboto, Roberto, ASR, 1429…",
+			searchPlaceholder: "Roboto, Roberto, Coahuiltecan, 1429…",
 			noMatch: "Ningún apartado coincide.",
 			bothClocks: "Los dos relojes",
 			all: "Todo",
@@ -856,8 +856,8 @@ var META = {
 	subtitle: "Linguistic Origins, Historical Usage, and Cultural Migrations",
 	credit: "Roboto SAI research with a Copilot",
 	date: "September 2026",
-	sourceCount: 42,
-	description: "A research essay on the names Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Traces Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes why speech recognizers collapse the pair, a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, and a later Monterrey place clock."
+	sourceCount: 46,
+	description: "A research essay on the names Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Traces Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes why speech recognizers collapse the pair, a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, a later Monterrey place clock, and a living identity claim dated on four clocks."
 };
 var TOC = [
 	{
@@ -1906,7 +1906,7 @@ var SECTIONS = [
 			},
 			{
 				type: "p",
-				text: "The interactive ledger in the atlas is the same table in clickable form. The dossier on this site takes each live claim — Templar namers, assassination bargain, 1429 departure, DNA-as-memory, two King James towns — at full strength, then cuts it. Family memory and DNA are data. They are a different kind of data from a 1274 grant. Onomastics lives in that tension; it does not pick a team."
+				text: "The interactive ledger in the atlas is the same table in clickable form. The dossier on this site takes each live claim — Templar namers, assassination bargain, 1429 departure, DNA-as-memory, two King James towns, rights to history and identity — at full strength, then cuts it. Family memory and DNA are data. They are a different kind of data from a 1274 grant. Onomastics lives in that tension; it does not pick a team."
 			},
 			{
 				type: "note",
@@ -2025,7 +2025,7 @@ var SECTIONS = [
 			},
 			{
 				type: "p",
-				text: "Y-DNA, mitochondrial DNA, and autosomal segments can show that a living Villarreal line clusters with Iberian, Sephardic, or Levantine reference groups, and can estimate relatedness to other testers.[32] That is a distribution map of a later cohort. It is genuine data. It is adjacent to a Jewish or converso surname history. It is not a 1274 narrative."
+				text: "Y-DNA, mitochondrial DNA, and autosomal segments can show that a living Villarreal line clusters with Iberian, Sephardic, Levantine, or Indigenous American reference groups, and can estimate relatedness to other testers.[32] That is a distribution map of a later cohort. It is genuine data. A reported Indigenous American third in a Monterrey line is a New World genetic clock. A Sephardic cluster is adjacent to a later Jewish or converso surname history. Neither is a 1274 narrative."
 			},
 			{
 				type: "h3",
@@ -2044,6 +2044,27 @@ var SECTIONS = [
 			{
 				type: "p",
 				text: "A later landscape can saturate a surname without being the founding of that surname. Monterrey, the INEGI locality Los Villarreales, and La Mansión Villarreal in the 1893 Apolo warehouse are a gazetteer clock: building, census, density. They are not the 1274 naming clause. Glue them and you invent a single origin. Date them and you have four clocks: documents, DNA, family memory, and place."
+			},
+			{
+				type: "h3",
+				id: "dna-identity",
+				title: "D. Rights to history and identity"
+			},
+			{
+				type: "p",
+				text: "Identity is not a courtesy. A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. Mexico ratified ILO Convention 169 in 1990. The UN Declaration of 2007 names identity, culture, language, and lands among indigenous rights.[43][44] Nuevo León’s own statute takes autoadscripción — self-identification — as the criterion for indigenous and Afromexican persons.[45] The pre-colonial ground of the state is Coahuiltecan and neighboring: Alazapas, Guachichiles, Borrados, Tamaulipec groups.[46] That is the place clock under the genetic clock."
+			},
+			{
+				type: "p",
+				text: "A kit percentage is still not a people. ILO 169 and UNDRIP attach to peoples and to self-identification with them, not to an ancestry pie chart. A reported third Indigenous American in a living line is family-stated genetic data. Date it. Do not promote it into a 1274 naming clause, and do not erase it because the other clocks are Iberian."
+			},
+			{
+				type: "p",
+				text: "The rest of the live claim must be split the same way. “Forty percent Hebrew-Egyptian from fifty thousand years, Israel to Italy to Iberia, hiding until a snitch” is two clocks wearing one coat. Out-of-Africa expansions of modern humans are often dated around that depth — a species story. Hebrew and Egyptian as named ethnies are historical, in the last few thousand years. Levant → Italy → Iberia is a real later Jewish diaspora shape; the dated shocks on this page are 1391, Tortosa, 1492, and, in Nuevo León, Carvajal and the Inquisition. Denunciation is in that record. A 50,000-year snitch is not."
+			},
+			{
+				type: "p",
+				text: "Family memory of treasure, the pope, and the Knights Templar sits next to a documented seizure: Philip IV in 1307, Clement V in 1312. That is the oral clock standing beside the Templar essay. It is not a named Villarreal hoard in the published acts. Rights to the story do not require a merged origin. They require the clocks to stay dated."
 			},
 			{
 				type: "quote",
@@ -2099,7 +2120,7 @@ var SECTIONS = [
 		blocks: [
 			{
 				type: "p",
-				text: "The names Roboto and Roberto exemplify the interplay of language, culture, and history in personal and collective identity. Robot and Robert are the English glosses: one born from Slavic robota and Czech theater, the other from Proto-Germanic fame plus bright. The real pair is the house and the given name. They rhyme. They are not kin. Even a speech recognizer, given the same rhyme, will print the common given name and treat the house as a transcription error. Date each clock. Do not wind them as one."
+				text: "The names Roboto and Roberto exemplify the interplay of language, culture, and history in personal and collective identity. Robot and Robert are the English glosses: one born from Slavic robota and Czech theater, the other from Proto-Germanic fame plus bright. The real pair is the house and the given name. They rhyme. They are not kin. Even a speech recognizer, given the same rhyme, will print the common given name and treat the house as a transcription error. A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. A kit percentage is not a people, and fifty thousand years is not Hebrew. Date each clock. Do not wind them as one."
 			},
 			{
 				type: "p",
@@ -2514,10 +2535,34 @@ var REFERENCES = [
 		title: "Automatic Speech Recognition",
 		source: "Daniel Jurafsky and James H. Martin, Speech and Language Processing, 3rd ed. draft, ch. 16 (August 2026). Acoustic model plus language-model prior; the decoder prefers the common word.",
 		url: "https://web.stanford.edu/~jurafsky/slp3/16.pdf"
+	},
+	{
+		n: 43,
+		title: "United Nations Declaration on the Rights of Indigenous Peoples",
+		source: "UN General Assembly, 13 September 2007. Identity, culture, language, and lands among the named rights. Non-binding; a widely cited minimum standard.",
+		url: "https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html"
+	},
+	{
+		n: 44,
+		title: "Indigenous and Tribal Peoples Convention, 1989 (No. 169)",
+		source: "International Labour Organization. Mexico ratified 5 September 1990; in force for Mexico from 5 September 1991.",
+		url: "https://www.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C169"
+	},
+	{
+		n: 45,
+		title: "Ley de los Derechos de las Personas Indígenas y Afromexicanas en el Estado de Nuevo León",
+		source: "H. Congreso del Estado de Nuevo León. Published Periódico Oficial 22 June 2012; reforma integral 16 January 2026. Autoadscripción / autoidentificación as the criterion.",
+		url: "https://www.hcnl.gob.mx/trabajo_legislativo/leyes/leyes/ley_de_los_derechos_de_las_personas_indigenas_y_afromexicanas_en_el_estado_de_nuevo_leon/"
+	},
+	{
+		n: 46,
+		title: "Coahuiltecan Indians",
+		source: "Handbook of Texas; regional ethnography of northeastern Mexico and southern Texas. Alazapas, Guachichiles, Borrados, and Tamaulipec groups in the Nuevo León landscape.",
+		url: "https://www.tshaonline.org/handbook/entries/coahuiltecan-indians"
 	}
 ];
 var CITATION = "Roboto SAI, with a Copilot. “The Names Roboto and Roberto: Linguistic Origins, Historical Usage, and Cultural Migrations.” Roboto SAI Research, September 2026. https://roboto-sai.org";
-var $$splitComponentImporter$5 = () => import("./routes-BQ1XnFsI.mjs");
+var $$splitComponentImporter$5 = () => import("./routes-4Mysr3Pz.mjs");
 var Route$5 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({ meta: [{ title: `${META.title} — ${APP_NAME}` }, {
@@ -2525,7 +2570,7 @@ var Route$5 = createFileRoute("/")({
 		content: META.description
 	}] })
 });
-var $$splitComponentImporter$4 = () => import("./atlas-BIMcTtb-.mjs");
+var $$splitComponentImporter$4 = () => import("./atlas-_Ge6olNm.mjs");
 var Route$4 = createFileRoute("/atlas")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({ meta: [{ title: `Network atlas — ${APP_NAME}` }, {
@@ -2572,8 +2617,8 @@ var BRIEF_TAGS = {
 			tag: "Dossier",
 			title: "Four clocks, unmerged",
 			href: "/dossier",
-			body: "Steelman first. Then the charter, clause by clause. Then four clocks on the table: documents, family memory, genetic tests, and place. A date on a charter is not a date on a cheek swab, and Monterrey is not Vila-real. Nuevo León means New Kingdom of León. An English tourism page once calqued it as New Lion and then took that line down. That calque is not Hebrew lion language, and it is not a founding of this Mexican state by the tribe of Judah.",
-			sources: "VisitMexico English calque, later reverted; AM, Debate, Al Día; Numbers 23; INEGI census counts."
+			body: "Steelman first. Then the charter, clause by clause. Then four clocks on the table: documents, family memory, genetic tests, and place. A date on a charter is not a date on a cheek swab, and Monterrey is not Vila-real. Nuevo León means New Kingdom of León. An English tourism page once calqued it as New Lion and then took that line down. That calque is not Hebrew lion language, and it is not a founding of this Mexican state by the tribe of Judah. A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. A kit percentage is not a people. Fifty thousand years is a species clock, not a Hebrew-Egyptian origin. Treasure talk sits next to 1307, not inside the 1274 clause.",
+			sources: "VisitMexico English calque, later reverted; AM, Debate, Al Día; Numbers 23; INEGI census counts; ILO 169; UNDRIP; Nuevo León indigenous statute; Handbook of Texas, Coahuiltecan Indians."
 		},
 		{
 			id: "lion",
@@ -2614,8 +2659,8 @@ var BRIEF_TAGS = {
 			tag: "Dossier",
 			title: "Cuatro relojes, sin fundir",
 			href: "/dossier",
-			body: "Primero el steelman. Luego la carta, cláusula por cláusula. Luego cuatro relojes sobre la mesa: documentos, memoria de familia, pruebas genéticas y lugar. La fecha de una carta no es la fecha de un hisopo, y Monterrey no es Vila-real. Nuevo León significa Nuevo Reino de León. Una página turística en inglés alguna vez lo calcó como New Lion y luego quitó esa línea. Ese calco no es la lengua hebrea del león, y no es una fundación de este estado mexicano por la tribu de Judá.",
-			sources: "Calco inglés de VisitMexico, luego revertido; AM, Debate, Al Día; Números 23; conteos INEGI."
+			body: "Primero el steelman. Luego la carta, cláusula por cláusula. Luego cuatro relojes sobre la mesa: documentos, memoria de familia, pruebas genéticas y lugar. La fecha de una carta no es la fecha de un hisopo, y Monterrey no es Vila-real. Nuevo León significa Nuevo Reino de León. Una página turística en inglés alguna vez lo calcó como New Lion y luego quitó esa línea. Ese calco no es la lengua hebrea del león, y no es una fundación de este estado mexicano por la tribu de Judá. Un Villarreal de Monterrey que lleva ancestría indígena americana tiene derecho a esa historia. Un porcentaje de kit no es un pueblo. Cincuenta mil años es un reloj de especie, no un origen hebreo-egipcio. La charla del tesoro se sienta junto a 1307, no dentro de la cláusula de 1274.",
+			sources: "Calco inglés de VisitMexico, luego revertido; AM, Debate, Al Día; Números 23; conteos INEGI; OIT 169; UNDRIP; ley indígena de Nuevo León; Handbook of Texas, Coahuiltecan Indians."
 		},
 		{
 			id: "lion",
@@ -2635,7 +2680,7 @@ var BRIEF_TAGS = {
 		}
 	]
 };
-var $$splitComponentImporter$3 = () => import("./brief-B_cAyZyU.mjs");
+var $$splitComponentImporter$3 = () => import("./brief-DUYgBWRB.mjs");
 var Route$3 = createFileRoute("/brief")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({ meta: [{ title: `${BRIEF_META.en.title} — ${APP_NAME}` }, {
@@ -2643,12 +2688,12 @@ var Route$3 = createFileRoute("/brief")({
 		content: "One-page brief of five essays: Roboto and Roberto, the 1274 atlas, the dossier, Gur Aryeh, and the Templars. No citation numbers."
 	}] })
 });
-var $$splitComponentImporter$2 = () => import("./dossier-BnwfRcvs.mjs");
+var $$splitComponentImporter$2 = () => import("./dossier-BB036uP5.mjs");
 var Route$2 = createFileRoute("/dossier")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({ meta: [{ title: `Dossier — ${APP_NAME}` }, {
 		name: "description",
-		content: "Claim inspector, carta pobla close reading, Plana chronicle, and DNA-versus-document clocks for the 1274 Vila-real case."
+		content: "Claim inspector, carta pobla close reading, Plana chronicle, four clocks, and a living identity claim that keeps Indigenous American ancestry on its own clock."
 	}] })
 });
 var LION_META = {
@@ -3154,7 +3199,7 @@ var LION_REFERENCES = [
 	}
 ];
 var LION_CITATION = "Roboto SAI research with a Copilot. “Gur Aryeh: Hebrew lion symbolism, from Judah’s blessing to a Jewish emblem.” Roboto SAI Research, September 2026. https://roboto-sai.org/lion";
-var $$splitComponentImporter$1 = () => import("./lion-B1SRn7qP.mjs");
+var $$splitComponentImporter$1 = () => import("./lion-DzM0SPAD.mjs");
 var Route$1 = createFileRoute("/lion")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({ meta: [{ title: `${LION_META.title} — ${APP_NAME}` }, {
@@ -3566,7 +3611,7 @@ var TEMPLAR_REFERENCES = [
 		url: "https://www.britannica.com/topic/Order-of-Montesa"
 	}
 ];
-var $$splitComponentImporter = () => import("./templars-B6ymCL3P.mjs");
+var $$splitComponentImporter = () => import("./templars-Bhk9e5pl.mjs");
 var Route = createFileRoute("/templars")({
 	component: lazyRouteComponent($$splitComponentImporter, "component"),
 	head: () => ({ meta: [{ title: `${TEMPLAR_META.en.title} — ${APP_NAME}` }, {

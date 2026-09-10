@@ -1,11 +1,11 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { b as require_jsx_runtime, v as Link, z as require_react } from "../_libs/@tanstack/react-router+[...].mjs";
 import { r as Search } from "../_libs/lucide-react.mjs";
-import { A as SITE_URL, C as CITATION, E as SECTIONS, N as useLang, O as TOC, T as REFERENCES, j as CHROME, w as META } from "./router-CfRJCdvi.mjs";
-import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CGRf7y1D.mjs";
-import { n as TableOfContents } from "./table-of-contents-CipP05QY.mjs";
-import { n as SectionBody, t as HistoryTimeline } from "./timeline-TsJ6e98T.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BQ1XnFsI.js
+import { A as SITE_URL, C as CITATION, E as SECTIONS, N as useLang, O as TOC, T as REFERENCES, j as CHROME, w as META } from "./router-CXAxw9mM.mjs";
+import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CC1S7zsx.mjs";
+import { n as TableOfContents } from "./table-of-contents-C-X6lr4Z.mjs";
+import { n as SectionBody, t as HistoryTimeline } from "./timeline-BQODARm-.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-4Mysr3Pz.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function sectionText(id) {

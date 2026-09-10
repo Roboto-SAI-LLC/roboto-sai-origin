@@ -1,10 +1,10 @@
 import { b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { M as pick, N as useLang, a as TEMPLAR_SECTIONS, i as TEMPLAR_REFERENCES, j as CHROME, n as TEMPLAR_FINDINGS, o as TEMPLAR_TIMELINE, r as TEMPLAR_META, s as TEMPLAR_TOC, w as META } from "./router-CfRJCdvi.mjs";
-import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CGRf7y1D.mjs";
-import { n as TableOfContents } from "./table-of-contents-CipP05QY.mjs";
+import { M as pick, N as useLang, a as TEMPLAR_SECTIONS, i as TEMPLAR_REFERENCES, j as CHROME, n as TEMPLAR_FINDINGS, o as TEMPLAR_TIMELINE, r as TEMPLAR_META, s as TEMPLAR_TOC, w as META } from "./router-CXAxw9mM.mjs";
+import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CC1S7zsx.mjs";
+import { n as TableOfContents } from "./table-of-contents-C-X6lr4Z.mjs";
 import { t as PhotoFigure } from "./photo-figure-DU1ko3LL.mjs";
-import { n as SectionBody, r as YearTimeline } from "./timeline-TsJ6e98T.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/templars-B6ymCL3P.js
+import { n as SectionBody, r as YearTimeline } from "./timeline-BQODARm-.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/templars-Bhk9e5pl.js
 var import_jsx_runtime = require_jsx_runtime();
 function TemplarPage() {
 	const { lang } = useLang();

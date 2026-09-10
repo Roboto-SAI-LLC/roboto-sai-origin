@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { b as require_jsx_runtime, v as Link, z as require_react } from "../_libs/@tanstack/react-router+[...].mjs";
-import { N as useLang, j as CHROME } from "./router-CfRJCdvi.mjs";
-import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CGRf7y1D.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/atlas-BIMcTtb-.js
+import { N as useLang, j as CHROME } from "./router-CXAxw9mM.mjs";
+import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-CC1S7zsx.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/atlas-_Ge6olNm.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var PEOPLE = [
@@ -410,6 +410,14 @@ var GLOSSARY = [
 	{
 		term: "Villa Real / Villarreal",
 		text: "The same habitational form in two orthographies. INAH writes the Monterrey hotel Villa Real; the public sign is Villarreal. The 1274 Latin is Villa Regalis."
+	},
+	{
+		term: "Autoadscripción",
+		text: "Self-identification as indigenous or Afromexican, the criterion in Nuevo León’s 2012/2026 statute. A right to identity. Not the same thing as a consumer-kit percentage, and not a 1274 naming clause."
+	},
+	{
+		term: "Indigenous American ancestry",
+		text: "A New World genetic clock: autosomal segments that cluster with Indigenous American reference groups. In a Monterrey Villarreal line it is later-cohort data on Coahuiltecan and neighboring ground. It is not Hebrew, not 1274, and not, by itself, a pueblo originario."
 	}
 ];
 var EDGE_COLORS = {
@@ -620,6 +628,34 @@ var MONTERREY_LEDGER = [
 		layer: "monterrey",
 		claim: "English “New Lion” is a machine calque of Nuevo León. VisitMexico published it in August 2020 (Guerrero as Warrior, Torreón as Turret) and took it down — that is the thread that disappeared. Hebrew lion language — Lion of Judah, Ariel “lion of God,” Operation Rising Lion from Numbers 23:24 — is Israel’s own clock. It does not name this Mexican state. No record of a modern Israeli project to found or rename Nuevo León as a New Lion. Do not wind the calque, the 1579 kingdom, and the biblical lion as one clock.",
 		source: "VisitMexico English pages, 7 August 2020, subsequently reverted (AM, Debate, Al Día). Numbers 23:24; IDF designation Am ke-lavi / Rising Lion, June 2025. León, Guanajuato’s 2025 declaration with Israel is a different León."
+	},
+	{
+		id: "M13",
+		status: "in-record",
+		layer: "monterrey",
+		claim: "Mexico ratified ILO Convention 169 on 5 September 1990. Nuevo León’s Ley de los Derechos de las Personas Indígenas y Afromexicanas (2012; reforma 2026) takes autoadscripción as the criterion. The pre-colonial landscape is Coahuiltecan and neighboring — Alazapas, Guachichiles, Borrados, Tamaulipec groups.",
+		source: "ILO NORMLEX, C169, Mexico; H. Congreso del Estado de Nuevo León; Handbook of Texas, Coahuiltecan Indians."
+	},
+	{
+		id: "M14",
+		status: "adjacent",
+		layer: "monterrey",
+		claim: "A living Monterrey Villarreal line reports nearly thirty percent Indigenous American ancestry. That is family-stated genetic data of a later New World cohort. This page does not republish a kit file. Date it. Do not erase it. Do not back-date it to 1274.",
+		source: "Oral plus genetic clocks of this dossier. A percentage is not a pueblo originario by itself."
+	},
+	{
+		id: "M15",
+		status: "adjacent",
+		layer: "monterrey",
+		claim: "Family memory: Roberto Villarreal talked about the treasure, the pope, and the Knights Templar. Adjacent to a documented seizure — Philip IV, 1307; Clement V, 1312. Not a named Villarreal hoard in the published acts.",
+		source: "Templar essay on this site; Barber; papal suppression. Oral clock."
+	},
+	{
+		id: "M16",
+		status: "not-in-record",
+		layer: "monterrey",
+		claim: "A Hebrew-Egyptian people at 50,000 years; a kit percentage as UNDRIP peoplehood; one Israelite-Indigenous-Templar origin glued to 1274. Out-of-Africa is a species clock. Hebrew and Egyptian are historical ethnies. Levant → Italy → Iberia is a later diaspora shape already dated on this page (1391, 1492, Carvajal). Do not wind them as one.",
+		source: "This dossier’s identity-rights claim. Rights to the story do not require a merged origin."
 	}
 ];
 function MonterreyAtlas() {
