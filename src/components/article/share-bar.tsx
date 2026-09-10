@@ -39,6 +39,13 @@ function usePageShare() {
       citation: CITATION,
     };
   }
+  if (pathname === "/rovox") {
+    return {
+      title: chrome.rovox.title,
+      text: chrome.rovox.lead,
+      citation: CITATION,
+    };
+  }
   if (pathname === "/atlas") {
     return {
       title: chrome.atlas.title,

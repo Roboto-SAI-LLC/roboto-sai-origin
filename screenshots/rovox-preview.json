@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/rovox",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "RoVox — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 892,
+      "bodyTextHash": "31df936187e82083996a33ef2e80d70fc1f9229d5a6994cd9edee4c851c6802d",
+      "bodyTextPrefix": "ROBOTO SAI Methodology · September 2026 EN ES Roboto SAI Essay A",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/rovox-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "RoVox — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 816,
+      "bodyTextHash": "d34b16956fe37707a364c8d04a00a0e07c843af5bfb1a8f25aeb8ecb7d102319",
+      "bodyTextPrefix": "ROBOTO SAI Methodology · September 2026 EN ES Roboto SAI Menu RE",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/rovox-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/rovox-preview.json"
+}

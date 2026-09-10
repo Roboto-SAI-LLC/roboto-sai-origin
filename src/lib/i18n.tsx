@@ -47,7 +47,7 @@ export function pick<T>(lang: Lang, pair: { en: T; es: T }): T {
 }
 
 export type NavItem = {
-  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief";
+  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief" | "/rovox";
   label: string;
 };
 
@@ -74,6 +74,7 @@ export const CHROME = {
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templars" },
       { to: "/brief", label: "Brief" },
+      { to: "/rovox", label: "RoVox" },
     ] satisfies NavItem[],
     home: {
       title: "The Names Roboto and Roberto",
@@ -121,6 +122,10 @@ export const CHROME = {
       briefKicker: "Brief",
       briefText: "One page. Five tags. No citation numbers. English and Spanish.",
       briefCta: "Open the brief",
+      rovoxKicker: "RoVox",
+      rovoxText:
+        "House reader. Pause or stop during the intro. After the end, it answers and can edit the working notes. Drop your recording — no catalog voice.",
+      rovoxCta: "Open RoVox",
       chronology: "A brief chronology",
       chronologyLead:
         "Selected dates that thread Roboto, Roberto, and the Iberian case studies through the same historical line.",
@@ -162,6 +167,40 @@ export const CHROME = {
         { id: "chronicle", label: "Chronicle" },
         { id: "dna", label: "Four clocks" },
       ],
+    },
+    rovox: {
+      kicker: "Reader · house voice",
+      title: "RoVox",
+      lead: "Listens first. You may pause or stop the intro. You may not skip it or talk over it. When the recording reaches the end, RoVox answers, searches xAI Docs, and can update the card and the working notes. Drop your own MP3 — generated on your device.",
+      card: "Info card",
+      name: "Name",
+      role: "Role",
+      note: "Note",
+      noStock: "No catalog stock voice. RoVox is the house recording.",
+      player: "Intro",
+      rule: "During the intro the only controls are pause and stop. Chat stays locked until the file ends.",
+      listen: "Listen",
+      pause: "Pause",
+      resume: "Resume",
+      stop: "Stop",
+      drop: "Drop a RoVox MP3 from this device",
+      usingFallback: "Using the Brief recording until you drop a RoVox file.",
+      usingFile: "Using your recording.",
+      docs: "Working notes",
+      reset: "Reset notes",
+      resetCard: "Reset card",
+      desk: "After the intro",
+      empty: "Finish the intro to ask.",
+      you: "You",
+      ask: "Ask RoVox…",
+      send: "Send",
+      locked: "Chat locked until the intro ends.",
+      unlocked: "Intro finished. Ask, or edit the notes. RoVox can update them.",
+      idleHint: "Start the intro. Pause or stop only.",
+      cap: "Eight questions this sitting.",
+      unavailable: "RoVox cannot reach the model in this environment. The intro and the notes still work.",
+      needGesture: "Press Listen again to start audio.",
+      writing: "RoVox is writing…",
     },
     lion: {
       kicker: "A static research page",
@@ -240,7 +279,7 @@ export const CHROME = {
     copied: "Copiado",
     cite: "Citar esta página",
     englishBody:
-      "El ensayo, el atlas, el dossier y Gur Aryeh están en inglés. Templarios y la síntesis están en los dos idiomas.",
+      "El ensayo, el atlas, el dossier y Gur Aryeh están en inglés. Templarios, la síntesis y RoVox están en los dos idiomas.",
     menu: "Menú",
     github: "Fuente en GitHub",
     nav: [
@@ -250,6 +289,7 @@ export const CHROME = {
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templarios" },
       { to: "/brief", label: "Síntesis" },
+      { to: "/rovox", label: "RoVox" },
     ] satisfies NavItem[],
     home: {
       title: "Los nombres Roboto y Roberto",
@@ -297,6 +337,10 @@ export const CHROME = {
       briefKicker: "Síntesis",
       briefText: "Una página. Cinco etiquetas. Sin números de cita. Inglés y español.",
       briefCta: "Abrir la síntesis",
+      rovoxKicker: "RoVox",
+      rovoxText:
+        "Lector de la casa. Pausa o alto durante la intro. Al terminar, responde y puede editar las notas. Suelta tu grabación — sin voz de catálogo.",
+      rovoxCta: "Abrir RoVox",
       chronology: "Una cronología breve",
       chronologyLead:
         "Fechas que atan Roboto, Roberto y los casos ibéricos a la misma línea histórica.",
@@ -338,6 +382,40 @@ export const CHROME = {
         { id: "chronicle", label: "Crónica" },
         { id: "dna", label: "Cuatro relojes" },
       ],
+    },
+    rovox: {
+      kicker: "Lector · voz de la casa",
+      title: "RoVox",
+      lead: "Primero escucha. Puedes pausar o parar la intro. No puedes saltarla ni hablar encima. Cuando la grabación llega al final, RoVox responde, busca xAI Docs y puede actualizar la ficha y las notas. Suelta tu propio MP3 — generado en tu aparato.",
+      card: "Ficha",
+      name: "Nombre",
+      role: "Oficio",
+      note: "Nota",
+      noStock: "Sin voz de catálogo. RoVox es la grabación de la casa.",
+      player: "Introducción",
+      rule: "Durante la intro los únicos controles son pausa y alto. El chat permanece cerrado hasta que el archivo termina.",
+      listen: "Escuchar",
+      pause: "Pausa",
+      resume: "Seguir",
+      stop: "Alto",
+      drop: "Suelta un MP3 de RoVox desde este aparato",
+      usingFallback: "Usa la grabación de la Síntesis hasta que sueltes un archivo RoVox.",
+      usingFile: "Usa tu grabación.",
+      docs: "Notas de trabajo",
+      reset: "Restablecer notas",
+      resetCard: "Restablecer ficha",
+      desk: "Después de la intro",
+      empty: "Termina la intro para preguntar.",
+      you: "Tú",
+      ask: "Pregunta a RoVox…",
+      send: "Enviar",
+      locked: "Chat cerrado hasta que termine la intro.",
+      unlocked: "Intro terminada. Pregunta, o edita las notas. RoVox puede actualizarlas.",
+      idleHint: "Empieza la intro. Solo pausa o alto.",
+      cap: "Ocho preguntas en esta sesión.",
+      unavailable: "RoVox no alcanza el modelo en este entorno. La intro y las notas siguen funcionando.",
+      needGesture: "Pulsa Escuchar otra vez para arrancar el audio.",
+      writing: "RoVox escribe…",
     },
     lion: {
       kicker: "Página de investigación",

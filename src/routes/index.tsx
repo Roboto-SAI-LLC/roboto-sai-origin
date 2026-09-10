@@ -149,7 +149,7 @@ function ResearchPage() {
           </div>
         </section>
 
-        <section className="mx-auto grid max-w-6xl gap-3 px-4 pb-10 sm:grid-cols-3 sm:px-6">
+        <section className="mx-auto grid max-w-6xl gap-3 px-4 pb-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
           <article className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
             <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">{home.lionKicker}</p>
             <p className="mt-2 text-sm leading-relaxed text-fg">{home.lionText}</p>
@@ -180,6 +180,16 @@ function ResearchPage() {
               className="mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg"
             >
               {home.briefCta}
+            </Link>
+          </article>
+          <article className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
+            <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">{home.rovoxKicker}</p>
+            <p className="mt-2 text-sm leading-relaxed text-fg">{home.rovoxText}</p>
+            <Link
+              to="/rovox"
+              className="mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg"
+            >
+              {home.rovoxCta}
             </Link>
           </article>
         </section>

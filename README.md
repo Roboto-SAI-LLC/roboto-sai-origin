@@ -20,6 +20,7 @@ Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com
 | `/lion` | Gur Aryeh | Chrome bilingual; body English |
 | `/templars` | Poor Knights of the Temple | English and Spanish |
 | `/brief` | One-page brief, with listen | English and Spanish |
+| `/rovox` | RoVox reader: intro then desk | English and Spanish |
 
 Plain-text brief for machines: [`/llms.txt`](https://roboto-sai.org/llms.txt)
 
@@ -33,11 +34,11 @@ Plain-text brief for machines: [`/llms.txt`](https://roboto-sai.org/llms.txt)
 
 ## Language
 
-Chrome (nav, findings, bylines, search, atlas tabs, dossier columns, register) is English and Spanish. Essay, atlas, dossier, and Gur Aryeh bodies stay in English; a note says so on those pages. Templars and the Brief are bilingual.
+Chrome (nav, findings, bylines, search, atlas tabs, dossier columns, register) is English and Spanish. Essay, atlas, dossier, and Gur Aryeh bodies stay in English; a note says so on those pages. Templars, the Brief, and RoVox are bilingual.
 
 ## Listen
 
-The Brief has a Listen control. Recordings are `public/speech/brief-en.mp3` and `brief-es.mp3`. Voice identity is not stored in source.
+The Brief has a Listen control. Recordings are `public/speech/brief-en.mp3` and `brief-es.mp3`. Voice identity is not stored in source. RoVox on `/rovox` reads an intro you drop from this device — pause or stop only until the end, then it can answer and edit the working notes. No catalog stock voice.
 
 ## Source
 
