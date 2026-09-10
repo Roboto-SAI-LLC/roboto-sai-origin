@@ -5,16 +5,17 @@ import { ChronicleMap } from "@/components/article/chronicle-map";
 import { ClaimInspector } from "@/components/article/claim-inspector";
 import { DnaClocks } from "@/components/article/dna-clocks";
 import { ReadingProgress } from "@/components/article/reading-progress";
+import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { CHROME, useLang } from "@/lib/i18n";
-import { META } from "@/lib/research";
+import { APP_NAME } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/dossier")({
   component: DossierPage,
   head: () => ({
     meta: [
-      { title: `Dossier — ${META.title}` },
+      { title: `Dossier — ${APP_NAME}` },
       {
         name: "description",
         content:
@@ -54,7 +55,11 @@ function DossierPage() {
           </Link>
           {copy.noteAfter}
         </p>
-        {chrome.englishBody ? <p className="mt-3 text-sm text-muted">{chrome.englishBody}</p> : null}
+        {chrome.englishBody ? (
+          <p className="mt-3 max-w-2xl rounded-lg bg-surface px-4 py-3 text-sm leading-relaxed text-muted shadow-paper">
+            {chrome.englishBody}
+          </p>
+        ) : null}
 
         <div className="no-print mt-8 flex flex-wrap gap-2" role="tablist" aria-label={copy.title}>
           {copy.tabs.map((item) => (
@@ -82,14 +87,7 @@ function DossierPage() {
         </section>
       </main>
 
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <p>{META.credit}</p>
-          <p>
-            {chrome.series} · {chrome.date}
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

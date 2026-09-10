@@ -3,23 +3,24 @@ import { EssaySearch } from "@/components/article/essay-search";
 import { EtymologyFigure } from "@/components/article/etymology-figure";
 import { ReadingProgress } from "@/components/article/reading-progress";
 import { SectionBody } from "@/components/article/section-body";
+import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { TableOfContents } from "@/components/article/table-of-contents";
 import { HistoryTimeline } from "@/components/article/timeline";
 import { CHROME, useLang } from "@/lib/i18n";
 import {
   CITATION,
-  FINDINGS,
   META,
   REFERENCES,
   SECTIONS,
 } from "@/lib/research";
+import { APP_NAME, SITE_URL } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   component: ResearchPage,
   head: () => ({
     meta: [
-      { title: `${META.title} — ${META.journal}` },
+      { title: `${META.title} — ${APP_NAME}` },
       { name: "description", content: META.description },
     ],
   }),
@@ -43,8 +44,9 @@ const jsonLd = {
   },
   publisher: {
     "@type": "Organization",
-    name: "Roboto SAI Research",
+    name: "Roboto SAI",
   },
+  url: SITE_URL,
   creditText: META.credit,
   keywords: [
     "Robot",
@@ -97,24 +99,26 @@ function ResearchPage() {
             {home.kicker} · {META.sourceCount} {home.sources}
           </p>
           <h1 className="stagger-in mt-4 max-w-4xl font-display text-display font-medium tracking-display text-fg sm:text-display-lg">
-            {META.title}
+            {home.title}
           </h1>
           <p className="stagger-in mt-5 max-w-2xl font-display text-xl leading-snug text-muted sm:text-2xl">
-            {META.subtitle}
+            {home.subtitle}
           </p>
           <p className="stagger-in mt-6 text-sm text-muted">
-            By <span className="text-fg">{META.credit}</span>
+            {chrome.ui.by} <span className="text-fg">{META.credit}</span>
           </p>
           {chrome.englishBody ? (
-            <p className="stagger-in mt-4 max-w-2xl text-sm leading-relaxed text-muted">{chrome.englishBody}</p>
+            <p className="stagger-in mt-4 max-w-2xl rounded-lg bg-surface px-4 py-3 text-sm leading-relaxed text-muted shadow-paper">
+              {chrome.englishBody}
+            </p>
           ) : null}
         </section>
 
         <section
-          aria-label={lang === "es" ? "Hallazgos" : "Key findings"}
+          aria-label={chrome.ui.findings}
           className="mx-auto grid max-w-6xl gap-3 px-4 pb-6 sm:grid-cols-2 sm:px-6 lg:grid-cols-3"
         >
-          {FINDINGS.map((finding) => (
+          {home.findings.map((finding) => (
             <article key={finding.kicker} className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
               <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
                 {finding.kicker}
@@ -179,7 +183,7 @@ function ResearchPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 pb-20 sm:px-6 lg:grid-cols-[16rem_1fr]">
           <aside className="no-print min-w-0 space-y-4 lg:sticky lg:top-6 lg:self-start">
             <details className="rounded-lg bg-surface px-4 py-3 shadow-paper lg:hidden">
-              <summary className="min-h-11 cursor-pointer list-none font-display text-sm font-medium text-fg">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center gap-3 font-display text-sm font-medium text-fg">
                 {chrome.contents}
               </summary>
               <TableOfContents className="mt-3 pb-2" />
@@ -248,14 +252,7 @@ function ResearchPage() {
         </div>
       </main>
 
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <p>{META.credit}</p>
-          <p>
-            {chrome.series} · {chrome.date}
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

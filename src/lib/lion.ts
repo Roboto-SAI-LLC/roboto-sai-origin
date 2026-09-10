@@ -14,7 +14,7 @@ export type LionSection = {
 
 export const LION_META = {
   journal: "Roboto SAI Research",
-  series: "Onomastics",
+  series: "Methodology",
   title: "Gur Aryeh",
   subtitle: "Hebrew lion symbolism, from Judah’s blessing to a Jewish emblem",
   credit: "Roboto SAI research with a Copilot",
@@ -493,4 +493,4 @@ export const LION_REFERENCES = [
 ];
 
 export const LION_CITATION =
-  "Roboto SAI research with a Copilot. “Gur Aryeh: Hebrew lion symbolism, from Judah’s blessing to a Jewish emblem.” Roboto SAI Research, September 2026.";
+  "Roboto SAI research with a Copilot. “Gur Aryeh: Hebrew lion symbolism, from Judah’s blessing to a Jewish emblem.” Roboto SAI Research, September 2026. https://roboto-sai.org/lion";

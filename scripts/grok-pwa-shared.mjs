@@ -58,27 +58,36 @@ function placeholderCardColor(site = {}) {
  * "wild-race.grok.me" → "Wild Race". Only published app hosts encode the
  * display name in the first label. Preview / guest hosts are image origins
  * only — slugifying them produced internal names like "Hds Abc 3000 Xy".
+ *
+ * Custom domains (roboto-sai.org, localhost, Vercel) do not encode a name.
+ * Those fall through to site.json `shortTitle` (home-screen label) then
+ * `title`, never the platform default "Grok App".
  */
-export function appNameFromHost(hostHeader) {
+export function appNameFromHost(hostHeader, site) {
   const host = String(hostHeader ?? "")
     .split(",")[0]
     .trim()
     .split(":")[0]
     .toLowerCase();
-  if (!host.endsWith(".grok.me")) {
-    return DEFAULT_APP_NAME;
+  if (host.endsWith(".grok.me")) {
+    const slug = host.split(".")[0] ?? "";
+    if (!slug || slug === "www" || !/^[a-z0-9-]{1,63}$/.test(slug)) {
+      return DEFAULT_APP_NAME;
+    }
+    return (
+      slug
+        .split("-")
+        .filter(Boolean)
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(" ") || DEFAULT_APP_NAME
+    );
   }
-  const slug = host.split(".")[0] ?? "";
-  if (!slug || slug === "www" || !/^[a-z0-9-]{1,63}$/.test(slug)) {
-    return DEFAULT_APP_NAME;
-  }
-  return (
-    slug
-      .split("-")
-      .filter(Boolean)
-      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-      .join(" ") || DEFAULT_APP_NAME
-  );
+  const resolved = site && typeof site === "object" ? site : readOgSite();
+  const short = String(resolved.shortTitle ?? "").trim();
+  if (short) return short;
+  const title = String(resolved.title ?? "").trim();
+  if (title) return title;
+  return DEFAULT_APP_NAME;
 }
 
 /** True for Vercel system domains. Envoy rewrites origin Host to these; they SSO-protect `/og.jpg`. */
@@ -151,14 +160,44 @@ export function stripInstallParams(url) {
   return rest ? `${path}?${rest}` : path;
 }
 
-export function renderInstallPageHtml(template, { host, url } = {}) {
+export function renderInstallPageHtml(template, { host, url, site } = {}) {
   return String(template)
-    .replaceAll("{{APP_NAME}}", escapeHtml(appNameFromHost(host)))
+    .replaceAll("{{APP_NAME}}", escapeHtml(appNameFromHost(host, site)))
     .replaceAll("{{APP_URL}}", escapeHtml(stripInstallParams(url)));
 }
 
-export function renderWebManifest(hostHeader) {
-  const name = appNameFromHost(hostHeader);
+/** 6-digit #rrggbb, or fallback. */
+function hexColor(value, fallback = "#000000") {
+  const raw = String(value ?? "").trim();
+  const hex = raw.startsWith("#") ? raw.slice(1) : raw;
+  return /^[0-9a-fA-F]{6}$/.test(hex) ? `#${hex.toLowerCase()}` : fallback;
+}
+
+export function pwaThemeColor(site = {}) {
+  const theme = String(site.themeColor ?? "").trim();
+  if (theme) return hexColor(theme, "#000000");
+  return "#000000";
+}
+
+export function renderWebManifest(hostHeader, site) {
+  const resolved = site && typeof site === "object" ? site : readOgSite();
+  const name = appNameFromHost(hostHeader, resolved);
+  const theme = pwaThemeColor(resolved);
+  const paper = theme !== "#000000";
+  const description = String(resolved.description ?? "").trim();
+  const icons = paper
+    ? [
+        { src: "/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
+        { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
+        { src: "/__grok/icon-180.png", sizes: "180x180", type: "image/png", purpose: "any" },
+      ]
+    : [
+        {
+          src: "/__grok/icon-180.png",
+          sizes: "180x180",
+          type: "image/png",
+        },
+      ];
   return JSON.stringify(
     {
       name,
@@ -167,22 +206,19 @@ export function renderWebManifest(hostHeader) {
       start_url: "/",
       scope: "/",
       display: "standalone",
-      background_color: "#000000",
-      theme_color: "#000000",
-      icons: [
-        {
-          src: "/__grok/icon-180.png",
-          sizes: "180x180",
-          type: "image/png",
-        },
-      ],
+      background_color: paper ? theme : "#000000",
+      theme_color: paper ? theme : "#000000",
+      ...(description ? { description } : {}),
+      icons,
     },
     null,
     2,
   );
 }
 
-export function grokPwaHeadTags(appName = DEFAULT_APP_NAME) {
+export function grokPwaHeadTags(appName = DEFAULT_APP_NAME, themeColor = "#000000") {
+  const theme = hexColor(themeColor, "#000000");
+  const statusBar = theme === "#000000" ? "black" : "default";
   return [
     // Standalone display comes from the manifest ("display": "standalone");
     // the legacy *-web-app-capable metas it replaces are deliberately absent.
@@ -194,9 +230,9 @@ export function grokPwaHeadTags(appName = DEFAULT_APP_NAME) {
     ],
     [
       "apple-mobile-web-app-status-bar-style",
-      '<meta name="apple-mobile-web-app-status-bar-style" content="black">',
+      `<meta name="apple-mobile-web-app-status-bar-style" content="${statusBar}">`,
     ],
-    ["theme-color", '<meta name="theme-color" content="#000000">'],
+    ["theme-color", `<meta name="theme-color" content="${theme}">`],
   ];
 }
 
@@ -307,7 +343,7 @@ export function resolveOgTitle(
   if (fromSite) return fromSite;
   const fromDoc = String(documentTitle ?? "").trim();
   if (fromDoc) return fromDoc;
-  const fromHost = appNameFromHost(host);
+  const fromHost = appNameFromHost(host, site);
   if (fromHost && fromHost !== DEFAULT_APP_NAME) return fromHost;
   const fromArg = String(appName ?? "").trim();
   return fromArg || DEFAULT_APP_NAME;
@@ -432,9 +468,11 @@ export function injectGrokPwaHead(html, ctx = {}) {
     host,
     documentTitle,
   );
+  const installName = appNameFromHost(host, site);
+  const theme = pwaThemeColor(site);
   let next = stripShareMetaTags(html);
 
-  const missing = grokPwaHeadTags(appName)
+  const missing = grokPwaHeadTags(installName, theme)
     .filter(([key]) => {
       if (key === "manifest") return !next.includes('href="/__grok/manifest.webmanifest"');
       if (key === "apple-touch-icon") return !next.includes('href="/__grok/icon-180.png"');

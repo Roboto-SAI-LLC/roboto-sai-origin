@@ -1,12 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ReadingProgress } from "@/components/article/reading-progress";
 import { SectionBody } from "@/components/article/section-body";
+import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { TableOfContents } from "@/components/article/table-of-contents";
 import { YearTimeline } from "@/components/article/timeline";
 import { PhotoFigure } from "@/components/lion/photo-figure";
 import { CHROME, pick, useLang } from "@/lib/i18n";
 import { META } from "@/lib/research";
+import { APP_NAME } from "@/lib/site";
 import {
   TEMPLAR_FINDINGS,
   TEMPLAR_META,
@@ -20,7 +22,7 @@ export const Route = createFileRoute("/templars")({
   component: TemplarPage,
   head: () => ({
     meta: [
-      { title: `${TEMPLAR_META.en.title} — ${META.journal}` },
+      { title: `${TEMPLAR_META.en.title} — ${APP_NAME}` },
       { name: "description", content: TEMPLAR_META.en.description },
     ],
   }),
@@ -61,12 +63,12 @@ function TemplarPage() {
             {meta.subtitle}
           </p>
           <p className="stagger-in mt-6 text-sm text-muted">
-            By <span className="text-fg">{META.credit}</span>
+            {chrome.ui.by} <span className="text-fg">{META.credit}</span>
           </p>
         </section>
 
         <section
-          aria-label={lang === "es" ? "Hallazgos" : "Key findings"}
+          aria-label={chrome.ui.findings}
           className="mx-auto grid max-w-6xl gap-3 px-4 pb-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-4"
         >
           {findings.map((finding) => (
@@ -82,7 +84,7 @@ function TemplarPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 pb-20 sm:px-6 lg:grid-cols-[16rem_1fr]">
           <aside className="no-print min-w-0 space-y-4 lg:sticky lg:top-6 lg:self-start">
             <details className="rounded-lg bg-surface px-4 py-3 shadow-paper lg:hidden">
-              <summary className="min-h-11 cursor-pointer list-none font-display text-sm font-medium text-fg">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center gap-3 font-display text-sm font-medium text-fg">
                 {chrome.contents}
               </summary>
               <TableOfContents items={toc} className="mt-3 pb-2" />
@@ -95,12 +97,6 @@ function TemplarPage() {
               className="hidden min-h-11 items-center rounded-md bg-surface px-3.5 text-sm font-medium text-fg shadow-paper hover:bg-wash lg:inline-flex"
             >
               {meta.back}
-            </Link>
-            <Link
-              to="/brief"
-              className="hidden min-h-11 items-center rounded-md bg-primary px-3.5 text-sm font-medium text-primary-fg lg:inline-flex"
-            >
-              {meta.listen}
             </Link>
           </aside>
 
@@ -175,11 +171,11 @@ function TemplarPage() {
               <p className="mt-2 text-sm leading-relaxed text-muted">{meta.citation}</p>
               <p className="mt-4 text-sm text-subtle">
                 <Link to="/brief" className="text-primary underline underline-offset-4">
-                  {meta.listen}
+                  {meta.brief}
                 </Link>
                 {" · "}
                 <Link to="/dossier" className="text-primary underline underline-offset-4">
-                  Dossier
+                  {chrome.dossier.title}
                 </Link>
               </p>
             </section>
@@ -187,14 +183,7 @@ function TemplarPage() {
         </div>
       </main>
 
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <p>{META.credit}</p>
-          <p>
-            {chrome.series} · {chrome.date}
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

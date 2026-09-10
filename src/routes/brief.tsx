@@ -1,19 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { FullBriefPlayer, TagListenButton } from "@/components/article/spoken-player";
+import { BriefListen } from "@/components/article/brief-listen";
 import { ReadingProgress } from "@/components/article/reading-progress";
+import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { BRIEF_META, BRIEF_TAGS } from "@/lib/brief";
 import { CHROME, useLang } from "@/lib/i18n";
 import { META } from "@/lib/research";
+import { APP_NAME } from "@/lib/site";
 
 export const Route = createFileRoute("/brief")({
   component: BriefPage,
   head: () => ({
     meta: [
-      { title: `${BRIEF_META.en.title} — ${META.journal}` },
+      { title: `${BRIEF_META.en.title} — ${APP_NAME}` },
       {
         name: "description",
-        content: "Spoken brief of five essays: Robot and Robert, the 1274 atlas, the dossier, Gur Aryeh, and the Templars. No citation numbers.",
+        content:
+          "One-page brief of five essays: Robot and Robert, the 1274 atlas, the dossier, Gur Aryeh, and the Templars. No citation numbers.",
       },
     ],
   }),
@@ -39,12 +42,9 @@ function BriefPage() {
         </h1>
         <p className="stagger-in mt-5 font-display text-xl leading-snug text-muted sm:text-2xl">{meta.subtitle}</p>
         <p className="stagger-in mt-6 text-sm text-muted">
-          By <span className="text-fg">{META.credit}</span>
+          {chrome.ui.by} <span className="text-fg">{META.credit}</span>
         </p>
-
-        <div className="mt-8">
-          <FullBriefPlayer />
-        </div>
+        <BriefListen />
 
         {tags.map((tag, index) => (
           <article key={tag.id} id={tag.id} className="mt-12 border-t border-border pt-10">
@@ -56,8 +56,7 @@ function BriefPage() {
             <p className="mt-4 text-sm leading-relaxed text-muted">
               {meta.sources}: {tag.sources}
             </p>
-            <div className="mt-5 flex flex-wrap items-center gap-2">
-              <TagListenButton tag={tag} />
+            <div className="mt-5">
               <Link
                 to={tag.href}
                 className="inline-flex min-h-11 items-center rounded-md bg-surface px-3.5 text-sm font-medium text-fg shadow-paper hover:bg-wash"
@@ -69,14 +68,7 @@ function BriefPage() {
         ))}
       </main>
 
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-3xl flex-col gap-2 px-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <p>{META.credit}</p>
-          <p>
-            {chrome.series} · {chrome.date}
-          </p>
-        </div>
-      </footer>
+      <SiteFooter compact />
     </div>
   );
 }

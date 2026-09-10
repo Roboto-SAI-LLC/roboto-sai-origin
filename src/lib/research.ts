@@ -15,7 +15,7 @@ export type Section = {
 
 export const META = {
   journal: "Roboto SAI Research",
-  series: "Onomastics",
+  series: "Methodology",
   title: "The Names Robot and Robert",
   subtitle: "Linguistic Origins, Historical Usage, and Cultural Migrations",
   credit: "Roboto SAI research with a Copilot",
@@ -1716,4 +1716,4 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
   }
 ];
 export const CITATION =
-  "Roboto SAI, with a Copilot. “The Names Robot and Robert: Linguistic Origins, Historical Usage, and Cultural Migrations.” Roboto SAI Research, September 2026.";
+  "Roboto SAI, with a Copilot. “The Names Robot and Robert: Linguistic Origins, Historical Usage, and Cultural Migrations.” Roboto SAI Research, September 2026. https://roboto-sai.org";

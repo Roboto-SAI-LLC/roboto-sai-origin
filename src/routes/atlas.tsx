@@ -6,16 +6,17 @@ import { NameRegister } from "@/components/article/name-register";
 import { NetworkAtlas } from "@/components/article/network-atlas";
 import { ReadingProgress } from "@/components/article/reading-progress";
 import { RecordLedger } from "@/components/article/record-ledger";
+import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { CHROME, useLang } from "@/lib/i18n";
-import { META } from "@/lib/research";
+import { APP_NAME } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/atlas")({
   component: AtlasPage,
   head: () => ({
     meta: [
-      { title: `Network atlas — ${META.title}` },
+      { title: `Network atlas — ${APP_NAME}` },
       {
         name: "description",
         content:
@@ -57,7 +58,11 @@ function AtlasPage() {
           </Link>
           {copy.noteAfter}
         </p>
-        {chrome.englishBody ? <p className="mt-3 text-sm text-muted">{chrome.englishBody}</p> : null}
+        {chrome.englishBody ? (
+          <p className="mt-3 max-w-2xl rounded-lg bg-surface px-4 py-3 text-sm leading-relaxed text-muted shadow-paper">
+            {chrome.englishBody}
+          </p>
+        ) : null}
 
         <div className="no-print mt-8 flex flex-wrap gap-2" role="tablist" aria-label={copy.title}>
           {copy.tabs.map((item) => (
@@ -86,14 +91,7 @@ function AtlasPage() {
         </section>
       </main>
 
-      <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <p>{META.credit}</p>
-          <p>
-            {chrome.series} · {chrome.date}
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

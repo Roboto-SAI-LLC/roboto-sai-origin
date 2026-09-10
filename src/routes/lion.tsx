@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ReadingProgress } from "@/components/article/reading-progress";
+import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { TableOfContents } from "@/components/article/table-of-contents";
 import { BlessingReader } from "@/components/lion/blessing-reader";
@@ -19,12 +20,13 @@ import {
   LION_SECTIONS,
   LION_TOC,
 } from "@/lib/lion";
+import { APP_NAME, SITE_URL } from "@/lib/site";
 
 export const Route = createFileRoute("/lion")({
   component: LionPage,
   head: () => ({
     meta: [
-      { title: `${LION_META.title} — ${LION_META.journal}` },
+      { title: `${LION_META.title} — ${APP_NAME}` },
       { name: "description", content: LION_META.description },
     ],
   }),
@@ -40,7 +42,8 @@ const jsonLd = {
   inLanguage: "en",
   author: { "@type": "Organization", name: "Roboto SAI" },
   contributor: { "@type": "Person", name: "a Copilot" },
-  publisher: { "@type": "Organization", name: "Roboto SAI Research" },
+  publisher: { "@type": "Organization", name: "Roboto SAI" },
+  url: `${SITE_URL}/lion`,
   creditText: LION_META.credit,
   keywords: [
     "Lion of Judah",
@@ -91,15 +94,17 @@ function LionPage() {
             {LION_META.subtitle}
           </p>
           <p className="stagger-in mt-6 text-sm text-muted">
-            By <span className="text-fg">{LION_META.credit}</span>
+            {chrome.ui.by} <span className="text-fg">{LION_META.credit}</span>
           </p>
           {chrome.englishBody ? (
-            <p className="stagger-in mt-4 max-w-2xl text-sm leading-relaxed text-muted">{chrome.englishBody}</p>
+            <p className="stagger-in mt-4 max-w-2xl rounded-lg bg-surface px-4 py-3 text-sm leading-relaxed text-muted shadow-paper">
+              {chrome.englishBody}
+            </p>
           ) : null}
         </section>
 
         <section
-          aria-label={lang === "es" ? "Hallazgos" : "Key findings"}
+          aria-label={chrome.ui.findings}
           className="mx-auto grid max-w-6xl gap-3 px-4 pb-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-4"
         >
           {LION_FINDINGS.map((finding) => (
@@ -115,7 +120,7 @@ function LionPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 pb-20 sm:px-6 lg:grid-cols-[16rem_1fr]">
           <aside className="no-print min-w-0 space-y-4 lg:sticky lg:top-6 lg:self-start">
             <details className="rounded-lg bg-surface px-4 py-3 shadow-paper lg:hidden">
-              <summary className="min-h-11 cursor-pointer list-none font-display text-sm font-medium text-fg">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center gap-3 font-display text-sm font-medium text-fg">
                 {copy.contents}
               </summary>
               <TableOfContents items={LION_TOC} className="mt-3 pb-2" />
@@ -252,6 +257,7 @@ function LionPage() {
           </article>
         </div>
       </main>
+      <SiteFooter />
     </div>
   );
 }
