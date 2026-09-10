@@ -19,7 +19,7 @@ export const Route = createFileRoute("/dossier")({
       {
         name: "description",
         content:
-          "Claim inspector, carta pobla close reading, Plana chronicle, and DNA-versus-document clocks for the 1274 Vila-real case.",
+          "Claim inspector, carta pobla close reading, Plana chronicle, four clocks, and a living identity claim that keeps Indigenous American ancestry on its own clock.",
       },
     ],
   }),

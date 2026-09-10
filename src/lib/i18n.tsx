@@ -108,7 +108,7 @@ export const CHROME = {
       ],
       newKicker: "New in this edition",
       newText:
-        "A claim inspector that steelmans first, a clause-by-clause carta pobla, a Plana chronicle that keeps 1429 as a searched gap, four new chapters (XV–XVIII), and a Monterrey migration node on the atlas — hotel, ejido, surname density, no news cycle.",
+        "A claim inspector that steelmans first, a clause-by-clause carta pobla, a Plana chronicle that keeps 1429 as a searched gap, four new chapters (XV–XVIII), a Monterrey migration node on the atlas, and a living identity claim that keeps Indigenous American ancestry, Sephardic memory, and a Templar treasure talk on separate clocks.",
       newCta: "Open the dossier",
       lionKicker: "Companion essay",
       lionText:
@@ -150,7 +150,7 @@ export const CHROME = {
     dossier: {
       kicker: "Instruments · steelman, then split",
       title: "Dossier",
-      lead: "Each claim is taken at full strength, then cut into what the acts say, what sits next to them, and what they do not carry. 1429 stays on the page as a searched gap. Monterrey is a later clock.",
+      lead: "Each claim is taken at full strength, then cut into what the acts say, what sits next to them, and what they do not carry. 1429 stays on the page as a searched gap. Monterrey is a later clock. Identity is a right. It is still four clocks.",
       noteBefore: "Essay chapters XV–XVIII are in the",
       report: "full report",
       noteMid: ". People of 1269–1274 are in the",
@@ -184,7 +184,7 @@ export const CHROME = {
       pause: "Pause",
       listenAria: "Listen to the brief",
       searchEssay: "Search the essay",
-      searchPlaceholder: "Roboto, Roberto, ASR, 1429…",
+      searchPlaceholder: "Roboto, Roberto, Coahuiltecan, 1429…",
       noMatch: "No matching section.",
       bothClocks: "Both clocks",
       all: "All",
@@ -284,7 +284,7 @@ export const CHROME = {
       ],
       newKicker: "Nuevo en esta edición",
       newText:
-        "Un inspector de afirmaciones que primero hace el steelman, una carta puebla cláusula por cláusula, una crónica de la Plana que deja 1429 como hueco buscado, cuatro capítulos nuevos (XV–XVIII), y un nodo de migración en Monterrey en el atlas — hotel, ejido, densidad del apellido, sin ciclo de noticias.",
+        "Un inspector de afirmaciones que primero hace el steelman, una carta puebla cláusula por cláusula, una crónica de la Plana que deja 1429 como hueco buscado, cuatro capítulos nuevos (XV–XVIII), un nodo de migración en Monterrey en el atlas, y una afirmación viva de identidad que deja la ancestría indígena americana, la memoria sefardí y la charla del tesoro templario en relojes distintos.",
       newCta: "Abrir el dossier",
       lionKicker: "Ensayo compañero",
       lionText:
@@ -326,7 +326,7 @@ export const CHROME = {
     dossier: {
       kicker: "Instrumentos · steelman, luego cortar",
       title: "Dossier",
-      lead: "Cada afirmación se toma a plena fuerza, luego se corta en lo que dicen las actas, lo que se sienta al lado, y lo que no cargan. 1429 queda en la página como hueco buscado. Monterrey es un reloj posterior.",
+      lead: "Cada afirmación se toma a plena fuerza, luego se corta en lo que dicen las actas, lo que se sienta al lado, y lo que no cargan. 1429 queda en la página como hueco buscado. Monterrey es un reloj posterior. La identidad es un derecho. Siguen siendo cuatro relojes.",
       noteBefore: "Los capítulos XV–XVIII del ensayo están en el",
       report: "informe completo",
       noteMid: ". Las personas de 1269–1274 están en el",
@@ -360,7 +360,7 @@ export const CHROME = {
       pause: "Pausa",
       listenAria: "Escuchar la síntesis",
       searchEssay: "Buscar el ensayo",
-      searchPlaceholder: "Roboto, Roberto, ASR, 1429…",
+      searchPlaceholder: "Roboto, Roberto, Coahuiltecan, 1429…",
       noMatch: "Ningún apartado coincide.",
       bothClocks: "Los dos relojes",
       all: "Todo",

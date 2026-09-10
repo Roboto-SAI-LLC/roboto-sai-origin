@@ -210,5 +210,38 @@ export const MONTERREY_LEDGER: LedgerRow[] = [
     source:
       "VisitMexico English pages, 7 August 2020, subsequently reverted (AM, Debate, Al Día). Numbers 23:24; IDF designation Am ke-lavi / Rising Lion, June 2025. León, Guanajuato’s 2025 declaration with Israel is a different León.",
   },
+  {
+    id: "M13",
+    status: "in-record",
+    layer: "monterrey",
+    claim:
+      "Mexico ratified ILO Convention 169 on 5 September 1990. Nuevo León’s Ley de los Derechos de las Personas Indígenas y Afromexicanas (2012; reforma 2026) takes autoadscripción as the criterion. The pre-colonial landscape is Coahuiltecan and neighboring — Alazapas, Guachichiles, Borrados, Tamaulipec groups.",
+    source:
+      "ILO NORMLEX, C169, Mexico; H. Congreso del Estado de Nuevo León; Handbook of Texas, Coahuiltecan Indians.",
+  },
+  {
+    id: "M14",
+    status: "adjacent",
+    layer: "monterrey",
+    claim:
+      "A living Monterrey Villarreal line reports nearly thirty percent Indigenous American ancestry. That is family-stated genetic data of a later New World cohort. This page does not republish a kit file. Date it. Do not erase it. Do not back-date it to 1274.",
+    source: "Oral plus genetic clocks of this dossier. A percentage is not a pueblo originario by itself.",
+  },
+  {
+    id: "M15",
+    status: "adjacent",
+    layer: "monterrey",
+    claim:
+      "Family memory: Roberto Villarreal talked about the treasure, the pope, and the Knights Templar. Adjacent to a documented seizure — Philip IV, 1307; Clement V, 1312. Not a named Villarreal hoard in the published acts.",
+    source: "Templar essay on this site; Barber; papal suppression. Oral clock.",
+  },
+  {
+    id: "M16",
+    status: "not-in-record",
+    layer: "monterrey",
+    claim:
+      "A Hebrew-Egyptian people at 50,000 years; a kit percentage as UNDRIP peoplehood; one Israelite-Indigenous-Templar origin glued to 1274. Out-of-Africa is a species clock. Hebrew and Egyptian are historical ethnies. Levant → Italy → Iberia is a later diaspora shape already dated on this page (1391, 1492, Carvajal). Do not wind them as one.",
+    source: "This dossier’s identity-rights claim. Rights to the story do not require a merged origin.",
+  },
 ];
 

@@ -384,6 +384,14 @@ export const GLOSSARY: { term: string; text: string }[] = [
     term: "Villa Real / Villarreal",
     text: "The same habitational form in two orthographies. INAH writes the Monterrey hotel Villa Real; the public sign is Villarreal. The 1274 Latin is Villa Regalis.",
   },
+  {
+    term: "Autoadscripción",
+    text: "Self-identification as indigenous or Afromexican, the criterion in Nuevo León’s 2012/2026 statute. A right to identity. Not the same thing as a consumer-kit percentage, and not a 1274 naming clause.",
+  },
+  {
+    term: "Indigenous American ancestry",
+    text: "A New World genetic clock: autosomal segments that cluster with Indigenous American reference groups. In a Monterrey Villarreal line it is later-cohort data on Coahuiltecan and neighboring ground. It is not Hebrew, not 1274, and not, by itself, a pueblo originario.",
+  },
 ];
 
 export const EDGE_COLORS: Record<EdgeKind, string> = {

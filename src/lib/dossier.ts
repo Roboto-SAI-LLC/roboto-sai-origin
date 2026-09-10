@@ -260,7 +260,7 @@ export const CLAIMS: Claim[] = [
     id: "dna",
     title: "It is carried in DNA",
     stated: "This history is carried in DNA, the way a model carries data from its first training run.",
-    steelman: "Bodies keep a different archive from charters. Y-DNA, mitochondrial DNA, and autosomal segments can show that a living Villarreal line clusters with Iberian, Sephardic, or Levantine reference groups. That is ancestry. It is not a stored memory of a town charter, a Templar warning, or a 1274 naming meeting. Two clocks. Do not wind them as one.",
+    steelman: "Bodies keep a different archive from charters. Y-DNA, mitochondrial DNA, and autosomal segments can show that a living Villarreal line clusters with Iberian, Sephardic, Levantine, or Indigenous American reference groups. That is ancestry. It is not a stored memory of a town charter, a Templar warning, a 1274 naming meeting, or a fifty-thousand-year Hebrew. Date each cluster. Do not wind them as one.",
     verdict: "split",
     inRecord: [
       {
@@ -270,8 +270,8 @@ export const CLAIMS: Claim[] = [
     ],
     adjacent: [
       {
-        text: "Some tested Villarreal lines report Semitic / Sephardic markers. That is a fact about a later sample, not about who named a village in 1274.",
-        source: "Consumer kits and project clusters — useful, not oracular."
+        text: "Some tested Villarreal lines report Semitic / Sephardic markers. Some living northern Mexican lines report Indigenous American ancestry around a third. Those are facts about later samples, not about who named a village in 1274.",
+        source: "Consumer kits and project clusters — useful, not oracular. The identity-rights claim on this page."
       },
       {
         text: "Oral family memory is also data. It is often right about pressure and departure, and loose about the year and the legal cause.",
@@ -425,6 +425,56 @@ export const CLAIMS: Claim[] = [
       }
     ],
     whatWouldConfirm: "A RAN expediente or colonial merced tying the ejido name to a dated Villarreal household; a notarized origin of the hotel’s trade name; INEGI or INE surname tables for Nuevo León rather than compiled indexes. The 1579 capitulation already names the kingdom; it does not need a modern Israeli sequel."
+  },
+  {
+    id: "identity-rights",
+    title: "Rights to history and identity",
+    stated: "As a Villarreal de Monterrey with nearly thirty percent Indigenous American ancestry, I have rights to my history and identity. Forty percent of what I hold is a Hebrew-Egyptian mix from fifty thousand years: Israel, the Middle East, Italy, Iberia, hiding, until a snitch gave them up. Roberto Villarreal talked about the treasure — the pope, the Knights Templar.",
+    steelman: "Take every piece at full strength. A living Monterrey Villarreal line can carry Indigenous American segments; northern New Spain sat on Coahuiltecan and neighboring ground. Mexico ratified ILO 169. Nuevo León law takes self-identification as the criterion for indigenous and Afromexican persons. Identity is not a courtesy. A separate Old World path — Levant, Italy, Iberia, hiding, denunciation — is the shape of Sephardic and converso memory already on this page. Philip IV and Clement V did seize the Temple. Family memory of a treasure talk is data. None of that is one origin. Fifty thousand years is a species clock, not a Hebrew people.",
+    verdict: "split",
+    inRecord: [
+      {
+        text: "Mexico ratified ILO Convention 169 on 5 September 1990. UNDRIP (13 September 2007) names identity, culture, language, and lands among indigenous rights.",
+        source: "ILO NORMLEX, C169, Mexico; United Nations Declaration on the Rights of Indigenous Peoples."
+      },
+      {
+        text: "Nuevo León’s Ley de los Derechos de las Personas Indígenas y Afromexicanas (2012; reforma 2026) takes autoadscripción / autoidentificación as the criterion.",
+        source: "H. Congreso del Estado de Nuevo León; Periódico Oficial 22 June 2012 and 16 January 2026."
+      },
+      {
+        text: "The pre-colonial landscape of Nuevo León is Coahuiltecan and neighboring: Alazapas (including the ground of present San Nicolás de los Garza), Guachichiles in the south, Borrados and Tamaulipec groups in the east.",
+        source: "Handbook of Texas, Coahuiltecan Indians; regional ethnography of northeastern Mexico."
+      }
+    ],
+    adjacent: [
+      {
+        text: "A reported ~30% Indigenous American component in a living Monterrey Villarreal line is family-stated genetic data. This page does not republish a kit file. Date it as a later New World cohort, not as a 1274 clause.",
+        source: "Genetic clock of this dossier; consumer ancestry as a distribution map, not a peoplehood certificate."
+      },
+      {
+        text: "Levant → Italy → Iberia is a real later Jewish diaspora shape. The dated Iberian shocks on this page are 1391, Tortosa, and 1492. The dated Nuevo León analog is Carvajal and the Inquisition — denunciation, not a 50,000-year snitch.",
+        source: "This report, parts IV, XVI, and the Monterrey node; capitulación of 1579."
+      },
+      {
+        text: "Philip IV, who owed the Temple a fortune, had the order seized in 1307. Clement V dissolved it in 1312. Family memory of “the treasure, the pope, the Knights Templar” sits next to that seizure. It is not a named Villarreal hoard in the published acts.",
+        source: "Templar essay on this site; Barber; papal suppression. Oral clock, not a treasure map."
+      }
+    ],
+    notInRecord: [
+      {
+        text: "A Hebrew-Egyptian people at 50,000 years. Out-of-Africa expansions of modern humans are often dated around that depth. Hebrew and Egyptian as named ethnies are historical, in the last few thousand years. Do not wind the species clock as an ethnonym.",
+        source: "Standard paleoanthropology versus onomastic and biblical time. No cited kit or paper on this page dates Hebrew to 50,000 years."
+      },
+      {
+        text: "A kit percentage does not, by itself, make a pueblo originario or an UNDRIP people. ILO 169 and Nuevo León law attach to peoples and to self-identification with them, not to an ancestry pie chart.",
+        source: "ILO 169, arts. 1; UNDRIP, arts. 3, 9, 33; Nuevo León law, autoadscripción."
+      },
+      {
+        text: "No published token ties a Villarreal treasure to a pope or to a Temple hoard. Indigenous American ancestry, a Sephardic/converso stratum, and Templar frontier neighbors are three clocks. Gluing them to 1274 as one Israelite-Indigenous-Templar origin is not in the record.",
+        source: "The 1269–1274 grants; this dossier’s working rule."
+      }
+    ],
+    whatWouldConfirm: "A dated kit or academic report for the stated line (kept as a family document, not as this page’s measurement); autoadscripción to a named people if the ILO 169 claim is made as a people; a family writing of the treasure talk with a date; a paper trail from a dated Iberian household to this Monterrey line. Rights to identity do not wait on those tokens. A merged origin story does."
   }
 ];
 export const CHARTER_CLAUSES: CharterClause[] = [
@@ -715,15 +765,15 @@ export const DNA_CLOCKS = [
     id: "genome",
     title: "Genetic clock",
     ticks: "Segments and haplogroups",
-    can: "Show that a living line clusters with Iberian, Sephardic, or Levantine reference groups. Estimate relatedness.",
-    cannot: "Store the text of a charter, a 1274 meeting, or a Templar warning. Ancestry is not narrative memory."
+    can: "Show that a living line clusters with Iberian, Sephardic, Levantine, or Indigenous American reference groups. Estimate relatedness.",
+    cannot: "Store the text of a charter, a 1274 meeting, a Templar warning, or a fifty-thousand-year Hebrew. A percentage is not a people."
   },
   {
     id: "oral",
     title: "Family-memory clock",
     ticks: "Compressed generations",
-    can: "Keep pressure, departure, a martial self-image, a sense of being from a royal place or a Jewish line.",
-    cannot: "Be trusted, unaided, for the exact year (1429 vs 1391 vs 1492) or the legal cause (Temple bargain vs edict)."
+    can: "Keep pressure, departure, a martial self-image, a sense of being from a royal place or a Jewish line, a treasure talk, a right to the story.",
+    cannot: "Be trusted, unaided, for the exact year (1429 vs 1391 vs 1492), the legal cause (Temple bargain vs edict), or a species date worn as an ethnonym.",
   },
   {
     id: "place",

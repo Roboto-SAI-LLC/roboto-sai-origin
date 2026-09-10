@@ -52,8 +52,8 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
       tag: "Dossier",
       title: "Four clocks, unmerged",
       href: "/dossier",
-      body: "Steelman first. Then the charter, clause by clause. Then four clocks on the table: documents, family memory, genetic tests, and place. A date on a charter is not a date on a cheek swab, and Monterrey is not Vila-real. Nuevo León means New Kingdom of León. An English tourism page once calqued it as New Lion and then took that line down. That calque is not Hebrew lion language, and it is not a founding of this Mexican state by the tribe of Judah.",
-      sources: "VisitMexico English calque, later reverted; AM, Debate, Al Día; Numbers 23; INEGI census counts.",
+      body: "Steelman first. Then the charter, clause by clause. Then four clocks on the table: documents, family memory, genetic tests, and place. A date on a charter is not a date on a cheek swab, and Monterrey is not Vila-real. Nuevo León means New Kingdom of León. An English tourism page once calqued it as New Lion and then took that line down. That calque is not Hebrew lion language, and it is not a founding of this Mexican state by the tribe of Judah. A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. A kit percentage is not a people. Fifty thousand years is a species clock, not a Hebrew-Egyptian origin. Treasure talk sits next to 1307, not inside the 1274 clause.",
+      sources: "VisitMexico English calque, later reverted; AM, Debate, Al Día; Numbers 23; INEGI census counts; ILO 169; UNDRIP; Nuevo León indigenous statute; Handbook of Texas, Coahuiltecan Indians.",
     },
     {
       id: "lion",
@@ -94,8 +94,8 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
       tag: "Dossier",
       title: "Cuatro relojes, sin fundir",
       href: "/dossier",
-      body: "Primero el steelman. Luego la carta, cláusula por cláusula. Luego cuatro relojes sobre la mesa: documentos, memoria de familia, pruebas genéticas y lugar. La fecha de una carta no es la fecha de un hisopo, y Monterrey no es Vila-real. Nuevo León significa Nuevo Reino de León. Una página turística en inglés alguna vez lo calcó como New Lion y luego quitó esa línea. Ese calco no es la lengua hebrea del león, y no es una fundación de este estado mexicano por la tribu de Judá.",
-      sources: "Calco inglés de VisitMexico, luego revertido; AM, Debate, Al Día; Números 23; conteos INEGI.",
+      body: "Primero el steelman. Luego la carta, cláusula por cláusula. Luego cuatro relojes sobre la mesa: documentos, memoria de familia, pruebas genéticas y lugar. La fecha de una carta no es la fecha de un hisopo, y Monterrey no es Vila-real. Nuevo León significa Nuevo Reino de León. Una página turística en inglés alguna vez lo calcó como New Lion y luego quitó esa línea. Ese calco no es la lengua hebrea del león, y no es una fundación de este estado mexicano por la tribu de Judá. Un Villarreal de Monterrey que lleva ancestría indígena americana tiene derecho a esa historia. Un porcentaje de kit no es un pueblo. Cincuenta mil años es un reloj de especie, no un origen hebreo-egipcio. La charla del tesoro se sienta junto a 1307, no dentro de la cláusula de 1274.",
+      sources: "Calco inglés de VisitMexico, luego revertido; AM, Debate, Al Día; Números 23; conteos INEGI; OIT 169; UNDRIP; ley indígena de Nuevo León; Handbook of Texas, Coahuiltecan Indians.",
     },
     {
       id: "lion",

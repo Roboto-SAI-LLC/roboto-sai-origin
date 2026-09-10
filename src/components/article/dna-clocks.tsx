@@ -8,10 +8,11 @@ export function DnaClocks() {
   return (
     <div>
       <p className="max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-        Four archives, four speeds. A genome can show that a living Villarreal line clusters with Sephardic
-        or Levantine samples. It cannot remember a 1274 meeting. Family memory often keeps the pressure and
-        loses the year. Charters keep the year and lose the broker. Place keeps a later map and must not
-        steal the founding.
+        Four archives, four speeds. A genome can show that a living Villarreal line clusters with Sephardic,
+        Levantine, or Indigenous American samples. It cannot remember a 1274 meeting, and it cannot mint
+        fifty thousand years as Hebrew. Family memory often keeps the pressure and loses the year. Charters
+        keep the year and lose the broker. Place keeps a later map and must not steal the founding. Identity
+        is a right. It is still four clocks.
       </p>
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
         {DNA_CLOCKS.map((clock) => (
@@ -33,7 +34,8 @@ export function DnaClocks() {
       </div>
       <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted">
         The working rule: date each clock. A Sephardic cluster in a living line is adjacent evidence for a later
-        Jewish or converso stratum of the surname. It is not a naming clause for Vila-real. The analogy to a
+        Jewish or converso stratum of the surname. An Indigenous American third is a New World genetic clock.
+        Neither is a naming clause for Vila-real. A kit percentage is not a people. The analogy to a
         model carrying early training data is exact about persistence and inexact about content — weights are
         not minutes of a meeting.
       </p>

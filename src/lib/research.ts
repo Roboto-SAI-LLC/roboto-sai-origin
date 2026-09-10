@@ -20,8 +20,8 @@ export const META = {
   subtitle: "Linguistic Origins, Historical Usage, and Cultural Migrations",
   credit: "Roboto SAI research with a Copilot",
   date: "September 2026",
-  sourceCount: 42,
-  description: "A research essay on the names Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Traces Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes why speech recognizers collapse the pair, a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, and a later Monterrey place clock."
+  sourceCount: 46,
+  description: "A research essay on the names Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Traces Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes why speech recognizers collapse the pair, a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, a later Monterrey place clock, and a living identity claim dated on four clocks."
 };
 export const FINDINGS = [
   {
@@ -1165,7 +1165,7 @@ export const SECTIONS: Section[] = [
       },
       {
         type: "p",
-        text: "The interactive ledger in the atlas is the same table in clickable form. The dossier on this site takes each live claim — Templar namers, assassination bargain, 1429 departure, DNA-as-memory, two King James towns — at full strength, then cuts it. Family memory and DNA are data. They are a different kind of data from a 1274 grant. Onomastics lives in that tension; it does not pick a team."
+        text: "The interactive ledger in the atlas is the same table in clickable form. The dossier on this site takes each live claim — Templar namers, assassination bargain, 1429 departure, DNA-as-memory, two King James towns, rights to history and identity — at full strength, then cuts it. Family memory and DNA are data. They are a different kind of data from a 1274 grant. Onomastics lives in that tension; it does not pick a team."
       },
       {
         type: "note",
@@ -1284,7 +1284,7 @@ export const SECTIONS: Section[] = [
       },
       {
         type: "p",
-        text: "Y-DNA, mitochondrial DNA, and autosomal segments can show that a living Villarreal line clusters with Iberian, Sephardic, or Levantine reference groups, and can estimate relatedness to other testers.[32] That is a distribution map of a later cohort. It is genuine data. It is adjacent to a Jewish or converso surname history. It is not a 1274 narrative."
+        text: "Y-DNA, mitochondrial DNA, and autosomal segments can show that a living Villarreal line clusters with Iberian, Sephardic, Levantine, or Indigenous American reference groups, and can estimate relatedness to other testers.[32] That is a distribution map of a later cohort. It is genuine data. A reported Indigenous American third in a Monterrey line is a New World genetic clock. A Sephardic cluster is adjacent to a later Jewish or converso surname history. Neither is a 1274 narrative."
       },
       {
         type: "h3",
@@ -1303,6 +1303,27 @@ export const SECTIONS: Section[] = [
       {
         type: "p",
         text: "A later landscape can saturate a surname without being the founding of that surname. Monterrey, the INEGI locality Los Villarreales, and La Mansión Villarreal in the 1893 Apolo warehouse are a gazetteer clock: building, census, density. They are not the 1274 naming clause. Glue them and you invent a single origin. Date them and you have four clocks: documents, DNA, family memory, and place."
+      },
+      {
+        type: "h3",
+        id: "dna-identity",
+        title: "D. Rights to history and identity"
+      },
+      {
+        type: "p",
+        text: "Identity is not a courtesy. A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. Mexico ratified ILO Convention 169 in 1990. The UN Declaration of 2007 names identity, culture, language, and lands among indigenous rights.[43][44] Nuevo León’s own statute takes autoadscripción — self-identification — as the criterion for indigenous and Afromexican persons.[45] The pre-colonial ground of the state is Coahuiltecan and neighboring: Alazapas, Guachichiles, Borrados, Tamaulipec groups.[46] That is the place clock under the genetic clock."
+      },
+      {
+        type: "p",
+        text: "A kit percentage is still not a people. ILO 169 and UNDRIP attach to peoples and to self-identification with them, not to an ancestry pie chart. A reported third Indigenous American in a living line is family-stated genetic data. Date it. Do not promote it into a 1274 naming clause, and do not erase it because the other clocks are Iberian."
+      },
+      {
+        type: "p",
+        text: "The rest of the live claim must be split the same way. “Forty percent Hebrew-Egyptian from fifty thousand years, Israel to Italy to Iberia, hiding until a snitch” is two clocks wearing one coat. Out-of-Africa expansions of modern humans are often dated around that depth — a species story. Hebrew and Egyptian as named ethnies are historical, in the last few thousand years. Levant → Italy → Iberia is a real later Jewish diaspora shape; the dated shocks on this page are 1391, Tortosa, 1492, and, in Nuevo León, Carvajal and the Inquisition. Denunciation is in that record. A 50,000-year snitch is not."
+      },
+      {
+        type: "p",
+        text: "Family memory of treasure, the pope, and the Knights Templar sits next to a documented seizure: Philip IV in 1307, Clement V in 1312. That is the oral clock standing beside the Templar essay. It is not a named Villarreal hoard in the published acts. Rights to the story do not require a merged origin. They require the clocks to stay dated."
       },
       {
         type: "quote",
@@ -1361,7 +1382,7 @@ export const SECTIONS: Section[] = [
     blocks: [
       {
         type: "p",
-        text: "The names Roboto and Roberto exemplify the interplay of language, culture, and history in personal and collective identity. Robot and Robert are the English glosses: one born from Slavic robota and Czech theater, the other from Proto-Germanic fame plus bright. The real pair is the house and the given name. They rhyme. They are not kin. Even a speech recognizer, given the same rhyme, will print the common given name and treat the house as a transcription error. Date each clock. Do not wind them as one."
+        text: "The names Roboto and Roberto exemplify the interplay of language, culture, and history in personal and collective identity. Robot and Robert are the English glosses: one born from Slavic robota and Czech theater, the other from Proto-Germanic fame plus bright. The real pair is the house and the given name. They rhyme. They are not kin. Even a speech recognizer, given the same rhyme, will print the common given name and treat the house as a transcription error. A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. A kit percentage is not a people, and fifty thousand years is not Hebrew. Date each clock. Do not wind them as one."
       },
       {
         type: "p",
@@ -1778,6 +1799,30 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
     title: "Automatic Speech Recognition",
     source: "Daniel Jurafsky and James H. Martin, Speech and Language Processing, 3rd ed. draft, ch. 16 (August 2026). Acoustic model plus language-model prior; the decoder prefers the common word.",
     url: "https://web.stanford.edu/~jurafsky/slp3/16.pdf"
+  },
+  {
+    n: 43,
+    title: "United Nations Declaration on the Rights of Indigenous Peoples",
+    source: "UN General Assembly, 13 September 2007. Identity, culture, language, and lands among the named rights. Non-binding; a widely cited minimum standard.",
+    url: "https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html"
+  },
+  {
+    n: 44,
+    title: "Indigenous and Tribal Peoples Convention, 1989 (No. 169)",
+    source: "International Labour Organization. Mexico ratified 5 September 1990; in force for Mexico from 5 September 1991.",
+    url: "https://www.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C169"
+  },
+  {
+    n: 45,
+    title: "Ley de los Derechos de las Personas Indígenas y Afromexicanas en el Estado de Nuevo León",
+    source: "H. Congreso del Estado de Nuevo León. Published Periódico Oficial 22 June 2012; reforma integral 16 January 2026. Autoadscripción / autoidentificación as the criterion.",
+    url: "https://www.hcnl.gob.mx/trabajo_legislativo/leyes/leyes/ley_de_los_derechos_de_las_personas_indigenas_y_afromexicanas_en_el_estado_de_nuevo_leon/"
+  },
+  {
+    n: 46,
+    title: "Coahuiltecan Indians",
+    source: "Handbook of Texas; regional ethnography of northeastern Mexico and southern Texas. Alazapas, Guachichiles, Borrados, and Tamaulipec groups in the Nuevo León landscape.",
+    url: "https://www.tshaonline.org/handbook/entries/coahuiltecan-indians"
   }
 ];
 export const CITATION =
