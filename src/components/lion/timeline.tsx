@@ -1,0 +1,21 @@
+import { LION_TIMELINE } from "@/lib/lion";
+
+export function LionTimeline() {
+  return (
+    <ol className="relative my-10 ml-2 border-l border-rule">
+      {LION_TIMELINE.map((item) => (
+        <li key={item.year} className="relative mb-8 pl-6 last:mb-0 sm:pl-8">
+          <span
+            aria-hidden="true"
+            className="absolute top-1.5 -left-1.5 size-3 rounded-full bg-primary"
+          />
+          <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
+            {item.year}
+          </p>
+          <h3 className="mt-1 font-display text-lg font-medium text-fg">{item.title}</h3>
+          <p className="mt-1 text-sm leading-relaxed text-muted sm:text-base">{item.text}</p>
+        </li>
+      ))}
+    </ol>
+  );
+}

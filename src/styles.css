@@ -15,6 +15,7 @@
 
   --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
   --font-serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-hebrew: "Frank Ruhl Libre", "Times New Roman", serif;
 
   --radius-xs: 0.25rem;
   --radius-sm: 0.5rem;
@@ -68,6 +69,11 @@
 
   p {
     text-wrap: pretty;
+  }
+
+  .hebrew {
+    font-family: var(--font-hebrew);
+    font-feature-settings: "kern" 1;
   }
 
   :focus-visible {

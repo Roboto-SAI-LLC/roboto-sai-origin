@@ -14,8 +14,9 @@ var install_page_default = "<!DOCTYPE html>\n<html lang=\"en\" class=\"device-de
 var grokOgIdentity = { "site": {
 	"title": "Robot & Robert",
 	"card": "custom",
-	"color": "3e534c",
-	"image": "/og.jpg"
+	"color": "05080a",
+	"image": "/og.jpg",
+	"banner": "/x-banner.jpg"
 } };
 //#endregion
 //#region scripts/grok-pwa-shared.mjs

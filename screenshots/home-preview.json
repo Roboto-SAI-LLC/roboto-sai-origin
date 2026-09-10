@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "The Names Robot and Robert — Roboto SAI Research",
+      "hasCanvas": false,
+      "bodyTextLen": 49195,
+      "bodyTextHash": "31b1668384cef51703cc1459af02d49df7d394dd2ca8249870bd717fc818bbef",
+      "bodyTextPrefix": "Skip to essay ROBOTO SAI RESEARCH Onomastics · September 2026 Es",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "The Names Robot and Robert — Roboto SAI Research",
+      "hasCanvas": false,
+      "bodyTextLen": 48758,
+      "bodyTextHash": "e0edf972e11d1c639e011c29d227a2d8e729a4c442985fd1172adf2fe172aace",
+      "bodyTextPrefix": "Skip to essay ROBOTO SAI RESEARCH Onomastics · September 2026 Es",
+      "horizontalOverflow": false,
+      "consoleErrors": [
+        "Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2020"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/home-preview.json"
+}

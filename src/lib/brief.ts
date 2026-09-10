@@ -1,0 +1,161 @@
+import type { Lang } from "@/lib/i18n";
+
+export type BriefTag = {
+  id: string;
+  tag: string;
+  title: string;
+  body: string;
+  sources: string;
+  href: "/" | "/atlas" | "/dossier" | "/lion" | "/templars";
+};
+
+export const BRIEF_META: Record<
+  Lang,
+  {
+    title: string;
+    subtitle: string;
+    kicker: string;
+    listen: string;
+    voice: string;
+    sources: string;
+    open: string;
+    tagListen: string;
+    tagStop: string;
+    live: string;
+    playing: string;
+    note: string;
+  }
+> = {
+  en: {
+    title: "Four clocks, and the Temple",
+    subtitle: "One page. No citation numbers. Five speech tags. Voice: Leo.",
+    kicker: "Spoken brief",
+    listen: "Listen",
+    voice: "Leo · multilingual",
+    sources: "Sources",
+    open: "Open the full page",
+    tagListen: "Speak this tag",
+    tagStop: "Stop",
+    live: "Live voice (this browser)",
+    playing: "Playing",
+    note: "Leo’s recording covers Essay, Atlas, Dossier, and Gur Aryeh. Live voice reads all five tags, including the Templars.",
+  },
+  es: {
+    title: "Cuatro relojes, y el Templo",
+    subtitle: "Una página. Sin números de cita. Cinco etiquetas de voz. Voz: Leo.",
+    kicker: "Síntesis hablada",
+    listen: "Escuchar",
+    voice: "Leo · multilingüe",
+    sources: "Fuentes",
+    open: "Abrir la página completa",
+    tagListen: "Hablar esta etiqueta",
+    tagStop: "Parar",
+    live: "Voz en vivo (este navegador)",
+    playing: "Reproduciendo",
+    note: "La grabación de Leo cubre Ensayo, Atlas, Dossier y Gur Aryeh. La voz en vivo lee las cinco etiquetas, incluidos los templarios.",
+  },
+};
+
+export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
+  en: [
+    {
+      id: "essay",
+      tag: "Essay",
+      title: "Robot and Robert",
+      href: "/",
+      body: "These two names rhyme in English. They are not kin. Robot entered world languages from Čapek’s Czech play R.U.R., from Slavic robota, forced labor. Robert is Proto-Germanic fame plus bright, carried by dukes, kings, and saints. Sound is not sense. Yisrael and Israel can look like twins and still keep different clocks. Villarreal and Martinez can share a street and not a root. The essay’s job is to keep the word, the crown, the surname, and the place from collapsing into one story.",
+      sources: "Čapek, R.U.R.; Slavic etymology of robota; Proto-Germanic Hrōþiberhtaz; onomastic pairs in this journal.",
+    },
+    {
+      id: "atlas",
+      tag: "Atlas",
+      title: "Vila-real, twelve seventy-four",
+      href: "/atlas",
+      body: "James I of Aragon grants a carta pobla and plants a town on the Plana. The charter is a legal machine, not a family album. Names in that network are offices, neighbors, witnesses, and land. They do not, by themselves, prove a bloodline to a living household in Monterrey. The atlas holds a hotel in the old warehouse, an ejido and a rural locality called Los Villarreales, and a searched gap in fourteen twenty-nine. It will not glue a Catalan charter to a Nuevo León census and call that one origin.",
+      sources: "Carta pobla of Vila-real; INEGI locality Los Villarreales; INAH record of the Apolo warehouse hotel; Plana chronicle gap.",
+    },
+    {
+      id: "dossier",
+      tag: "Dossier",
+      title: "Three clocks, unmerged",
+      href: "/dossier",
+      body: "Steelman first. Then the charter, clause by clause. Then three clocks on the table: documents, family memory, genetic tests. A date on a charter is not a date on a cheek swab. Nuevo León means New Kingdom of León. An English tourism page once calqued it as New Lion and then took that line down. That calque is not Hebrew lion language, and it is not a founding of this Mexican state by the tribe of Judah.",
+      sources: "VisitMexico English calque, later reverted; AM, Debate, Al Día; Numbers 23; INEGI census counts.",
+    },
+    {
+      id: "lion",
+      tag: "Gur Aryeh",
+      title: "Judah’s animal",
+      href: "/lion",
+      body: "Jacob blesses Judah as a lion’s cub. From prey the cub has gone up. He crouches like a lion, like a lioness. Who will rouse him. The next line keeps the scepter in Judah. After the northern tribes are lost, Judah’s name becomes Jew, and the tribal animal becomes a Jewish one. Hebrew keeps six biblical words for this beast. The same animal flips: crown in the hand of Judah or God, mouth when aimed at the psalmist. Aryeh, Ari, Ariel, Kfir, Lavi, Aryeh Leib: the blessing became a name.",
+      sources: "Genesis 49; Numbers 23–24; Sanhedrin; Mishnah Middot; Ezekiel; Shulchan Aruch, Orach Chayim; emblem of Jerusalem; Sefaria.",
+    },
+    {
+      id: "templars",
+      tag: "Templars",
+      title: "Neighbors, not namers",
+      href: "/templars",
+      body: "Nine French knights under Hugh of Payns, after the First Crusade, to guard pilgrims on roads full of bandits. Baldwin II housed them at Al-Aqsa, which they took for Solomon’s Temple. The pope blessed them at Troyes. They became feared in the field and richer as bankers. Philip IV, who owed them a fortune, had them seized in a single night. Clement V dissolved the order in 1312. Jacques de Molay burned in 1314. On the Plana they are neighbors: Xivert after Burriana, a share of the city, perhaps the almoner Peyronet. Vila-real is James’s royal village in 1274, after the order already exists. Era and frontier. Not a lineage, and not a naming clause.",
+      sources: "Barber; Nicholson; Forey, The Templars in the Corona de Aragón; arrests of 1307; Vox in excelso; carta puebla of 1274; grant of Xivert, 1233; Order of Montesa.",
+    },
+  ],
+  es: [
+    {
+      id: "essay",
+      tag: "Ensayo",
+      title: "Robot y Robert",
+      href: "/",
+      body: "Estos dos nombres riman en inglés. No son parientes. Robot entró a las lenguas del mundo desde la obra checa R.U.R. de Čapek, del eslavo robota, trabajo forzado. Robert viene del proto-germánico: fama más brillante, llevado por duques, reyes y santos. El sonido no es el sentido. Yisrael e Israel pueden parecer gemelos y guardar relojes distintos. Villarreal y Martinez pueden compartir una calle y no una raíz. El oficio del ensayo es no dejar que la palabra, la corona, el apellido y el lugar se vuelvan un solo relato.",
+      sources: "Čapek, R.U.R.; etimología eslava de robota; proto-germánico Hrōþiberhtaz; pares onomásticos de esta revista.",
+    },
+    {
+      id: "atlas",
+      tag: "Atlas",
+      title: "Vila-real, mil doscientos setenta y cuatro",
+      href: "/atlas",
+      body: "Jaime I de Aragón otorga una carta puebla y planta una villa en la Plana. La carta es una máquina legal, no un álbum de familia. Los nombres de esa red son oficios, vecinos, testigos y tierra. Por sí solos no prueban una línea de sangre hasta una casa viva en Monterrey. El atlas guarda un hotel en la antigua bodega, un ejido y una localidad rural llamada Los Villarreales, y un hueco buscado en mil cuatrocientos veintinueve. No pega una carta catalana a un censo de Nuevo León para llamarlo un solo origen.",
+      sources: "Carta puebla de Vila-real; localidad INEGI Los Villarreales; ficha INAH del hotel en la bodega Apolo; hueco de la crónica de la Plana.",
+    },
+    {
+      id: "dossier",
+      tag: "Dossier",
+      title: "Tres relojes, sin fundir",
+      href: "/dossier",
+      body: "Primero el steelman. Luego la carta, cláusula por cláusula. Luego tres relojes sobre la mesa: documentos, memoria de familia, pruebas genéticas. La fecha de una carta no es la fecha de un hisopo. Nuevo León significa Nuevo Reino de León. Una página turística en inglés alguna vez lo calcó como New Lion y luego quitó esa línea. Ese calco no es la lengua hebrea del león, y no es una fundación de este estado mexicano por la tribu de Judá.",
+      sources: "Calco inglés de VisitMexico, luego revertido; AM, Debate, Al Día; Números 23; conteos INEGI.",
+    },
+    {
+      id: "lion",
+      tag: "Gur Aryeh",
+      title: "El animal de Judá",
+      href: "/lion",
+      body: "Jacob bendice a Judá como cachorro de león. De la presa el cachorro ha subido. Se agacha como león, como leona. Quién lo despertará. La línea siguiente deja el cetro en Judá. Cuando se pierden las tribus del norte, el nombre de Judá se vuelve judío, y el animal de la tribu se vuelve un animal judío. El hebreo guarda seis palabras bíblicas para esta fiera. El mismo animal se voltea: corona en la mano de Judá o de Dios, boca cuando apunta al salmista. Aryeh, Ari, Ariel, Kfir, Lavi, Aryeh Leib: la bendición se volvió nombre.",
+      sources: "Génesis 49; Números 23–24; Sanedrín; Mishná Midot; Ezequiel; Shulján Aruj, Oraj Jaim; sello de Jerusalén; Sefaria.",
+    },
+    {
+      id: "templars",
+      tag: "Templarios",
+      title: "Vecinos, no nominadores",
+      href: "/templars",
+      body: "Nueve caballeros franceses bajo Hugo de Payns, después de la Primera Cruzada, para guardar peregrinos en caminos llenos de bandidos. Balduino II los alojó en Al-Aqsa, que ellos tomaron por el Templo de Salomón. El papa los bendijo en Troyes. Se volvieron temidos en el campo y más ricos como banqueros. Felipe IV, que les debía una fortuna, los hizo prender en una sola noche. Clemente V disolvió la orden en 1312. Jacques de Molay ardió en 1314. En la Plana son vecinos: Xivert después de Burriana, una parte de la ciudad, quizá el limosnero Peyronet. Vila-real es la villa real de Jaime en 1274, cuando la orden ya existe. Época y frontera. No linaje, y no cláusula de nombre.",
+      sources: "Barber; Nicholson; Forey, The Templars in the Corona de Aragón; prisiones de 1307; Vox in excelso; carta puebla de 1274; merced de Xivert, 1233; Orden de Montesa.",
+    },
+  ],
+};
+
+export function briefNarration(lang: Lang): string {
+  const meta = BRIEF_META[lang];
+  const intro =
+    lang === "en"
+      ? `${meta.title}. A spoken brief from Roboto SAI Research.`
+      : `${meta.title}. Una síntesis hablada de Roboto SAI Research.`;
+  const parts = BRIEF_TAGS[lang].map((tag, index) => {
+    const n = lang === "en" ? `Speech tag ${index + 1}` : `Etiqueta de voz ${index + 1}`;
+    return `${n}. ${tag.tag}. ${tag.title}. ${tag.body}`;
+  });
+  return [intro, ...parts].join("\n\n");
+}
+
+export function tagNarration(lang: Lang, tag: BriefTag): string {
+  return `${tag.tag}. ${tag.title}. ${tag.body}`;
+}

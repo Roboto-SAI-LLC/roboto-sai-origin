@@ -386,6 +386,10 @@ export const CLAIMS: Claim[] = [
       {
         text: "Hotel La Mansión Villarreal occupies the 1893 warehouse of Fábricas Apolo / Droguería Apolo at Pino Suárez and Carlos Salazar Poniente, Centro. INAH catalogued the building; the 2009 paper already records it as a hotel.",
         source: "Garza Luna & Tovar Esquivel, Boletín de Monumentos Históricos 15 (2009); Catálogo Nacional de Monumentos Históricos Inmuebles, Nuevo León, t. IV (1985)."
+      },
+      {
+        text: "The state keeps, with “Reino de” dropped, the 1579 name Nuevo Reino de León, for the Kingdom of León — Felipe II’s birthplace. English gloss is New León, not New Lion. León is from Latin Legio.",
+        source: "INAFED, “Nomenclatura — Nuevo León”; Wiktionary, Nuevo León."
       }
     ],
     adjacent: [
@@ -400,6 +404,10 @@ export const CLAIMS: Claim[] = [
       {
         text: "Antonio I. Villarreal of Lampazos (1879–1944) was governor of Nuevo León in 1914. A named bearer in the state’s political record — not the namer of the hotel or the ejido.",
         source: "H. Congreso del Estado de Nuevo León, Archivo."
+      },
+      {
+        text: "Carvajal, a Portuguese New Christian, obtained the 31 May 1579 capitulation for the Nuevo Reino de León and brought about a hundred families, many conversos from the León–Portugal border. The Inquisition later tried the household. Local pages title this “Un nuevo león.” A sixteenth-century converso colonization — not a modern Israeli state project.",
+        source: "Capitulación of 31 May 1579; INAH Historias 88 (2014); León Virtual, “Judíos leoneses fundadores de Nuevo León.”"
       }
     ],
     notInRecord: [
@@ -410,9 +418,13 @@ export const CLAIMS: Claim[] = [
       {
         text: "The 1274 carta pobla does not name this city, this hotel, or this locality. Opposite transonymizations. Do not wind them as one clock.",
         source: "Carta pobla of 20 February 1274."
+      },
+      {
+        text: "English “New Lion” is a machine calque of Nuevo León (VisitMexico, August 2020, reverted). Hebrew lion language is Israel’s own clock. No record of a modern Israeli project to found or rename this state as a New Lion.",
+        source: "VisitMexico English pages, 7 August 2020; Numbers 23:24 / Operation Rising Lion, 2025."
       }
     ],
-    whatWouldConfirm: "A RAN expediente or colonial merced tying the ejido name to a dated Villarreal household; a notarized origin of the hotel’s trade name; INEGI or INE surname tables for Nuevo León rather than compiled indexes."
+    whatWouldConfirm: "A RAN expediente or colonial merced tying the ejido name to a dated Villarreal household; a notarized origin of the hotel’s trade name; INEGI or INE surname tables for Nuevo León rather than compiled indexes. The 1579 capitulation already names the kingdom; it does not need a modern Israeli sequel."
   }
 ];
 export const CHARTER_CLAUSES: CharterClause[] = [

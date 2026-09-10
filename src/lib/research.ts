@@ -20,7 +20,7 @@ export const META = {
   subtitle: "Linguistic Origins, Historical Usage, and Cultural Migrations",
   credit: "Roboto SAI research with a Copilot",
   date: "September 2026",
-  sourceCount: 37,
+  sourceCount: 41,
   description: "A research essay tracing Robot and Robert from Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, and a later Monterrey migration node."
 };
 export const FINDINGS = [
@@ -788,6 +788,18 @@ export const SECTIONS: Section[] = [
       {
         type: "note",
         text: "Place → surname (Iberia, 1274 and after) and surname → place (Nuevo León) are opposite transonymizations. “Villarreal de los Monterrey” is a disambiguator of living geography, analogously to Villarreal de los Infantes — not a municipality. The 1274 town and this landscape are separate clocks."
+      },
+      {
+        type: "p",
+        text: "The state name is a third clock. In 1579 Luis de Carvajal y de la Cueva, a Portuguese New Christian, obtained a capitulation for the Nuevo Reino de León, named for the Kingdom of León in Spain — Felipe II’s birthplace — not for the animal. León itself is Latin Legio. INAFED still writes that nomenclatura. The red lion on the 1943 state shield is folk-heraldry of the homonym.[38]"
+      },
+      {
+        type: "p",
+        text: "Carvajal brought about a hundred families, many conversos from the León–Portugal border. The Inquisition later tried the household; Luis el Mozo wrote as Joseph Lumbroso. Local León pages title the episode “Un nuevo león”; Jewish-Mexican journalism restates a discreet Jewish colony. That is a sixteenth-century converso colonization, not a 1274 naming clause and not a modern Israeli state project.[39] Eugenio del Hoyo records a 1933 Mexican debate on whether the landing had been “un ensayo de colonización judía” anticipating the Mayflower — a later question, not the 1579 naming clause."
+      },
+      {
+        type: "note",
+        text: "English “New Lion” is a machine calque. VisitMexico published it in August 2020 (Guerrero as Warrior, Torreón as Turret) and took it down.[40] Hebrew lion language — Lion of Judah, Ariel “lion of God,” Operation Rising Lion — is Israel’s own clock, from Numbers 23:24, not this toponym.[41] Do not wind the calque, the 1579 kingdom, and the biblical lion as one clock."
       }
     ]
   },
@@ -936,6 +948,10 @@ export const SECTIONS: Section[] = [
             "Alhambra Decree; remnant Jewish households leave or convert"
           ],
           [
+            "1579",
+            "Nuevo Reino de León named for the Kingdom of León — New León, not New Lion"
+          ],
+          [
             "1607",
             "Jamestown, Virginia, named for James I of England"
           ],
@@ -958,6 +974,10 @@ export const SECTIONS: Section[] = [
           [
             "2020",
             "INEGI census: Los Villarreales, Salinas Victoria, 633 inhabitants"
+          ],
+          [
+            "2020",
+            "VisitMexico English calque: Nuevo León as “New Lion”; page taken down"
           ]
         ]
       }
@@ -1407,6 +1427,11 @@ export const TIMELINE = [
     text: "The remnant Jewish households of the Plana leave or convert."
   },
   {
+    year: "1579",
+    title: "Nuevo Reino de León",
+    text: "Luis de Carvajal y de la Cueva’s capitulation names a New Kingdom of León after Felipe II’s birthplace. New León, not New Lion. A converso colonization clock — not 1274, not modern Israel."
+  },
+  {
     year: "1607",
     title: "Jamestown",
     text: "Named for James I of England — given name on the map, unlike Vila-real’s office-name."
@@ -1435,6 +1460,11 @@ export const TIMELINE = [
     year: "2020",
     title: "Los Villarreales census",
     text: "INEGI locality 190450118, Salinas Victoria: 633 inhabitants. A name on land north of Monterrey."
+  },
+  {
+    year: "2020",
+    title: "“New Lion” calque",
+    text: "VisitMexico’s English pages render Nuevo León as New Lion, Guerrero as Warrior, Torreón as Turret. The copy is taken down. A machine translation, not a renaming."
   }
 ];
 export const REFERENCES: { n: number; title: string; source: string; url: string }[] = [
@@ -1659,6 +1689,30 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
     title: "Antonio I. Villarreal",
     source: "H. Congreso del Estado de Nuevo León, Archivo y Biblioteca; standard biographies",
     url: "https://www.hcnl.gob.mx/archivo/2025/07/antonio-i-villarreal.php"
+  },
+  {
+    n: 38,
+    title: "Nomenclatura — Nuevo León",
+    source: "INAFED, Enciclopedia de los Municipios y Delegaciones de México; Wiktionary, Nuevo León (New León, after the Kingdom of León)",
+    url: "https://web.archive.org/web/20220710031045/http://www.inafed.gob.mx/work/enciclopedia/EMM19nuevoleon/nomenclatura.html"
+  },
+  {
+    n: 39,
+    title: "Luis de Carvajal and the converso colonization of Nuevo Reino de León",
+    source: "INAH, Historias 88 (2014); Diario Judío; León Virtual, “Judíos leoneses fundadores de Nuevo León” (heading: “Un nuevo león”)",
+    url: "https://revistas.inah.gob.mx/index.php/historias/article/view/11072"
+  },
+  {
+    n: 40,
+    title: "VisitMexico English calque: New Lion, Warrior, Turret",
+    source: "AM, 7 August 2020; Debate; Al Día News. Copy subsequently reverted.",
+    url: "https://www.am.com.mx/news/2020/08/07/warrior-new-lion-critican-en-redes-las-traducciones-de-visitmexicocom-410413.html"
+  },
+  {
+    n: 41,
+    title: "Rising Lion / Am ke-lavi",
+    source: "Numbers 23:24; Haaretz, 12 August 2025, on the IDF designation. Adjacent Hebrew lion language — not the Mexican toponym.",
+    url: "https://www.haaretz.com/israel-news/2025-08-12/ty-article/rising-lion-how-an-ancient-blessing-became-modern-israels-battle-cry/00000198-9d9a-d50b-a398-9fba171c0000"
   }
 ];
 export const CITATION =

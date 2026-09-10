@@ -1,30 +1,30 @@
 import { Link, useRouterState } from "@tanstack/react-router";
+import { LangToggle } from "@/components/article/lang-toggle";
 import { ShareBar } from "@/components/article/share-bar";
-import { META } from "@/lib/research";
+import { CHROME, useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
-
-const NAV = [
-  { to: "/", label: "Essay" },
-  { to: "/atlas", label: "Network atlas" },
-  { to: "/dossier", label: "Dossier" },
-] as const;
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const { lang } = useLang();
+  const chrome = CHROME[lang];
 
   return (
     <header className="border-b border-border">
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-        <div className="min-w-0">
-          <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-            {META.journal}
-          </p>
-          <p className="mt-1 text-xs text-muted">
-            {META.series} · {META.date}
-          </p>
+        <div className="flex min-w-0 flex-wrap items-end justify-between gap-3">
+          <div className="min-w-0">
+            <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
+              {chrome.journal}
+            </p>
+            <p className="mt-1 text-xs text-muted">
+              {chrome.series} · {chrome.date}
+            </p>
+          </div>
+          <LangToggle />
         </div>
         <nav className="no-print flex flex-wrap items-center gap-2" aria-label="Primary">
-          {NAV.map((item) => {
+          {chrome.nav.map((item) => {
             const active = pathname === item.to;
             return (
               <Link

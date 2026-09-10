@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/templars",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Poor Knights of the Temple — Roboto SAI Research",
+      "hasCanvas": false,
+      "bodyTextLen": 6293,
+      "bodyTextHash": "95d094019950643cbf528c562b8f5a4e464854509c23c116f3606d349dbf87b8",
+      "bodyTextPrefix": "Skip to essay ROBOTO SAI RESEARCH Onomastics · September 2026 EN",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/templars-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Poor Knights of the Temple — Roboto SAI Research",
+      "hasCanvas": false,
+      "bodyTextLen": 6164,
+      "bodyTextHash": "017a2988670deb6979f405968c76f16c245bccd7bded78b1ac3037a1b7df4260",
+      "bodyTextPrefix": "Skip to essay ROBOTO SAI RESEARCH Onomastics · September 2026 EN",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/templars-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/templars-preview.json"
+}

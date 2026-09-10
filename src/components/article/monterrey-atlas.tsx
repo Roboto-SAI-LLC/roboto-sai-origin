@@ -186,7 +186,7 @@ function relatedIds(nodeId: string): Set<string> {
   if (nodeId === "villarreales") return new Set(["M1", "M5"]);
   if (nodeId === "monterrey") return new Set(["M4", "M7"]);
   if (nodeId === "salinas") return new Set(["M1", "M5"]);
-  if (nodeId === "nuevoleon") return new Set(["M4", "M7", "M8"]);
+  if (nodeId === "nuevoleon") return new Set(["M4", "M8", "M9", "M10", "M11", "M12"]);
   return new Set();
 }
 

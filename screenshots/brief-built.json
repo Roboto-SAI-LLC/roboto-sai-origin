@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/brief",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Four clocks, and the Temple — Roboto SAI Research",
+      "hasCanvas": false,
+      "bodyTextLen": 4046,
+      "bodyTextHash": "046fbe4c1cea867b77b5df9118dc2fe802dc126256d1eb01659af469d7affbfd",
+      "bodyTextPrefix": "ROBOTO SAI RESEARCH Onomastics · September 2026 EN ES Roboto SAI",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/brief-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Four clocks, and the Temple — Roboto SAI Research",
+      "hasCanvas": false,
+      "bodyTextLen": 4022,
+      "bodyTextHash": "9c2c0b7fc4f2053f2a8a6e6e5a212925e928be727dfa668a04c18dbddbf348ee",
+      "bodyTextPrefix": "ROBOTO SAI RESEARCH Onomastics · September 2026 EN ES Roboto SAI",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/brief-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/brief-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

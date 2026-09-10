@@ -11,7 +11,10 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AtlasRouteImport } from './routes/atlas'
+import { Route as BriefRouteImport } from './routes/brief'
 import { Route as DossierRouteImport } from './routes/dossier'
+import { Route as LionRouteImport } from './routes/lion'
+import { Route as TemplarsRouteImport } from './routes/templars'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,40 +26,68 @@ const AtlasRoute = AtlasRouteImport.update({
   path: '/atlas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BriefRoute = BriefRouteImport.update({
+  id: '/brief',
+  path: '/brief',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DossierRoute = DossierRouteImport.update({
   id: '/dossier',
   path: '/dossier',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LionRoute = LionRouteImport.update({
+  id: '/lion',
+  path: '/lion',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemplarsRoute = TemplarsRouteImport.update({
+  id: '/templars',
+  path: '/templars',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
+  '/brief': typeof BriefRoute
   '/dossier': typeof DossierRoute
+  '/lion': typeof LionRoute
+  '/templars': typeof TemplarsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
+  '/brief': typeof BriefRoute
   '/dossier': typeof DossierRoute
+  '/lion': typeof LionRoute
+  '/templars': typeof TemplarsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
+  '/brief': typeof BriefRoute
   '/dossier': typeof DossierRoute
+  '/lion': typeof LionRoute
+  '/templars': typeof TemplarsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/atlas' | '/dossier'
+  fullPaths: '/' | '/atlas' | '/brief' | '/dossier' | '/lion' | '/templars'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/atlas' | '/dossier'
-  id: '__root__' | '/' | '/atlas' | '/dossier'
+  to: '/' | '/atlas' | '/brief' | '/dossier' | '/lion' | '/templars'
+  id:
+    '__root__' | '/' | '/atlas' | '/brief' | '/dossier' | '/lion' | '/templars'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AtlasRoute: typeof AtlasRoute
+  BriefRoute: typeof BriefRoute
   DossierRoute: typeof DossierRoute
+  LionRoute: typeof LionRoute
+  TemplarsRoute: typeof TemplarsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,11 +106,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AtlasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/brief': {
+      id: '/brief'
+      path: '/brief'
+      fullPath: '/brief'
+      preLoaderRoute: typeof BriefRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/dossier': {
       id: '/dossier'
       path: '/dossier'
       fullPath: '/dossier'
       preLoaderRoute: typeof DossierRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lion': {
+      id: '/lion'
+      path: '/lion'
+      fullPath: '/lion'
+      preLoaderRoute: typeof LionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/templars': {
+      id: '/templars'
+      path: '/templars'
+      fullPath: '/templars'
+      preLoaderRoute: typeof TemplarsRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -88,7 +140,10 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AtlasRoute: AtlasRoute,
+  BriefRoute: BriefRoute,
   DossierRoute: DossierRoute,
+  LionRoute: LionRoute,
+  TemplarsRoute: TemplarsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

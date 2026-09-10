@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/lion",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Gur Aryeh — Roboto SAI Research",
+      "hasCanvas": false,
+      "bodyTextLen": 12392,
+      "bodyTextHash": "697cc396ee183f4c743a2895bc0453470613c4fc1a31c781869ea3b49bb73f2f",
+      "bodyTextPrefix": "Skip to essay ROBOTO SAI RESEARCH Onomastics · September 2026 Es",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/lion-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Gur Aryeh — Roboto SAI Research",
+      "hasCanvas": false,
+      "bodyTextLen": 12190,
+      "bodyTextHash": "a4fb6a361c77fed31a4fe7ce15f75597326a283a21a2b64474daf14eac00e313",
+      "bodyTextPrefix": "Skip to essay ROBOTO SAI RESEARCH Onomastics · September 2026 Es",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/lion-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/lion-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

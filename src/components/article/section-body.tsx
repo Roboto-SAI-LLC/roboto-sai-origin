@@ -1,6 +1,7 @@
 import type { Block, Section } from "@/lib/research";
 import { DataTable } from "@/components/article/data-table";
 import { InlineText } from "@/components/article/inline-text";
+import { CHROME, useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 function BlockView({ block }: { block: Block }) {
@@ -60,12 +61,15 @@ function BlockView({ block }: { block: Block }) {
 }
 
 export function SectionBody({ section }: { section: Section }) {
+  const { lang } = useLang();
+  const part = CHROME[lang].part;
+
   return (
     <section aria-labelledby={section.id} className="scroll-mt-24">
       <header className="mb-6">
         {section.numeral ? (
           <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-            Part {section.numeral}
+            {part} {section.numeral}
           </p>
         ) : null}
         <h2

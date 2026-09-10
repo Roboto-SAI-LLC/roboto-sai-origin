@@ -1,19 +1,30 @@
 import { useEffect, useState } from "react";
+import { CHROME, useLang } from "@/lib/i18n";
 import { TOC } from "@/lib/research";
 import { cn } from "@/lib/utils";
 
-export function TableOfContents({ className }: { className?: string }) {
-  const [active, setActive] = useState(TOC[0]?.id ?? "introduction");
+export type TocItem = { id: string; numeral: string; title: string };
+
+export function TableOfContents({
+  className,
+  items,
+}: {
+  className?: string;
+  items?: readonly TocItem[];
+}) {
+  const { lang } = useLang();
+  const entries = items ?? TOC;
+  const [active, setActive] = useState(entries[0]?.id ?? "introduction");
 
   useEffect(() => {
-    const headings = TOC.map((item) => document.getElementById(item.id)).filter(
-      (el): el is HTMLElement => Boolean(el),
-    );
+    const headings = entries
+      .map((item) => document.getElementById(item.id))
+      .filter((el): el is HTMLElement => Boolean(el));
     if (headings.length === 0) return;
 
     const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
+      (entriesObserved) => {
+        const visible = entriesObserved
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
         if (visible[0]?.target.id) {
@@ -25,15 +36,15 @@ export function TableOfContents({ className }: { className?: string }) {
 
     headings.forEach((heading) => observer.observe(heading));
     return () => observer.disconnect();
-  }, []);
+  }, [entries]);
 
   return (
-    <nav className={cn("text-sm", className)} aria-label="Table of contents">
+    <nav className={cn("text-sm", className)} aria-label={CHROME[lang].contents}>
       <p className="mb-3 font-display text-kicker font-medium tracking-kicker text-subtle uppercase">
-        Contents
+        {CHROME[lang].contents}
       </p>
       <ol className="space-y-1">
-        {TOC.map((item) => {
+        {entries.map((item) => {
           const isActive = active === item.id;
           return (
             <li key={item.id}>

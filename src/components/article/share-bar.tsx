@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { Check, Copy, Share2 } from "lucide-react";
+import { CHROME, useLang } from "@/lib/i18n";
 import { CITATION, META } from "@/lib/research";
+import { cn } from "@/lib/utils";
 
 const buttonClass =
   "inline-flex min-h-11 items-center gap-2 rounded-md border border-border bg-surface px-3.5 text-sm font-medium text-fg shadow-paper transition-[transform,background-color] duration-150 ease-out hover:bg-wash active:scale-95";
 
 export function ShareBar() {
   const [copied, setCopied] = useState<"link" | "cite" | null>(null);
+  const { lang } = useLang();
+  const chrome = CHROME[lang];
 
   async function copy(value: string, kind: "link" | "cite") {
     let ok = false;
@@ -48,23 +52,31 @@ export function ShareBar() {
     <div className="no-print flex flex-wrap items-center gap-2">
       <button type="button" className={buttonClass} onClick={share}>
         <Share2 className="size-4" strokeWidth={1.75} />
-        Share
+        {chrome.share}
       </button>
-      <button type="button" className={buttonClass} onClick={() => copy(window.location.href, "link")}>
+      <button
+        type="button"
+        className={cn(buttonClass, "hidden sm:inline-flex")}
+        onClick={() => copy(window.location.href, "link")}
+      >
         {copied === "link" ? (
           <Check className="size-4" strokeWidth={1.75} />
         ) : (
           <Copy className="size-4" strokeWidth={1.75} />
         )}
-        {copied === "link" ? "Copied" : "Copy link"}
+        {copied === "link" ? chrome.copied : chrome.copyLink}
       </button>
-      <button type="button" className={buttonClass} onClick={() => copy(CITATION, "cite")}>
+      <button
+        type="button"
+        className={cn(buttonClass, "hidden sm:inline-flex")}
+        onClick={() => copy(CITATION, "cite")}
+      >
         {copied === "cite" ? (
           <Check className="size-4" strokeWidth={1.75} />
         ) : (
           <Copy className="size-4" strokeWidth={1.75} />
         )}
-        {copied === "cite" ? "Copied" : "Copy citation"}
+        {copied === "cite" ? chrome.copied : chrome.copyCite}
       </button>
     </div>
   );

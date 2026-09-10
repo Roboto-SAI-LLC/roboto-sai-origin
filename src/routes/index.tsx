@@ -6,6 +6,7 @@ import { SectionBody } from "@/components/article/section-body";
 import { SiteHeader } from "@/components/article/site-header";
 import { TableOfContents } from "@/components/article/table-of-contents";
 import { HistoryTimeline } from "@/components/article/timeline";
+import { CHROME, useLang } from "@/lib/i18n";
 import {
   CITATION,
   FINDINGS,
@@ -69,6 +70,9 @@ const jsonLd = {
 function ResearchPage() {
   const intro = SECTIONS.find((section) => section.id === "introduction");
   const rest = SECTIONS.filter((section) => section.id !== "introduction");
+  const { lang } = useLang();
+  const chrome = CHROME[lang];
+  const home = chrome.home;
 
   return (
     <div className="paper-grain min-h-dvh bg-bg text-fg">
@@ -82,7 +86,7 @@ function ResearchPage() {
         href="#article"
         className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-surface focus:px-3 focus:py-2"
       >
-        Skip to essay
+        {chrome.skip}
       </a>
 
       <SiteHeader />
@@ -90,7 +94,7 @@ function ResearchPage() {
       <main>
         <section className="mx-auto max-w-6xl px-4 pt-10 pb-6 sm:px-6 sm:pt-16">
           <p className="stagger-in font-display text-kicker font-medium tracking-kicker text-subtle uppercase">
-            A static research page · {META.sourceCount} sources
+            {home.kicker} · {META.sourceCount} {home.sources}
           </p>
           <h1 className="stagger-in mt-4 max-w-4xl font-display text-display font-medium tracking-display text-fg sm:text-display-lg">
             {META.title}
@@ -101,17 +105,17 @@ function ResearchPage() {
           <p className="stagger-in mt-6 text-sm text-muted">
             By <span className="text-fg">{META.credit}</span>
           </p>
+          {chrome.englishBody ? (
+            <p className="stagger-in mt-4 max-w-2xl text-sm leading-relaxed text-muted">{chrome.englishBody}</p>
+          ) : null}
         </section>
 
         <section
-          aria-label="Key findings"
+          aria-label={lang === "es" ? "Hallazgos" : "Key findings"}
           className="mx-auto grid max-w-6xl gap-3 px-4 pb-6 sm:grid-cols-2 sm:px-6 lg:grid-cols-3"
         >
           {FINDINGS.map((finding) => (
-            <article
-              key={finding.kicker}
-              className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5"
-            >
+            <article key={finding.kicker} className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
               <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
                 {finding.kicker}
               </p>
@@ -124,28 +128,59 @@ function ResearchPage() {
           <div className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:flex sm:items-center sm:justify-between sm:px-5">
             <div>
               <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-                New in this edition
+                {home.newKicker}
               </p>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-fg sm:text-base">
-                A claim inspector that steelmans first, a clause-by-clause carta pobla, a Plana chronicle that
-                keeps 1429 as a searched gap, four new chapters (XV–XVIII), and a Monterrey migration node on
-                the atlas — hotel, ejido, surname density, no news cycle.
-              </p>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-fg sm:text-base">{home.newText}</p>
             </div>
             <Link
               to="/dossier"
               className="mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg sm:mt-0"
             >
-              Open the dossier
+              {home.newCta}
             </Link>
           </div>
+        </section>
+
+        <section className="mx-auto grid max-w-6xl gap-3 px-4 pb-10 sm:grid-cols-3 sm:px-6">
+          <article className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
+            <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">{home.lionKicker}</p>
+            <p className="mt-2 text-sm leading-relaxed text-fg">{home.lionText}</p>
+            <Link
+              to="/lion"
+              className="mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg"
+            >
+              {home.lionCta}
+            </Link>
+          </article>
+          <article className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
+            <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
+              {home.templarKicker}
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-fg">{home.templarText}</p>
+            <Link
+              to="/templars"
+              className="mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg"
+            >
+              {home.templarCta}
+            </Link>
+          </article>
+          <article className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
+            <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">{home.briefKicker}</p>
+            <p className="mt-2 text-sm leading-relaxed text-fg">{home.briefText}</p>
+            <Link
+              to="/brief"
+              className="mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg"
+            >
+              {home.briefCta}
+            </Link>
+          </article>
         </section>
 
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 pb-20 sm:px-6 lg:grid-cols-[16rem_1fr]">
           <aside className="no-print min-w-0 space-y-4 lg:sticky lg:top-6 lg:self-start">
             <details className="rounded-lg bg-surface px-4 py-3 shadow-paper lg:hidden">
               <summary className="min-h-11 cursor-pointer list-none font-display text-sm font-medium text-fg">
-                Contents
+                {chrome.contents}
               </summary>
               <TableOfContents className="mt-3 pb-2" />
             </details>
@@ -161,12 +196,9 @@ function ResearchPage() {
             <EtymologyFigure />
 
             <h2 className="mt-4 mb-2 font-display text-2xl font-medium tracking-tight text-fg sm:text-3xl">
-              A brief chronology
+              {home.chronology}
             </h2>
-            <p className="mb-2 text-article text-muted">
-              Selected dates that thread Robot, Robert, and the Iberian case studies through the same
-              historical line.
-            </p>
+            <p className="mb-2 text-article text-muted">{home.chronologyLead}</p>
             <HistoryTimeline />
 
             {rest.map((section) => (
@@ -181,15 +213,11 @@ function ResearchPage() {
               className="mt-16 scroll-mt-24 border-t border-border pt-12"
             >
               <h2 className="font-display text-2xl font-medium tracking-tight text-fg sm:text-3xl">
-                References
+                {home.references}
               </h2>
               <ol className="mt-6 space-y-4">
                 {REFERENCES.map((reference) => (
-                  <li
-                    id={`ref-${reference.n}`}
-                    key={reference.n}
-                    className="scroll-mt-24 text-sm leading-relaxed text-fg"
-                  >
+                  <li id={`ref-${reference.n}`} key={reference.n} className="scroll-mt-24 text-sm leading-relaxed text-fg">
                     <span className="mr-2 font-display text-primary">{reference.n}.</span>
                     <span>{reference.source}. </span>
                     <a
@@ -206,10 +234,10 @@ function ResearchPage() {
             </section>
 
             <section className="mt-12 rounded-xl bg-surface px-5 py-5 shadow-paper sm:px-6">
-              <h2 className="font-display text-lg font-medium text-fg">Cite this page</h2>
+              <h2 className="font-display text-lg font-medium text-fg">{chrome.cite}</h2>
               <p className="mt-2 text-sm leading-relaxed text-muted">{CITATION}</p>
               <p className="mt-4 text-sm text-subtle">
-                Full text is on this page for human readers and for Grok. A plain-text brief is also at{" "}
+                {home.llms}{" "}
                 <a href="/llms.txt" className="text-primary underline underline-offset-4">
                   /llms.txt
                 </a>
@@ -223,7 +251,9 @@ function ResearchPage() {
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <p>{META.credit}</p>
-          <p>Onomastics · {META.date}</p>
+          <p>
+            {chrome.series} · {chrome.date}
+          </p>
         </div>
       </footer>
     </div>

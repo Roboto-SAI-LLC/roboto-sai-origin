@@ -88,7 +88,7 @@ export const MODERN_NODES: ModernNode[] = [
     year: "later cohort",
     role: "Mexican state of densest Villarreal incidence",
     dossier:
-      "Spain itself holds a few thousand people named Villarreal. Mexico holds about a hundred thousand, and Nuevo León holds about a third of those. The surname is habitational: “one who came from Villareal / the royal estate,” a formation taken from several Iberian places. Density in this state is a New Spain and after fact — migration, not a naming clause from Jaime I.",
+      "Spain itself holds a few thousand people named Villarreal. Mexico holds about a hundred thousand, and Nuevo León holds about a third of those. The surname is habitational: “one who came from Villareal / the royal estate,” a formation taken from several Iberian places. Density in this state is a New Spain and after fact — migration, not a naming clause from Jaime I. The state name is a third clock: Nuevo Reino de León, 1579, after the Kingdom of León — New León, not New Lion.",
     x: 180,
     y: 400,
   },
@@ -182,6 +182,33 @@ export const MONTERREY_LEDGER: LedgerRow[] = [
     claim:
       "The 1274 carta pobla does not name Monterrey, this hotel, or this ejido. Place → surname (Iberia) and surname → place (Nuevo León) are opposite transonymizations. Do not wind them as one clock.",
     source: "Carta pobla of 20 February 1274; this stratum is New Spain and after.",
+  },
+  {
+    id: "M10",
+    status: "in-record",
+    layer: "monterrey",
+    claim:
+      "Nuevo León keeps, with “Reino de” dropped, the 1579 name Nuevo Reino de León. INAFED: Luis de Carvajal y de la Cueva named it for the Kingdom of León, birthplace of Felipe II. English gloss is New León, not New Lion. León itself is from Latin Legio (Legio VII Gemina). The red lion on the 1943 state shield is folk-heraldry of that homonym.",
+    source:
+      "INAFED, Enciclopedia de los Municipios y Delegaciones, “Nomenclatura — Nuevo León”; Wiktionary, Nuevo León; state coat of arms adopted 1943–44.",
+  },
+  {
+    id: "M11",
+    status: "adjacent",
+    layer: "monterrey",
+    claim:
+      "Carvajal, a Portuguese New Christian of Jewish descent, obtained the 31 May 1579 capitulation and brought about a hundred families, many conversos from the León–Portugal border. The Inquisition later tried the household; Luis el Mozo wrote as Joseph Lumbroso. Local León pages title this “Un nuevo león”; Jewish-Mexican journalism restates a discreet Jewish colony. That is a sixteenth-century converso colonization — not a modern Israeli state project, and not the 1274 carta pobla.",
+    source:
+      "Capitulación of 31 May 1579; INAH, Historias 88 (2014); Diario Judío, “Luis de Carvajal, fundador del Nuevo Reino de León”; León Virtual, “Judíos leoneses fundadores de Nuevo León” (heading: “Un nuevo león”). Eugenio del Hoyo records a 1933 Mexican debate on whether the landing was a Jewish colonization experiment — a later question, not the 1579 naming clause.",
+  },
+  {
+    id: "M12",
+    status: "not-in-record",
+    layer: "monterrey",
+    claim:
+      "English “New Lion” is a machine calque of Nuevo León. VisitMexico published it in August 2020 (Guerrero as Warrior, Torreón as Turret) and took it down — that is the thread that disappeared. Hebrew lion language — Lion of Judah, Ariel “lion of God,” Operation Rising Lion from Numbers 23:24 — is Israel’s own clock. It does not name this Mexican state. No record of a modern Israeli project to found or rename Nuevo León as a New Lion. Do not wind the calque, the 1579 kingdom, and the biblical lion as one clock.",
+    source:
+      "VisitMexico English pages, 7 August 2020, subsequently reverted (AM, Debate, Al Día). Numbers 23:24; IDF designation Am ke-lavi / Rising Lion, June 2025. León, Guanajuato’s 2025 declaration with Israel is a different León.",
   },
 ];
 
