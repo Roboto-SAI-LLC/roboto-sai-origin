@@ -13,7 +13,7 @@ import { HistoryTimeline } from "@/components/article/timeline";
 import { CHAPTERS, sectionsForChapter } from "@/lib/chapters";
 import { CHROME, useLang } from "@/lib/i18n";
 import { CITATION, META, REFERENCES } from "@/lib/research";
-import { APP_NAME, SITE_URL } from "@/lib/site";
+import { APP_NAME, AUTHOR, SITE_URL } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   component: ResearchPage,
@@ -33,7 +33,7 @@ const jsonLd = {
   description: META.description,
   datePublished: "2026-09-02",
   inLanguage: "en",
-  author: { "@type": "Organization", name: "Roboto SAI" },
+  author: { "@type": "Person", name: AUTHOR },
   contributor: { "@type": "Person", name: "a Copilot" },
   publisher: { "@type": "Organization", name: "Roboto SAI" },
   url: SITE_URL,

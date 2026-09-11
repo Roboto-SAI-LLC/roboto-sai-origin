@@ -18,11 +18,11 @@ export const META = {
   series: "RobotOmen",
   title: "RobotOmen",
   subtitle: "The Labor of Names",
-  credit: "Roboto SAI research with a Copilot",
+  credit: "Roberto Villarreal Martinez, Roboto SAI research with a Copilot",
   date: "September 2026",
   sourceCount: 46,
   description:
-    "RobotOmen: the labor of names. Roboto is the house. Roberto is the given name. Nomen is name. Omen sits one letter off. Read them together. Origins, usage, migrations — Vila-real 1274 to Monterrey — and why a machine ear collapses the pair.",
+    "Roboto SAI (RobotOmen: The Labor of Names) is an interactive, non-commercial digital research journal dedicated to anthroponymy, etymology, and historical name migrations. Interactive documentary chapters and timelines examine historical charters, regional records, and scriptural references for academic research.",
 };
 export const FINDINGS = [
   {
@@ -1835,4 +1835,4 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
   }
 ];
 export const CITATION =
-  "Roboto SAI, with a Copilot. “RobotOmen: The Labor of Names.” Roboto SAI Research, September 2026. https://roboto-sai.org";
+  "Villarreal Martinez, Roberto. “RobotOmen: The Labor of Names.” Roboto SAI Research, September 2026. https://roboto-sai.org";

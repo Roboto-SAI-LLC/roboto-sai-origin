@@ -40,7 +40,7 @@ export const MODERN_NODES: ModernNode[] = [
     year: "2020 census",
     role: "Rural locality; ejido / ranch landscape in Salinas Victoria",
     dossier:
-      "INEGI locality 190450118, in the municipality of Salinas Victoria, inside the Monterrey metropolitan area, about forty kilometres north of the city. Census counts: 600 (2000), 659 (2005), 811 (2010), 633 (2020). Postal and land language also says pueblo, ejido, Hacienda los Villarreales, ranchos and quintas (C.P. 65530). A name written back onto land. Not a municipality, and not Vila-real in Castellón.",
+      "INEGI locality 190450118, in the municipality of Salinas Victoria, inside the Monterrey metropolitan area, about forty kilometres north of the city. Census counts: 600 (2000), 659 (2005), 811 (2010), 633 (2020). Postal and land language also says pueblo, ejido, Hacienda los Villarreales, ranchos and quintas (C.P. 65530). 2 January 2023: a shootout at Hacienda Los Villarreales killed three officers (two Fuerza Civil, one local chief); two gunmen were killed and five arrested. Attackers came from Nuevo Laredo, cartel-linked, with .50-cal rifles. That is a later-clock event on land that still carries the name. It is not a lawsuit, not a 1274 founding, and not Vila-real in Castellón.",
     x: 450,
     y: 64,
   },

@@ -2,24 +2,26 @@
 
 Canonical site: [https://roboto-sai.org](https://roboto-sai.org)
 
-Onomastic **methodology**, not mythology. The journal dates **four clocks** (documents, DNA, family memory, place), steelmans a claim before splitting it, and keeps record vs gap on the page. Gur Aryeh is the lion companion — Hebrew symbolism — not the name of the series.
+[roboto-sai.org](https://roboto-sai.org) is an interactive, non-commercial digital research journal created by Roberto Villarreal Martinez. Dedicated to anthroponymy, etymology, and historical name migrations, the platform features interactive documentary chapters and timelines. It analyzes the linguistic, cultural, and religious lineages of names by examining historical charters, regional records, and scriptural references for academic research.
 
-A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. A kit percentage is not a people. Fifty thousand years is a species clock, not a Hebrew-Egyptian origin. Treasure talk sits next to 1307. Do not wind them as one.
+Fully public. No ads. No paid tiers.
 
-The title is **RobotOmen: The Labor of Names**. Roboto is the house. Omen sits next to nomen — name. One letter. Sit with both. The labor is *robota* — work.
+The title is **RobotOmen: The Labor of Names**. Roboto is Roberto’s house. He named it.
 
 Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com.
+
 
 ## What lives here
 
 | Route | Page | Language |
 | --- | --- | --- |
-| `/` | Essay: The Names Roboto and Roberto | Chrome bilingual; body English |
+| `/` | Essay: RobotOmen — The Labor of Names | Chrome bilingual; body English |
 | `/atlas` | 1274 network + Monterrey node | Chrome bilingual; body English |
 | `/dossier` | Claims, carta pobla, chronicle, four clocks | Chrome bilingual; body English |
 | `/lion` | Gur Aryeh | Chrome bilingual; body English |
 | `/templars` | Poor Knights of the Temple | English and Spanish |
 | `/brief` | One-page brief, with listen | English and Spanish |
+| `/scripture` | KJV and LBLA quotes (key stays on the server) | English and Spanish |
 
 Plain-text brief for machines: [`/llms.txt`](https://roboto-sai.org/llms.txt)
 
@@ -27,7 +29,8 @@ Plain-text brief for machines: [`/llms.txt`](https://roboto-sai.org/llms.txt)
 
 - **Roboto SAI** — publisher, masthead, and the name on the home screen.
 - **Roboto / Roberto** — the names under study (house and given name). Robot / Robert are English glosses.
-- **Methodology** / **Metodología** — series kicker. Four clocks, steelman, record vs gap.
+- **RobotOmen** — series and film title: The Labor of Names.
+- **Roboto / Roberto** — house and founder. Robot / Robert are English glosses.
 - **Roboto SAI Research** — bibliographic journal name in citations, so existing cites keep working.
 - **Gur Aryeh** — the mythic register (Judah’s animal). Adjacent, not the journal title.
 

@@ -70,9 +70,9 @@ export const GEO_PLACES: GeoPlace[] = [
     clock: "later",
     name: "Los Villarreales",
     short: "Los Villarreales",
-    role: "INEGI locality 190450118, Salinas Victoria",
+    role: "Hacienda Los Villarreales, Salinas Victoria",
     dossier:
-      "Census 2020: 633. About forty kilometres north of Monterrey. A name written back onto land. Not Vila-real in Castellón.",
+      "INEGI 190450118. Census 2020: 633. A name written back onto land. 2 January 2023: shootout at Hacienda Los Villarreales — three officers dead (two Fuerza Civil, one local chief), two gunmen killed, five arrested; attackers from Nuevo Laredo, .50-cal rifles. Later clock. Not a lawsuit. Not Vila-real 1274.",
     lat: 26.04688,
     lng: -100.32222,
   },

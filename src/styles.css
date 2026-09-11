@@ -62,6 +62,15 @@
     font-kerning: normal;
     font-synthesis: none;
     scroll-behavior: smooth;
+    scroll-padding-top: 0;
+  }
+
+  .chapter-plate[id] {
+    scroll-margin-top: 0;
+  }
+
+  article [id] {
+    scroll-margin-top: 1.25rem;
   }
 
   body {

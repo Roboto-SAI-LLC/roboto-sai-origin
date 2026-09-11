@@ -6,7 +6,10 @@ export function ChapterPlate({ chapter }: { chapter: Chapter }) {
   const { lang } = useLang();
 
   return (
-    <header className="relative isolate min-h-[70svh] overflow-hidden bg-obsidian text-primary-fg sm:min-h-[78svh]">
+    <header
+      id={chapter.id}
+      className="chapter-plate relative isolate min-h-[70svh] overflow-hidden bg-obsidian text-primary-fg sm:min-h-[78svh]"
+    >
       <img
         src={chapter.still}
         alt={chapter.stillAlt}
@@ -17,10 +20,7 @@ export function ChapterPlate({ chapter }: { chapter: Chapter }) {
         <p className="font-display text-kicker font-medium tracking-kicker text-gold uppercase">
           {lang === "es" ? "Acto" : "Act"} {chapter.numeral}
         </p>
-        <h2
-          id={chapter.id}
-          className="mt-3 font-display text-4xl font-medium tracking-display text-primary-fg sm:text-5xl"
-        >
+        <h2 className="mt-3 font-display text-4xl font-medium tracking-display text-primary-fg sm:text-5xl">
           {chapter.title[lang]}
         </h2>
         <p className="mt-4 max-w-xl text-lg leading-snug text-primary-fg/85 sm:text-xl">
