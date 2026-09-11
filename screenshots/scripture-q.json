@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/scripture?q=Genesis+32:28",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Scripture — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 1282,
+      "bodyTextHash": "45f5a7332196075d3093783b7329280dd5c04aae6b2b48abf7b44281c5022cdb",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/scripture-q.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Scripture — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 1258,
+      "bodyTextHash": "31da5dd51efb878fedc1c60a2b5cb0eddd90cfd3f383f23021cb9e15b7a313c2",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/scripture-q-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/scripture-q.json"
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/act/four-clocks",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Act V — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 17082,
+      "bodyTextHash": "9565f4ea5381123d19b1eaa4c919a3e0c3949f50a5c0e9dac61b683446dec6d4",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/act5-check.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Act V — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 16965,
+      "bodyTextHash": "be9a0cc76f92c3a9d6a286d51d961ece70baf30523eb7912c3bc08793f5efe2c",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/act5-check-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/act5-check.json"
+}

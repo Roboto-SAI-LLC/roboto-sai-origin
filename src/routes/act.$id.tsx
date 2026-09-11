@@ -67,6 +67,12 @@ function ActPage() {
               <ScripturePull query={lang === "es" ? "Juan 1:1-5" : "John 1:1-5"} />
             </>
           ) : null}
+          {chapter.id === "sound-sense" ? (
+            <ScripturePull query={lang === "es" ? "Génesis 32:28" : "Genesis 32:28"} />
+          ) : null}
+          {chapter.id === "four-clocks" ? (
+            <ScripturePull query={lang === "es" ? "Mateo 4:21" : "Matthew 4:21"} />
+          ) : null}
           {chapter.id === "record-gap" ? (
             <>
               <h2 className="mb-2 font-display text-2xl font-medium tracking-tight text-fg">{home.chronology}</h2>

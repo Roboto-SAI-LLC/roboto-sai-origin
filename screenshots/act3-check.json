@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/act/sound-sense",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Act III — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 7791,
+      "bodyTextHash": "9282e5071b95d811486e530e902556aa33d500baac5d870c55f74ec1907d8a40",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/act3-check.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Act III — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 7674,
+      "bodyTextHash": "9e6d40ccf87c458ddde7b1a378faacf4ca797341e7d09607df07c1dadb1ce16e",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/act3-check-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/act3-check.json"
+}
