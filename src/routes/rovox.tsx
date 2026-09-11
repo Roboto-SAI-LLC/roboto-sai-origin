@@ -31,7 +31,7 @@ function RoVoxPage() {
       <SiteHeader />
       <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
         <p className="stagger-in font-display text-kicker font-medium tracking-kicker text-subtle uppercase">{copy.kicker}</p>
-        <h1 className="stagger-in mt-4 max-w-3xl font-display text-display font-bold italic tracking-display text-fire sm:text-display-lg">
+        <h1 className="stagger-in mt-4 max-w-3xl font-display text-display tracking-display text-fire sm:text-display-lg">
           {copy.title}
         </h1>
         <p className="stagger-in mt-5 max-w-2xl text-lg leading-relaxed text-muted">{copy.lead}</p>

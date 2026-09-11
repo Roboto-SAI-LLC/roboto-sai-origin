@@ -2,11 +2,11 @@ import { i as __toESM } from "../_runtime.mjs";
 import { a as META, l as TOC, o as REFERENCES, r as CITATION, s as SECTIONS } from "./research-BbnSBAkh.mjs";
 import { B as require_react, b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { o as Search } from "../_libs/lucide-react.mjs";
-import { C as CHROME, S as SITE_URL, T as useLang } from "./router-qoZEAWWR.mjs";
-import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
-import { n as TableOfContents } from "./table-of-contents-hdSLyoTs.mjs";
-import { n as SectionBody, t as HistoryTimeline } from "./timeline-hv_0dsdu.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CGJ1drap.js
+import { C as CHROME, S as SITE_URL, T as useLang } from "./router-fRnNbUfD.mjs";
+import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-DrOVLZ7b.mjs";
+import { n as TableOfContents } from "./table-of-contents-CEJtM56s.mjs";
+import { n as SectionBody, t as HistoryTimeline } from "./timeline-zZEDFAbi.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Cve2TZz_.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function sectionText(id) {
@@ -69,6 +69,22 @@ function EssaySearch() {
 				}) }, item.id))
 			}) : null
 		]
+	});
+}
+var NAME_RE = /(Roboto|Roberto)/g;
+function BrandWord({ name, className }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+		className: cn("brand-word", className),
+		children: name
+	});
+}
+function withBrandNames(text) {
+	if (!text) return text;
+	const parts = text.split(NAME_RE);
+	if (parts.length === 1) return text;
+	return parts.map((part, index) => {
+		if (part === "Roboto" || part === "Roberto") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(BrandWord, { name: part }, `${part}-${index}`);
+		return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_react.Fragment, { children: part }, index);
 	});
 }
 function EtymologyFigure() {
@@ -230,11 +246,11 @@ function ResearchPage() {
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-							className: "stagger-in mt-4 max-w-4xl font-display text-display font-medium tracking-display text-fg sm:text-display-lg",
-							children: home.title
+							className: "stagger-in mt-4 max-w-4xl font-display text-display tracking-display text-fire sm:text-display-lg",
+							children: withBrandNames(home.title)
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "stagger-in mt-5 max-w-2xl font-display text-xl leading-snug text-muted sm:text-2xl",
+							className: "stagger-in mt-5 max-w-2xl font-serif text-xl font-normal leading-snug text-muted sm:text-2xl",
 							children: home.subtitle
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
@@ -244,7 +260,7 @@ function ResearchPage() {
 								" ",
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 									className: "text-fg",
-									children: META.credit
+									children: withBrandNames(META.credit)
 								})
 							]
 						}),

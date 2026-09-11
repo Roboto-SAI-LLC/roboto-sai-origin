@@ -45,8 +45,8 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 xl:flex-row xl:items-center xl:justify-between sm:px-6">
         <div className="flex min-w-0 items-end justify-between gap-3">
           <Link to="/" className="min-w-0 rounded-sm">
-            <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-              {chrome.journal}
+            <p className="font-display text-kicker tracking-kicker text-primary uppercase">
+              Roboto SAI
             </p>
             <p className="mt-1 text-xs text-muted">
               {chrome.series} · {chrome.date}
@@ -56,7 +56,7 @@ export function SiteHeader() {
         </div>
 
         <details className="rounded-lg bg-surface px-4 py-1 shadow-paper xl:hidden">
-          <summary className="flex min-h-11 cursor-pointer list-none items-center gap-3 font-display text-sm font-medium text-fg">
+          <summary className="flex min-h-11 cursor-pointer list-none items-center gap-3 font-display text-sm text-fg">
             {chrome.menu}
           </summary>
           <div className="flex flex-col gap-2 pb-3">

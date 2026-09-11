@@ -1,11 +1,11 @@
 import { a as META } from "./research-BbnSBAkh.mjs";
 import { b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { C as CHROME, T as useLang, a as TEMPLAR_SECTIONS, i as TEMPLAR_REFERENCES, n as TEMPLAR_FINDINGS, o as TEMPLAR_TIMELINE, r as TEMPLAR_META, s as TEMPLAR_TOC, w as pick } from "./router-qoZEAWWR.mjs";
-import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
-import { n as TableOfContents } from "./table-of-contents-hdSLyoTs.mjs";
+import { C as CHROME, T as useLang, a as TEMPLAR_SECTIONS, i as TEMPLAR_REFERENCES, n as TEMPLAR_FINDINGS, o as TEMPLAR_TIMELINE, r as TEMPLAR_META, s as TEMPLAR_TOC, w as pick } from "./router-fRnNbUfD.mjs";
+import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-DrOVLZ7b.mjs";
+import { n as TableOfContents } from "./table-of-contents-CEJtM56s.mjs";
 import { t as PhotoFigure } from "./photo-figure-DU1ko3LL.mjs";
-import { n as SectionBody, r as YearTimeline } from "./timeline-hv_0dsdu.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/templars-DbuXCRsM.js
+import { n as SectionBody, r as YearTimeline } from "./timeline-zZEDFAbi.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/templars-DQTWQpKk.js
 var import_jsx_runtime = require_jsx_runtime();
 function TemplarPage() {
 	const { lang } = useLang();
@@ -35,11 +35,11 @@ function TemplarPage() {
 							children: meta.kicker
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-							className: "stagger-in mt-4 max-w-4xl font-display text-display font-medium tracking-display text-fg sm:text-display-lg",
+							className: "stagger-in mt-4 max-w-4xl font-display text-display tracking-display text-fire sm:text-display-lg",
 							children: meta.title
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "stagger-in mt-5 max-w-2xl font-display text-xl leading-snug text-muted sm:text-2xl",
+							className: "stagger-in mt-5 max-w-2xl font-serif text-xl font-normal leading-snug text-muted sm:text-2xl",
 							children: meta.subtitle
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {

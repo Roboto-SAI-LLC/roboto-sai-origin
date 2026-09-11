@@ -2,9 +2,9 @@ import { i as __toESM } from "../_runtime.mjs";
 import { a as META, n as BRIEF_TAGS, t as BRIEF_META } from "./research-BbnSBAkh.mjs";
 import { B as require_react, b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { c as Pause, s as Play } from "../_libs/lucide-react.mjs";
-import { C as CHROME, T as useLang } from "./router-qoZEAWWR.mjs";
-import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/brief-Dl0QHk0b.js
+import { C as CHROME, T as useLang } from "./router-fRnNbUfD.mjs";
+import { n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-DrOVLZ7b.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/brief-D02jCK1B.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var SRC = {
@@ -79,11 +79,11 @@ function BriefPage() {
 						children: meta.kicker
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-						className: "stagger-in mt-4 font-display text-display font-medium tracking-display text-fg sm:text-display-lg",
+						className: "stagger-in mt-4 font-display text-display tracking-display text-fire sm:text-display-lg",
 						children: meta.title
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "stagger-in mt-5 font-display text-xl leading-snug text-muted sm:text-2xl",
+						className: "stagger-in mt-5 font-serif text-xl font-normal leading-snug text-muted sm:text-2xl",
 						children: meta.subtitle
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {

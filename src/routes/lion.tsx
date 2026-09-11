@@ -87,7 +87,7 @@ function LionPage() {
           <p className="stagger-in font-display text-kicker font-medium tracking-kicker text-subtle uppercase">
             {copy.kicker} · {LION_META.sourceCount} {copy.sources}
           </p>
-          <h1 className="stagger-in mt-4 max-w-4xl font-display text-display font-bold italic tracking-display text-fire sm:text-display-lg">
+          <h1 className="stagger-in mt-4 max-w-4xl font-display text-display tracking-display text-fire sm:text-display-lg">
             {LION_META.title}
           </h1>
           <p className="stagger-in mt-5 max-w-2xl font-serif text-xl font-normal leading-snug text-muted sm:text-2xl">

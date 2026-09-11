@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { B as require_react, b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { C as CHROME, T as useLang } from "./router-qoZEAWWR.mjs";
-import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/dossier-NiZF11jn.js
+import { C as CHROME, T as useLang } from "./router-fRnNbUfD.mjs";
+import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-DrOVLZ7b.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/dossier-C8FNV9et.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var CLAIMS = [
@@ -1098,7 +1098,7 @@ function DossierPage() {
 						children: copy.kicker
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-						className: "mt-4 max-w-3xl font-display text-display font-medium tracking-display text-fg sm:text-display-lg",
+						className: "mt-4 max-w-3xl font-display text-display tracking-display text-fire sm:text-display-lg",
 						children: copy.title
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {

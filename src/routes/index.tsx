@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { EssaySearch } from "@/components/article/essay-search";
+import { withBrandNames } from "@/components/article/brand-word";
 import { EtymologyFigure } from "@/components/article/etymology-figure";
 import { ReadingProgress } from "@/components/article/reading-progress";
 import { SectionBody } from "@/components/article/section-body";
@@ -102,14 +103,14 @@ function ResearchPage() {
           <p className="stagger-in font-display text-kicker font-medium tracking-kicker text-subtle uppercase">
             {home.kicker} · {META.sourceCount} {home.sources}
           </p>
-          <h1 className="stagger-in mt-4 max-w-4xl font-display text-display font-bold italic tracking-display text-fire sm:text-display-lg">
-            {home.title}
+          <h1 className="stagger-in mt-4 max-w-4xl font-display text-display tracking-display text-fire sm:text-display-lg">
+            {withBrandNames(home.title)}
           </h1>
           <p className="stagger-in mt-5 max-w-2xl font-serif text-xl font-normal leading-snug text-muted sm:text-2xl">
             {home.subtitle}
           </p>
           <p className="stagger-in mt-6 text-sm text-muted">
-            {chrome.ui.by} <span className="text-fg">{META.credit}</span>
+            {chrome.ui.by} <span className="text-fg">{withBrandNames(META.credit)}</span>
           </p>
           {chrome.englishBody ? (
             <p className="stagger-in mt-4 max-w-2xl rounded-lg bg-surface px-4 py-3 text-sm leading-relaxed text-muted shadow-paper">

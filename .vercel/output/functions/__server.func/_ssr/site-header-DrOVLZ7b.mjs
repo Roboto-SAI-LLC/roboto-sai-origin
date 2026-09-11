@@ -2,10 +2,10 @@ import { i as __toESM } from "../_runtime.mjs";
 import { a as META, r as CITATION, t as BRIEF_META } from "./research-BbnSBAkh.mjs";
 import { B as require_react, b as require_jsx_runtime, d as useRouterState, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { i as Share2, l as Copy, u as Check } from "../_libs/lucide-react.mjs";
-import { C as CHROME, T as useLang, d as LION_CITATION, p as LION_META, r as TEMPLAR_META, x as GITHUB_URL } from "./router-qoZEAWWR.mjs";
+import { C as CHROME, T as useLang, d as LION_CITATION, p as LION_META, r as TEMPLAR_META, x as GITHUB_URL } from "./router-fRnNbUfD.mjs";
 import { t as clsx } from "../_libs/clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/site-header-D8A9BVRn.js
+//#region node_modules/.nitro/vite/services/ssr/assets/site-header-DrOVLZ7b.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function cn(...inputs) {
@@ -238,8 +238,8 @@ function SiteHeader() {
 						to: "/",
 						className: "min-w-0 rounded-sm",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "font-display text-kicker font-medium tracking-kicker text-primary uppercase",
-							children: chrome.journal
+							className: "font-display text-kicker tracking-kicker text-primary uppercase",
+							children: "Roboto SAI"
 						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 							className: "mt-1 text-xs text-muted",
 							children: [
@@ -253,7 +253,7 @@ function SiteHeader() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("details", {
 					className: "rounded-lg bg-surface px-4 py-1 shadow-paper xl:hidden",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("summary", {
-						className: "flex min-h-11 cursor-pointer list-none items-center gap-3 font-display text-sm font-medium text-fg",
+						className: "flex min-h-11 cursor-pointer list-none items-center gap-3 font-display text-sm text-fg",
 						children: chrome.menu
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "flex flex-col gap-2 pb-3",

@@ -1,10 +1,10 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { B as require_react, b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { C as CHROME, S as SITE_URL, T as useLang, _ as LION_TOC, b as REGISTERS, c as BLESSING, d as LION_CITATION, f as LION_FINDINGS, g as LION_TIMELINE, h as LION_SECTIONS, l as COMMENTARIES, m as LION_REFERENCES, p as LION_META, u as LEXICON, v as MERKABAH_FACES, y as PERSONAL_NAMES } from "./router-qoZEAWWR.mjs";
-import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
-import { n as TableOfContents, t as InlineText } from "./table-of-contents-hdSLyoTs.mjs";
+import { C as CHROME, S as SITE_URL, T as useLang, _ as LION_TOC, b as REGISTERS, c as BLESSING, d as LION_CITATION, f as LION_FINDINGS, g as LION_TIMELINE, h as LION_SECTIONS, l as COMMENTARIES, m as LION_REFERENCES, p as LION_META, u as LEXICON, v as MERKABAH_FACES, y as PERSONAL_NAMES } from "./router-fRnNbUfD.mjs";
+import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-DrOVLZ7b.mjs";
+import { n as TableOfContents, t as InlineText } from "./table-of-contents-CEJtM56s.mjs";
 import { t as PhotoFigure } from "./photo-figure-DU1ko3LL.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/lion-BGErnPJQ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/lion-DAbvJNFc.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function Hebrew({ children, className, size = "body" }) {
@@ -503,11 +503,11 @@ function LionPage() {
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-							className: "stagger-in mt-4 max-w-4xl font-display text-display font-medium tracking-display text-fg sm:text-display-lg",
+							className: "stagger-in mt-4 max-w-4xl font-display text-display tracking-display text-fire sm:text-display-lg",
 							children: LION_META.title
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "stagger-in mt-5 max-w-2xl font-display text-xl leading-snug text-muted sm:text-2xl",
+							className: "stagger-in mt-5 max-w-2xl font-serif text-xl font-normal leading-snug text-muted sm:text-2xl",
 							children: LION_META.subtitle
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {

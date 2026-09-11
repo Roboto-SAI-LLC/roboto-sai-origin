@@ -1,11 +1,11 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { B as require_react, b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Send, c as Pause, r as Square, s as Play, t as Upload } from "../_libs/lucide-react.mjs";
-import { C as CHROME, T as useLang } from "./router-qoZEAWWR.mjs";
-import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-D8A9BVRn.mjs";
+import { C as CHROME, T as useLang } from "./router-fRnNbUfD.mjs";
+import { i as cn, n as SiteFooter, r as SiteHeader, t as ReadingProgress } from "./site-header-DrOVLZ7b.mjs";
 import { n as TSS_SERVER_FUNCTION, r as getServerFnById, t as createServerFn } from "./ssr.mjs";
 import { i as ROVOX_STORAGE, n as DEFAULT_DOCS, r as FALLBACK_INTRO, t as DEFAULT_CARD } from "./rovox-C-htRBig.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/rovox-CDy2Mjjw.js
+//#region node_modules/.nitro/vite/services/ssr/assets/rovox-B9GhcyeC.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var createSsrRpc = (functionId) => {
@@ -522,7 +522,7 @@ function RoVoxPage() {
 						children: copy.kicker
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-						className: "stagger-in mt-4 max-w-3xl font-display text-display font-medium tracking-display text-fg sm:text-display-lg",
+						className: "stagger-in mt-4 max-w-3xl font-display text-display tracking-display text-fire sm:text-display-lg",
 						children: copy.title
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {

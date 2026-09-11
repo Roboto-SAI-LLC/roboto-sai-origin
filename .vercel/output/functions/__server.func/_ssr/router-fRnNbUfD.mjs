@@ -3,7 +3,7 @@ import { a as META, t as BRIEF_META } from "./research-BbnSBAkh.mjs";
 import { B as require_react, _ as createRootRoute, b as require_jsx_runtime, g as createFileRoute, h as lazyRouteComponent, l as Scripts, m as Outlet, p as createRouter, u as HeadContent, y as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-qoZEAWWR.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-fRnNbUfD.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var __defProp = Object.defineProperty;
@@ -826,8 +826,22 @@ var SITE_URL = "https://roboto-sai.org";
 var APP_NAME = "Roboto SAI";
 var APP_SHORT_NAME = "Roboto SAI";
 var GITHUB_URL = "https://github.com/Roboto-SAI-LLC/roboto-sai-origins";
-var styles_default = "/assets/styles-Du8Aj_3T.css";
+var styles_default = "/assets/styles-DViUcjeF.css";
 var DESCRIPTION = "Onomastic methodology from Roboto SAI: the names Roboto and Roberto, the 1274 Vila-real network, four clocks, Gur Aryeh, and the Temple on the Plana.";
+/** Same public-host guard the injector uses for og:image (no IPs, no Vercel system hosts). */
+function publicShareHost(url) {
+	try {
+		const host = new URL(url).hostname.toLowerCase();
+		if (!host || !/^[a-z0-9.-]+$/.test(host) || !host.includes(".")) return "";
+		if (/^\d{1,3}(?:\.\d{1,3}){3}$/.test(host)) return "";
+		if (host === "vercel.app" || host.endsWith(".vercel.app") || host === "vercel.com" || host.endsWith(".vercel.com")) return "";
+		return host;
+	} catch {
+		return "";
+	}
+}
+var host = publicShareHost(SITE_URL);
+var xBanner = host ? `https://${host}/x-banner.jpg` : "";
 var Route$7 = createRootRoute({
 	head: () => ({
 		meta: [
@@ -860,7 +874,21 @@ var Route$7 = createRootRoute({
 			{
 				name: "apple-mobile-web-app-title",
 				content: APP_SHORT_NAME
-			}
+			},
+			...xBanner ? [
+				{
+					property: "x:game:image",
+					content: xBanner
+				},
+				{
+					property: "x:game:image:width",
+					content: "1200"
+				},
+				{
+					property: "x:game:image:height",
+					content: "264"
+				}
+			] : []
 		],
 		links: [
 			{
@@ -888,7 +916,7 @@ var Route$7 = createRootRoute({
 			},
 			{
 				rel: "stylesheet",
-				href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,560;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Frank+Ruhl+Libre:ital,wght@0,400;0,500;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap"
+				href: "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Serif:GRAD,ital,opsz,wdth,wght@-50..100,0,8..144,50..150,100..900;-50..100,1,8..144,50..150,100..900&display=swap"
 			},
 			{
 				rel: "stylesheet",
@@ -932,7 +960,7 @@ var Route$7 = createRootRoute({
 		})]
 	})
 });
-var $$splitComponentImporter$6 = () => import("./routes-CGJ1drap.mjs");
+var $$splitComponentImporter$6 = () => import("./routes-Cve2TZz_.mjs");
 var Route$6 = createFileRoute("/")({
 	component: lazyRouteComponent($$splitComponentImporter$6, "component"),
 	head: () => ({ meta: [{ title: `${META.title} — ${APP_NAME}` }, {
@@ -940,7 +968,7 @@ var Route$6 = createFileRoute("/")({
 		content: META.description
 	}] })
 });
-var $$splitComponentImporter$5 = () => import("./atlas-BuaJD75w.mjs");
+var $$splitComponentImporter$5 = () => import("./atlas-U9mb1nQH.mjs");
 var Route$5 = createFileRoute("/atlas")({
 	component: lazyRouteComponent($$splitComponentImporter$5, "component"),
 	head: () => ({ meta: [{ title: `Network atlas — ${APP_NAME}` }, {
@@ -948,7 +976,7 @@ var Route$5 = createFileRoute("/atlas")({
 		content: "Prosopographical atlas of people named in the 1269–1274 Vila-real grants, and a later Monterrey migration node: surname density, Los Villarreales, La Mansión Villarreal."
 	}] })
 });
-var $$splitComponentImporter$4 = () => import("./brief-Dl0QHk0b.mjs");
+var $$splitComponentImporter$4 = () => import("./brief-D02jCK1B.mjs");
 var Route$4 = createFileRoute("/brief")({
 	component: lazyRouteComponent($$splitComponentImporter$4, "component"),
 	head: () => ({ meta: [{ title: `${BRIEF_META.en.title} — ${APP_NAME}` }, {
@@ -956,7 +984,7 @@ var Route$4 = createFileRoute("/brief")({
 		content: "One-page brief of five essays: Roboto and Roberto, the 1274 atlas, the dossier, Gur Aryeh, and the Templars. No citation numbers."
 	}] })
 });
-var $$splitComponentImporter$3 = () => import("./dossier-NiZF11jn.mjs");
+var $$splitComponentImporter$3 = () => import("./dossier-C8FNV9et.mjs");
 var Route$3 = createFileRoute("/dossier")({
 	component: lazyRouteComponent($$splitComponentImporter$3, "component"),
 	head: () => ({ meta: [{ title: `Dossier — ${APP_NAME}` }, {
@@ -1467,7 +1495,7 @@ var LION_REFERENCES = [
 	}
 ];
 var LION_CITATION = "Roboto SAI research with a Copilot. “Gur Aryeh: Hebrew lion symbolism, from Judah’s blessing to a Jewish emblem.” Roboto SAI Research, September 2026. https://roboto-sai.org/lion";
-var $$splitComponentImporter$2 = () => import("./lion-BGErnPJQ.mjs");
+var $$splitComponentImporter$2 = () => import("./lion-DAbvJNFc.mjs");
 var Route$2 = createFileRoute("/lion")({
 	component: lazyRouteComponent($$splitComponentImporter$2, "component"),
 	head: () => ({ meta: [{ title: `${LION_META.title} — ${APP_NAME}` }, {
@@ -1475,7 +1503,7 @@ var Route$2 = createFileRoute("/lion")({
 		content: LION_META.description
 	}] })
 });
-var $$splitComponentImporter$1 = () => import("./rovox-CDy2Mjjw.mjs");
+var $$splitComponentImporter$1 = () => import("./rovox-B9GhcyeC.mjs");
 var Route$1 = createFileRoute("/rovox")({
 	component: lazyRouteComponent($$splitComponentImporter$1, "component"),
 	head: () => ({ meta: [{ title: `RoVox — ${APP_NAME}` }, {
@@ -1887,7 +1915,7 @@ var TEMPLAR_REFERENCES = [
 		url: "https://www.britannica.com/topic/Order-of-Montesa"
 	}
 ];
-var $$splitComponentImporter = () => import("./templars-DbuXCRsM.mjs");
+var $$splitComponentImporter = () => import("./templars-DQTWQpKk.mjs");
 var Route = createFileRoute("/templars")({
 	component: lazyRouteComponent($$splitComponentImporter, "component"),
 	head: () => ({ meta: [{ title: `${TEMPLAR_META.en.title} — ${APP_NAME}` }, {

@@ -44,7 +44,7 @@
   --text-display-lg--line-height: 1.02;
 
   --tracking-kicker: 0.16em;
-  --tracking-display: -0.03em;
+  --tracking-display: -0.04em;
 
   --shadow-paper:
     0px 0px 0px 1px rgba(28, 25, 21, 0.06),
@@ -58,6 +58,9 @@
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+    font-kerning: normal;
+    font-synthesis: none;
     scroll-behavior: smooth;
   }
 
@@ -66,7 +69,12 @@
     color: var(--color-fg);
     font-family: var(--font-serif);
     font-weight: 450;
-    font-optical-sizing: auto;
+    font-style: normal;
+    font-optical-sizing: none;
+    font-stretch: 100%;
+    font-variation-settings: "opsz" 18, "GRAD" 0, "wdth" 100;
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: geometricPrecision;
   }
 
   button:not(:disabled),
@@ -78,19 +86,25 @@
   footer,
   nav {
     font-family: var(--font-serif);
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-variation-settings: "GRAD" 0;
+    font-weight: 550;
+    font-style: normal;
+    font-optical-sizing: none;
+    font-stretch: 94%;
+    font-variation-settings: "opsz" 28, "GRAD" 24, "wdth" 94;
+    letter-spacing: 0.01em;
   }
 
   h1 {
     text-wrap: balance;
     font-family: var(--font-display);
-    font-style: italic;
-    font-weight: 700;
-    font-optical-sizing: auto;
-    font-stretch: 100%;
-    font-variation-settings: "GRAD" 48;
+    font-style: normal;
+    font-weight: 650;
+    font-optical-sizing: none;
+    font-stretch: 90%;
+    font-variation-settings: "opsz" 144, "GRAD" 48, "wdth" 90;
+    letter-spacing: -0.04em;
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: geometricPrecision;
   }
 
   h2,
@@ -100,8 +114,12 @@
     font-family: var(--font-serif);
     font-style: normal;
     font-weight: 650;
-    font-optical-sizing: auto;
-    font-variation-settings: "GRAD" 18;
+    font-optical-sizing: none;
+    font-stretch: 92%;
+    font-variation-settings: "opsz" 60, "GRAD" 32, "wdth" 92;
+    letter-spacing: -0.03em;
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: geometricPrecision;
   }
 
   p {
@@ -158,16 +176,18 @@
 
 .drop-cap::first-letter {
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 650;
   font-size: 4.25rem;
   line-height: 0.82;
   float: left;
   padding-right: 0.5rem;
   padding-top: 0.35rem;
   color: var(--color-ember);
-  font-optical-sizing: auto;
-  font-variation-settings: "GRAD" 48;
+  font-optical-sizing: none;
+  font-stretch: 90%;
+  font-variation-settings: "opsz" 144, "GRAD" 48, "wdth" 90;
+  text-rendering: geometricPrecision;
 }
 
 .text-fire {
@@ -181,6 +201,14 @@
   background-clip: text;
   color: var(--color-ember);
   -webkit-text-fill-color: transparent;
+}
+
+/* Same Roboto Serif instance as the parent — no extra weight, no mixed cut */
+.brand-word {
+  font: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  text-rendering: geometricPrecision;
 }
 
 .paper-grain {
