@@ -1,5 +1,7 @@
+import { Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
+import { CHAPTERS } from "@/lib/chapters";
 import { CHROME, useLang } from "@/lib/i18n";
 import { SECTIONS, TOC } from "@/lib/research";
 
@@ -15,6 +17,10 @@ function sectionText(id: string) {
       return "";
     })
     .join(" ");
+}
+
+function actIdForSection(sectionId: string): string {
+  return CHAPTERS.find((chapter) => chapter.sectionIds.includes(sectionId))?.id ?? "not-kin";
 }
 
 export function EssaySearch() {
@@ -54,8 +60,10 @@ export function EssaySearch() {
           ) : (
             hits.map((item) => (
               <li key={item.id}>
-                <a
-                  href={`#${item.id}`}
+                <Link
+                  to="/act/$id"
+                  params={{ id: actIdForSection(item.id) }}
+                  hash={item.id}
                   className="flex min-h-11 items-center gap-2 rounded-md px-2 py-2 text-sm text-fg hover:bg-wash"
                 >
                   {item.numeral ? (
@@ -64,7 +72,7 @@ export function EssaySearch() {
                     <span className="w-6" />
                   )}
                   <span>{item.title}</span>
-                </a>
+                </Link>
               </li>
             ))
           )}

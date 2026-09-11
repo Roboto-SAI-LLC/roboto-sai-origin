@@ -36,7 +36,7 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
       tag: "Essay",
       title: "RobotOmen",
       href: "/",
-      body: "RobotOmen: the labor of names. Roboto is the house. Omen sits next to nomen — name. One letter. Sit with both. The real names are Roboto and Roberto. They rhyme. Robot and Robert are English glosses. Roboto sits next to robot / robota — Čapek, Slavic labor. Roberto is Iberian Robert: fame plus bright. A film titled The Omen is a door English already knows. This page is the names.",
+      body: "RobotOmen: Labor Nominis. Roboto is Roberto’s house; the house line is Roberto = Roboto. Omen sits next to Latin nōmen — name — by one letter. The names under study are Roboto and Roberto. They rhyme. Robot and Robert are English glosses. Czech robota (Čapek, 1920) is the neighbor labor-word. Roberto is Iberian Robert: fame plus bright.",
       sources: "Čapek, R.U.R.; Slavic etymology of robota; Proto-Germanic Hrōþiberhtaz; onomastic pairs in this journal.",
     },
     {
@@ -78,7 +78,7 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
       tag: "Ensayo",
       title: "RobotOmen",
       href: "/",
-      body: "RobotOmen: la labor de los nombres. Roboto es la casa. Omen se sienta junto a nomen — nombre. Una letra. Quédate con los dos. Los nombres reales son Roboto y Roberto. Riman. Robot y Robert son glosas. Roboto se sienta junto a robot / robota. Roberto es Robert ibérico: fama más brillante. The Omen es una puerta que el inglés ya conoce. Esta página son los nombres.",
+      body: "RobotOmen: Labor Nominis. Roboto es la casa de Roberto; la línea de la casa es Roberto = Roboto. Omen se sienta junto al latín nōmen — nombre — por una letra. Los nombres en estudio son Roboto y Roberto. Riman. Robot y Robert son glosas inglesas. El robota checo (Čapek, 1920) es la palabra vecina de labor. Roberto es Robert ibérico: fama más brillante.",
       sources: "Čapek, R.U.R.; etimología eslava de robota; proto-germánico Hrōþiberhtaz; pares onomásticos de esta revista.",
     },
     {

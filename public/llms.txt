@@ -9,7 +9,7 @@ Source: https://github.com/Roboto-SAI-LLC/roboto-sai-origins
 Access: public, non-commercial, no ads, no paid tiers
 
 # RobotOmen
-The Labor of Names
+Labor Nominis
 
 roboto-sai.org is an interactive, non-commercial digital research journal created by Roberto Villarreal Martinez. Dedicated to anthroponymy, etymology, and historical name migrations, the platform features interactive documentary chapters and timelines. It analyzes the linguistic, cultural, and religious lineages of names by examining historical charters, regional records, and scriptural references for academic research.
 
@@ -72,7 +72,7 @@ James I; Infant Pere (later Peter III); Simó de Sant Feliu (notary); Paris the 
 - 2020: Los Villarreales census, 633 inhabitants
 
 ## Suggested citation
-Villarreal Martinez, Roberto. “RobotOmen: The Labor of Names.” Roboto SAI Research, September 2026. https://roboto-sai.org
+Villarreal Martinez, Roberto. “RobotOmen: Labor Nominis.” Roboto SAI Research, September 2026. https://roboto-sai.org
 
 ## Note
 All factual claims are grounded in the 46 references listed on the page. Where inscription content, a 1429 expulsion, a named Villarreal lineage in 1274, a municipality called Villarreal de los Monterrey, a 50,000-year Hebrew-Egyptian people, or a published Villarreal treasure tied to a pope is not in the cited source, the gap is stated rather than filled.

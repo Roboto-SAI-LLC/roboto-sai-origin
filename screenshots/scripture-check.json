@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/scripture",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Scripture — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 937,
+      "bodyTextHash": "4de142cb1652bf55a3cf921bb1af8e2c589c33feeac9ab86d6afc864eee046d1",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/scripture-check.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Scripture — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 913,
+      "bodyTextHash": "18cb44dda76dec2e0d698bd8aaf23a01336c4655a83c84602890bf06d03826d7",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/scripture-check-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/scripture-check.json"
+}

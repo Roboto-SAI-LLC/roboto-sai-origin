@@ -1,29 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { withBrandNames } from "@/components/article/brand-word";
-import { ClockMap } from "@/components/article/clock-map";
-import { ChapterPlate } from "@/components/article/chapter-plate";
-import { ChapterRail } from "@/components/article/chapter-rail";
-import { EssaySearch } from "@/components/article/essay-search";
-import { EtymologyFigure } from "@/components/article/etymology-figure";
 import { ReadingProgress } from "@/components/article/reading-progress";
-import { SectionBody } from "@/components/article/section-body";
+import { ScripturePull } from "@/components/article/scripture-pull";
 import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
-import { HistoryTimeline } from "@/components/article/timeline";
-import { CHAPTERS, sectionsForChapter } from "@/lib/chapters";
+import { CHAPTERS } from "@/lib/chapters";
 import { CHROME, useLang } from "@/lib/i18n";
-import { CITATION, META, REFERENCES } from "@/lib/research";
+import { CITATION, META } from "@/lib/research";
 import { APP_NAME, AUTHOR, SITE_URL } from "@/lib/site";
 
-const ACT_IDS = new Set([
-  "not-kin",
-  "villa-regalis",
-  "sound-sense",
-  "record-gap",
-  "four-clocks",
-  "references",
-]);
+const ACT_IDS = new Set(CHAPTERS.map((chapter) => chapter.id));
 
 export const Route = createFileRoute("/")({
   validateSearch: (raw: Record<string, unknown>): { act?: string } => {
@@ -63,181 +50,66 @@ function ResearchPage() {
   const navigate = Route.useNavigate();
 
   useEffect(() => {
-    const fromHash = window.location.hash.replace(/^#/, "");
-    if (fromHash && ACT_IDS.has(fromHash)) {
-      void navigate({ search: { act: fromHash }, replace: true });
-      return;
+    if (act && ACT_IDS.has(act)) {
+      void navigate({ to: "/act/$id", params: { id: act }, replace: true });
     }
-    if (!act) {
-      window.scrollTo({ top: 0, behavior: "auto" });
-      return;
-    }
-    document.getElementById(act)?.scrollIntoView({ behavior: "auto", block: "start" });
   }, [act, navigate]);
 
   return (
-    <div className="relative bg-bg text-fg">
+    <div className="bg-bg text-fg">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <ReadingProgress />
-
-      <Link
-        to="/"
-        search={{ act: "not-kin" }}
-        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-surface focus:px-3 focus:py-2"
-      >
-        {chrome.skip}
-      </Link>
-
       <SiteHeader />
 
-      <main>
-        <section className="relative isolate min-h-[88svh] overflow-hidden bg-obsidian text-primary-fg">
-          <img
-            src="/brand/glow-wide.png"
-            alt=""
-            className="absolute inset-0 size-full object-cover opacity-90"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/25" />
-          <div className="relative z-10 mx-auto flex min-h-[88svh] max-w-3xl flex-col justify-end px-4 py-16 sm:px-6 sm:py-24">
-            <img
-              src="/brand/mark.png"
-              alt=""
-              className="mb-8 h-20 w-20 rounded-full object-cover"
-            />
-            <p className="flex flex-wrap items-center gap-x-3 gap-y-2 font-display text-kicker font-medium tracking-kicker text-gold uppercase">
-              <span>{chrome.series}</span>
+      <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+        <img src="/brand/mark.png" alt="" className="h-16 w-16 rounded-full object-cover" />
+        <p className="mt-8 font-display text-kicker font-medium tracking-kicker text-primary uppercase">
+          {chrome.series} · {META.sourceCount} {home.sources}
+        </p>
+        <h1 className="mt-4 font-display text-4xl tracking-display text-fg sm:text-6xl">
+          {withBrandNames(home.title)}
+        </h1>
+        <p className="mt-5 font-serif text-2xl leading-snug text-muted">{home.subtitle}</p>
+        <p className="mt-6 text-sm text-muted">
+          {chrome.ui.by} {withBrandNames(META.credit)}
+        </p>
+
+        <ol className="mt-12 grid gap-3 sm:grid-cols-3">
+          {home.findings.slice(0, 3).map((finding) => (
+            <li key={finding.kicker} className="rounded-lg border border-border bg-surface px-4 py-4">
+              <p className="font-display text-kicker tracking-kicker text-primary uppercase">{finding.kicker}</p>
+              <p className="mt-2 max-w-prose text-sm leading-relaxed text-fg">{finding.text}</p>
+            </li>
+          ))}
+        </ol>
+
+        <ScripturePull query={lang === "es" ? "Juan 1:1-5" : "John 1:1-5"} />
+
+        <ol className="mt-6 divide-y divide-border border-y border-border">
+          {CHAPTERS.map((chapter) => (
+            <li key={chapter.id}>
               <Link
-                to="/"
-                search={{ act: "references" }}
-                className="inline-flex min-h-11 items-center rounded-full bg-gold/15 px-3.5 text-gold transition-colors duration-150 hover:bg-gold/25"
+                to="/act/$id"
+                params={{ id: chapter.id }}
+                className="flex gap-4 py-5 no-underline hover:bg-wash"
               >
-                {META.sourceCount} {home.sources}
+                <span className="w-8 shrink-0 font-display text-sm text-primary">{chapter.numeral}</span>
+                <span>
+                  <span className="block font-display text-xl text-fg">{chapter.title[lang]}</span>
+                  <span className="mt-1 block text-sm leading-relaxed text-muted">{chapter.dek[lang]}</span>
+                </span>
               </Link>
-            </p>
-            <h1 className="mt-4 font-display text-4xl tracking-display text-primary-fg sm:text-6xl">
-              {withBrandNames(home.title)}
-            </h1>
-            <p className="mt-5 max-w-xl text-xl leading-snug text-primary-fg sm:text-2xl">{home.subtitle}</p>
-            <p className="mt-6 text-sm text-primary-fg/80">
-              {chrome.ui.by} {withBrandNames(META.credit)}
-            </p>
-            <ol className="mt-10 grid gap-3 sm:grid-cols-3">
-              {home.findings.slice(0, 3).map((finding) => (
-                <li
-                  key={finding.kicker}
-                  className="rounded-lg bg-obsidian/75 px-4 py-4 ring-1 ring-gold/25"
-                >
-                  <p className="font-display text-kicker tracking-kicker text-gold uppercase">{finding.kicker}</p>
-                  <p className="mt-2 max-w-prose text-sm leading-relaxed text-primary-fg">{finding.text}</p>
-                </li>
-              ))}
-            </ol>
-            <Link
-              to="/"
-              search={{ act: "not-kin" }}
-              className="mt-10 inline-flex min-h-11 w-fit items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg transition-transform duration-150 ease-out active:scale-[0.96]"
-            >
-              {lang === "es" ? "Empezar el acto I" : "Begin act I"}
-            </Link>
-            <Link
-              to="/"
-              search={{ act: "not-kin" }}
-              className="mt-5 inline-flex min-h-11 items-center font-display text-kicker tracking-kicker text-gold uppercase"
-            >
-              {lang === "es" ? "↓ Acto I · La labor" : "↓ Act I · The labor"}
-            </Link>
-          </div>
-        </section>
+            </li>
+          ))}
+        </ol>
 
-        <div className="h-px bg-gradient-to-r from-transparent via-gold to-transparent" aria-hidden="true" />
-
-        {CHAPTERS.map((chapter, index) => {
-          const sections = sectionsForChapter(chapter);
-          return (
-            <section key={chapter.id} aria-labelledby={chapter.id} className="bg-bg">
-              <ChapterPlate chapter={chapter} />
-              <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[13rem_1fr] lg:py-16">
-                <aside className="no-print min-w-0 lg:sticky lg:top-6 lg:self-start">
-                  {index === 0 ? (
-                    <details className="rounded-lg bg-surface px-4 py-3 shadow-paper lg:hidden">
-                      <summary className="flex min-h-11 cursor-pointer list-none items-center font-display text-sm font-medium text-fg">
-                        {lang === "es" ? "Actos" : "Acts"}
-                      </summary>
-                      <ChapterRail className="mt-3 pb-2" />
-                    </details>
-                  ) : null}
-                  <div className="hidden lg:block">
-                    <ChapterRail />
-                  </div>
-                  {index === 0 ? (
-                    <div className="mt-4 hidden lg:block">
-                      <EssaySearch />
-                    </div>
-                  ) : null}
-                </aside>
-                <article className="min-w-0 max-w-3xl">
-                  {chapter.id === "not-kin" ? <EtymologyFigure /> : null}
-                  {chapter.id === "record-gap" ? (
-                    <>
-                      <h3 className="mb-2 font-display text-2xl font-medium tracking-tight text-fg">
-                        {home.chronology}
-                      </h3>
-                      <p className="mb-4 text-article text-muted">{home.chronologyLead}</p>
-                      <HistoryTimeline />
-                    </>
-                  ) : null}
-                  {sections.map((section) => (
-                    <div key={section.id} className="mt-12 first:mt-0">
-                      <SectionBody section={section} />
-                    </div>
-                  ))}
-                  {chapter.id === "villa-regalis" ? (
-                    <div className="mt-12">
-                      <ClockMap compact />
-                    </div>
-                  ) : null}
-                </article>
-              </div>
-            </section>
-          );
-        })}
-
-        <section
-          id="references"
-          className="mx-auto max-w-3xl px-4 py-16 sm:px-6"
-          aria-labelledby="references-title"
-        >
-          <h2 id="references-title" className="font-display text-2xl font-medium tracking-tight text-fg sm:text-3xl">
-            {home.references}
-          </h2>
-          <ol className="mt-6 space-y-4">
-            {REFERENCES.map((reference) => (
-              <li id={`ref-${reference.n}`} key={reference.n} className="scroll-mt-24 text-sm leading-relaxed text-fg">
-                <span className="mr-2 font-display text-primary">{reference.n}.</span>
-                <span>{reference.source}. </span>
-                <a
-                  href={reference.url}
-                  className="text-primary underline decoration-border underline-offset-4 hover:decoration-primary"
-                  rel="noopener noreferrer"
-                >
-                  {reference.title}
-                </a>
-                .
-              </li>
-            ))}
-          </ol>
-          <section className="mt-12 rounded-xl bg-surface px-5 py-5 shadow-paper">
-            <h2 className="font-display text-lg font-medium text-fg">{chrome.cite}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-muted">{CITATION}</p>
-            <p className="mt-4 text-sm text-subtle">
-              {home.llms}{" "}
-              <a href="/llms.txt" className="text-primary underline underline-offset-4">
-                /llms.txt
-              </a>
-              .
-            </p>
-          </section>
-        </section>
+        <p className="mt-10 text-sm text-muted">{CITATION}</p>
+        <p className="mt-3 text-sm text-subtle">
+          {home.llms}{" "}
+          <a href="/llms.txt" className="text-primary underline underline-offset-4">
+            /llms.txt
+          </a>
+        </p>
       </main>
 
       <SiteFooter />

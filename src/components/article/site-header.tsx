@@ -1,88 +1,49 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { LangToggle } from "@/components/article/lang-toggle";
-import { ShareBar } from "@/components/article/share-bar";
 import { CHROME, useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
-
-function InstrumentLinks({
-  pathname,
-  className,
-}: {
-  pathname: string;
-  className?: string;
-}) {
-  const { lang } = useLang();
-  const chrome = CHROME[lang];
-  const items = chrome.nav.filter((item) => item.to !== "/");
-
-  return (
-    <nav className={className} aria-label={lang === "es" ? "Instrumentos" : "Instruments"}>
-      {items.map((item) => {
-        const active = pathname === item.to;
-        return (
-          <Link
-            key={item.to}
-            to={item.to}
-            className={cn(
-              "inline-flex min-h-11 items-center rounded-md px-3.5 text-sm font-medium transition-colors duration-150",
-              active ? "bg-primary text-primary-fg" : "bg-surface text-fg shadow-paper hover:bg-wash",
-            )}
-          >
-            {item.label}
-          </Link>
-        );
-      })}
-    </nav>
-  );
-}
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { lang } = useLang();
   const chrome = CHROME[lang];
-  const onFilm = pathname === "/";
+
+  const links = [
+    { to: "/" as const, label: lang === "es" ? "Índice" : "Index" },
+    { to: "/atlas" as const, label: chrome.nav.find((n) => n.to === "/atlas")?.label ?? "Atlas" },
+    { to: "/dossier" as const, label: "Dossier" },
+    { to: "/scripture" as const, label: lang === "es" ? "Escritura" : "Scripture" },
+  ];
 
   return (
-    <header
-      className={cn(
-        onFilm
-          ? "absolute inset-x-0 top-0 z-20 border-b-0 bg-gradient-to-b from-obsidian/70 to-transparent"
-          : "border-b border-border bg-bg/90 backdrop-blur-sm",
-      )}
-    >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-        <Link to="/" search={{ act: undefined }} className="flex min-w-0 items-center gap-3 rounded-sm">
-          <img
-            src="/brand/mark.png"
-            alt=""
-            className="h-9 w-9 rounded-full object-cover"
-          />
+    <header className="border-b border-border bg-bg">
+      <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <Link to="/" className="flex min-w-0 items-center gap-3 rounded-sm">
+          <img src="/brand/mark.png" alt="" className="h-8 w-8 rounded-full object-cover" />
           <span>
-          <p className={cn("font-display text-kicker tracking-kicker uppercase", onFilm ? "text-gold" : "text-primary")}>
-            Roboto SAI
-          </p>
-          <p className={cn("mt-0.5 text-xs", onFilm ? "text-primary-fg/75" : "text-muted")}>
-            {onFilm
-              ? lang === "es"
-                ? "RobotOmen · cinco actos"
-                : "RobotOmen · five acts"
-              : `${chrome.series} · ${chrome.date}`}
-          </p>
+            <p className="font-display text-kicker tracking-kicker text-primary uppercase">Roboto SAI</p>
+            <p className="mt-0.5 text-xs text-muted">Labor Nominis</p>
           </span>
         </Link>
 
-        <div className="flex items-center gap-2">
+        <nav className="flex flex-wrap items-center gap-x-1 gap-y-1" aria-label={lang === "es" ? "Principal" : "Primary"}>
+          {links.map((item) => {
+            const active = item.to === "/" ? pathname === "/" : pathname === item.to || pathname.startsWith(`${item.to}/`);
+            return (
+              <Link
+                key={item.to}
+                to={item.to}
+                className={cn(
+                  "inline-flex min-h-11 items-center px-2.5 text-sm transition-colors duration-150 sm:px-3",
+                  active ? "text-fg" : "text-muted hover:text-fg",
+                )}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
           <LangToggle />
-          <details className="relative">
-            <summary className="flex min-h-11 cursor-pointer list-none items-center rounded-md bg-surface px-3.5 text-sm font-medium text-fg shadow-paper">
-              {lang === "es" ? "Instrumentos" : "Instruments"}
-            </summary>
-            <div className="absolute right-0 z-40 mt-2 flex min-w-52 flex-col gap-2 rounded-lg bg-surface p-3 shadow-paper">
-              <InstrumentLinks pathname={pathname} className="flex flex-col gap-2" />
-              <ShareBar />
-            </div>
-          </details>
-        </div>
+        </nav>
       </div>
     </header>
   );

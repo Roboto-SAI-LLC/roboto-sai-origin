@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useMemo, useState, type FormEvent } from "react";
+import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { ReadingProgress } from "@/components/article/reading-progress";
 import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
@@ -36,7 +36,7 @@ function ScripturePage() {
         ? {
             kicker: "Instrumento",
             title: "Escritura",
-            dek: "Cita KJV o LBLA. La llave se queda en el servidor. No va en una URL pública.",
+            dek: "Citas KJV y LBLA por el servidor de la casa. Uso no comercial.",
             look: "Buscar",
             looking: "Buscando…",
             ref: "Referencia",
@@ -45,7 +45,7 @@ function ScripturePage() {
         : {
             kicker: "Instrument",
             title: "Scripture",
-            dek: "Quote KJV or LBLA. The key stays on the server. It does not ride a public URL.",
+            dek: "KJV and LBLA quotes through the house server. Non-commercial use.",
             look: "Look up",
             looking: "Looking…",
             ref: "Reference",
@@ -53,6 +53,30 @@ function ScripturePage() {
           },
     [lang],
   );
+
+  useEffect(() => {
+    let cancelled = false;
+    setBusy(true);
+    void lookupScripture({ data: { bibleId, query } })
+      .then((passage) => {
+        if (cancelled) return;
+        setResult(passage);
+        setError(null);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setResult(null);
+        setError(copy.missing);
+      })
+      .finally(() => {
+        if (!cancelled) setBusy(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+    // First paint only — later lookups go through the form.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   async function onSubmit(event: FormEvent) {
     event.preventDefault();

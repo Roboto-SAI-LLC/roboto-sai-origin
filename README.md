@@ -6,7 +6,7 @@ Canonical site: [https://roboto-sai.org](https://roboto-sai.org)
 
 Fully public. No ads. No paid tiers.
 
-The title is **RobotOmen: The Labor of Names**. Roboto is Roberto’s house. He named it.
+The title is **RobotOmen: Labor Nominis**. Roboto is Roberto’s house. He named it.
 
 Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com.
 
@@ -15,7 +15,7 @@ Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com
 
 | Route | Page | Language |
 | --- | --- | --- |
-| `/` | Essay: RobotOmen — The Labor of Names | Chrome bilingual; body English |
+| `/` | Essay: RobotOmen — Labor Nominis | Chrome bilingual; body English |
 | `/atlas` | 1274 network + Monterrey node | Chrome bilingual; body English |
 | `/dossier` | Claims, carta pobla, chronicle, four clocks | Chrome bilingual; body English |
 | `/lion` | Gur Aryeh | Chrome bilingual; body English |
@@ -29,7 +29,7 @@ Plain-text brief for machines: [`/llms.txt`](https://roboto-sai.org/llms.txt)
 
 - **Roboto SAI** — publisher, masthead, and the name on the home screen.
 - **Roboto / Roberto** — the names under study (house and given name). Robot / Robert are English glosses.
-- **RobotOmen** — series and film title: The Labor of Names.
+- **RobotOmen** — series and film title: Labor Nominis.
 - **Roboto / Roberto** — house and founder. Robot / Robert are English glosses.
 - **Roboto SAI Research** — bibliographic journal name in citations, so existing cites keep working.
 - **Gur Aryeh** — the mythic register (Judah’s animal). Adjacent, not the journal title.

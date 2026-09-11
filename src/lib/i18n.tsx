@@ -78,21 +78,21 @@ export const CHROME = {
     ] satisfies NavItem[],
     home: {
       title: "RobotOmen",
-      subtitle: "The Labor of Names",
-      kicker: "The labor of names",
+      subtitle: "Labor Nominis",
+      kicker: "Labor Nominis",
       sources: "sources",
       findings: [
         {
-          kicker: "RobotOmen",
-          text: "Roboto is the house. Omen sits next to nomen — name. One letter. Sit with both. The labor is the names.",
+          kicker: "Roots",
+          text: "House line: Roberto = Roboto. Neighbor gloss: Czech robota, Čapek 1920, from Slavic labor vocabulary. Given name: Iberian Roberto < Proto-Germanic *Hrōþiberhtaz (fame + bright). Latin nōmen = name.",
         },
         {
-          kicker: "House name",
-          text: "Roboto is Roberto’s house. He named it. The house line is Roberto = Roboto. Robot / robota is the neighbor word — Čapek, 1920 — not the founder.",
+          kicker: "Scope",
+          text: "Vila-real, Castellón: carta pobla 20 February 1274 (Ville Regalis). Later clock: Los Villarreales, Salinas Victoria, Nuevo León (INEGI 190450118).",
         },
         {
-          kicker: "Given name",
-          text: "Roberto is the Iberian form of Robert: Proto-Germanic *Hrōþiberhtaz — fame + bright — carried by dukes, kings, and saints.",
+          kicker: "Sources",
+          text: "46 cited works. Primary: 1274 naming clause. Scripture quotes: KJV and LBLA via API.Bible, non-commercial.",
         },
         {
           kicker: "Sound vs sense",
@@ -104,7 +104,7 @@ export const CHROME = {
         },
         {
           kicker: "Four clocks",
-          text: "Documents, DNA, family memory, and place keep different time. Hold them. Hear which one is sounding.",
+          text: "Documents, DNA, family memory, and place keep different time. Each clock is dated on its own.",
         },
       ],
       newKicker: "New in this edition",
@@ -134,7 +134,7 @@ export const CHROME = {
       leadMonterrey:
         "A modern migration node: Villarreal saturating Monterrey, the Los Villarreales locality in Salinas Victoria, and La Mansión Villarreal in the centro. Building and gazetteer — not the news cycle.",
       leadMap:
-        "A surveyed map. Vila-real 1274 and Los Villarreales sit thousands of kilometres apart. Same name-shape. Two clocks. Do not merge them.",
+        "A surveyed map. Vila-real 1274 and Los Villarreales sit thousands of kilometres apart. Same name-shape. Two clocks.",
       leadNetwork:
         "People actually named in the Vila-real grants, the neighboring Temple, and the aljama — kept in three columns: in the record, adjacent, not in the record.",
       noteBefore: "Full argument is in the",
@@ -258,21 +258,21 @@ export const CHROME = {
     ] satisfies NavItem[],
     home: {
       title: "RobotOmen",
-      subtitle: "La labor de los nombres",
-      kicker: "La labor de los nombres",
+      subtitle: "Labor Nominis",
+      kicker: "Labor Nominis",
       sources: "fuentes",
       findings: [
         {
-          kicker: "RobotOmen",
-          text: "Roboto es la casa. Omen se sienta junto a nomen — nombre. Una letra. Quédate con los dos. La labor son los nombres.",
+          kicker: "Raíces",
+          text: "Línea de la casa: Roberto = Roboto. Glosa vecina: robota checo, Čapek 1920, del vocabulario eslavo de labor. Nombre de pila: Roberto ibérico < proto-germánico *Hrōþiberhtaz (fama + brillante). Latín nōmen = nombre.",
         },
         {
-          kicker: "Nombre de casa",
-          text: "Roboto es la casa de Roberto. Él la nombró. La línea de la casa es Roberto = Roboto. Robot / robota es la palabra vecina — Čapek, 1920 — no el fundador.",
+          kicker: "Ámbito",
+          text: "Vila-real, Castellón: carta pobla 20 de febrero de 1274 (Ville Regalis). Reloj posterior: Los Villarreales, Salinas Victoria, Nuevo León (INEGI 190450118).",
         },
         {
-          kicker: "Nombre de pila",
-          text: "Roberto es la forma ibérica de Robert: proto-germánico *Hrōþiberhtaz — fama + brillante — llevado por duques, reyes y santos.",
+          kicker: "Fuentes",
+          text: "46 obras citadas. Primaria: cláusula de nombramiento de 1274. Citas bíblicas: KJV y LBLA por API.Bible, no comercial.",
         },
         {
           kicker: "Sonido y sentido",
@@ -284,7 +284,7 @@ export const CHROME = {
         },
         {
           kicker: "Cuatro relojes",
-          text: "Documentos, ADN, memoria de familia y lugar llevan tiempos distintos. Fecha cada reloj. No los fundas.",
+          text: "Documentos, ADN, memoria de familia y lugar llevan tiempos distintos. Cada reloj se fecha por su cuenta.",
         },
       ],
       newKicker: "Nuevo en esta edición",
@@ -314,7 +314,7 @@ export const CHROME = {
       leadMonterrey:
         "Un nodo moderno de migración: Villarreal saturando Monterrey, la localidad Los Villarreales en Salinas Victoria, y La Mansión Villarreal en el centro. Edificio y gazetero — no el ciclo de noticias.",
       leadMap:
-        "Un mapa levantado. Vila-real 1274 y Los Villarreales quedan a miles de kilómetros. Misma forma de nombre. Dos relojes. No los fundas.",
+        "Un mapa levantado. Vila-real 1274 y Los Villarreales quedan a miles de kilómetros. Misma forma de nombre. Dos relojes.",
       leadNetwork:
         "Personas realmente nombradas en las mercedes de Vila-real, el Templo vecino y la aljama — en tres columnas: en el acta, al lado, no en el acta.",
       noteBefore: "El argumento completo está en el",

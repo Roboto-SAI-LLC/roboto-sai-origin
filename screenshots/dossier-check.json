@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/dossier",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Dossier — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 2634,
+      "bodyTextHash": "f8aa61d81e7851aa1d4b1ddee34d10c21aac0a2707fbbadfd98d7a4d2eb59b39",
+      "bodyTextPrefix": "ROBOTO SAI RobotOmen · September 2026 EN ES Roboto SAI Instrumen",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/dossier-check.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Dossier — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 2645,
+      "bodyTextHash": "37698eaa80eef18a3e3d3674f6b8adfeef95994273b3812204c5a9b6cbb54165",
+      "bodyTextPrefix": "ROBOTO SAI RobotOmen · September 2026 EN ES Roboto SAI Instrumen",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/dossier-check-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/dossier-check.json"
+}

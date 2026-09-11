@@ -17,12 +17,12 @@ export const META = {
   journal: "Roboto SAI Research",
   series: "RobotOmen",
   title: "RobotOmen",
-  subtitle: "The Labor of Names",
+  subtitle: "Labor Nominis",
   credit: "Roberto Villarreal Martinez, Roboto SAI research with a Copilot",
   date: "September 2026",
   sourceCount: 46,
   description:
-    "Roboto SAI (RobotOmen: The Labor of Names) is an interactive, non-commercial digital research journal dedicated to anthroponymy, etymology, and historical name migrations. Interactive documentary chapters and timelines examine historical charters, regional records, and scriptural references for academic research.",
+    "Roboto SAI (RobotOmen: Labor Nominis) is an interactive, non-commercial digital research journal dedicated to anthroponymy, etymology, and historical name migrations. Interactive documentary chapters and timelines examine historical charters, regional records, and scriptural references for academic research.",
 };
 export const FINDINGS = [
   {
@@ -47,7 +47,7 @@ export const FINDINGS = [
   },
   {
     kicker: "Four clocks",
-    text: "Documents, DNA, family memory, and place keep different time. Date each clock. Do not merge them."
+    text: "Documents, DNA, family memory, and place keep different time. Each clock is dated on its own."
   }
 ];
 export const TOC = [
@@ -171,15 +171,15 @@ export const SECTIONS: Section[] = [
       {
         type: "p",
         dropCap: true,
-        text: "RobotOmen is the title of this labor. Roboto is the house. Omen sits next to nomen — Latin for name — by one letter. Sit with both. The names under study are Roboto and Roberto. Robot and Robert are English glosses that rhyme beside them."
+        text: "RobotOmen is the title of this labor. Labor Nominis is the subtitle. Roboto is Roberto’s house; the house line is Roberto = Roboto. Omen sits one letter from Latin nōmen, name. The names under study are Roboto and Roberto. Robot and Robert are English glosses that rhyme beside them."
       },
       {
         type: "p",
-        text: "Roboto is Roberto’s house. He named it. The house’s own line is Roberto = Roboto. Robot and robota — Čapek, 1920, a Slavic labor word that English borrowed — sit beside that name as look-alikes. They did not found the house. Roberto is also the Iberian form of Robert — fame plus bright. A 1976 film used Damien and a father named Robert. That register is a story people already know how to enter. This page is the names."
+        text: "Czech robota — Čapek, 1920, a Slavic labor word English borrowed as robot — is the neighbor gloss. It did not found the house. Roberto is the Iberian form of Robert: fame plus bright. A 1976 film used Damien and a father named Robert; that register is adjacent, not the naming of this journal."
       },
       {
         type: "p",
-        text: "It also walks similar-sounding names with different lives — Yisroel and Israel, Villarreal and Martinez — and the charge a name can carry, including Martinez beside Mars. The reader is invited to hold every clock at once, then feel which one is sounding."
+        text: "Similar-sounding names with different lives — Yisroel and Israel, Villarreal and Martinez — and the charge a name can carry, including Martinez beside Mars, are treated on separate clocks: documents, DNA, family memory, and place."
       },
       {
         type: "p",
@@ -1835,4 +1835,4 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
   }
 ];
 export const CITATION =
-  "Villarreal Martinez, Roberto. “RobotOmen: The Labor of Names.” Roboto SAI Research, September 2026. https://roboto-sai.org";
+  "Villarreal Martinez, Roberto. “RobotOmen: Labor Nominis.” Roboto SAI Research, September 2026. https://roboto-sai.org";

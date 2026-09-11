@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "RobotOmen — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 2232,
+      "bodyTextHash": "30c5c292a77d283da85cb505558526f6932470d7fb58921335b7505d48619e81",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home-check.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "RobotOmen — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 2208,
+      "bodyTextHash": "ef13b9d65c24eea32a1971b8769c51c723f6d5cd123ce88c44336370f354d101",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home-check-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/home-check.json"
+}

@@ -111,7 +111,7 @@ export function ClockMap({ compact = false }: { compact?: boolean }) {
   const labels = {
     en: {
       kicker: "Surveyed map · two clocks",
-      both: "Do not merge",
+      both: "Two clocks",
       plana: "Plana 1274",
       nl: "Nuevo León, later",
       km: `${TWO_CLOCK_KM.toLocaleString("en-US")} km between Vila-real and Los Villarreales. Same name-shape. Not the same town.`,
@@ -119,7 +119,7 @@ export function ClockMap({ compact = false }: { compact?: boolean }) {
     },
     es: {
       kicker: "Mapa levantado · dos relojes",
-      both: "No fundir",
+      both: "Dos relojes",
       plana: "Plana 1274",
       nl: "Nuevo León, después",
       km: `${TWO_CLOCK_KM.toLocaleString("es-MX")} km entre Vila-real y Los Villarreales. Misma forma de nombre. No el mismo pueblo.`,

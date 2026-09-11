@@ -1,9 +1,24 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { HOUSE_BIBLES, isHouseBibleId, type ScriptureResult } from "./scripture";
 
 const BASE = process.env.API_BIBLE_BASE ?? "https://rest.api.bible/v1";
 
+function readDotEnvKey(): string | undefined {
+  try {
+    const raw = readFileSync(join(process.cwd(), ".env"), "utf8");
+    for (const line of raw.split("\n")) {
+      const trimmed = line.trim();
+      if (!trimmed.startsWith("API_BIBLE_KEY=")) continue;
+      return trimmed.slice("API_BIBLE_KEY=".length).trim();
+    }
+  } catch {
+    return undefined;
+  }
+}
+
 function apiKey(): string {
-  const key = process.env.API_BIBLE_KEY?.trim();
+  const key = process.env.API_BIBLE_KEY?.trim() || readDotEnvKey();
   if (!key) throw new Error("API.Bible key is not set on the server.");
   return key;
 }

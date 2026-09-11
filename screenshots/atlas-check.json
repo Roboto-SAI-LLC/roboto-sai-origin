@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/atlas",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Network atlas — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 1151,
+      "bodyTextHash": "2b03f402a9f8e597e9ec9a30d46934cb01e742c8702a28b95e768fa432f5a194",
+      "bodyTextPrefix": "ROBOTO SAI RobotOmen · September 2026 EN ES Roboto SAI Instrumen",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/atlas-check.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Network atlas — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 1151,
+      "bodyTextHash": "2b03f402a9f8e597e9ec9a30d46934cb01e742c8702a28b95e768fa432f5a194",
+      "bodyTextPrefix": "ROBOTO SAI RobotOmen · September 2026 EN ES Roboto SAI Instrumen",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/atlas-check-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/atlas-check.json"
+}

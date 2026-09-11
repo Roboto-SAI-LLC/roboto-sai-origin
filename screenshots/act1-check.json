@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/act/not-kin",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Act I — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 10726,
+      "bodyTextHash": "bd9bd800f79deadc29765a7c71e74025dd1cf0d419f9554618449b6996ac129e",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/act1-check.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Act I — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 10592,
+      "bodyTextHash": "599222e08201a212e69f8b135330b1a1d4b326742d99e00202a0cb0790af75fa",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Scripture EN ES Rob",
+      "horizontalOverflow": true,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/act1-check-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/act1-check.json"
+}
