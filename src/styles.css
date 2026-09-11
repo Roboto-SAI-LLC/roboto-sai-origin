@@ -7,14 +7,25 @@
   --color-fg: #1c1915;
   --color-muted: #6d6558;
   --color-subtle: #8a8173;
-  --color-primary: #3e534c;
+  --color-primary: #b45309;
   --color-primary-fg: #f3eee4;
   --color-border: #d9d0c3;
   --color-rule: #b8ad9c;
   --color-ink-soft: #2a2620;
 
-  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
-  --font-serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  /* Aztec Fuego tokens — roboto-sai.com apps/web/src/index.css */
+  --color-gold: #ffb800;
+  --color-gold-glow: #ffce33;
+  --color-fire: #ff5500;
+  --color-ember: #e67000;
+  --color-obsidian: #08081a;
+  --color-obsidian-light: #12122a;
+  --color-blood: #bd1111;
+  --color-fuego-red: #e60000;
+
+  --font-display: "Roboto Serif", Georgia, "Times New Roman", serif;
+  --font-serif: "Roboto Serif", Georgia, "Times New Roman", serif;
+  --font-source: "Roboto Serif", Georgia, "Times New Roman", serif;
   --font-hebrew: "Frank Ruhl Libre", "Times New Roman", serif;
 
   --radius-xs: 0.25rem;
@@ -39,6 +50,8 @@
     0px 0px 0px 1px rgba(28, 25, 21, 0.06),
     0px 1px 2px -1px rgba(28, 25, 21, 0.06),
     0px 2px 4px 0px rgba(28, 25, 21, 0.04);
+  --shadow-gold: 0 0 40px rgb(255 184 0 / 0.3);
+  --shadow-ember: 0 4px 30px rgb(230 112 0 / 0.28);
 }
 
 @layer base {
@@ -52,6 +65,8 @@
     background-color: var(--color-bg);
     color: var(--color-fg);
     font-family: var(--font-serif);
+    font-weight: 450;
+    font-optical-sizing: auto;
   }
 
   button:not(:disabled),
@@ -59,12 +74,34 @@
     cursor: pointer;
   }
 
-  h1,
+  header,
+  footer,
+  nav {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-variation-settings: "GRAD" 0;
+  }
+
+  h1 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-stretch: 100%;
+    font-variation-settings: "GRAD" 48;
+  }
+
   h2,
   h3,
   h4 {
     text-wrap: balance;
-    font-family: var(--font-display);
+    font-family: var(--font-serif);
+    font-style: normal;
+    font-weight: 650;
+    font-optical-sizing: auto;
+    font-variation-settings: "GRAD" 18;
   }
 
   p {
@@ -121,20 +158,35 @@
 
 .drop-cap::first-letter {
   font-family: var(--font-display);
-  font-weight: 560;
+  font-style: italic;
+  font-weight: 700;
   font-size: 4.25rem;
   line-height: 0.82;
   float: left;
   padding-right: 0.5rem;
   padding-top: 0.35rem;
-  color: var(--color-primary);
+  color: var(--color-ember);
   font-optical-sizing: auto;
+  font-variation-settings: "GRAD" 48;
+}
+
+.text-fire {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-gold) 0%,
+    var(--color-ember) 46%,
+    var(--color-fire) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: var(--color-ember);
+  -webkit-text-fill-color: transparent;
 }
 
 .paper-grain {
   background-image:
-    radial-gradient(ellipse at 12% -10%, color-mix(in oklab, var(--color-primary) 8%, transparent), transparent 42%),
-    radial-gradient(ellipse at 100% 0%, color-mix(in oklab, var(--color-rule) 28%, transparent), transparent 36%);
+    radial-gradient(ellipse at 12% -10%, color-mix(in oklab, var(--color-ember) 10%, transparent), transparent 42%),
+    radial-gradient(ellipse at 100% 0%, color-mix(in oklab, var(--color-gold) 18%, transparent), transparent 36%);
 }
 
 .stagger-in {
@@ -165,8 +217,8 @@
 
 .article-table th {
   text-align: left;
-  font-family: var(--font-display);
-  font-weight: 550;
+  font-family: var(--font-serif);
+  font-weight: 600;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;

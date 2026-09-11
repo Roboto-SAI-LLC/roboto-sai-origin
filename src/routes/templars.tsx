@@ -56,10 +56,10 @@ function TemplarPage() {
           <p className="stagger-in font-display text-kicker font-medium tracking-kicker text-subtle uppercase">
             {meta.kicker}
           </p>
-          <h1 className="stagger-in mt-4 max-w-4xl font-display text-display font-medium tracking-display text-fg sm:text-display-lg">
+          <h1 className="stagger-in mt-4 max-w-4xl font-display text-display font-bold italic tracking-display text-fire sm:text-display-lg">
             {meta.title}
           </h1>
-          <p className="stagger-in mt-5 max-w-2xl font-display text-xl leading-snug text-muted sm:text-2xl">
+          <p className="stagger-in mt-5 max-w-2xl font-serif text-xl font-normal leading-snug text-muted sm:text-2xl">
             {meta.subtitle}
           </p>
           <p className="stagger-in mt-6 text-sm text-muted">

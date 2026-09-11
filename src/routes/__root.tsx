@@ -8,6 +8,29 @@ import appCss from "../styles.css?url";
 const DESCRIPTION =
   "Onomastic methodology from Roboto SAI: the names Roboto and Roberto, the 1274 Vila-real network, four clocks, Gur Aryeh, and the Temple on the Plana.";
 
+/** Same public-host guard the injector uses for og:image (no IPs, no Vercel system hosts). */
+function publicShareHost(url: string): string {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    if (!host || !/^[a-z0-9.-]+$/.test(host) || !host.includes(".")) return "";
+    if (/^\d{1,3}(?:\.\d{1,3}){3}$/.test(host)) return "";
+    if (
+      host === "vercel.app" ||
+      host.endsWith(".vercel.app") ||
+      host === "vercel.com" ||
+      host.endsWith(".vercel.com")
+    ) {
+      return "";
+    }
+    return host;
+  } catch {
+    return "";
+  }
+}
+
+const host = publicShareHost(SITE_URL);
+const xBanner = host ? `https://${host}/x-banner.jpg` : "";
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -20,6 +43,13 @@ export const Route = createRootRoute({
       { name: "robots", content: "index, follow" },
       { name: "application-name", content: APP_SHORT_NAME },
       { name: "apple-mobile-web-app-title", content: APP_SHORT_NAME },
+      ...(xBanner
+        ? [
+            { property: "x:game:image", content: xBanner },
+            { property: "x:game:image:width", content: "1200" },
+            { property: "x:game:image:height", content: "264" },
+          ]
+        : []),
     ],
     links: [
       { rel: "canonical", href: SITE_URL },
@@ -29,7 +59,7 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,560;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Frank+Ruhl+Libre:ital,wght@0,400;0,500;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Serif:GRAD,ital,opsz,wdth,wght@-50..100,0,8..144,50..150,100..900;-50..100,1,8..144,50..150,100..900&display=swap",
       },
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/manifest.webmanifest" },
