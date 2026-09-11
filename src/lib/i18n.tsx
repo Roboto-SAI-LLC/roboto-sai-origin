@@ -47,14 +47,14 @@ export function pick<T>(lang: Lang, pair: { en: T; es: T }): T {
 }
 
 export type NavItem = {
-  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief";
+  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief" | "/scripture";
   label: string;
 };
 
 export const CHROME = {
   en: {
     journal: "Roboto SAI",
-    series: "Methodology",
+    series: "RobotOmen",
     date: "September 2026",
     skip: "Skip to essay",
     contents: "Contents",
@@ -74,20 +74,21 @@ export const CHROME = {
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templars" },
       { to: "/brief", label: "Brief" },
+      { to: "/scripture", label: "Scripture" },
     ] satisfies NavItem[],
     home: {
-      title: "Nomen: The Labor of Names",
-      subtitle: "Roboto and Roberto — origins, usage, migrations",
-      kicker: "Nomen, not omen",
+      title: "RobotOmen",
+      subtitle: "The Labor of Names",
+      kicker: "The labor of names",
       sources: "sources",
       findings: [
         {
-          kicker: "Nomen",
-          text: "Latin nōmen is name. Latin ōmen is a portent. One letter. They are not kin. The labor in the title is robota — work — not a 1976 film.",
+          kicker: "RobotOmen",
+          text: "Roboto is the house. Omen sits next to nomen — name. One letter. Sit with both. The labor is the names.",
         },
         {
           kicker: "House name",
-          text: "Roboto sits next to robot / robota — Čapek’s 1920 Czech coinage from Slavic forced labor. That is the house, not a diminutive of Roberto.",
+          text: "Roboto is Roberto’s house. He named it. The house line is Roberto = Roboto. Robot / robota is the neighbor word — Čapek, 1920 — not the founder.",
         },
         {
           kicker: "Given name",
@@ -103,7 +104,7 @@ export const CHROME = {
         },
         {
           kicker: "Four clocks",
-          text: "Documents, DNA, family memory, and place keep different time. Date each clock. Do not merge them.",
+          text: "Documents, DNA, family memory, and place keep different time. Hold them. Hear which one is sounding.",
         },
       ],
       newKicker: "New in this edition",
@@ -193,7 +194,7 @@ export const CHROME = {
       all: "All",
       inRecord: "In the record",
       adjacent: "Adjacent",
-      notInRecord: "Not in the record",
+      notInRecord: "Open",
       gapYear: "Gap year",
       split: "Split — keep the parts",
       stated: "Stated.",
@@ -232,7 +233,7 @@ export const CHROME = {
   },
   es: {
     journal: "Roboto SAI",
-    series: "Metodología",
+    series: "RobotOmen",
     date: "Septiembre de 2026",
     skip: "Saltar al ensayo",
     contents: "Índice",
@@ -253,20 +254,21 @@ export const CHROME = {
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templarios" },
       { to: "/brief", label: "Síntesis" },
+      { to: "/scripture", label: "Escritura" },
     ] satisfies NavItem[],
     home: {
-      title: "Nomen: la labor de los nombres",
-      subtitle: "Roboto y Roberto — orígenes, uso, migraciones",
-      kicker: "Nomen, no omen",
+      title: "RobotOmen",
+      subtitle: "La labor de los nombres",
+      kicker: "La labor de los nombres",
       sources: "fuentes",
       findings: [
         {
-          kicker: "Nomen",
-          text: "En latín nōmen es nombre. Ōmen es un presagio. Una letra. No son parientes. La labor del título es robota — trabajo — no una película de 1976.",
+          kicker: "RobotOmen",
+          text: "Roboto es la casa. Omen se sienta junto a nomen — nombre. Una letra. Quédate con los dos. La labor son los nombres.",
         },
         {
           kicker: "Nombre de casa",
-          text: "Roboto se sienta junto a robot / robota — la acuñación checa de 1920 de Čapek, del eslavo trabajo forzado. Es la casa, no un diminutivo de Roberto.",
+          text: "Roboto es la casa de Roberto. Él la nombró. La línea de la casa es Roberto = Roboto. Robot / robota es la palabra vecina — Čapek, 1920 — no el fundador.",
         },
         {
           kicker: "Nombre de pila",
@@ -372,7 +374,7 @@ export const CHROME = {
       all: "Todo",
       inRecord: "En el acta",
       adjacent: "Al lado",
-      notInRecord: "No en el acta",
+      notInRecord: "Abierta",
       gapYear: "Año hueco",
       split: "Partido — guardar las partes",
       stated: "Dicho.",

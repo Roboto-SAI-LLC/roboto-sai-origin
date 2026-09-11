@@ -1,13 +1,13 @@
 import { Fragment, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-const NAME_RE = /(Roboto|Roberto)/g;
+const NAME_RE = /(RobotOmen|Roboto|Roberto)/g;
 
 export function BrandWord({
   name,
   className,
 }: {
-  name: "Roboto" | "Roberto" | string;
+  name: "RobotOmen" | "Roboto" | "Roberto" | string;
   className?: string;
 }) {
   return <span className={cn("brand-word", className)}>{name}</span>;
@@ -18,7 +18,7 @@ export function withBrandNames(text: string): ReactNode {
   const parts = text.split(NAME_RE);
   if (parts.length === 1) return text;
   return parts.map((part, index) => {
-    if (part === "Roboto" || part === "Roberto") {
+    if (part === "RobotOmen" || part === "Roboto" || part === "Roberto") {
       return <BrandWord key={`${part}-${index}`} name={part} />;
     }
     return <Fragment key={index}>{part}</Fragment>;

@@ -350,7 +350,7 @@ export const CLAIMS: Claim[] = [
     id: "robot-robert",
     title: "Roboto because someone was Roberto",
     stated: "Roboto is named from Roberto, which is why the words rhyme.",
-    steelman: "The rhyme is a fact of sound. Roboto sits next to robot / robota (forced labor). Roberto is the Iberian form of Robert, from Germanic Hrōþiberhtaz (bright fame). They are not kin. Robot and Robert are the English glosses that collapse the pair. The play’s word is Josef Čapek’s; the play’s characters are Domin, Helena, Radius, and others.",
+    steelman: "Roboto is Roberto’s house. He named it. The house line, in the house’s own code, is Roberto = Roboto. Robot / robota (Čapek, Slavic labor vocabulary) is a neighbor word that English borrowed in 1920. Roberto is also the Iberian form of Robert, from Germanic Hrōþiberhtaz (bright fame). Robot and Robert are the English glosses that sit beside the pair. The play’s word is Josef Čapek’s; the play’s characters are Domin, Helena, Radius, and others.",
     verdict: "not-in-record",
     inRecord: [
       {

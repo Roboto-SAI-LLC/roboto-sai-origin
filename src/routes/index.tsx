@@ -62,9 +62,9 @@ function ResearchPage() {
       <main>
         <section className="relative isolate min-h-[88svh] overflow-hidden bg-obsidian text-primary-fg">
           <img
-            src="/templars/coast.jpg"
+            src="/brand/glow-wide.png"
             alt=""
-            className="absolute inset-0 size-full object-cover opacity-80"
+            className="absolute inset-0 size-full object-cover opacity-90"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/25" />
           <div className="relative z-10 mx-auto flex min-h-[88svh] max-w-3xl flex-col justify-end px-4 py-16 sm:px-6 sm:py-24">

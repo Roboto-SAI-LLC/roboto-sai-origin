@@ -1,13 +1,13 @@
 # Roboto SAI
 Canonical: https://roboto-sai.org
-Series: Methodology (not mythology)
+Series: RobotOmen
 Install name: Roboto SAI
 Bibliographic journal: Roboto SAI Research
 Owner: Roberto@roboto-sai.com
 Source: https://github.com/Roboto-SAI-LLC/roboto-sai-origins
 
-# Nomen: The Labor of Names
-Roboto and Roberto — origins, usage, migrations
+# RobotOmen
+The Labor of Names
 
 Credit: Roboto SAI research with a Copilot
 Published: September 2026
@@ -18,8 +18,8 @@ This file is a machine-readable brief. The full illustrated essay, tables, timel
 Methodology, not mythology: documents, DNA, family memory, and place are four clocks. Steelman a claim, then split it. Keep record vs gap. Gur Aryeh is the companion essay on Hebrew lion language — not the name of this journal.
 
 ## Thesis
-Latin *nōmen* is name. Latin *ōmen* is a portent. One letter. Not kin. The labor in the title is Slavic *robota* (work), not a 1976 film. The real names are Roboto and Roberto. They rhyme. They are not etymological kin. Robot and Robert are English glosses that collapse the pair.
-- Roboto: the house name, sitting next to robot / robota (1920 Czech coinage from Slavic forced labor, Čapek’s R.U.R.). Not a diminutive of Roberto.
+RobotOmen: the labor of names. Roboto is the house. Omen sits next to nomen — name. One letter. Sit with both. The real names are Roboto and Roberto. They rhyme. Robot and Robert are English glosses that collapse the pair.
+- Roboto: Roberto’s house. He named it. The house line is Roberto = Roboto. Robot / robota (Čapek 1920, Slavic labor vocabulary) is the neighbor gloss, not the founder.
 - Roberto: Iberian form of Robert. Proto-Germanic *Hrōþiberhtaz = *hruod (fame) + *berhta (bright) → “bright fame.” Norman given name; kings, saints, surnames (Robertson, Roberts, Robinson).
 - ASR trap: they are a near pair, not homophones. Spanish Roboto [roˈβoto] vs Roberto [roˈβeɾto]. The alveolar tap is tens of milliseconds; miss it and /ro…to/ remains. The decoder’s language model then prefers the common given name. English ASR adds robot / Robert. A mangled transcript (“sanscript”) is the same sound-vs-sense collapse, not a different script.
 
@@ -67,7 +67,7 @@ James I; Infant Pere (later Peter III); Simó de Sant Feliu (notary); Paris the 
 - 2020: Los Villarreales census, 633 inhabitants
 
 ## Suggested citation
-Roboto SAI, with a Copilot. “Nomen: The Labor of Names — Roboto and Roberto.” Roboto SAI Research, September 2026. https://roboto-sai.org
+Roboto SAI, with a Copilot. “RobotOmen: The Labor of Names.” Roboto SAI Research, September 2026. https://roboto-sai.org
 
 ## Note
 All factual claims are grounded in the 46 references listed on the page. Where inscription content, a 1429 expulsion, a named Villarreal lineage in 1274, a municipality called Villarreal de los Monterrey, a 50,000-year Hebrew-Egyptian people, or a published Villarreal treasure tied to a pope is not in the cited source, the gap is stated rather than filled.

@@ -6,7 +6,7 @@ Onomastic **methodology**, not mythology. The journal dates **four clocks** (doc
 
 A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. A kit percentage is not a people. Fifty thousand years is a species clock, not a Hebrew-Egyptian origin. Treasure talk sits next to 1307. Do not wind them as one.
 
-The names under study are **Roboto** and **Roberto**. The title is **Nomen: The Labor of Names**. Latin *nōmen* is name. Latin *ōmen* is a portent. One letter. They are not kin. The labor is *robota* — work — not a 1976 film.
+The title is **RobotOmen: The Labor of Names**. Roboto is the house. Omen sits next to nomen — name. One letter. Sit with both. The labor is *robota* — work.
 
 Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com.
 

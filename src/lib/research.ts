@@ -15,14 +15,14 @@ export type Section = {
 
 export const META = {
   journal: "Roboto SAI Research",
-  series: "Methodology",
-  title: "Nomen: The Labor of Names",
-  subtitle: "Roboto and Roberto — origins, usage, migrations",
+  series: "RobotOmen",
+  title: "RobotOmen",
+  subtitle: "The Labor of Names",
   credit: "Roboto SAI research with a Copilot",
   date: "September 2026",
   sourceCount: 46,
   description:
-    "Nomen is Latin for name. Omen is a portent. One letter; not kin. A research essay on Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Slavic labor vocabulary, Proto-Germanic fame-compounds, Vila-real 1274, four clocks, and why speech recognizers collapse the pair.",
+    "RobotOmen: the labor of names. Roboto is the house. Roberto is the given name. Nomen is name. Omen sits one letter off. Read them together. Origins, usage, migrations — Vila-real 1274 to Monterrey — and why a machine ear collapses the pair.",
 };
 export const FINDINGS = [
   {
@@ -31,7 +31,7 @@ export const FINDINGS = [
   },
   {
     kicker: "House name",
-    text: "Roboto sits next to robot / robota — Čapek’s 1920 Czech coinage from Slavic forced labor. That is the house, not a diminutive of Roberto."
+    text: "Roboto is Roberto’s house. He named it. The house line is Roberto = Roboto. Robot / robota is the neighbor word, not the founder."
   },
   {
     kicker: "Given name",
@@ -171,15 +171,15 @@ export const SECTIONS: Section[] = [
       {
         type: "p",
         dropCap: true,
-        text: "Latin *nōmen* is name. Latin *ōmen* is a portent. One letter. They are not kin. That is this journal’s job in miniature: keep the look-alike from stealing the sense. The names under study are Roboto and Roberto. Robot and Robert are English glosses that rhyme beside them. They are not the names under study."
+        text: "RobotOmen is the title of this labor. Roboto is the house. Omen sits next to nomen — Latin for name — by one letter. Sit with both. The names under study are Roboto and Roberto. Robot and Robert are English glosses that rhyme beside them."
       },
       {
         type: "p",
-        text: "The labor in the title is *robota* — Slavic forced work, Čapek’s 1920 Czech coinage — not a curse from a 1976 film. Robert Thorn, in *The Omen*, is a character who adopts a child named Damien. Roberto is a given name: Iberian Robert, fame plus bright. Date the registers. Do not merge a movie with a baptism."
+        text: "Roboto is Roberto’s house. He named it. The house’s own line is Roberto = Roboto. Robot and robota — Čapek, 1920, a Slavic labor word that English borrowed — sit beside that name as look-alikes. They did not found the house. Roberto is also the Iberian form of Robert — fame plus bright. A 1976 film used Damien and a father named Robert. That register is a story people already know how to enter. This page is the names."
       },
       {
         type: "p",
-        text: "It also examines similar-sounding names with divergent meanings — Yisroel and Israel, Villarreal and Martinez — and the symbolic associations names can carry, including Martinez beside Mars, the Roman god of war. Roboto sits next to robot / robota. The house is not a diminutive of the given name."
+        text: "It also walks similar-sounding names with different lives — Yisroel and Israel, Villarreal and Martinez — and the charge a name can carry, including Martinez beside Mars. The reader is invited to hold every clock at once, then feel which one is sounding."
       },
       {
         type: "p",
@@ -395,7 +395,7 @@ export const SECTIONS: Section[] = [
       },
       {
         type: "p",
-        text: "Onomastics is the study of names. The English word rides Greek *ónoma*. The Latin word is *nōmen, nōminis* — name, noun, heading. Plural *nōmina*. From it: *nōmināre* (to name), *praenōmen*, *cognōmen*, *agnōmen*, *nōmenclātūra*. Hebrew keeps *shem*. None of those roots is *ōmen, ōminis*, a portent. The movie title *The Omen* is the second word. It is not a Latin treatise on names, and it does not make Robert the father of an antichrist in the 1274 record."
+        text: "Onomastics is the study of names. The English word rides Greek *ónoma*. The Latin word is *nōmen, nōminis* — name, noun, heading. Plural *nōmina*. From it: *nōmināre* (to name), *praenōmen*, *cognōmen*, *agnōmen*, *nōmenclātūra*. Hebrew keeps *shem*. *Ōmen, ōminis* is a portent. One letter off *nōmen*. RobotOmen holds that pair in the title so the reader can hear it: house, name, portent, labor. A 1976 film titled *The Omen* is one way English already knows the second word. It is a door, not a verdict."
       },
       {
         type: "p",
@@ -1835,4 +1835,4 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
   }
 ];
 export const CITATION =
-  "Roboto SAI, with a Copilot. “Nomen: The Labor of Names — Roboto and Roberto.” Roboto SAI Research, September 2026. https://roboto-sai.org";
+  "Roboto SAI, with a Copilot. “RobotOmen: The Labor of Names.” Roboto SAI Research, September 2026. https://roboto-sai.org";

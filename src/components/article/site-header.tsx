@@ -51,17 +51,20 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-        <Link to="/" className="min-w-0 rounded-sm">
+        <Link to="/" className="flex min-w-0 items-center gap-3 rounded-sm">
+          <img src="/brand/mark.png" alt="" className="h-9 w-9 object-contain" />
+          <span>
           <p className={cn("font-display text-kicker tracking-kicker uppercase", onFilm ? "text-gold" : "text-primary")}>
             Roboto SAI
           </p>
           <p className={cn("mt-0.5 text-xs", onFilm ? "text-primary-fg/75" : "text-muted")}>
             {onFilm
               ? lang === "es"
-                ? "Nomen · cinco actos"
-                : "Nomen · five acts"
+                ? "RobotOmen · cinco actos"
+                : "RobotOmen · five acts"
               : `${chrome.series} · ${chrome.date}`}
           </p>
+          </span>
         </Link>
 
         <div className="flex items-center gap-2">

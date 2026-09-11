@@ -34,9 +34,9 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
     {
       id: "essay",
       tag: "Essay",
-      title: "Nomen",
+      title: "RobotOmen",
       href: "/",
-      body: "Latin nōmen is name. Latin ōmen is a portent. One letter. Not kin. The real names are Roboto and Roberto. They rhyme. They are not relatives. Robot and Robert are the English glosses that collapse the pair. Roboto sits next to robot / robota — Čapek’s Czech play R.U.R., Slavic forced labor. That is the house, not a diminutive of the given name. Roberto is the Iberian form of Robert: Proto-Germanic fame plus bright. Robert Thorn in The Omen is a character. Date the registers. Sound is not sense.",
+      body: "RobotOmen: the labor of names. Roboto is the house. Omen sits next to nomen — name. One letter. Sit with both. The real names are Roboto and Roberto. They rhyme. Robot and Robert are English glosses. Roboto sits next to robot / robota — Čapek, Slavic labor. Roberto is Iberian Robert: fame plus bright. A film titled The Omen is a door English already knows. This page is the names.",
       sources: "Čapek, R.U.R.; Slavic etymology of robota; Proto-Germanic Hrōþiberhtaz; onomastic pairs in this journal.",
     },
     {
@@ -76,9 +76,9 @@ export const BRIEF_TAGS: Record<Lang, BriefTag[]> = {
     {
       id: "essay",
       tag: "Ensayo",
-      title: "Nomen",
+      title: "RobotOmen",
       href: "/",
-      body: "En latín nōmen es nombre. Ōmen es un presagio. Una letra. No son parientes. Los nombres reales son Roboto y Roberto. Riman. Robot y Robert son las glosas inglesas que funden el par. Roboto se sienta junto a robot / robota — R.U.R. de Čapek, trabajo forzado eslavo. Es la casa, no un diminutivo. Roberto es la forma ibérica de Robert: fama más brillante. Robert Thorn en The Omen es un personaje. Fecha los registros. El sonido no es el sentido.",
+      body: "RobotOmen: la labor de los nombres. Roboto es la casa. Omen se sienta junto a nomen — nombre. Una letra. Quédate con los dos. Los nombres reales son Roboto y Roberto. Riman. Robot y Robert son glosas. Roboto se sienta junto a robot / robota. Roberto es Robert ibérico: fama más brillante. The Omen es una puerta que el inglés ya conoce. Esta página son los nombres.",
       sources: "Čapek, R.U.R.; etimología eslava de robota; proto-germánico Hrōþiberhtaz; pares onomásticos de esta revista.",
     },
     {
