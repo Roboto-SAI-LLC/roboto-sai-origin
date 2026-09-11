@@ -52,7 +52,11 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Link to="/" className="flex min-w-0 items-center gap-3 rounded-sm">
-          <img src="/brand/mark.png" alt="" className="h-9 w-9 object-contain" />
+          <img
+            src="/brand/mark.png"
+            alt=""
+            className="h-9 w-9 rounded-full object-cover"
+          />
           <span>
           <p className={cn("font-display text-kicker tracking-kicker uppercase", onFilm ? "text-gold" : "text-primary")}>
             Roboto SAI
