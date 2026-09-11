@@ -1,4 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { withBrandNames } from "@/components/article/brand-word";
 import { ClockMap } from "@/components/article/clock-map";
 import { ChapterPlate } from "@/components/article/chapter-plate";
@@ -15,7 +16,21 @@ import { CHROME, useLang } from "@/lib/i18n";
 import { CITATION, META, REFERENCES } from "@/lib/research";
 import { APP_NAME, AUTHOR, SITE_URL } from "@/lib/site";
 
+const ACT_IDS = new Set([
+  "not-kin",
+  "villa-regalis",
+  "sound-sense",
+  "record-gap",
+  "four-clocks",
+  "references",
+]);
+
 export const Route = createFileRoute("/")({
+  validateSearch: (raw: Record<string, unknown>): { act?: string } => {
+    const act = typeof raw.act === "string" ? raw.act : undefined;
+    if (!act || !ACT_IDS.has(act)) return {};
+    return { act };
+  },
   component: ResearchPage,
   head: () => ({
     meta: [
@@ -44,18 +59,34 @@ function ResearchPage() {
   const { lang } = useLang();
   const chrome = CHROME[lang];
   const home = chrome.home;
+  const { act } = Route.useSearch();
+  const navigate = Route.useNavigate();
+
+  useEffect(() => {
+    const fromHash = window.location.hash.replace(/^#/, "");
+    if (fromHash && ACT_IDS.has(fromHash)) {
+      void navigate({ search: { act: fromHash }, replace: true });
+      return;
+    }
+    if (!act) {
+      window.scrollTo({ top: 0, behavior: "auto" });
+      return;
+    }
+    document.getElementById(act)?.scrollIntoView({ behavior: "auto", block: "start" });
+  }, [act, navigate]);
 
   return (
     <div className="relative bg-bg text-fg">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <ReadingProgress />
 
-      <a
-        href="#not-kin"
+      <Link
+        to="/"
+        search={{ act: "not-kin" }}
         className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-surface focus:px-3 focus:py-2"
       >
         {chrome.skip}
-      </a>
+      </Link>
 
       <SiteHeader />
 
@@ -75,12 +106,13 @@ function ResearchPage() {
             />
             <p className="flex flex-wrap items-center gap-x-3 gap-y-2 font-display text-kicker font-medium tracking-kicker text-gold uppercase">
               <span>{chrome.series}</span>
-              <a
-                href="#references"
+              <Link
+                to="/"
+                search={{ act: "references" }}
                 className="inline-flex min-h-11 items-center rounded-full bg-gold/15 px-3.5 text-gold transition-colors duration-150 hover:bg-gold/25"
               >
                 {META.sourceCount} {home.sources}
-              </a>
+              </Link>
             </p>
             <h1 className="mt-4 font-display text-4xl tracking-display text-primary-fg sm:text-6xl">
               {withBrandNames(home.title)}
@@ -100,18 +132,20 @@ function ResearchPage() {
                 </li>
               ))}
             </ol>
-            <a
-              href="#not-kin"
+            <Link
+              to="/"
+              search={{ act: "not-kin" }}
               className="mt-10 inline-flex min-h-11 w-fit items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg transition-transform duration-150 ease-out active:scale-[0.96]"
             >
               {lang === "es" ? "Empezar el acto I" : "Begin act I"}
-            </a>
-            <a
-              href="#not-kin"
+            </Link>
+            <Link
+              to="/"
+              search={{ act: "not-kin" }}
               className="mt-5 inline-flex min-h-11 items-center font-display text-kicker tracking-kicker text-gold uppercase"
             >
               {lang === "es" ? "↓ Acto I · La labor" : "↓ Act I · The labor"}
-            </a>
+            </Link>
           </div>
         </section>
 

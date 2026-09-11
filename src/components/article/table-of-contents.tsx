@@ -48,10 +48,13 @@ export function TableOfContents({
           const isActive = active === item.id;
           return (
             <li key={item.id}>
-              <a
-                href={`#${item.id}`}
+              <button
+                type="button"
+                onClick={() =>
+                  document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+                }
                 className={cn(
-                  "flex gap-2 rounded-md px-2 py-1.5 leading-snug no-underline transition-colors duration-150",
+                  "flex w-full gap-2 rounded-md px-2 py-1.5 text-left leading-snug no-underline transition-colors duration-150",
                   isActive ? "bg-wash text-fg" : "text-muted hover:text-fg",
                 )}
               >
@@ -61,7 +64,7 @@ export function TableOfContents({
                   <span className="w-6 shrink-0" />
                 )}
                 <span>{item.title}</span>
-              </a>
+              </button>
             </li>
           );
         })}

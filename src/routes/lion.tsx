@@ -73,12 +73,13 @@ function LionPage() {
       />
       <ReadingProgress />
 
-      <a
-        href="#article"
+      <button
+        type="button"
+        onClick={() => document.getElementById("article")?.scrollIntoView({ behavior: "smooth", block: "start" })}
         className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-md focus:bg-surface focus:px-3 focus:py-2"
       >
         {copy.skip}
-      </a>
+      </button>
 
       <SiteHeader />
 

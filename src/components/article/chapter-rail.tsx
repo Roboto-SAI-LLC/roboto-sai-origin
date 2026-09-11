@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { CHAPTERS } from "@/lib/chapters";
 import { useLang } from "@/lib/i18n";
@@ -37,8 +38,9 @@ export function ChapterRail({ className }: { className?: string }) {
           const isActive = active === chapter.id;
           return (
             <li key={chapter.id}>
-              <a
-                href={`#${chapter.id}`}
+              <Link
+                to="/"
+                search={{ act: chapter.id }}
                 className={cn(
                   "flex gap-3 rounded-md px-2 py-2 leading-snug no-underline transition-colors duration-150",
                   isActive ? "bg-wash text-fg" : "text-muted hover:text-fg",
@@ -46,7 +48,7 @@ export function ChapterRail({ className }: { className?: string }) {
               >
                 <span className="w-5 shrink-0 font-display text-xs text-primary">{chapter.numeral}</span>
                 <span>{chapter.title[lang]}</span>
-              </a>
+              </Link>
             </li>
           );
         })}

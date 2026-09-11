@@ -2,6 +2,7 @@ import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-r
 import { AuthProvider } from "@/lib/auth/provider";
 import { LangProvider } from "@/lib/i18n";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
+import { PathMemory } from "@/lib/path-memory";
 import { APP_NAME, APP_SHORT_NAME, SITE_URL } from "@/lib/site";
 import appCss from "../styles.css?url";
 
@@ -77,6 +78,7 @@ export const Route = createRootRoute({
       </head>
       <body className="bg-bg text-fg font-serif">
         <PreviewHostBridge />
+        <PathMemory />
         <AuthProvider>
           <LangProvider>
             <Outlet />
