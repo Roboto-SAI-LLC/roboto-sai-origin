@@ -68,32 +68,54 @@ function ResearchPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-obsidian/25" />
           <div className="relative z-10 mx-auto flex min-h-[88svh] max-w-3xl flex-col justify-end px-4 py-16 sm:px-6 sm:py-24">
-            <p className="font-display text-kicker font-medium tracking-kicker text-gold uppercase">
-              {chrome.series} · {META.sourceCount} {home.sources}
+            <img
+              src="/brand/mark.png"
+              alt=""
+              className="mb-8 h-20 w-20 rounded-full object-cover"
+            />
+            <p className="flex flex-wrap items-center gap-x-3 gap-y-2 font-display text-kicker font-medium tracking-kicker text-gold uppercase">
+              <span>{chrome.series}</span>
+              <a
+                href="#references"
+                className="inline-flex min-h-11 items-center rounded-full bg-gold/15 px-3.5 text-gold transition-colors duration-150 hover:bg-gold/25"
+              >
+                {META.sourceCount} {home.sources}
+              </a>
             </p>
             <h1 className="mt-4 font-display text-4xl tracking-display text-primary-fg sm:text-6xl">
               {withBrandNames(home.title)}
             </h1>
-            <p className="mt-5 max-w-xl text-xl leading-snug text-primary-fg/85 sm:text-2xl">{home.subtitle}</p>
-            <p className="mt-6 text-sm text-primary-fg/70">
+            <p className="mt-5 max-w-xl text-xl leading-snug text-primary-fg sm:text-2xl">{home.subtitle}</p>
+            <p className="mt-6 text-sm text-primary-fg/80">
               {chrome.ui.by} {withBrandNames(META.credit)}
             </p>
             <ol className="mt-10 grid gap-3 sm:grid-cols-3">
               {home.findings.slice(0, 3).map((finding) => (
-                <li key={finding.kicker}>
+                <li
+                  key={finding.kicker}
+                  className="rounded-lg bg-obsidian/75 px-4 py-4 ring-1 ring-gold/25"
+                >
                   <p className="font-display text-kicker tracking-kicker text-gold uppercase">{finding.kicker}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-primary-fg/80">{finding.text}</p>
+                  <p className="mt-2 max-w-prose text-sm leading-relaxed text-primary-fg">{finding.text}</p>
                 </li>
               ))}
             </ol>
             <a
               href="#not-kin"
-              className="mt-10 inline-flex min-h-11 w-fit items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg"
+              className="mt-10 inline-flex min-h-11 w-fit items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg transition-transform duration-150 ease-out active:scale-[0.96]"
             >
               {lang === "es" ? "Empezar el acto I" : "Begin act I"}
             </a>
+            <a
+              href="#not-kin"
+              className="mt-5 inline-flex min-h-11 items-center font-display text-kicker tracking-kicker text-gold uppercase"
+            >
+              {lang === "es" ? "↓ Acto I · La labor" : "↓ Act I · The labor"}
+            </a>
           </div>
         </section>
+
+        <div className="h-px bg-gradient-to-r from-transparent via-gold to-transparent" aria-hidden="true" />
 
         {CHAPTERS.map((chapter, index) => {
           const sections = sectionsForChapter(chapter);
