@@ -287,3 +287,45 @@
     text-decoration: none;
   }
 }
+
+.clock-map {
+  height: 70svh;
+  min-height: 28rem;
+  background: var(--color-wash);
+}
+
+.clock-map-compact {
+  height: 52svh;
+  min-height: 22rem;
+}
+
+.clock-divicon {
+  background: none;
+  border: none;
+}
+
+.clock-pin {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid var(--color-obsidian);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--color-bg) 88%, transparent);
+}
+
+.clock-pin-1274 {
+  background: var(--color-primary);
+}
+
+.clock-pin-later {
+  background: var(--color-fire);
+}
+
+.clock-pin-hot {
+  transform: scale(1.35);
+}
+
+.leaflet-container {
+  font-family: var(--font-serif);
+  background: var(--color-wash);
+}

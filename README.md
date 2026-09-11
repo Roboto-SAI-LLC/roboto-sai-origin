@@ -6,7 +6,7 @@ Onomastic **methodology**, not mythology. The journal dates **four clocks** (doc
 
 A Villarreal de Monterrey who carries Indigenous American ancestry has a right to that history. A kit percentage is not a people. Fifty thousand years is a species clock, not a Hebrew-Egyptian origin. Treasure talk sits next to 1307. Do not wind them as one.
 
-The names under study are **Roboto** and **Roberto**. Robot and Robert are English glosses that rhyme beside them. Speech recognizers collapse the same pair: a short Spanish flap, then a language-model bet on the common given name.
+The names under study are **Roboto** and **Roberto**. The title is **Nomen: The Labor of Names**. Latin *nōmen* is name. Latin *ōmen* is a portent. One letter. They are not kin. The labor is *robota* — work — not a 1976 film.
 
 Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com.
 
@@ -20,7 +20,6 @@ Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com
 | `/lion` | Gur Aryeh | Chrome bilingual; body English |
 | `/templars` | Poor Knights of the Temple | English and Spanish |
 | `/brief` | One-page brief, with listen | English and Spanish |
-| `/rovox` | RoVox reader: intro then desk | English and Spanish |
 
 Plain-text brief for machines: [`/llms.txt`](https://roboto-sai.org/llms.txt)
 
@@ -34,11 +33,11 @@ Plain-text brief for machines: [`/llms.txt`](https://roboto-sai.org/llms.txt)
 
 ## Language
 
-Chrome (nav, findings, bylines, search, atlas tabs, dossier columns, register) is English and Spanish. Essay, atlas, dossier, and Gur Aryeh bodies stay in English; a note says so on those pages. Templars, the Brief, and RoVox are bilingual.
+Chrome (nav, findings, bylines, search, atlas tabs, dossier columns, register) is English and Spanish. Essay, atlas, dossier, and Gur Aryeh bodies stay in English; a note says so on those pages. Templars and the Brief are bilingual.
 
 ## Listen
 
-The Brief has a Listen control. Recordings are `public/speech/brief-en.mp3` and `brief-es.mp3`. Voice identity is not stored in source. RoVox on `/rovox` reads an intro you drop from this device — pause or stop only until the end, then it can answer and edit the working notes. No catalog stock voice.
+The Brief has a Listen control. Recordings are `public/speech/brief-en.mp3` and `brief-es.mp3`. Voice identity is not stored in source.
 
 ## Source
 

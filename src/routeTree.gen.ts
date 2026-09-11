@@ -14,7 +14,6 @@ import { Route as AtlasRouteImport } from './routes/atlas'
 import { Route as BriefRouteImport } from './routes/brief'
 import { Route as DossierRouteImport } from './routes/dossier'
 import { Route as LionRouteImport } from './routes/lion'
-import { Route as RovoxRouteImport } from './routes/rovox'
 import { Route as TemplarsRouteImport } from './routes/templars'
 
 const IndexRoute = IndexRouteImport.update({
@@ -42,11 +41,6 @@ const LionRoute = LionRouteImport.update({
   path: '/lion',
   getParentRoute: () => rootRouteImport,
 } as any)
-const RovoxRoute = RovoxRouteImport.update({
-  id: '/rovox',
-  path: '/rovox',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TemplarsRoute = TemplarsRouteImport.update({
   id: '/templars',
   path: '/templars',
@@ -59,7 +53,6 @@ export interface FileRoutesByFullPath {
   '/brief': typeof BriefRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
-  '/rovox': typeof RovoxRoute
   '/templars': typeof TemplarsRoute
 }
 export interface FileRoutesByTo {
@@ -68,7 +61,6 @@ export interface FileRoutesByTo {
   '/brief': typeof BriefRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
-  '/rovox': typeof RovoxRoute
   '/templars': typeof TemplarsRoute
 }
 export interface FileRoutesById {
@@ -78,24 +70,15 @@ export interface FileRoutesById {
   '/brief': typeof BriefRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
-  '/rovox': typeof RovoxRoute
   '/templars': typeof TemplarsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    '/' | '/atlas' | '/brief' | '/dossier' | '/lion' | '/rovox' | '/templars'
+  fullPaths: '/' | '/atlas' | '/brief' | '/dossier' | '/lion' | '/templars'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/atlas' | '/brief' | '/dossier' | '/lion' | '/rovox' | '/templars'
+  to: '/' | '/atlas' | '/brief' | '/dossier' | '/lion' | '/templars'
   id:
-    | '__root__'
-    | '/'
-    | '/atlas'
-    | '/brief'
-    | '/dossier'
-    | '/lion'
-    | '/rovox'
-    | '/templars'
+    '__root__' | '/' | '/atlas' | '/brief' | '/dossier' | '/lion' | '/templars'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -104,7 +87,6 @@ export interface RootRouteChildren {
   BriefRoute: typeof BriefRoute
   DossierRoute: typeof DossierRoute
   LionRoute: typeof LionRoute
-  RovoxRoute: typeof RovoxRoute
   TemplarsRoute: typeof TemplarsRoute
 }
 
@@ -145,13 +127,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LionRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/rovox': {
-      id: '/rovox'
-      path: '/rovox'
-      fullPath: '/rovox'
-      preLoaderRoute: typeof RovoxRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/templars': {
       id: '/templars'
       path: '/templars'
@@ -168,7 +143,6 @@ const rootRouteChildren: RootRouteChildren = {
   BriefRoute: BriefRoute,
   DossierRoute: DossierRoute,
   LionRoute: LionRoute,
-  RovoxRoute: RovoxRoute,
   TemplarsRoute: TemplarsRoute,
 }
 export const routeTree = rootRouteImport

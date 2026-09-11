@@ -16,12 +16,13 @@ export type Section = {
 export const META = {
   journal: "Roboto SAI Research",
   series: "Methodology",
-  title: "The Names Roboto and Roberto",
-  subtitle: "Linguistic Origins, Historical Usage, and Cultural Migrations",
+  title: "Nomen: The Labor of Names",
+  subtitle: "Roboto and Roberto — origins, usage, migrations",
   credit: "Roboto SAI research with a Copilot",
   date: "September 2026",
   sourceCount: 46,
-  description: "A research essay on the names Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Traces Slavic labor vocabulary and Proto-Germanic fame-compounds through royalty, surnames, inscriptions, and sound-alike names with divergent meanings. Includes why speech recognizers collapse the pair, a 1274 Vila-real network atlas, a carta pobla close reading, a claim-by-claim dossier, a later Monterrey place clock, and a living identity claim dated on four clocks."
+  description:
+    "Nomen is Latin for name. Omen is a portent. One letter; not kin. A research essay on Roboto and Roberto — house and given name — against the English glosses Robot and Robert. Slavic labor vocabulary, Proto-Germanic fame-compounds, Vila-real 1274, four clocks, and why speech recognizers collapse the pair.",
 };
 export const FINDINGS = [
   {
@@ -170,11 +171,15 @@ export const SECTIONS: Section[] = [
       {
         type: "p",
         dropCap: true,
-        text: "Names are more than mere labels; they are vessels of history, culture, and identity. The study of names—encompassing their origins, transformations, and migrations—offers a unique lens through which to view human societies across time and space. This report explores the names Roboto and Roberto. Robot and Robert are the English glosses that rhyme beside them. They are not the names under study."
+        text: "Latin *nōmen* is name. Latin *ōmen* is a portent. One letter. They are not kin. That is this journal’s job in miniature: keep the look-alike from stealing the sense. The names under study are Roboto and Roberto. Robot and Robert are English glosses that rhyme beside them. They are not the names under study."
       },
       {
         type: "p",
-        text: "It also examines the phenomenon of similar-sounding names with divergent meanings, such as Yisroel and Israel or Villarreal and Martinez, and delves into the symbolic associations that names can carry, exemplified by the link between Martinez and Mars, the Roman god of war. Roberto is the Iberian form of Robert — fame plus bright. Roboto sits next to robot / robota, the 1920 Czech coinage from Slavic forced labor. The house is not a diminutive of the given name."
+        text: "The labor in the title is *robota* — Slavic forced work, Čapek’s 1920 Czech coinage — not a curse from a 1976 film. Robert Thorn, in *The Omen*, is a character who adopts a child named Damien. Roberto is a given name: Iberian Robert, fame plus bright. Date the registers. Do not merge a movie with a baptism."
+      },
+      {
+        type: "p",
+        text: "It also examines similar-sounding names with divergent meanings — Yisroel and Israel, Villarreal and Martinez — and the symbolic associations names can carry, including Martinez beside Mars, the Roman god of war. Roboto sits next to robot / robota. The house is not a diminutive of the given name."
       },
       {
         type: "p",
@@ -390,7 +395,11 @@ export const SECTIONS: Section[] = [
       },
       {
         type: "p",
-        text: "Onomastics is the study of names. Anthroponymy (or anthroponomastics) focuses on the proper names of human beings, individual and collective.[3] It is a branch of onomastics and intersects with anthropology, history, geography, sociology, prosopography, and genealogy.[3]"
+        text: "Onomastics is the study of names. The English word rides Greek *ónoma*. The Latin word is *nōmen, nōminis* — name, noun, heading. Plural *nōmina*. From it: *nōmināre* (to name), *praenōmen*, *cognōmen*, *agnōmen*, *nōmenclātūra*. Hebrew keeps *shem*. None of those roots is *ōmen, ōminis*, a portent. The movie title *The Omen* is the second word. It is not a Latin treatise on names, and it does not make Robert the father of an antichrist in the 1274 record."
+      },
+      {
+        type: "p",
+        text: "Anthroponymy (or anthroponomastics) focuses on the proper names of human beings, individual and collective.[3] It is a branch of onomastics and intersects with anthropology, history, geography, sociology, prosopography, and genealogy.[3]"
       },
       {
         type: "p",
@@ -1826,4 +1835,4 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
   }
 ];
 export const CITATION =
-  "Roboto SAI, with a Copilot. “The Names Roboto and Roberto: Linguistic Origins, Historical Usage, and Cultural Migrations.” Roboto SAI Research, September 2026. https://roboto-sai.org";
+  "Roboto SAI, with a Copilot. “Nomen: The Labor of Names — Roboto and Roberto.” Roboto SAI Research, September 2026. https://roboto-sai.org";

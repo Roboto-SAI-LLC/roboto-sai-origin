@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Four clocks — Roboto SAI Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f3eee4;
+      --surface: #faf6ee;
+      --wash: #ebe4d6;
+      --fg: #1c1915;
+      --muted: #6d6558;
+      --primary: #3e534c;
+      --primary-fg: #f3eee4;
+      --border: #d9d0c3;
+      --display: "Fraunces", Palatino, serif;
+      --serif: "Source Serif 4", Georgia, serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--serif);
+      line-height: 1.65;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.25rem;
+    }
+    .bar {
+      max-width: 44rem;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .kicker {
+      font-family: var(--display);
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin: 0;
+    }
+    .lang {
+      display: flex;
+      gap: 0.25rem;
+      background: var(--surface);
+      padding: 0.25rem;
+      border-radius: 0.5rem;
+    }
+    .lang button {
+      min-height: 44px;
+      min-width: 44px;
+      border: 0;
+      border-radius: 0.35rem;
+      background: transparent;
+      color: var(--muted);
+      font-family: var(--display);
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+    .lang button[aria-pressed="true"] {
+      background: var(--primary);
+      color: var(--primary-fg);
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin: 0.75rem 0 0.5rem;
+    }
+    .lede { color: var(--muted); font-family: var(--display); font-size: 1.2rem; line-height: 1.35; }
+    .player {
+      margin: 1.5rem 0 2rem;
+      padding: 1rem 1.1rem;
+      background: var(--surface);
+      border-radius: 1rem;
+      box-shadow: 0 0 0 1px rgba(28,25,21,0.06);
+    }
+    audio { width: 100%; margin-top: 0.6rem; }
+    .tag {
+      font-family: var(--display);
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+    article { margin: 2.25rem 0; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    h2 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: 1.6rem;
+      margin: 0.35rem 0 0.75rem;
+    }
+    p { margin: 0 0 0.9rem; }
+    .sources { font-size: 0.92rem; color: var(--muted); }
+    .sources a { color: var(--primary); }
+    [data-lang] { display: none; }
+    html[lang="en"] [data-lang="en"],
+    html[lang="es"] [data-lang="es"] { display: block; }
+    html[lang="es"] [data-lang="es"].inline,
+    html[lang="en"] [data-lang="en"].inline { display: inline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <p class="kicker">Roboto SAI Research</p>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <p class="kicker" data-lang="en">One page · four speech tags · RoVox</p>
+    <p class="kicker" data-lang="es">Una pagina · cuatro etiquetas de voz · RoVox</p>
+    <h1 data-lang="en">Four clocks</h1>
+    <h1 data-lang="es">Cuatro relojes</h1>
+    <p class="lede" data-lang="en">A spoken summary of the four essays. No citation numbers. Sources named at the end of each tag.</p>
+    <p class="lede" data-lang="es">Un resumen hablado de los cuatro ensayos. Sin numeros de cita. Fuentes al pie de cada etiqueta.</p>
+
+    <div class="player">
+      <p class="tag" data-lang="en">Listen · English</p>
+      <p class="tag" data-lang="es">Escuchar · Espanol</p>
+      <audio id="player-en" controls preload="metadata" src="../speech/summary-en.mp3"></audio>
+      <audio id="player-es" controls preload="metadata" src="../speech/summary-es.mp3" hidden></audio>
+    </div>
+
+    <article>
+      <p class="tag">Essay · Ensayo</p>
+      <h2 data-lang="en">Robot and Robert</h2>
+      <h2 data-lang="es">Robot y Robert</h2>
+      <p data-lang="en">These two names rhyme in English. They are not kin. Robot entered world languages from Capek’s Czech play R.U.R., from Slavic robota, forced labor. Robert is Proto-Germanic fame plus bright, carried by dukes, kings, and saints. Sound is not sense. Yisrael and Israel can look like twins and still keep different clocks. Villarreal and Martinez can share a street and not a root. The essay’s job is to keep the word, the crown, the surname, and the place from collapsing into one story.</p>
+      <p data-lang="es">Estos dos nombres riman en ingles. No son parientes. Robot entro a las lenguas del mundo desde la obra checa R.U.R. de Capek, del eslavo robota, trabajo forzado. Robert viene del proto-germanico: fama mas brillante, llevado por duques, reyes y santos. El sonido no es el sentido. Yisrael e Israel pueden parecer gemelos y guardar relojes distintos. Villarreal y Martinez pueden compartir una calle y no una raiz. El oficio del ensayo es no dejar que la palabra, la corona, el apellido y el lugar se vuelvan un solo relato.</p>
+      <p class="sources" data-lang="en">Sources: Capek, R.U.R.; Slavic etymology of robota; Proto-Germanic Hrōþiberhtaz; onomastic pairs in this journal.</p>
+      <p class="sources" data-lang="es">Fuentes: Capek, R.U.R.; etimologia eslava de robota; proto-germanico Hrōþiberhtaz; pares onomasticos de esta revista.</p>
+    </article>
+
+    <article>
+      <p class="tag">Atlas</p>
+      <h2 data-lang="en">Vila-real, twelve seventy-four</h2>
+      <h2 data-lang="es">Vila-real, mil doscientos setenta y cuatro</h2>
+      <p data-lang="en">James the First of Aragon grants a carta pobla and plants a town on the Plana. The charter is a legal machine, not a family album. Names in that network are offices, neighbors, witnesses, and land. They do not, by themselves, prove a bloodline to a living household in Monterrey. The atlas holds a hotel in the old warehouse, an ejido and a rural locality called Los Villarreales north of the city, and a searched gap in fourteen twenty-nine. It will not glue a Catalan charter to a Nuevo Leon census and call that one origin.</p>
+      <p data-lang="es">Jaime Primero de Aragon otorga una carta puebla y planta una villa en la Plana. La carta es una maquina legal, no un album de familia. Los nombres de esa red son oficios, vecinos, testigos y tierra. Por si solos no prueban una linea de sangre hasta una casa viva en Monterrey. El atlas guarda un hotel en la antigua bodega, un ejido y una localidad rural llamada Los Villarreales al norte de la ciudad, y un hueco buscado en mil cuatrocientos veintinueve. No pega una carta catalana a un censo de Nuevo Leon para llamarlo un solo origen.</p>
+      <p class="sources" data-lang="en">Sources: carta pobla of Vila-real; INEGI locality Los Villarreales, Salinas Victoria; INAH record of the Apolo warehouse hotel; Plana chronicle gap.</p>
+      <p class="sources" data-lang="es">Fuentes: carta puebla de Vila-real; localidad INEGI Los Villarreales, Salinas Victoria; ficha INAH del hotel en la bodega Apolo; hueco de la cronica de la Plana.</p>
+    </article>
+
+    <article>
+      <p class="tag">Dossier</p>
+      <h2 data-lang="en">Three clocks, unmerged</h2>
+      <h2 data-lang="es">Tres relojes, sin fundir</h2>
+      <p data-lang="en">Steelman first. Then the charter, clause by clause. Then three clocks on the table: documents, family memory, genetic tests. A date on a charter is not a date on a cheek swab. Nuevo Leon means New Kingdom of Leon. An English tourism page once calqued it as New Lion and then took that line down. That calque is not Hebrew lion language, and it is not a founding of this Mexican state by the tribe of Judah.</p>
+      <p data-lang="es">Primero el steelman. Luego la carta, clausula por clausula. Luego tres relojes sobre la mesa: documentos, memoria de familia, pruebas geneticas. La fecha de una carta no es la fecha de un hisopo. Nuevo Leon significa Nuevo Reino de Leon. Una pagina turistica en ingles alguna vez lo calco como New Lion y luego quito esa linea. Ese calco no es la lengua hebrea del leon, y no es una fundacion de este estado mexicano por la tribu de Juda.</p>
+      <p class="sources" data-lang="en">Sources: VisitMexico English calque, later reverted; reporting in AM, Debate, Al Dia; Numbers twenty-three; INEGI census counts.</p>
+      <p class="sources" data-lang="es">Fuentes: calco ingles de VisitMexico, luego revertido; notas en AM, Debate, Al Dia; Numeros veintitres; conteos INEGI.</p>
+    </article>
+
+    <article>
+      <p class="tag">Gur Aryeh</p>
+      <h2 data-lang="en">Judah’s animal</h2>
+      <h2 data-lang="es">El animal de Juda</h2>
+      <p data-lang="en">Jacob blesses Judah as a lion’s cub. From prey the cub has gone up. He crouches like a lion, like a lioness. Who will rouse him. The next line keeps the scepter in Judah. After the northern tribes are lost, Judah’s name becomes Jew, and the tribal animal becomes a Jewish one. Hebrew keeps six biblical words for this beast: ari, kefir, lavi, layish, shachal, and the cub, gur. The same animal flips. In the hand of Judah, David, Israel, or God, it is a crown. Aimed at the psalmist or the covenant-breaker, it is a mouth. The Temple was said to be shaped like a lion. Ezekiel puts a lion face on the right of the chariot. Synagogues still pair lions at the ark. Jerusalem’s seal still walks a lion on a wall. Aryeh, Ari, Ariel, Kfir, Lavi, Aryeh Leib: the blessing became a name.</p>
+      <p data-lang="es">Jacob bendice a Juda como cachorro de leon. De la presa el cachorro ha subido. Se agacha como leon, como leona. Quien lo despertara. La linea siguiente deja el cetro en Juda. Cuando se pierden las tribus del norte, el nombre de Juda se vuelve judio, y el animal de la tribu se vuelve un animal judio. El hebreo guarda seis palabras biblicas para esta fiera: ari, kefir, lavi, layish, shachal, y el cachorro, gur. El mismo animal se voltea. En la mano de Juda, de David, de Israel o de Dios, es corona. Apuntado al salmista o al que rompe el pacto, es boca. Se decia que el Templo tenia forma de leon. Ezequiel pone cara de leon a la derecha del carro. Las sinagogas siguen poniendo leones junto al arca. El sello de Jerusalen todavia camina un leon sobre un muro. Aryeh, Ari, Ariel, Kfir, Lavi, Aryeh Leib: la bendicion se volvio nombre.</p>
+      <p class="sources" data-lang="en">Sources: Genesis forty-nine; Numbers twenty-three and twenty-four; Sanhedrin; Mishnah Middot; Ezekiel; Shulchan Aruch, Orach Chayim; emblem of Jerusalem; Sefaria text witnesses.</p>
+      <p class="sources" data-lang="es">Fuentes: Genesis cuarenta y nueve; Numeros veintitres y veinticuatro; Sanedrin; Mishna Midot; Ezequiel; Shuljan Aruj, Oraj Jaim; sello de Jerusalen; testigos de texto en Sefaria.</p>
+    </article>
+  </main>
+  <script>
+    const root = document.documentElement;
+    const enAudio = document.getElementById("player-en");
+    const esAudio = document.getElementById("player-es");
+    function setLang(lang) {
+      root.lang = lang;
+      localStorage.setItem("rs-lang", lang);
+      document.querySelectorAll("[data-set-lang]").forEach((btn) => {
+        btn.setAttribute("aria-pressed", String(btn.getAttribute("data-set-lang") === lang));
+      });
+      const show = lang === "es" ? esAudio : enAudio;
+      const hide = lang === "es" ? enAudio : esAudio;
+      hide.pause();
+      hide.hidden = true;
+      show.hidden = false;
+    }
+    document.querySelectorAll("[data-set-lang]").forEach((btn) => {
+      btn.addEventListener("click", () => setLang(btn.getAttribute("data-set-lang")));
+    });
+    setLang(localStorage.getItem("rs-lang") === "es" ? "es" : "en");
+  </script>
+</body>
+</html>

@@ -4,7 +4,7 @@ import { ShareBar } from "@/components/article/share-bar";
 import { CHROME, useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
-function NavLinks({
+function InstrumentLinks({
   pathname,
   className,
 }: {
@@ -13,10 +13,11 @@ function NavLinks({
 }) {
   const { lang } = useLang();
   const chrome = CHROME[lang];
+  const items = chrome.nav.filter((item) => item.to !== "/");
 
   return (
-    <nav className={className} aria-label={chrome.ui.nav}>
-      {chrome.nav.map((item) => {
+    <nav className={className} aria-label={lang === "es" ? "Instrumentos" : "Instruments"}>
+      {items.map((item) => {
         const active = pathname === item.to;
         return (
           <Link
@@ -39,35 +40,41 @@ export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { lang } = useLang();
   const chrome = CHROME[lang];
+  const onFilm = pathname === "/";
 
   return (
-    <header className="border-b border-border">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 xl:flex-row xl:items-center xl:justify-between sm:px-6">
-        <div className="flex min-w-0 items-end justify-between gap-3">
-          <Link to="/" className="min-w-0 rounded-sm">
-            <p className="font-display text-kicker tracking-kicker text-primary uppercase">
-              Roboto SAI
-            </p>
-            <p className="mt-1 text-xs text-muted">
-              {chrome.series} · {chrome.date}
-            </p>
-          </Link>
+    <header
+      className={cn(
+        onFilm
+          ? "absolute inset-x-0 top-0 z-20 border-b-0 bg-gradient-to-b from-obsidian/70 to-transparent"
+          : "border-b border-border bg-bg/90 backdrop-blur-sm",
+      )}
+    >
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+        <Link to="/" className="min-w-0 rounded-sm">
+          <p className={cn("font-display text-kicker tracking-kicker uppercase", onFilm ? "text-gold" : "text-primary")}>
+            Roboto SAI
+          </p>
+          <p className={cn("mt-0.5 text-xs", onFilm ? "text-primary-fg/75" : "text-muted")}>
+            {onFilm
+              ? lang === "es"
+                ? "Nomen · cinco actos"
+                : "Nomen · five acts"
+              : `${chrome.series} · ${chrome.date}`}
+          </p>
+        </Link>
+
+        <div className="flex items-center gap-2">
           <LangToggle />
-        </div>
-
-        <details className="rounded-lg bg-surface px-4 py-1 shadow-paper xl:hidden">
-          <summary className="flex min-h-11 cursor-pointer list-none items-center gap-3 font-display text-sm text-fg">
-            {chrome.menu}
-          </summary>
-          <div className="flex flex-col gap-2 pb-3">
-            <NavLinks pathname={pathname} className="flex flex-col gap-2" />
-            <ShareBar />
-          </div>
-        </details>
-
-        <div className="hidden items-center gap-2 xl:flex">
-          <NavLinks pathname={pathname} className="flex flex-wrap items-center gap-2" />
-          <ShareBar />
+          <details className="relative">
+            <summary className="flex min-h-11 cursor-pointer list-none items-center rounded-md bg-surface px-3.5 text-sm font-medium text-fg shadow-paper">
+              {lang === "es" ? "Instrumentos" : "Instruments"}
+            </summary>
+            <div className="absolute right-0 z-40 mt-2 flex min-w-52 flex-col gap-2 rounded-lg bg-surface p-3 shadow-paper">
+              <InstrumentLinks pathname={pathname} className="flex flex-col gap-2" />
+              <ShareBar />
+            </div>
+          </details>
         </div>
       </div>
     </header>

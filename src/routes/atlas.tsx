@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ClockMap } from "@/components/article/clock-map";
 import { GlossaryList } from "@/components/article/glossary-list";
 import { MonterreyAtlas } from "@/components/article/monterrey-atlas";
 import { NameRegister } from "@/components/article/name-register";
@@ -26,10 +27,10 @@ export const Route = createFileRoute("/atlas")({
   }),
 });
 
-type TabId = "monterrey" | "network" | "ledger" | "register" | "glossary";
+type TabId = "map" | "monterrey" | "network" | "ledger" | "register" | "glossary";
 
 function AtlasPage() {
-  const [tab, setTab] = useState<TabId>("monterrey");
+  const [tab, setTab] = useState<TabId>("map");
   const { lang } = useLang();
   const chrome = CHROME[lang];
   const copy = chrome.atlas;
@@ -45,7 +46,7 @@ function AtlasPage() {
           {copy.title}
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-          {tab === "monterrey" ? copy.leadMonterrey : copy.leadNetwork}
+          {tab === "map" ? copy.leadMap : tab === "monterrey" ? copy.leadMonterrey : copy.leadNetwork}
         </p>
         <p className="mt-4 text-sm text-muted">
           {copy.noteBefore}{" "}
@@ -83,6 +84,7 @@ function AtlasPage() {
         </div>
 
         <section className="mt-8" role="tabpanel">
+          {tab === "map" ? <ClockMap /> : null}
           {tab === "monterrey" ? <MonterreyAtlas /> : null}
           {tab === "network" ? <NetworkAtlas /> : null}
           {tab === "ledger" ? <RecordLedger /> : null}

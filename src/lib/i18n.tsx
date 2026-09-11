@@ -47,7 +47,7 @@ export function pick<T>(lang: Lang, pair: { en: T; es: T }): T {
 }
 
 export type NavItem = {
-  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief" | "/rovox";
+  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief";
   label: string;
 };
 
@@ -74,17 +74,16 @@ export const CHROME = {
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templars" },
       { to: "/brief", label: "Brief" },
-      { to: "/rovox", label: "RoVox" },
     ] satisfies NavItem[],
     home: {
-      title: "The Names Roboto and Roberto",
-      subtitle: "Linguistic origins, historical usage, and cultural migrations",
-      kicker: "A static research page",
+      title: "Nomen: The Labor of Names",
+      subtitle: "Roboto and Roberto — origins, usage, migrations",
+      kicker: "Nomen, not omen",
       sources: "sources",
       findings: [
         {
-          kicker: "Not kin",
-          text: "The real names are Roboto and Roberto. They rhyme. They are not etymological relatives.",
+          kicker: "Nomen",
+          text: "Latin nōmen is name. Latin ōmen is a portent. One letter. They are not kin. The labor in the title is robota — work — not a 1976 film.",
         },
         {
           kicker: "House name",
@@ -122,10 +121,6 @@ export const CHROME = {
       briefKicker: "Brief",
       briefText: "One page. Five tags. No citation numbers. English and Spanish.",
       briefCta: "Open the brief",
-      rovoxKicker: "RoVox",
-      rovoxText:
-        "House reader. Pause or stop during the intro. After the end, it answers and can edit the working notes. Drop your recording — no catalog voice.",
-      rovoxCta: "Open RoVox",
       chronology: "A brief chronology",
       chronologyLead:
         "Selected dates that thread Roboto, Roberto, and the Iberian case studies through the same historical line.",
@@ -137,6 +132,8 @@ export const CHROME = {
       title: "Network atlas",
       leadMonterrey:
         "A modern migration node: Villarreal saturating Monterrey, the Los Villarreales locality in Salinas Victoria, and La Mansión Villarreal in the centro. Building and gazetteer — not the news cycle.",
+      leadMap:
+        "A surveyed map. Vila-real 1274 and Los Villarreales sit thousands of kilometres apart. Same name-shape. Two clocks. Do not merge them.",
       leadNetwork:
         "People actually named in the Vila-real grants, the neighboring Temple, and the aljama — kept in three columns: in the record, adjacent, not in the record.",
       noteBefore: "Full argument is in the",
@@ -145,6 +142,7 @@ export const CHROME = {
       dossier: "dossier",
       noteAfter: ". The 1274 town and the Nuevo León landscape are separate clocks.",
       tabs: [
+        { id: "map", label: "Two clocks" },
         { id: "monterrey", label: "Monterrey" },
         { id: "network", label: "1274 network" },
         { id: "ledger", label: "Record vs gap" },
@@ -167,40 +165,6 @@ export const CHROME = {
         { id: "chronicle", label: "Chronicle" },
         { id: "dna", label: "Four clocks" },
       ],
-    },
-    rovox: {
-      kicker: "Reader · house voice",
-      title: "RoVox",
-      lead: "Listens first. You may pause or stop the intro. You may not skip it or talk over it. When the recording reaches the end, RoVox answers, searches xAI Docs, and can update the card and the working notes. Drop your own MP3 — generated on your device.",
-      card: "Info card",
-      name: "Name",
-      role: "Role",
-      note: "Note",
-      noStock: "No catalog stock voice. RoVox is the house recording.",
-      player: "Intro",
-      rule: "During the intro the only controls are pause and stop. Chat stays locked until the file ends.",
-      listen: "Listen",
-      pause: "Pause",
-      resume: "Resume",
-      stop: "Stop",
-      drop: "Drop a RoVox MP3 from this device",
-      usingFallback: "Using the Brief recording until you drop a RoVox file.",
-      usingFile: "Using your recording.",
-      docs: "Working notes",
-      reset: "Reset notes",
-      resetCard: "Reset card",
-      desk: "After the intro",
-      empty: "Finish the intro to ask.",
-      you: "You",
-      ask: "Ask RoVox…",
-      send: "Send",
-      locked: "Chat locked until the intro ends.",
-      unlocked: "Intro finished. Ask, or edit the notes. RoVox can update them.",
-      idleHint: "Start the intro. Pause or stop only.",
-      cap: "Eight questions this sitting.",
-      unavailable: "RoVox cannot reach the model in this environment. The intro and the notes still work.",
-      needGesture: "Press Listen again to start audio.",
-      writing: "RoVox is writing…",
     },
     lion: {
       kicker: "A static research page",
@@ -279,7 +243,7 @@ export const CHROME = {
     copied: "Copiado",
     cite: "Citar esta página",
     englishBody:
-      "El ensayo, el atlas, el dossier y Gur Aryeh están en inglés. Templarios, la síntesis y RoVox están en los dos idiomas.",
+      "El ensayo, el atlas, el dossier y Gur Aryeh están en inglés. Templarios y la síntesis están en los dos idiomas.",
     menu: "Menú",
     github: "Fuente en GitHub",
     nav: [
@@ -289,17 +253,16 @@ export const CHROME = {
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templarios" },
       { to: "/brief", label: "Síntesis" },
-      { to: "/rovox", label: "RoVox" },
     ] satisfies NavItem[],
     home: {
-      title: "Los nombres Roboto y Roberto",
-      subtitle: "Orígenes lingüísticos, uso histórico y migraciones culturales",
-      kicker: "Página de investigación",
+      title: "Nomen: la labor de los nombres",
+      subtitle: "Roboto y Roberto — orígenes, uso, migraciones",
+      kicker: "Nomen, no omen",
       sources: "fuentes",
       findings: [
         {
-          kicker: "No son parientes",
-          text: "Los nombres reales son Roboto y Roberto. Riman. No son parientes etimológicos.",
+          kicker: "Nomen",
+          text: "En latín nōmen es nombre. Ōmen es un presagio. Una letra. No son parientes. La labor del título es robota — trabajo — no una película de 1976.",
         },
         {
           kicker: "Nombre de casa",
@@ -337,10 +300,6 @@ export const CHROME = {
       briefKicker: "Síntesis",
       briefText: "Una página. Cinco etiquetas. Sin números de cita. Inglés y español.",
       briefCta: "Abrir la síntesis",
-      rovoxKicker: "RoVox",
-      rovoxText:
-        "Lector de la casa. Pausa o alto durante la intro. Al terminar, responde y puede editar las notas. Suelta tu grabación — sin voz de catálogo.",
-      rovoxCta: "Abrir RoVox",
       chronology: "Una cronología breve",
       chronologyLead:
         "Fechas que atan Roboto, Roberto y los casos ibéricos a la misma línea histórica.",
@@ -352,6 +311,8 @@ export const CHROME = {
       title: "Atlas de red",
       leadMonterrey:
         "Un nodo moderno de migración: Villarreal saturando Monterrey, la localidad Los Villarreales en Salinas Victoria, y La Mansión Villarreal en el centro. Edificio y gazetero — no el ciclo de noticias.",
+      leadMap:
+        "Un mapa levantado. Vila-real 1274 y Los Villarreales quedan a miles de kilómetros. Misma forma de nombre. Dos relojes. No los fundas.",
       leadNetwork:
         "Personas realmente nombradas en las mercedes de Vila-real, el Templo vecino y la aljama — en tres columnas: en el acta, al lado, no en el acta.",
       noteBefore: "El argumento completo está en el",
@@ -360,6 +321,7 @@ export const CHROME = {
       dossier: "dossier",
       noteAfter: ". La villa de 1274 y el paisaje de Nuevo León son relojes distintos.",
       tabs: [
+        { id: "map", label: "Dos relojes" },
         { id: "monterrey", label: "Monterrey" },
         { id: "network", label: "Red 1274" },
         { id: "ledger", label: "Acta y hueco" },
@@ -382,40 +344,6 @@ export const CHROME = {
         { id: "chronicle", label: "Crónica" },
         { id: "dna", label: "Cuatro relojes" },
       ],
-    },
-    rovox: {
-      kicker: "Lector · voz de la casa",
-      title: "RoVox",
-      lead: "Primero escucha. Puedes pausar o parar la intro. No puedes saltarla ni hablar encima. Cuando la grabación llega al final, RoVox responde, busca xAI Docs y puede actualizar la ficha y las notas. Suelta tu propio MP3 — generado en tu aparato.",
-      card: "Ficha",
-      name: "Nombre",
-      role: "Oficio",
-      note: "Nota",
-      noStock: "Sin voz de catálogo. RoVox es la grabación de la casa.",
-      player: "Introducción",
-      rule: "Durante la intro los únicos controles son pausa y alto. El chat permanece cerrado hasta que el archivo termina.",
-      listen: "Escuchar",
-      pause: "Pausa",
-      resume: "Seguir",
-      stop: "Alto",
-      drop: "Suelta un MP3 de RoVox desde este aparato",
-      usingFallback: "Usa la grabación de la Síntesis hasta que sueltes un archivo RoVox.",
-      usingFile: "Usa tu grabación.",
-      docs: "Notas de trabajo",
-      reset: "Restablecer notas",
-      resetCard: "Restablecer ficha",
-      desk: "Después de la intro",
-      empty: "Termina la intro para preguntar.",
-      you: "Tú",
-      ask: "Pregunta a RoVox…",
-      send: "Enviar",
-      locked: "Chat cerrado hasta que termine la intro.",
-      unlocked: "Intro terminada. Pregunta, o edita las notas. RoVox puede actualizarlas.",
-      idleHint: "Empieza la intro. Solo pausa o alto.",
-      cap: "Ocho preguntas en esta sesión.",
-      unavailable: "RoVox no alcanza el modelo en este entorno. La intro y las notas siguen funcionando.",
-      needGesture: "Pulsa Escuchar otra vez para arrancar el audio.",
-      writing: "RoVox escribe…",
     },
     lion: {
       kicker: "Página de investigación",
