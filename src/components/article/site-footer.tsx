@@ -18,6 +18,9 @@ export function SiteFooter({ compact = false }: { compact?: boolean }) {
         )}
       >
         <nav className="flex flex-wrap gap-x-4 gap-y-2" aria-label={lang === "es" ? "Más" : "More"}>
+          <Link to="/codex" className="text-primary underline underline-offset-4">
+            {lang === "es" ? "Códice" : "Codex"}
+          </Link>
           <Link to="/lion" className="text-primary underline underline-offset-4">
             Gur Aryeh
           </Link>

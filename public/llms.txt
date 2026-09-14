@@ -17,7 +17,7 @@ Credit: Roberto Villarreal Martinez, Roboto SAI research with a Copilot
 Published: September 2026
 Type: Scholarly research essay + 1274 network atlas + Monterrey migration node + claim dossier + scripture quotes (KJV, LBLA)
 
-This file is a machine-readable brief. The full illustrated essay, tables, timeline, and references live on the page at /. The clickable network, ledger, and register live at /atlas (two clocks: 1269–1274 and Monterrey). The claim inspector, carta pobla close reading, Plana chronicle, and DNA clocks live at /dossier. Gur Aryeh (lion symbolism) lives at /lion. Templars live at /templars. A one-page bilingual brief, with audio, lives at /brief. Scripture quotes (server-side API.Bible; key never in the browser) live at /scripture.
+This file is a machine-readable brief. The full illustrated essay, tables, timeline, and references live on the page at /. The clickable network, ledger, and register live at /atlas (two clocks: 1269–1274 and Monterrey). The claim inspector, carta pobla close reading, Plana chronicle, and DNA clocks live at /dossier. The Villarreal Codex (Diego’s mining clocks, Monterrey, Battle of Monterrey 21 September 1846 pinned to a Houston birth 21 September 1999) lives at /codex. Gur Aryeh (lion symbolism) lives at /lion. Templars live at /templars. A one-page bilingual brief, with audio, lives at /brief. Scripture quotes (server-side API.Bible; key never in the browser) live at /scripture.
 
 
 Methodology, not mythology: documents, DNA, family memory, and place are four clocks. Steelman a claim, then split it. Keep record vs gap. Gur Aryeh is the companion essay on Hebrew lion language — not the name of this journal.

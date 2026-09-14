@@ -12,6 +12,7 @@ export function SiteHeader() {
     { to: "/" as const, label: lang === "es" ? "Índice" : "Index" },
     { to: "/atlas" as const, label: chrome.nav.find((n) => n.to === "/atlas")?.label ?? "Atlas" },
     { to: "/dossier" as const, label: "Dossier" },
+    { to: "/codex" as const, label: lang === "es" ? "Códice" : "Codex" },
     { to: "/scripture" as const, label: lang === "es" ? "Escritura" : "Scripture" },
   ];
 

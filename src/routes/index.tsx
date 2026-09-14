@@ -103,6 +103,15 @@ function ResearchPage() {
           ))}
         </ol>
 
+        <p className="mt-8">
+          <Link
+            to="/codex"
+            className="inline-flex min-h-11 items-center font-display text-sm text-primary underline underline-offset-4"
+          >
+            {lang === "es" ? "Códice Villarreal — 1608 a 1999" : "Villarreal Codex — 1608 to 1999"}
+          </Link>
+        </p>
+
         <p className="mt-10 text-sm text-muted">{CITATION}</p>
         <p className="mt-3 text-sm text-subtle">
           {home.llms}{" "}

@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AtlasRouteImport } from './routes/atlas'
 import { Route as BriefRouteImport } from './routes/brief'
+import { Route as CodexRouteImport } from './routes/codex'
 import { Route as DossierRouteImport } from './routes/dossier'
 import { Route as LionRouteImport } from './routes/lion'
 import { Route as ScriptureRouteImport } from './routes/scripture'
@@ -31,6 +32,11 @@ const AtlasRoute = AtlasRouteImport.update({
 const BriefRoute = BriefRouteImport.update({
   id: '/brief',
   path: '/brief',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CodexRoute = CodexRouteImport.update({
+  id: '/codex',
+  path: '/codex',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DossierRoute = DossierRouteImport.update({
@@ -63,6 +69,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
   '/brief': typeof BriefRoute
+  '/codex': typeof CodexRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
   '/scripture': typeof ScriptureRoute
@@ -73,6 +80,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
   '/brief': typeof BriefRoute
+  '/codex': typeof CodexRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
   '/scripture': typeof ScriptureRoute
@@ -84,6 +92,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/atlas': typeof AtlasRoute
   '/brief': typeof BriefRoute
+  '/codex': typeof CodexRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
   '/scripture': typeof ScriptureRoute
@@ -96,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/atlas'
     | '/brief'
+    | '/codex'
     | '/dossier'
     | '/lion'
     | '/scripture'
@@ -106,6 +116,7 @@ export interface FileRouteTypes {
     | '/'
     | '/atlas'
     | '/brief'
+    | '/codex'
     | '/dossier'
     | '/lion'
     | '/scripture'
@@ -116,6 +127,7 @@ export interface FileRouteTypes {
     | '/'
     | '/atlas'
     | '/brief'
+    | '/codex'
     | '/dossier'
     | '/lion'
     | '/scripture'
@@ -127,6 +139,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AtlasRoute: typeof AtlasRoute
   BriefRoute: typeof BriefRoute
+  CodexRoute: typeof CodexRoute
   DossierRoute: typeof DossierRoute
   LionRoute: typeof LionRoute
   ScriptureRoute: typeof ScriptureRoute
@@ -155,6 +168,13 @@ declare module '@tanstack/react-router' {
       path: '/brief'
       fullPath: '/brief'
       preLoaderRoute: typeof BriefRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/codex': {
+      id: '/codex'
+      path: '/codex'
+      fullPath: '/codex'
+      preLoaderRoute: typeof CodexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dossier': {
@@ -199,6 +219,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AtlasRoute: AtlasRoute,
   BriefRoute: BriefRoute,
+  CodexRoute: CodexRoute,
   DossierRoute: DossierRoute,
   LionRoute: LionRoute,
   ScriptureRoute: ScriptureRoute,

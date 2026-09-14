@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/codex",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Villarreal Codex — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 3999,
+      "bodyTextHash": "25dfaaed0979d51b993cc7c575953ba45b696b66627ad8cfcd6cc2f1fea7d167",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Codex Scripture EN ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/codex.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Villarreal Codex — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 3975,
+      "bodyTextHash": "92480ae21710b869ab2499729031b0b74ec03c600285011bd276bc3f700cd0a6",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Codex Scripture EN ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/codex-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/codex.json"
+}

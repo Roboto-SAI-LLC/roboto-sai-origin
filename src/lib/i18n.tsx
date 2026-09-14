@@ -47,7 +47,7 @@ export function pick<T>(lang: Lang, pair: { en: T; es: T }): T {
 }
 
 export type NavItem = {
-  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief" | "/scripture";
+  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief" | "/scripture" | "/codex";
   label: string;
 };
 
@@ -71,6 +71,7 @@ export const CHROME = {
       { to: "/", label: "Essay" },
       { to: "/atlas", label: "Atlas" },
       { to: "/dossier", label: "Dossier" },
+      { to: "/codex", label: "Codex" },
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templars" },
       { to: "/brief", label: "Brief" },
@@ -244,13 +245,14 @@ export const CHROME = {
     copied: "Copiado",
     cite: "Citar esta página",
     englishBody:
-      "El ensayo, el atlas, el dossier y Gur Aryeh están en inglés. Templarios y la síntesis están en los dos idiomas.",
+      "El ensayo, el atlas, el dossier y Gur Aryeh están en inglés. Códice, templarios y la síntesis están en los dos idiomas.",
     menu: "Menú",
     github: "Fuente en GitHub",
     nav: [
       { to: "/", label: "Ensayo" },
       { to: "/atlas", label: "Atlas" },
       { to: "/dossier", label: "Dossier" },
+      { to: "/codex", label: "Códice" },
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templarios" },
       { to: "/brief", label: "Síntesis" },
