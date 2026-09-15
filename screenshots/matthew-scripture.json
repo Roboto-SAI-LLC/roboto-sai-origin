@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/scripture",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Scripture — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 634,
+      "bodyTextHash": "09cfc5c81f04d0e335004bc04626535bb0db8fff958c84ac21a4358f7161129d",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Codex Pins Scriptur",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/matthew-scripture.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Scripture — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 611,
+      "bodyTextHash": "fcf72af1a7326f28d600b73ee49a2e4a800accfadb97751e9a746b869ab523ef",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Codex Pins Scriptur",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/matthew-scripture-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/matthew-scripture.json"
+}

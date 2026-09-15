@@ -17,7 +17,7 @@ Credit: Roberto Villarreal Martinez, Roboto SAI research with a Copilot
 Published: September 2026
 Type: Scholarly research essay + 1274 network atlas + Monterrey migration node + claim dossier + scripture quotes (KJV, LBLA)
 
-This file is a machine-readable brief. The full illustrated essay, tables, timeline, and references live on the page at /. The clickable network, ledger, and register live at /atlas (two clocks: 1269–1274 and Monterrey). The claim inspector, carta pobla close reading, Plana chronicle, and DNA clocks live at /dossier. The Villarreal Codex (Diego’s mining clocks, Monterrey, Battle of Monterrey 21 September 1846 pinned to a Houston birth 21 September 1999) lives at /codex. Gur Aryeh (lion symbolism) lives at /lion. Templars live at /templars. A one-page bilingual brief, with audio, lives at /brief. Scripture quotes (server-side API.Bible; key never in the browser) live at /scripture.
+This file is a machine-readable brief. The full illustrated essay, tables, timeline, and references live on the page at /. The clickable network, ledger, and register live at /atlas (two clocks: 1269–1274 and Monterrey). The claim inspector, carta pobla close reading, Plana chronicle, and DNA clocks live at /dossier. The Villarreal Codex (Diego’s mining clocks, Monterrey, Battle of Monterrey 21 September 1846 pinned to a Houston birth 21 September 1999) lives at /codex. Calendar pins, owner-reported Y E-M96, and east-departure literature live at /pins. Gur Aryeh (lion symbolism) lives at /lion. Templars live at /templars. A one-page bilingual brief, with audio, lives at /brief. Scripture quotes (server-side API.Bible; key never in the browser) live at /scripture.
 
 
 Methodology, not mythology: documents, DNA, family memory, and place are four clocks. Steelman a claim, then split it. Keep record vs gap. Gur Aryeh is the companion essay on Hebrew lion language — not the name of this journal.
@@ -69,7 +69,14 @@ James I; Infant Pere (later Peter III); Simó de Sant Feliu (notary); Paris the 
 - 1893: Fábricas Apolo warehouse, Monterrey centro
 - 1914: Antonio I. Villarreal, governor of Nuevo León
 - 1920: Robot coined; English by 1923
+- 21 Sep (Western): Feast of St Matthew. House gospel going forward: Matthew (feast reading 9:9–13). Same date-shape as the Houston birth; not one event.
+- 21 Sep 1999: Houston birth; Chi-Chi / 921 Taiwan
 - 2020: Los Villarreales census, 633 inhabitants
+- 14 Oct 2023: annular eclipse, Oregon–Texas
+- 8 Apr 2024: total eclipse, Mexico–Texas–Maine
+- 21 Sep 2025: partial eclipse, Saros 154, South Pacific — not Texas
+- 20–21 Sep 2026: Yom Kippur 5787 (10 Tishrei). Sundown 20 Sep, civil day 21 Sep. Same Gregorian numeral as the Houston birth; lunisolar calendar, not a single cause.
+- Calendar engines (dated, not glued): Julian 45 BCE as Latin civil year before 1582; Gregorian Inter gravissimas 1582 (Easter/equinox; 10 days dropped); Britain Calendar Act 1750 / 2→14 Sep 1752 (11 numbers); Soviet 1918 (13 numbers). Hebrew lunisolar intercalation keeps spring rites in spring. Mesoamerican 260-day (cholq’ij / tzolk’in) still kept by highland Maya daykeepers; Mexica/Maya states used it too. Colonial book-burning is a document clock. E-M96 is a Y haplogroup, not a calendar. Four clocks stay four clocks — not four layers of one overwrite.
 
 ## Suggested citation
 Villarreal Martinez, Roberto. “RobotOmen: Labor Nominis.” Roboto SAI Research, September 2026. https://roboto-sai.org

@@ -47,7 +47,7 @@ export function pick<T>(lang: Lang, pair: { en: T; es: T }): T {
 }
 
 export type NavItem = {
-  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief" | "/scripture" | "/codex";
+  to: "/" | "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief" | "/scripture" | "/codex" | "/pins";
   label: string;
 };
 
@@ -72,6 +72,7 @@ export const CHROME = {
       { to: "/atlas", label: "Atlas" },
       { to: "/dossier", label: "Dossier" },
       { to: "/codex", label: "Codex" },
+      { to: "/pins", label: "Pins" },
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templars" },
       { to: "/brief", label: "Brief" },
@@ -253,6 +254,7 @@ export const CHROME = {
       { to: "/atlas", label: "Atlas" },
       { to: "/dossier", label: "Dossier" },
       { to: "/codex", label: "Códice" },
+      { to: "/pins", label: "Clavos" },
       { to: "/lion", label: "Gur Aryeh" },
       { to: "/templars", label: "Templarios" },
       { to: "/brief", label: "Síntesis" },

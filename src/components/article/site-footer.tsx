@@ -21,6 +21,9 @@ export function SiteFooter({ compact = false }: { compact?: boolean }) {
           <Link to="/codex" className="text-primary underline underline-offset-4">
             {lang === "es" ? "Códice" : "Codex"}
           </Link>
+          <Link to="/pins" className="text-primary underline underline-offset-4">
+            {lang === "es" ? "Clavos" : "Pins"}
+          </Link>
           <Link to="/lion" className="text-primary underline underline-offset-4">
             Gur Aryeh
           </Link>

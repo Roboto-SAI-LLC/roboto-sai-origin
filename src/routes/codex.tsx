@@ -3,6 +3,7 @@ import { ReadingProgress } from "@/components/article/reading-progress";
 import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { CODEX_FOLIOS, CODEX_META, CODEX_PIN, CODEX_SOURCES } from "@/lib/codex";
+import { PINS_BLOCKS } from "@/lib/pins";
 import { useLang } from "@/lib/i18n";
 import { APP_NAME, AUTHOR, SITE_URL } from "@/lib/site";
 
@@ -77,6 +78,13 @@ function CodexPage() {
               <p className="mt-1 text-sm leading-relaxed text-fg">{CODEX_PIN.right.what[lang]}</p>
             </div>
           </div>
+          <p className="mt-6 text-sm leading-relaxed text-fg">{PINS_BLOCKS.chiChi[lang]}</p>
+          <p className="mt-3 text-sm leading-relaxed text-muted">{PINS_BLOCKS.sky[lang]}</p>
+          <p className="mt-4 text-sm">
+            <Link to="/pins" className="text-primary underline underline-offset-4">
+              {lang === "es" ? "Addenda: clavos de calendario y E-M96" : "Addendum: calendar pins and E-M96"}
+            </Link>
+          </p>
         </section>
 
         <ol className="mt-14 space-y-0">

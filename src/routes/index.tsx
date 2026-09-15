@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/article/site-header";
 import { CHAPTERS } from "@/lib/chapters";
 import { CHROME, useLang } from "@/lib/i18n";
 import { CITATION, META } from "@/lib/research";
+import { HOUSE_GOSPEL } from "@/lib/scripture";
 import { APP_NAME, AUTHOR, SITE_URL } from "@/lib/site";
 
 const ACT_IDS = new Set(CHAPTERS.map((chapter) => chapter.id));
@@ -83,7 +84,7 @@ function ResearchPage() {
           ))}
         </ol>
 
-        <ScripturePull query={lang === "es" ? "Juan 1:1-5" : "John 1:1-5"} />
+        <ScripturePull query={lang === "es" ? HOUSE_GOSPEL.qEs : HOUSE_GOSPEL.q} />
 
         <ol className="mt-6 divide-y divide-border border-y border-border">
           {CHAPTERS.map((chapter) => (

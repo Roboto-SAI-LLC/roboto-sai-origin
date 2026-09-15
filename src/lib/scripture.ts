@@ -15,6 +15,12 @@ export const HOUSE_BIBLES = [
 
 export type HouseBibleId = (typeof HOUSE_BIBLES)[number]["id"];
 
+export const HOUSE_GOSPEL = {
+  q: "Matthew 9:9-13",
+  qEs: "Mateo 9:9-13",
+} as const;
+
+
 export function isHouseBibleId(id: string): id is HouseBibleId {
   return HOUSE_BIBLES.some((bible) => bible.id === id);
 }

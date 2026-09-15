@@ -4,7 +4,7 @@ import { ReadingProgress } from "@/components/article/reading-progress";
 import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { useLang } from "@/lib/i18n";
-import { HOUSE_BIBLES, isHouseBibleId, type ScriptureResult } from "@/lib/scripture";
+import { HOUSE_BIBLES, HOUSE_GOSPEL, isHouseBibleId, type ScriptureResult } from "@/lib/scripture";
 import { noteForQuery, SCRIPTURE_PRESETS } from "@/lib/scripture-notes";
 import { lookupScripture } from "@/lib/scripture-fn";
 import { APP_NAME } from "@/lib/site";
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/scripture")({
       { title: `Scripture — ${APP_NAME}` },
       {
         name: "description",
-        content: "Quote KJV or LBLA through the house server. The API key never ships to the browser.",
+        content: "Quote KJV or LBLA through the house server. House gospel: Matthew. The API key never ships to the browser.",
       },
     ],
   }),
@@ -34,7 +34,7 @@ function ScripturePage() {
   const search = Route.useSearch();
   const navigate = Route.useNavigate();
   const defaultBible = lang === "es" ? HOUSE_BIBLES[1].id : HOUSE_BIBLES[0].id;
-  const defaultQuery = lang === "es" ? "Juan 1:1-5" : "John 1:1-5";
+  const defaultQuery = lang === "es" ? HOUSE_GOSPEL.qEs : HOUSE_GOSPEL.q;
   const bibleId = search.bible ?? defaultBible;
   const query = search.q ?? defaultQuery;
   const [draft, setDraft] = useState(query);
@@ -53,7 +53,7 @@ function ScripturePage() {
         ? {
             kicker: "Instrumento",
             title: "Escritura",
-            dek: "Citas KJV y LBLA. Cada bloque lleva fichas onomásticas: raíces, reloj, corte. Uso no comercial.",
+            dek: "Citas KJV y LBLA. Evangelio de casa: Mateo. Cada bloque lleva fichas onomásticas. Uso no comercial.",
             look: "Buscar",
             looking: "Buscando…",
             ref: "Referencia",
@@ -67,7 +67,7 @@ function ScripturePage() {
         : {
             kicker: "Instrument",
             title: "Scripture",
-            dek: "KJV and LBLA quotes. Each block carries an onomastic strip: roots, clock, split. Non-commercial use.",
+            dek: "KJV and LBLA quotes. House gospel: Matthew. Each block carries an onomastic strip. Non-commercial use.",
             look: "Look up",
             looking: "Looking…",
             ref: "Reference",

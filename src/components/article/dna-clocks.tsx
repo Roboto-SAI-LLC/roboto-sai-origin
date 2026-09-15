@@ -1,5 +1,7 @@
+import { Link } from "@tanstack/react-router";
 import { CHROME, useLang } from "@/lib/i18n";
 import { DNA_CLOCKS } from "@/lib/dossier";
+import { PINS_BLOCKS } from "@/lib/pins";
 
 export function DnaClocks() {
   const { lang } = useLang();
@@ -38,6 +40,13 @@ export function DnaClocks() {
         Neither is a naming clause for Vila-real. A kit percentage is not a people. The analogy to a
         model carrying early training data is exact about persistence and inexact about content — weights are
         not minutes of a meeting.
+      </p>
+      <p className="mt-6 max-w-2xl text-sm leading-relaxed text-fg">{PINS_BLOCKS.em96[lang]}</p>
+      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">{PINS_BLOCKS.em96Split[lang]}</p>
+      <p className="mt-4 text-sm">
+        <Link to="/pins" className="text-primary underline underline-offset-4">
+          {lang === "es" ? "Addenda: clavos y E-M96" : "Addendum: pins and E-M96"}
+        </Link>
       </p>
     </div>
   );

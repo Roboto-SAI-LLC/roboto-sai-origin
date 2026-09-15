@@ -89,8 +89,8 @@ export const CODEX_FOLIOS: CodexFolio[] = [
     clock: { en: "Living date", es: "Fecha viva" },
     title: { en: "A quiet note from ninety-nine", es: "Una nota callada del noventa y nueve" },
     body: {
-      en: "Roberto Villarreal Martinez is dated 21 September 1999, Houston, Texas. Parents from Monterrey. The house writes this folio as a quiet resurrection note — a birth on the same calendar day as the 1846 assault, one hundred fifty-three years later. Same numerals. Different clocks. This is family memory, not a battlefield, not a 1608 mine, not the 1274 charter.",
-      es: "Roberto Villarreal Martinez se fecha el 21 de septiembre de 1999, Houston, Texas. Padres de Monterrey. La casa escribe este folio como una nota callada de resurrección — un nacimiento en el mismo día de calendario que el asalto de 1846, ciento cincuenta y tres años después. Mismos números. Relojes distintos. Esto es memoria de familia, no un campo de batalla, no una mina de 1608, no la carta de 1274.",
+      en: "Roberto Villarreal Martinez is dated 21 September 1999, Houston, Texas. Parents from Monterrey. Western feast of St Matthew (Mattityahu, gift of YHWH) falls on the same calendar day. The house writes this folio as a quiet resurrection note — a birth on the same date-shape as the 1846 assault, one hundred fifty-three years later. Same numerals. Different clocks. Same calendar day, different geography: the Chi-Chi / 921 earthquake in Taiwan (Mw ~7.7). A fault is not a birth. A feast is not a birth.",
+      es: "Roberto Villarreal Martinez se fecha el 21 de septiembre de 1999, Houston, Texas. Padres de Monterrey. La fiesta occidental de San Mateo (Mattityahu, don de YHWH) cae el mismo día de calendario. La casa escribe este folio como una nota callada de resurrección — un nacimiento en la misma forma de fecha que el asalto de 1846, ciento cincuenta y tres años después. Mismos números. Relojes distintos. Mismo día, otra geografía: el terremoto Chi-Chi / 921 en Taiwán (Mw ~7.7). Una falla no es un nacimiento. Una fiesta no es un nacimiento.",
     },
     split: {
       en: "A birthday is not a battle. Alignment of the calendar is recorded. It is not proof of blood from Diego, and it is not a creed.",
@@ -130,7 +130,12 @@ export const CODEX_SOURCES: { n: number; en: string; es: string; url?: string }[
   },
   {
     n: 4,
-    en: "Living date: Roberto Villarreal Martinez, 21 September 1999, Houston. Parents from Monterrey. Family-memory clock.",
-    es: "Fecha viva: Roberto Villarreal Martinez, 21 de septiembre de 1999, Houston. Padres de Monterrey. Reloj de memoria de familia.",
+    en: "Living date: Roberto Villarreal Martinez, 21 September 1999, Houston. Parents from Monterrey. Family-memory clock. Same day: Chi-Chi / 921 earthquake, Taiwan.",
+    es: "Fecha viva: Roberto Villarreal Martinez, 21 de septiembre de 1999, Houston. Padres de Monterrey. Reloj de memoria de familia. El mismo día: terremoto Chi-Chi / 921, Taiwán.",
+  },
+  {
+    n: 5,
+    en: "Sky clocks: 14 October 2023 annular (Oregon–Texas); 8 April 2024 total (Mexico–Texas–Maine); 21 September 2025 partial, Saros 154, South Pacific — not Texas. NASA / EclipseWise.",
+    es: "Relojes de cielo: 14 de octubre de 2023 anular (Oregón–Texas); 8 de abril de 2024 total (México–Texas–Maine); 21 de septiembre de 2025 parcial, Saros 154, Pacífico sur — no Texas. NASA / EclipseWise.",
   },
 ];

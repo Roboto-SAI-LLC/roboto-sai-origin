@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/pins",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Calendar pins — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 5938,
+      "bodyTextHash": "66d9966274305cb041ee8a5adef80b7c6019c3f6944fe958004246ad3a314a41",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Codex Pins Scriptur",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/pins-matthew.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Calendar pins — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 5914,
+      "bodyTextHash": "166ef15aff0e69726a964b06a64fe4c8b5a3b4f3051968cea3de1e21bef360cb",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Codex Pins Scriptur",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/pins-matthew-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/pins-matthew.json"
+}

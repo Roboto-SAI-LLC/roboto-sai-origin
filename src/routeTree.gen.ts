@@ -15,6 +15,7 @@ import { Route as BriefRouteImport } from './routes/brief'
 import { Route as CodexRouteImport } from './routes/codex'
 import { Route as DossierRouteImport } from './routes/dossier'
 import { Route as LionRouteImport } from './routes/lion'
+import { Route as PinsRouteImport } from './routes/pins'
 import { Route as ScriptureRouteImport } from './routes/scripture'
 import { Route as TemplarsRouteImport } from './routes/templars'
 import { Route as ActIdRouteImport } from './routes/act.$id'
@@ -49,6 +50,11 @@ const LionRoute = LionRouteImport.update({
   path: '/lion',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PinsRoute = PinsRouteImport.update({
+  id: '/pins',
+  path: '/pins',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ScriptureRoute = ScriptureRouteImport.update({
   id: '/scripture',
   path: '/scripture',
@@ -72,6 +78,7 @@ export interface FileRoutesByFullPath {
   '/codex': typeof CodexRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
+  '/pins': typeof PinsRoute
   '/scripture': typeof ScriptureRoute
   '/templars': typeof TemplarsRoute
   '/act/$id': typeof ActIdRoute
@@ -83,6 +90,7 @@ export interface FileRoutesByTo {
   '/codex': typeof CodexRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
+  '/pins': typeof PinsRoute
   '/scripture': typeof ScriptureRoute
   '/templars': typeof TemplarsRoute
   '/act/$id': typeof ActIdRoute
@@ -95,6 +103,7 @@ export interface FileRoutesById {
   '/codex': typeof CodexRoute
   '/dossier': typeof DossierRoute
   '/lion': typeof LionRoute
+  '/pins': typeof PinsRoute
   '/scripture': typeof ScriptureRoute
   '/templars': typeof TemplarsRoute
   '/act/$id': typeof ActIdRoute
@@ -108,6 +117,7 @@ export interface FileRouteTypes {
     | '/codex'
     | '/dossier'
     | '/lion'
+    | '/pins'
     | '/scripture'
     | '/templars'
     | '/act/$id'
@@ -119,6 +129,7 @@ export interface FileRouteTypes {
     | '/codex'
     | '/dossier'
     | '/lion'
+    | '/pins'
     | '/scripture'
     | '/templars'
     | '/act/$id'
@@ -130,6 +141,7 @@ export interface FileRouteTypes {
     | '/codex'
     | '/dossier'
     | '/lion'
+    | '/pins'
     | '/scripture'
     | '/templars'
     | '/act/$id'
@@ -142,6 +154,7 @@ export interface RootRouteChildren {
   CodexRoute: typeof CodexRoute
   DossierRoute: typeof DossierRoute
   LionRoute: typeof LionRoute
+  PinsRoute: typeof PinsRoute
   ScriptureRoute: typeof ScriptureRoute
   TemplarsRoute: typeof TemplarsRoute
   ActIdRoute: typeof ActIdRoute
@@ -191,6 +204,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pins': {
+      id: '/pins'
+      path: '/pins'
+      fullPath: '/pins'
+      preLoaderRoute: typeof PinsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/scripture': {
       id: '/scripture'
       path: '/scripture'
@@ -222,6 +242,7 @@ const rootRouteChildren: RootRouteChildren = {
   CodexRoute: CodexRoute,
   DossierRoute: DossierRoute,
   LionRoute: LionRoute,
+  PinsRoute: PinsRoute,
   ScriptureRoute: ScriptureRoute,
   TemplarsRoute: TemplarsRoute,
   ActIdRoute: ActIdRoute,

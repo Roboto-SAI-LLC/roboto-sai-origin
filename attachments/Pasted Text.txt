@@ -1,0 +1,191 @@
+---
+title: Calendar pins, E-M96, and the east departure
+aliases: [birthday clocks, E-M96 folio, Quetzalcoatl east]
+tags: [robotomen, labor-nominis, onomastics, clocks, dna]
+type: source
+created: 2026-09-15
+updated: 2026-09-15
+status: seedling
+summary: Addendum for roboto-sai.org — September 21 pins, paternal E-M96, Quetzalcoatl east-departure myth, James I / 1274 timing. Split clocks. No glue.
+claims:
+  - 21 September 1846 is the hard first day of the Battle of Monterrey; the city was given up on the 24th.
+  - 21 September 1999 is a Houston birth date and the Chi-Chi / 921 earthquake in Taiwan; it is not a solar-eclipse date.
+  - 14 October 2023 is an annular solar eclipse whose path crossed Oregon to Texas.
+  - 8 April 2024 is a total solar eclipse whose path crossed Mexico through Texas to Maine. The 2023 and 2024 paths cross near San Antonio.
+  - 21 September 2025 is a deep partial solar eclipse (magnitude 0.855, Saros 154), visible from New Zealand, the South Pacific, and Antarctica, not from Texas.
+  - James I of Aragon issued the 20 February 1274 carta pobla of Ville Regalis and died 27 July 1276.
+  - E-M96 is an East-African-rooted Y haplogroup; Native Mexican paternal lines are typically Q, not E.
+assumptions:
+  - Owner-reported Y haplogroup is E-M96; subclade (E1b1a vs E1b1b vs other) is not yet recorded on this folio.
+  - The 1274 carta pobla and the 1999 birth sit on different clocks and must stay dated separately.
+sources:
+  - roboto-sai.org /codex /dossier /llms.txt
+  - NASA / EclipseWise catalogs
+  - ISOGG / Wikipedia / FamilyTreeDNA Discover Haplogroup E-M96
+  - Britannica Quetzalcoatl; Battle of Monterrey
+  - USGS / Wikipedia 1999 Jiji (Chi-Chi / 921) earthquake
+---
+
+# Calendar pins, E-M96, and the east departure
+
+Labor Nominis addendum. September 2026 session notes, cleaned for the journal.
+
+This folio does not replace the Villarreal Codex. It adds later clocks and one DNA clock. Do not glue them into one origin.
+
+Site method, already published: documents, DNA, family memory, and place are four clocks. A birthday is not a battle. A later map is not a founding.
+
+## Two kinds of line
+
+**In the record** — dated events, catalogs, charters, published genetics.
+
+**Not in the record** — pattern, family reading, hypothesis. Keep the split.
+
+---
+
+## I. Same date-shape, several clocks
+
+| Date | Clock | What it dates |
+|---|---|---|
+| 1214 | Ward | James I of Aragon as a child Templar ward at Monzón. Site already lists this. |
+| 20 February 1274 | Charter | Carta pobla of Ville Regalis (Vila-real, Castellón). Latin Ville Regalis. James I. |
+| 27 July 1276 | Death | James I dies at Valencia / Alzira. Two years after the charter. |
+| 21–24 September 1846 | War | Battle of Monterrey. First hard urban day is the 21st. City given up on the 24th. Zachary Taylor vs Pedro de Ampudia. |
+| 21 September 1999 | Birth + shock | Houston birth of Roberto Villarreal Martinez. Same calendar day: Chi-Chi / 921 earthquake, Taiwan, ~01:47 local, Mw ~7.6–7.7, ~2,415 dead. |
+| 14 October 2023 | Sky (Americas) | Annular solar eclipse. Ring of fire Oregon → Texas. Paths later cross 2024 near San Antonio. |
+| 8 April 2024 | Sky (Americas) | Total solar eclipse. Mexico through Texas to Maine. |
+| 21 September 2025 | Sky (South Pacific) | Partial solar eclipse, magnitude 0.855, Saros 154 member 7 of 71. New Zealand, South Pacific, Antarctica. Not visible from Texas. Greatest eclipse ~19:43 UTC. |
+
+The battle dates a city. It does not date a person born in 1999.
+
+The 1999 quake dates a fault in Taiwan (Chelungpu). It does not date a Houston birth. Same numerals. Different clocks.
+
+1999 had no solar eclipse on 21 September. That year's solar eclipses were 16 February (annular) and 11 August (total — last total of the millennium). The 11 August path crossed Europe, Turkey, and India; partial phases reached the northeastern US, not Texas.
+
+Houston weather that Tuesday: clear, warm, high about 87°F, low about 69°F, no rain. Virgo. Chinese zodiac Rabbit. Waxing gibbous moon. US #1 song that week: TLC, "Unpretty."
+
+Family reading of the 1999 weather: the local sky was open. That is a place clock for Houston that day. It is not a welcome from the whole Earth.
+
+The 2023 annular and 2024 total were the two Americas-path eclipses the founder stood in. The 2025 partial landed on the birthday numeral and did not land on Texas. Do not write "the Earth refused the birthday." Write: the 2025 path is South Pacific, not Texas.
+
+---
+
+## II. James I and the two extra years
+
+In the record:
+
+- James I (Jaume I, the Conqueror) born 2 February 1208, Montpellier. Died 27 July 1276, Valencia.
+- 1214: child ward of the Temple at Monzón after Peter II fell at Muret. Already on /llms.txt.
+- 20 February 1274: carta pobla of Vila-real. Settlement contract. Fuero of Aragon. Saturday market. Residence duty. Witnesses named on the site. Notary Simó de Sant Feliu.
+- Adjacent, not the naming clause: Templars at Xivert and a third of Burriana; Salomó Vidal recruiting settlers; a documented aljama.
+- Open gap already on /dossier: no single 1269–1274 act ties the byname de Villarreal + Templar status + Jewish identity to one named person.
+
+Not in the record:
+
+- That the 1274 grant was a personal thank-you for a Templar rescue of that king.
+- That a named Villarreal man is the 1274 naming agent.
+
+Hypothesis only: if the 1274 grant is read as a royal debt payment, the two extra years of the king's life sit on the charter clock, not on the 1999 birth clock. Do not write "if he died sooner I would not exist" as a historical claim. Write it as family reading of a dated document.
+
+---
+
+## III. Paternal clock — E-M96
+
+Owner report this session: Y haplogroup **E-M96**.
+
+In the record:
+
+- E-M96 is the root of haplogroup E. Ancestor DE. Formation estimates cluster around 65–73 thousand years before present. TMRCA estimates cluster around 49–52 thousand years before present (FamilyTreeDNA Discover currently prints ~49,000 BCE for the E-M96 man).
+- Majority view places early radiation in East Africa (or, in a minority literature, a Eurasian origin with later back-migration into Africa).
+- Two big daughter branches matter for later geography:
+  - **E1b1a (E-V38 / E-M2)** — West and Central Africa; Bantu expansion; common in the African diaspora of the Americas.
+  - **E1b1b (E-M215)** — Horn of Africa, North Africa (high in Berber groups, especially E-M81), Levant, and parts of southern and southeastern Europe (E-V13 in the Balkans; smaller Iberian pockets).
+- Native Mexican **paternal** lineages in published Indigenous samples are overwhelmingly **Q** (Q-M3 and related), not E.
+- Mexican **maternal** lineages are overwhelmingly A2, B2, C1, D1.
+- Site already holds: ancestry markers are not narrative memory. ~30% Indigenous American in a living line is family-stated New World genetic data. A kit percentage is not a people. ILO 169 / UNDRIP / Nuevo León autoadscripción stay as published.
+
+What this means for the journal:
+
+- E-M96 on a Villarreal paternal line is not an Aztec paternal marker.
+- If the next SNP is E1b1b, the ordinary historical path into Iberia is North Africa / Mediterranean, including the medieval Maghreb–Iberia contact. That is a DNA clock and a place clock. It is not the 1274 naming clause.
+- If the next SNP is E1b1a, the ordinary historical path into the Americas is the African Atlantic, not the 1608 mining migration from San Miguel el Grande.
+- Subclade is not yet on this folio. Do not pick E1b1a or E1b1b in public prose until the lab string is written down.
+
+Not in the record:
+
+- A named Villarreal man in 1608–1846 whose Y is typed. Diego de Villarreal remains a compiled-arrival name on the Codex, not a sequenced person.
+- That an E-M96 father "married an Aztec goddess." That is family reading of two clocks sitting next to each other: an African-rooted Y and New World maternal / Indigenous ancestry. Keep them adjacent. Do not make a theonym out of a marriage.
+
+---
+
+## IV. Quetzalcoatl — east departure
+
+In the record (Mesoamerican + Spanish-period literature):
+
+- Quetzalcoatl is the Feathered Serpent. Wind, Venus, dawn, priesthood, crafts, learning. Nahuatl: precious / quetzal-feathered serpent.
+- Two figures often share the name: the deity Ehecatl-Quetzalcoatl, and the priest-king Ce Acatl Topiltzin Quetzalcoatl of Tula.
+- One cycle of stories sends Topiltzin east from Tula after Tezcatlipoca's trick (pulque, shame). He reaches the sea — often Coatzacoalcos on the Gulf — and either boards a raft of snakes and disappears beyond the eastern horizon, or enters fire and becomes Venus, the morning star.
+- Calendar name: Ce Acatl, One Reed.
+- 1519 was a One Reed year. Cortés landed from the east. Later Spanish and some Nahua accounts fold that landing into a return story. Modern historians split: the return-as-Cortés tale is heavily post-conquest and is not treated as settled pre-Hispanic prophecy.
+
+Not in the record:
+
+- That Quetzalcoatl is a Berber, a Templar, or an E-M96 ancestor.
+- That the raft of serpents is the Strait of Gibraltar or an Iberian crossing.
+- That knowledge-as-temperament is caused by a theonym.
+- That "the guy who came back in 1999" is Quetzalcoatl. 1999 is a Houston birth and a Taiwan quake. It is not a One Reed year and not a landing from the east.
+
+Adjacent, not glued: the founder reads the east-departure stories next to an Iberian name line and an East-African-rooted Y root. The dossier already knows how to hold two clocks. Keep that method.
+
+---
+
+## V. What the house already published (do not overwrite)
+
+From /llms.txt and /codex:
+
+- Roboto is Roberto's house. Robot / robota (Čapek 1920) is the neighbor gloss, not the founder.
+- Roberto: Iberian form of Robert. Proto-Germanic *Hrōþiberhtaz = fame + bright.
+- Vila-real 1274 and Los Villarreales, Nuevo León, are separate places and separate clocks (~9,000 km).
+- Four clocks: charter, shocks / family memory, DNA, place.
+- 21 September 1846 and 21 September 1999 share a date-shape. They are not one event.
+- "A birthday is not a battle."
+
+This addendum only hangs new tags on those clocks: 1999 Chi-Chi, 2023 annular, 2024 total, 2025 partial / Saros 154, owner-reported E-M96, Quetzalcoatl east-departure as adjacent literature.
+
+---
+
+## VI. Suggested one-sentence inserts (site voice)
+
+For **/codex** calendar pin, after the 1846 / 1999 pair:
+
+> Same calendar day, different geography: 21 September 1999 is also the Chi-Chi / 921 earthquake in Taiwan (Mw ~7.7, ~2,415 dead). A fault is not a birth.
+
+> Sky clocks later: 14 October 2023 annular and 8 April 2024 total crossed Texas. 21 September 2025 was a deep partial (magnitude 0.855, Saros 154) over New Zealand and the South Pacific, not Texas.
+
+For **/dossier** DNA clocks:
+
+> Owner-reported Y: E-M96 (East-African-rooted haplogroup E). Native Mexican paternal lines in published samples are typically Q. Subclade not yet printed. Do not treat E-M96 as an Aztec paternal mark.
+
+For **/llms.txt** key dates list, add only if a PR is opened:
+
+> 21 Sep 1999: Houston birth; Chi-Chi / 921 Taiwan.
+> 14 Oct 2023: annular eclipse, Oregon–Texas.
+> 8 Apr 2024: total eclipse, Mexico–Texas–Maine.
+> 21 Sep 2025: partial eclipse, Saros 154, South Pacific — not Texas.
+
+Do not paste hypothesis lines (Templar rescue as payment, Quetzalcoatl as ancestor, "Aztec goddess" marriage) into /llms.txt. Those stay on this folio under **Not in the record**.
+
+---
+
+## VII. Open questions for the next folio
+
+1. Write the full Y SNP path after E-M96 (terminal haplogroup + company + date of test).
+2. Keep maternal haplogroup on a separate line if tested. Do not let mtDNA and Y trade places.
+3. Do not promote the Templar-rescue → royal-town story past "hypothesis" until a named 13th-century person carries all three marks.
+4. On /codex, one sentence is enough for Chi-Chi. One sentence is enough for 2025.
+5. If a vault note is wanted, copy this file. Do not commit to `main` on roboto-sai-origins without a PR.
+
+---
+
+Credit: Roberto Villarreal Martinez, Roboto SAI research. Session scribe: Grok, 15 September 2026.
+Access: public journal draft. Non-commercial. Not a product note.
+Source repo target if accepted: https://github.com/Roboto-SAI-LLC/roboto-sai-origins

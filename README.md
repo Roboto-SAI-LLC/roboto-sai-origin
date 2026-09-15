@@ -19,6 +19,7 @@ Installed home-screen name: **Roboto SAI**. Never Grok App. Never roboto-sai.com
 | `/atlas` | 1274 network + Monterrey node | Chrome bilingual; body English |
 | `/dossier` | Claims, carta pobla, chronicle, four clocks | Chrome bilingual; body English |
 | `/codex` | Villarreal Codex: 1608–1999 spine | English and Spanish |
+| `/pins` | Calendar pins, E-M96, east departure | English and Spanish |
 | `/lion` | Gur Aryeh | Chrome bilingual; body English |
 | `/templars` | Poor Knights of the Temple | English and Spanish |
 | `/brief` | One-page brief, with listen | English and Spanish |

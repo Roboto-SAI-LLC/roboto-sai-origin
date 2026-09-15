@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/codex",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Villarreal Codex — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 4693,
+      "bodyTextHash": "386bd2bdfbff562b98a00063dbeb2ebaa82f78904aa7dd92c5e58c44ab97450a",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Codex Pins Scriptur",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/codex-pins.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Villarreal Codex — Roboto SAI",
+      "hasCanvas": false,
+      "bodyTextLen": 4669,
+      "bodyTextHash": "c8291d0635ec2c7e2e694886d90f8f25d53d9d8b30828e264f3057ac2fcd57d2",
+      "bodyTextPrefix": "ROBOTO SAI Labor Nominis Index Atlas Dossier Codex Pins Scriptur",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/codex-pins-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/codex-pins.json"
+}
