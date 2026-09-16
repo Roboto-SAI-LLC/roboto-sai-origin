@@ -1,4 +1,6 @@
 import { SECTIONS, type Section } from "@/lib/research";
+import { SECTIONS as SECTIONS_ES } from "@/lib/research.es";
+import type { Lang } from "@/lib/i18n";
 
 export type InstrumentLink = {
   to: "/atlas" | "/dossier" | "/lion" | "/templars" | "/brief";
@@ -83,8 +85,9 @@ export const CHAPTERS: Chapter[] = [
   },
 ];
 
-export function sectionsForChapter(chapter: Chapter): Section[] {
+export function sectionsForChapter(chapter: Chapter, lang: Lang = "en"): Section[] {
+  const pool = lang === "es" ? SECTIONS_ES : SECTIONS;
   return chapter.sectionIds
-    .map((id) => SECTIONS.find((section) => section.id === id))
+    .map((id) => pool.find((section) => section.id === id))
     .filter((section): section is Section => Boolean(section));
 }

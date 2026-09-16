@@ -1,9 +1,11 @@
 import { LION_TIMELINE } from "@/lib/lion";
+import { useLang } from "@/lib/i18n";
 
 export function LionTimeline() {
+  const { lang } = useLang();
   return (
     <ol className="relative my-10 ml-2 border-l border-rule">
-      {LION_TIMELINE.map((item) => (
+      {LION_TIMELINE[lang].map((item) => (
         <li key={item.year} className="relative mb-8 pl-6 last:mb-0 sm:pl-8">
           <span
             aria-hidden="true"

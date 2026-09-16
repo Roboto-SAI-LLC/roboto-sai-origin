@@ -4,9 +4,10 @@ import { Search } from "lucide-react";
 import { CHAPTERS } from "@/lib/chapters";
 import { CHROME, useLang } from "@/lib/i18n";
 import { SECTIONS, TOC } from "@/lib/research";
+import { SECTIONS as SECTIONS_ES, TOC as TOC_ES } from "@/lib/research.es";
+import type { Section } from "@/lib/research";
 
-function sectionText(id: string) {
-  const section = SECTIONS.find((item) => item.id === id);
+function sectionText(section: Section | undefined) {
   if (!section) return "";
   return section.blocks
     .map((block) => {
@@ -31,11 +32,16 @@ export function EssaySearch() {
   const hits = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (q.length < 2) return [];
-    return TOC.filter((item) => {
-      const hay = `${item.title} ${sectionText(item.id)}`.toLowerCase();
-      return hay.includes(q);
-    }).slice(0, 8);
-  }, [query]);
+    const toc = lang === "es" ? TOC_ES : TOC;
+    const pool = lang === "es" ? SECTIONS_ES : SECTIONS;
+    return toc
+      .filter((item) => {
+        const section = pool.find((entry) => entry.id === item.id);
+        const hay = `${item.title} ${sectionText(section)}`.toLowerCase();
+        return hay.includes(q);
+      })
+      .slice(0, 8);
+  }, [query, lang]);
 
   return (
     <div className="no-print rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">

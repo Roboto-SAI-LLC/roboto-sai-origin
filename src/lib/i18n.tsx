@@ -2,6 +2,8 @@ import { createContext, useContext, useEffect, useMemo, useState, type ReactNode
 
 export type Lang = "en" | "es";
 
+export type LocaleText = { en: string; es: string };
+
 const STORAGE_KEY = "rs-lang";
 
 const LangContext = createContext<{
@@ -245,8 +247,7 @@ export const CHROME = {
     copyCite: "Copiar cita",
     copied: "Copiado",
     cite: "Citar esta página",
-    englishBody:
-      "El ensayo, el atlas, el dossier y Gur Aryeh están en inglés. Códice, templarios y la síntesis están en los dos idiomas.",
+    englishBody: "",
     menu: "Menú",
     github: "Fuente en GitHub",
     nav: [

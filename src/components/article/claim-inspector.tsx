@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CHROME, useLang } from "@/lib/i18n";
-import { CLAIMS, type Claim, type ClaimVerdict } from "@/lib/dossier";
+import { CHROME, useLang, type Lang } from "@/lib/i18n";
+import { CLAIMS, VERDICT_LABEL, type Claim, type ClaimVerdict } from "@/lib/dossier";
 import { cn } from "@/lib/utils";
 
 const VERDICT_CLASS: Record<ClaimVerdict, string> = {
@@ -15,11 +15,13 @@ function Column({
   points,
   tone,
   empty,
+  lang,
 }: {
   title: string;
   points: Claim["inRecord"];
   tone: "in" | "near" | "out";
   empty: string;
+  lang: Lang;
 }) {
   return (
     <section className="rounded-lg bg-bg px-4 py-4">
@@ -38,8 +40,8 @@ function Column({
       ) : (
         <ul className="mt-3 space-y-3">
           {points.map((point) => (
-            <li key={point.text}>
-              <p className="text-sm leading-relaxed text-fg">{point.text}</p>
+            <li key={point.text.en}>
+              <p className="text-sm leading-relaxed text-fg">{point.text[lang]}</p>
               <p className="mt-1 text-xs text-muted">{point.source}</p>
             </li>
           ))}
@@ -54,12 +56,7 @@ export function ClaimInspector() {
   const active = CLAIMS.find((claim) => claim.id === activeId) ?? CLAIMS[0];
   const { lang } = useLang();
   const ui = CHROME[lang].ui;
-  const verdictLabel = {
-    "in-record": ui.inRecord,
-    adjacent: ui.adjacent,
-    "not-in-record": ui.notInRecord,
-    split: ui.split,
-  }[active.verdict];
+  const verdictLabel = VERDICT_LABEL[active.verdict][lang];
 
   return (
     <div className="grid gap-4 lg:grid-cols-[16rem_1fr]">
@@ -76,7 +73,7 @@ export function ClaimInspector() {
                 selected ? "bg-primary text-primary-fg" : "bg-surface text-fg shadow-paper hover:bg-wash",
               )}
             >
-              {claim.title}
+              {claim.title[lang]}
             </button>
           );
         })}
@@ -88,25 +85,31 @@ export function ClaimInspector() {
             {verdictLabel}
           </span>
         </p>
-        <h2 className="mt-3 font-display text-2xl font-medium tracking-tight text-fg">{active.title}</h2>
+        <h2 className="mt-3 font-display text-2xl font-medium tracking-tight text-fg">{active.title[lang]}</h2>
         <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
           <span className="font-medium text-fg">{ui.stated} </span>
-          {active.stated}
+          {active.stated[lang]}
         </p>
         <p className="mt-3 text-sm leading-relaxed text-fg sm:text-base">
           <span className="font-medium">{ui.steelman} </span>
-          {active.steelman}
+          {active.steelman[lang]}
         </p>
 
         <div className="mt-6 grid gap-3 lg:grid-cols-3">
-          <Column title={ui.inRecord} points={active.inRecord} tone="in" empty={ui.none} />
-          <Column title={ui.adjacent} points={active.adjacent} tone="near" empty={ui.none} />
-          <Column title={ui.notInRecord} points={active.notInRecord} tone="out" empty={ui.none} />
+          <Column title={VERDICT_LABEL["in-record"][lang]} points={active.inRecord} tone="in" empty={ui.none} lang={lang} />
+          <Column title={VERDICT_LABEL.adjacent[lang]} points={active.adjacent} tone="near" empty={ui.none} lang={lang} />
+          <Column
+            title={VERDICT_LABEL["not-in-record"][lang]}
+            points={active.notInRecord}
+            tone="out"
+            empty={ui.none}
+            lang={lang}
+          />
         </div>
 
         <p className="mt-5 border-t border-border pt-4 text-sm leading-relaxed text-muted">
           <span className="font-medium text-fg">{ui.confirm} </span>
-          {active.whatWouldConfirm}
+          {active.whatWouldConfirm[lang]}
         </p>
       </article>
     </div>

@@ -17,10 +17,11 @@ function usePageShare() {
   const chrome = CHROME[lang];
 
   if (pathname === "/lion") {
+    const meta = LION_META[lang];
     return {
-      title: LION_META.title,
-      text: `${LION_META.title}: ${LION_META.subtitle}`,
-      citation: LION_CITATION,
+      title: meta.title,
+      text: `${meta.title}: ${meta.subtitle}`,
+      citation: LION_CITATION[lang],
     };
   }
   if (pathname === "/templars") {

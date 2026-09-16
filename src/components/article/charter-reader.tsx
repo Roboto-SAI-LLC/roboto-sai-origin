@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CHROME, useLang } from "@/lib/i18n";
-import { CHARTER_CLAUSES, WITNESSES } from "@/lib/dossier";
+import { CHARTER_CLAUSES, DOSSIER_COPY, WITNESSES } from "@/lib/dossier";
 import { cn } from "@/lib/utils";
 
 export function CharterReader() {
@@ -11,10 +11,7 @@ export function CharterReader() {
 
   return (
     <div>
-      <p className="max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-        Close reading of the 20 February 1274 carta pobla. Latin from the royal register. Each clause is asked
-        the same two questions: who does it name, and who does it not.
-      </p>
+      <p className="max-w-2xl text-sm leading-relaxed text-muted sm:text-base">{DOSSIER_COPY.charterLead[lang]}</p>
 
       <div className="mt-6 flex gap-2 overflow-x-auto pb-1 sm:flex-wrap sm:overflow-visible">
         {CHARTER_CLAUSES.map((clause, index) => {
@@ -29,7 +26,7 @@ export function CharterReader() {
                 selected ? "bg-primary text-primary-fg" : "bg-surface text-fg shadow-paper hover:bg-wash",
               )}
             >
-              {index + 1}. {clause.kicker}
+              {index + 1}. {clause.kicker[lang]}
             </button>
           );
         })}
@@ -37,39 +34,36 @@ export function CharterReader() {
 
       <article className="mt-4 rounded-xl bg-surface px-4 py-5 shadow-paper sm:px-6">
         <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-          {active.kicker}
+          {active.kicker[lang]}
         </p>
-        <h2 className="mt-2 font-display text-2xl font-medium tracking-tight text-fg">{active.title}</h2>
+        <h2 className="mt-2 font-display text-2xl font-medium tracking-tight text-fg">{active.title[lang]}</h2>
         <blockquote className="mt-5 border-l-2 border-primary pl-4">
           <p className="font-display text-base leading-relaxed text-ink-soft italic sm:text-lg">{active.latin}</p>
         </blockquote>
-        <p className="mt-4 text-sm leading-relaxed text-fg sm:text-base">{active.english}</p>
+        <p className="mt-4 text-sm leading-relaxed text-fg sm:text-base">{active.english[lang]}</p>
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
           <section className="rounded-lg bg-bg px-4 py-4">
             <h3 className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">{ui.names}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-fg">{active.names}</p>
+            <p className="mt-2 text-sm leading-relaxed text-fg">{active.names[lang]}</p>
           </section>
           <section className="rounded-lg bg-bg px-4 py-4">
             <h3 className="font-display text-kicker font-medium tracking-kicker text-muted uppercase">
               {ui.doesNotName}
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-fg">{active.doesNotName}</p>
+            <p className="mt-2 text-sm leading-relaxed text-fg">{active.doesNotName[lang]}</p>
           </section>
         </div>
       </article>
 
       <section className="mt-8">
         <h2 className="font-display text-xl font-medium text-fg">{ui.witnessBench}</h2>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-          The men who stand in the room at Valencia. Sancho Martínez de Oblites is a control: a Martínez is
-          already here in 1274, as a patronymic, not as a Villarreal.
-        </p>
+        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{DOSSIER_COPY.witnessLead[lang]}</p>
         <ol className="mt-4 grid gap-3 sm:grid-cols-2">
           {WITNESSES.map((witness) => (
             <li key={witness.latin} className="rounded-xl bg-surface px-4 py-4 shadow-paper">
-              <p className="font-display text-lg font-medium text-fg">{witness.name}</p>
+              <p className="font-display text-lg font-medium text-fg">{witness.name[lang]}</p>
               <p className="mt-1 font-display text-xs text-subtle italic">{witness.latin}</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{witness.role}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{witness.role[lang]}</p>
             </li>
           ))}
         </ol>

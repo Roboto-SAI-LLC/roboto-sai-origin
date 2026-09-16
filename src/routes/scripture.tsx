@@ -133,7 +133,9 @@ function ScripturePage() {
             />
           </label>
           <label className="text-sm sm:w-56">
-            <span className="font-display text-kicker tracking-kicker text-subtle uppercase">Bible</span>
+            <span className="font-display text-kicker tracking-kicker text-subtle uppercase">
+              {lang === "es" ? "Biblia" : "Bible"}
+            </span>
             <select
               value={bibleId}
               onChange={(event) => {

@@ -1836,3 +1836,6 @@ export const REFERENCES: { n: number; title: string; source: string; url: string
 ];
 export const CITATION =
   "Villarreal Martinez, Roberto. “RobotOmen: Labor Nominis.” Roboto SAI Research, September 2026. https://roboto-sai.org";
+
+export const CITATION_ES =
+  "Villarreal Martinez, Roberto. «RobotOmen: Labor Nominis». Roboto SAI Research, septiembre de 2026. https://roboto-sai.org";

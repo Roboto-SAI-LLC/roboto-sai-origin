@@ -1,10 +1,13 @@
 import { useState } from "react";
-import { LEXICON } from "@/lib/lion";
+import { LEXICON, LION_META } from "@/lib/lion";
 import { Hebrew } from "@/components/lion/hebrew";
+import { pick, useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 export function LionLexicon() {
   const [open, setOpen] = useState(LEXICON[0].id);
+  const { lang } = useLang();
+  const meta = pick(lang, LION_META);
   const active = LEXICON.find((item) => item.id === open) ?? LEXICON[0];
 
   return (
@@ -41,7 +44,7 @@ export function LionLexicon() {
                 {item.latin}
               </p>
               <p className={cn("mt-2 text-sm leading-snug", selected ? "text-primary-fg/90" : "text-muted")}>
-                {item.gloss}
+                {item.gloss[lang]}
               </p>
             </button>
           );
@@ -49,16 +52,14 @@ export function LionLexicon() {
       </div>
       <div className="mt-3 rounded-xl bg-surface px-5 py-5 shadow-paper">
         <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-          {active.count}
+          {active.count[lang]}
         </p>
         <Hebrew size="display" className="mt-2">
           {active.hebrew}
         </Hebrew>
-        <p className="mt-3 text-sm leading-relaxed text-fg sm:text-base">{active.body}</p>
+        <p className="mt-3 text-sm leading-relaxed text-fg sm:text-base">{active.body[lang]}</p>
       </div>
-      <figcaption className="mt-3 text-sm text-muted">
-        Figure 2. Sanhedrin 95a’s six names, with gur as the blessing’s opening word.
-      </figcaption>
+      <figcaption className="mt-3 text-sm text-muted">{meta.figureLexicon}</figcaption>
     </figure>
   );
 }

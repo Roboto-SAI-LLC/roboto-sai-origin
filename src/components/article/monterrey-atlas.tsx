@@ -21,6 +21,18 @@ export function MonterreyAtlas() {
     locality: ui.locality,
     building: ui.building,
   };
+  const copy = {
+    en: {
+      north: "≈ 40 km north",
+      caption:
+        "A later clock. Edges are geography — state, municipality, metro, address — not a household invented between the hotel and the ejido.",
+    },
+    es: {
+      north: "≈ 40 km al norte",
+      caption:
+        "Un reloj posterior. Las aristas son geografía — estado, municipio, metro, dirección — no una casa inventada entre el hotel y el ejido.",
+    },
+  }[lang];
 
   const linked = useMemo(() => {
     const ids = new Set<string>();
@@ -55,7 +67,7 @@ export function MonterreyAtlas() {
             </text>
             <line x1="450" y1="88" x2="450" y2="286" stroke="#3e534c" strokeWidth="1.5" strokeDasharray="5 6" />
             <text x="464" y="190" fill="#3e534c" fontSize="10" fontFamily="Fraunces, Palatino, serif">
-              ≈ 40 km north
+              {copy.north}
             </text>
             <text x="820" y="36" textAnchor="middle" fill="#8a8173" fontSize="11" fontFamily="Fraunces, Palatino, serif">
               N
@@ -84,7 +96,7 @@ export function MonterreyAtlas() {
               const neighbor = linked.has(node.id);
               return (
                 <g key={node.id}>
-                  <title>{`${node.name}: ${node.role}`}</title>
+                  <title>{`${node.name}: ${node.role[lang]}`}</title>
                   <circle
                     cx={node.x}
                     cy={node.y}
@@ -112,18 +124,17 @@ export function MonterreyAtlas() {
             })}
           </svg>
           <figcaption className="border-t border-border px-4 py-3 text-sm text-muted">
-            A later clock. Edges are geography — state, municipality, metro, address — not a household invented
-            between the hotel and the ejido.
+            {copy.caption}
           </figcaption>
         </figure>
 
         <aside className="rounded-xl bg-surface px-4 py-4 shadow-paper sm:px-5">
           <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-            {kindLabel[active.kind]} · {active.year}
+            {kindLabel[active.kind]} · {active.year[lang]}
           </p>
           <h3 className="mt-2 font-display text-xl font-medium text-fg">{active.name}</h3>
-          <p className="mt-1 text-sm text-muted">{active.role}</p>
-          <p className="mt-3 text-sm leading-relaxed text-fg">{active.dossier}</p>
+          <p className="mt-1 text-sm text-muted">{active.role[lang]}</p>
+          <p className="mt-3 text-sm leading-relaxed text-fg">{active.dossier[lang]}</p>
           <ul className="mt-4 flex flex-wrap gap-1.5">
             {MODERN_NODES.map((node) => (
               <li key={node.id}>
@@ -152,6 +163,16 @@ function LedgerPanel({ activeId }: { activeId: string }) {
   const related = useMemo(() => relatedIds(activeId), [activeId]);
   const { lang } = useLang();
   const ui = CHROME[lang].ui;
+  const copy = {
+    en: {
+      title: "Record vs gap — this stratum",
+      lead: "Same three columns as 1274. The hotel is a building in the INAH catalogue. The ejido is an INEGI locality. Surname density is a compiled later-cohort map. No news cycle on this node.",
+    },
+    es: {
+      title: "Acta y hueco — este estrato",
+      lead: "Las mismas tres columnas que 1274. El hotel es un edificio del catálogo INAH. El ejido es una localidad INEGI. La densidad del apellido es un mapa compilado de cohorte posterior. Sin ciclo de noticias en este nodo.",
+    },
+  }[lang];
   const status = {
     "in-record": { label: ui.inRecord, className: "bg-primary text-primary-fg" },
     adjacent: { label: ui.adjacent, className: "bg-wash text-fg" },
@@ -160,11 +181,8 @@ function LedgerPanel({ activeId }: { activeId: string }) {
 
   return (
     <div>
-      <h2 className="font-display text-xl font-medium text-fg">Record vs gap — this stratum</h2>
-      <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-        Same three columns as 1274. The hotel is a building in the INAH catalogue. The ejido is an INEGI
-        locality. Surname density is a compiled later-cohort map. No news cycle on this node.
-      </p>
+      <h2 className="font-display text-xl font-medium text-fg">{copy.title}</h2>
+      <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{copy.lead}</p>
       <ol className="mt-4 space-y-3">
         {MONTERREY_LEDGER.map((row) => {
           const hot = related.has(row.id);
@@ -182,7 +200,7 @@ function LedgerPanel({ activeId }: { activeId: string }) {
                   {status[row.status].label}
                 </span>
               </p>
-              <p className="mt-2 text-sm leading-relaxed text-fg sm:text-base">{row.claim}</p>
+              <p className="mt-2 text-sm leading-relaxed text-fg sm:text-base">{row.claim[lang]}</p>
               <p className="mt-2 text-sm text-muted">{row.source}</p>
             </li>
           );
@@ -200,5 +218,3 @@ function relatedIds(nodeId: string): Set<string> {
   if (nodeId === "nuevoleon") return new Set(["M4", "M8", "M9", "M10", "M11", "M12"]);
   return new Set();
 }
-
-

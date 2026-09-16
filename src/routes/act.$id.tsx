@@ -12,7 +12,7 @@ import { SiteHeader } from "@/components/article/site-header";
 import { HistoryTimeline } from "@/components/article/timeline";
 import { CHAPTERS, sectionsForChapter } from "@/lib/chapters";
 import { CHROME, useLang } from "@/lib/i18n";
-import { CITATION, REFERENCES } from "@/lib/research";
+import { CITATION, CITATION_ES, REFERENCES } from "@/lib/research";
 import { APP_NAME } from "@/lib/site";
 
 export const Route = createFileRoute("/act/$id")({
@@ -33,7 +33,7 @@ function ActPage() {
   const { lang } = useLang();
   const chrome = CHROME[lang];
   const home = chrome.home;
-  const sections = sectionsForChapter(chapter);
+  const sections = sectionsForChapter(chapter, lang);
   const showRefs = chapter.id === "four-clocks";
 
   return (
@@ -112,7 +112,7 @@ function ActPage() {
                   </li>
                 ))}
               </ol>
-              <p className="mt-10 text-sm text-muted">{CITATION}</p>
+              <p className="mt-10 text-sm text-muted">{lang === "es" ? CITATION_ES : CITATION}</p>
             </section>
           ) : null}
         </article>

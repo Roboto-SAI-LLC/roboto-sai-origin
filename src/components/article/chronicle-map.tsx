@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { CHROME, useLang } from "@/lib/i18n";
-import { CHRONICLE, PLANA_PLACES } from "@/lib/dossier";
+import { CHRONICLE, DOSSIER_COPY, PLANA_PLACES } from "@/lib/dossier";
 import { cn } from "@/lib/utils";
 
 const INK = "#1c1915";
@@ -43,7 +43,7 @@ export function ChronicleMap() {
             <rect width="640" height="360" fill={CREAM} />
             <path d="M500 0 L640 0 L640 360 L520 360 Q490 220 500 0 Z" fill={WASH} />
             <text x="580" y="180" textAnchor="middle" fill={RULE} fontSize="11" fontFamily="Fraunces, Palatino, serif">
-              Sea
+              {DOSSIER_COPY.sea[lang]}
             </text>
             <line x1="40" y1="62" x2="470" y2="50" stroke={FOREST} strokeWidth="1.5" />
             <text x="48" y="54" fill={FOREST} fontSize="10" fontFamily="Fraunces, Palatino, serif">
@@ -53,7 +53,7 @@ export function ChronicleMap() {
               const selected = place.id === hotPlace;
               return (
                 <g key={place.id}>
-                  <title>{`${place.name}: ${place.role}`}</title>
+                  <title>{`${place.name}: ${place.role[lang]}`}</title>
                   <circle
                     cx={place.x}
                     cy={place.y}
@@ -87,8 +87,7 @@ export function ChronicleMap() {
             })}
           </svg>
           <figcaption className="border-t border-border px-4 py-3 text-xs leading-relaxed text-muted sm:px-5">
-            Schematic, not a surveyed map. Xivert sits in the Maestrazgo, kept on the same board as neighboring
-            power, not as a next-door street.
+            {DOSSIER_COPY.chronicleCaption[lang]}
           </figcaption>
         </figure>
 
@@ -108,7 +107,7 @@ export function ChronicleMap() {
                   )}
                 >
                   <span className="font-display text-xs tracking-kicker uppercase">{item.year}</span>
-                  <span className="font-medium">{item.title}</span>
+                  <span className="font-medium">{item.title[lang]}</span>
                 </button>
               </li>
             );
@@ -121,11 +120,9 @@ export function ChronicleMap() {
           <span className={cn("rounded-full px-2 py-0.5 text-xs font-medium", statusClass)}>{statusLabel}</span>
         </p>
         <p className="mt-3 font-display text-kicker font-medium tracking-kicker text-primary uppercase">{active.year}</p>
-        <h2 className="mt-2 font-display text-xl font-medium text-fg">{active.title}</h2>
-        <p className="mt-3 text-sm leading-relaxed text-fg">{active.text}</p>
-        <p className="mt-4 text-xs text-muted">
-          Click a year or a place. 1429 stays on the line as a searched gap, not as a deleted claim.
-        </p>
+        <h2 className="mt-2 font-display text-xl font-medium text-fg">{active.title[lang]}</h2>
+        <p className="mt-3 text-sm leading-relaxed text-fg">{active.text[lang]}</p>
+        <p className="mt-4 text-xs text-muted">{DOSSIER_COPY.chronicleHint[lang]}</p>
       </aside>
     </div>
   );

@@ -1,4 +1,6 @@
 import { TIMELINE } from "@/lib/research";
+import { TIMELINE as TIMELINE_ES } from "@/lib/research.es";
+import { useLang } from "@/lib/i18n";
 
 export function YearTimeline({ items }: { items: { year: string; title: string; text: string }[] }) {
   return (
@@ -16,5 +18,6 @@ export function YearTimeline({ items }: { items: { year: string; title: string; 
 }
 
 export function HistoryTimeline() {
-  return <YearTimeline items={TIMELINE} />;
+  const { lang } = useLang();
+  return <YearTimeline items={lang === "es" ? TIMELINE_ES : TIMELINE} />;
 }

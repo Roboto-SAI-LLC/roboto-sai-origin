@@ -82,7 +82,7 @@ export function RecordLedger() {
                 {status[row.status].label}
               </span>
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-fg sm:text-base">{row.claim}</p>
+            <p className="mt-2 text-sm leading-relaxed text-fg sm:text-base">{row.claim[lang]}</p>
             <p className="mt-2 text-sm text-muted">{row.source}</p>
           </li>
         ))}

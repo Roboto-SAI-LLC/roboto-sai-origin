@@ -13,26 +13,6 @@ type RegisterRow = {
   search: string;
 };
 
-const ROWS: RegisterRow[] = [
-  ...PEOPLE.map((person) => ({
-    id: person.id,
-    name: person.name,
-    year: person.year,
-    role: person.role,
-    layer: "1274" as const,
-    search: `${person.name} ${person.role} ${person.dossier} ${person.year} 1274 vila-real`,
-  })),
-  ...MODERN_NODES.map((node) => ({
-    id: node.id,
-    name: node.name,
-    year: node.year,
-    role: node.role,
-    kind: node.kind,
-    layer: "monterrey" as const,
-    search: `${node.name} ${KIND_LABEL[node.kind]} ${node.role} ${node.dossier} ${node.year} monterrey mansion ejido villarreales`,
-  })),
-];
-
 export function NameRegister() {
   const [query, setQuery] = useState("");
   const { lang } = useLang();
@@ -45,10 +25,29 @@ export function NameRegister() {
     building: ui.building,
   };
   const rows = useMemo(() => {
+    const base: RegisterRow[] = [
+      ...PEOPLE.map((person) => ({
+        id: person.id,
+        name: person.name[lang],
+        year: person.year,
+        role: person.role[lang],
+        layer: "1274" as const,
+        search: `${person.name.en} ${person.name.es} ${person.short.en} ${person.short.es} ${person.role.en} ${person.role.es} ${person.dossier.en} ${person.dossier.es} ${person.year} 1274 vila-real`,
+      })),
+      ...MODERN_NODES.map((node) => ({
+        id: node.id,
+        name: node.name,
+        year: node.year[lang],
+        role: node.role[lang],
+        kind: node.kind,
+        layer: "monterrey" as const,
+        search: `${node.name} ${KIND_LABEL[node.kind].en} ${KIND_LABEL[node.kind].es} ${node.role.en} ${node.role.es} ${node.dossier.en} ${node.dossier.es} ${node.year.en} ${node.year.es} monterrey mansion ejido villarreales`,
+      })),
+    ];
     const q = query.trim().toLowerCase();
-    if (!q) return ROWS;
-    return ROWS.filter((row) => row.search.toLowerCase().includes(q));
-  }, [query]);
+    if (!q) return base;
+    return base.filter((row) => row.search.toLowerCase().includes(q));
+  }, [query, lang]);
 
   return (
     <div>

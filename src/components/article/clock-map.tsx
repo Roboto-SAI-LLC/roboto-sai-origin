@@ -184,8 +184,8 @@ export function ClockMap({ compact = false }: { compact?: boolean }) {
               {active.clock === "1274" ? labels.plana : labels.nl}
             </p>
             <h3 className="mt-2 font-display text-xl font-medium text-fg">{active.name}</h3>
-            <p className="mt-1 text-sm text-muted">{active.role}</p>
-            <p className="mt-3 text-sm leading-relaxed text-fg">{active.dossier}</p>
+            <p className="mt-1 text-sm text-muted">{active.role[lang]}</p>
+            <p className="mt-3 text-sm leading-relaxed text-fg">{active.dossier[lang]}</p>
             <ul className="mt-4 flex flex-wrap gap-1.5">
               {GEO_PLACES.map((place) => (
                 <li key={place.id}>

@@ -58,7 +58,7 @@ export function NetworkAtlas() {
             const neighbor = linked.has(person.id);
             return (
               <g key={person.id}>
-                <title>{`${person.name}: ${person.role}`}</title>
+                <title>{`${person.name[lang]}: ${person.role[lang]}`}</title>
                 <circle
                   cx={person.x}
                   cy={person.y}
@@ -79,7 +79,7 @@ export function NetworkAtlas() {
                   className="cursor-pointer"
                   onClick={() => setActiveId(person.id)}
                 >
-                  {person.short}
+                  {person.short[lang]}
                 </text>
               </g>
             );
@@ -94,9 +94,9 @@ export function NetworkAtlas() {
         <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
           {kindLabel[active.kind]} · {active.year}
         </p>
-        <h3 className="mt-2 font-display text-xl font-medium text-fg">{active.name}</h3>
-        <p className="mt-1 text-sm text-muted">{active.role}</p>
-        <p className="mt-3 text-sm leading-relaxed text-fg">{active.dossier}</p>
+        <h3 className="mt-2 font-display text-xl font-medium text-fg">{active.name[lang]}</h3>
+        <p className="mt-1 text-sm text-muted">{active.role[lang]}</p>
+        <p className="mt-3 text-sm leading-relaxed text-fg">{active.dossier[lang]}</p>
         <ul className="mt-4 flex flex-wrap gap-1.5">
           {PEOPLE.map((person) => (
             <li key={person.id}>
@@ -108,7 +108,7 @@ export function NetworkAtlas() {
                   person.id === active.id ? "bg-primary text-primary-fg" : "bg-wash text-fg hover:bg-border",
                 )}
               >
-                {person.name.split(",")[0]}
+                {person.name[lang].split(",")[0]}
               </button>
             </li>
           ))}

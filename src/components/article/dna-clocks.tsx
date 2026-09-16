@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { CHROME, useLang } from "@/lib/i18n";
-import { DNA_CLOCKS } from "@/lib/dossier";
+import { DNA_CLOCKS, DOSSIER_COPY } from "@/lib/dossier";
 import { PINS_BLOCKS } from "@/lib/pins";
 
 export function DnaClocks() {
@@ -9,38 +9,26 @@ export function DnaClocks() {
 
   return (
     <div>
-      <p className="max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-        Four archives, four speeds. A genome can show that a living Villarreal line clusters with Sephardic,
-        Levantine, or Indigenous American samples. It cannot remember a 1274 meeting, and it cannot mint
-        fifty thousand years as Hebrew. Family memory often keeps the pressure and loses the year. Charters
-        keep the year and lose the broker. Place keeps a later map and must not steal the founding. Identity
-        is a right. It is still four clocks.
-      </p>
+      <p className="max-w-2xl text-sm leading-relaxed text-muted sm:text-base">{DOSSIER_COPY.dnaLead[lang]}</p>
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
         {DNA_CLOCKS.map((clock) => (
           <article key={clock.id} className="rounded-xl bg-surface px-4 py-5 shadow-paper sm:px-5">
             <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-              {clock.ticks}
+              {clock.ticks[lang]}
             </p>
-            <h2 className="mt-2 font-display text-xl font-medium text-fg">{clock.title}</h2>
+            <h2 className="mt-2 font-display text-xl font-medium text-fg">{clock.title[lang]}</h2>
             <p className="mt-4 text-sm leading-relaxed text-fg">
               <span className="font-medium">{ui.can} </span>
-              {clock.can}
+              {clock.can[lang]}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted">
               <span className="font-medium text-fg">{ui.cannot} </span>
-              {clock.cannot}
+              {clock.cannot[lang]}
             </p>
           </article>
         ))}
       </div>
-      <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted">
-        The working rule: date each clock. A Sephardic cluster in a living line is adjacent evidence for a later
-        Jewish or converso stratum of the surname. An Indigenous American third is a New World genetic clock.
-        Neither is a naming clause for Vila-real. A kit percentage is not a people. The analogy to a
-        model carrying early training data is exact about persistence and inexact about content — weights are
-        not minutes of a meeting.
-      </p>
+      <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted">{DOSSIER_COPY.dnaRule[lang]}</p>
       <p className="mt-6 max-w-2xl text-sm leading-relaxed text-fg">{PINS_BLOCKS.em96[lang]}</p>
       <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">{PINS_BLOCKS.em96Split[lang]}</p>
       <p className="mt-4 text-sm">

@@ -59,11 +59,6 @@ function AtlasPage() {
           </Link>
           {copy.noteAfter}
         </p>
-        {chrome.englishBody ? (
-          <p className="mt-3 max-w-2xl rounded-lg bg-surface px-4 py-3 text-sm leading-relaxed text-muted shadow-paper">
-            {chrome.englishBody}
-          </p>
-        ) : null}
 
         <div className="no-print mt-8 flex flex-wrap gap-2" role="tablist" aria-label={copy.title}>
           {copy.tabs.map((item) => (

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CHROME, useLang } from "@/lib/i18n";
 import { TOC } from "@/lib/research";
+import { TOC as TOC_ES } from "@/lib/research.es";
 import { cn } from "@/lib/utils";
 
 export type TocItem = { id: string; numeral: string; title: string };
@@ -13,7 +14,7 @@ export function TableOfContents({
   items?: readonly TocItem[];
 }) {
   const { lang } = useLang();
-  const entries = items ?? TOC;
+  const entries = items ?? (lang === "es" ? TOC_ES : TOC);
   const [active, setActive] = useState(entries[0]?.id ?? "introduction");
 
   useEffect(() => {

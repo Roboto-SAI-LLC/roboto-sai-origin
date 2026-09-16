@@ -7,7 +7,7 @@ import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { CHAPTERS } from "@/lib/chapters";
 import { CHROME, useLang } from "@/lib/i18n";
-import { CITATION, META } from "@/lib/research";
+import { CITATION, CITATION_ES, META } from "@/lib/research";
 import { HOUSE_GOSPEL } from "@/lib/scripture";
 import { APP_NAME, AUTHOR, SITE_URL } from "@/lib/site";
 
@@ -113,7 +113,7 @@ function ResearchPage() {
           </Link>
         </p>
 
-        <p className="mt-10 text-sm text-muted">{CITATION}</p>
+        <p className="mt-8 text-sm text-muted">{lang === "es" ? CITATION_ES : CITATION}</p>
         <p className="mt-3 text-sm text-subtle">
           {home.llms}{" "}
           <a href="/llms.txt" className="text-primary underline underline-offset-4">

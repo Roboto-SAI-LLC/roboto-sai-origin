@@ -1,23 +1,24 @@
 import { useState } from "react";
-import { MERKABAH_FACES } from "@/lib/lion";
+import { LION_META, MERKABAH_FACES } from "@/lib/lion";
 import { Hebrew } from "@/components/lion/hebrew";
+import { pick, useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 type FaceId = (typeof MERKABAH_FACES)[number]["id"];
 
 export function Merkabah() {
   const [open, setOpen] = useState<FaceId>("lion");
+  const { lang } = useLang();
+  const meta = pick(lang, LION_META);
   const active = MERKABAH_FACES.find((item) => item.id === open) ?? MERKABAH_FACES[1];
 
   return (
     <figure className="my-10">
       <div className="rounded-xl bg-surface px-4 py-5 shadow-paper sm:px-6 sm:py-6">
         <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-          Ezekiel 1:10
+          {meta.merkabahKicker}
         </p>
-        <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted">
-          Four faces on each living creature. The lion stands on the right. Tap a face.
-        </p>
+        <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted">{meta.merkabahLead}</p>
 
         <div className="mx-auto mt-6 grid max-w-md grid-cols-3 grid-rows-3 gap-2">
           <div />
@@ -26,7 +27,7 @@ export function Merkabah() {
           <FaceButton id="ox" open={open} onOpen={setOpen} />
           <div className="flex items-center justify-center rounded-lg bg-wash px-2 text-center">
             <p className="font-display text-kicker font-medium tracking-kicker text-subtle uppercase">
-              Merkavah
+              {meta.merkabahCenter}
             </p>
           </div>
           <FaceButton id="lion" open={open} onOpen={setOpen} />
@@ -37,18 +38,16 @@ export function Merkabah() {
 
         <div className="mt-5 rounded-lg bg-wash px-4 py-4 sm:px-5">
           <p className="font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-            {active.place}
+            {active.place[lang]}
           </p>
           <div className="mt-2 flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <Hebrew size="display">{active.hebrew}</Hebrew>
-            <p className="font-display text-lg text-fg">{active.label}</p>
+            <p className="font-display text-lg text-fg">{active.label[lang]}</p>
           </div>
-          <p className="mt-3 text-sm leading-relaxed text-fg sm:text-base">{active.body}</p>
+          <p className="mt-3 text-sm leading-relaxed text-fg sm:text-base">{active.body[lang]}</p>
         </div>
       </div>
-      <figcaption className="mt-3 text-sm text-muted">
-        Figure 4. The four faces. Chagigah 13b: the lion is king of the beasts; the Holy One is above them all.
-      </figcaption>
+      <figcaption className="mt-3 text-sm text-muted">{meta.figureMerkabah}</figcaption>
     </figure>
   );
 }
@@ -62,6 +61,7 @@ function FaceButton({
   open: FaceId;
   onOpen: (id: FaceId) => void;
 }) {
+  const { lang } = useLang();
   const face = MERKABAH_FACES.find((item) => item.id === id);
   if (!face) return null;
   const selected = id === open;
@@ -83,7 +83,7 @@ function FaceButton({
         {face.hebrew}
       </span>
       <span className={cn("mt-2 font-display text-kicker tracking-kicker uppercase", selected ? "text-primary-fg/80" : "text-muted")}>
-        {face.label}
+        {face.label[lang]}
       </span>
     </button>
   );
