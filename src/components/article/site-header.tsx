@@ -9,7 +9,7 @@ export function SiteHeader() {
   const chrome = CHROME[lang];
 
   const links = [
-    { to: "/" as const, label: lang === "es" ? "Índice" : "Index" },
+    { to: "/" as const, label: "Omen" },
     { to: "/atlas" as const, label: chrome.nav.find((n) => n.to === "/atlas")?.label ?? "Atlas" },
     { to: "/dossier" as const, label: "Dossier" },
     { to: "/codex" as const, label: lang === "es" ? "Códice" : "Codex" },

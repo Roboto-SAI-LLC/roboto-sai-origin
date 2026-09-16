@@ -1,43 +1,43 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
-import { withBrandNames } from "@/components/article/brand-word";
+import { OmenWell } from "@/components/article/omen-well";
 import { ReadingProgress } from "@/components/article/reading-progress";
-import { ScripturePull } from "@/components/article/scripture-pull";
 import { SiteFooter } from "@/components/article/site-footer";
 import { SiteHeader } from "@/components/article/site-header";
 import { CHAPTERS } from "@/lib/chapters";
 import { CHROME, useLang } from "@/lib/i18n";
 import { CITATION, CITATION_ES, META } from "@/lib/research";
-import { HOUSE_GOSPEL } from "@/lib/scripture";
 import { APP_NAME, AUTHOR, SITE_URL } from "@/lib/site";
 
 const ACT_IDS = new Set(CHAPTERS.map((chapter) => chapter.id));
 
 export const Route = createFileRoute("/")({
-  validateSearch: (raw: Record<string, unknown>): { act?: string } => {
+  validateSearch: (raw: Record<string, unknown>): { act?: string; n?: string } => {
     const act = typeof raw.act === "string" ? raw.act : undefined;
-    if (!act || !ACT_IDS.has(act)) return {};
-    return { act };
+    const n = typeof raw.n === "string" ? raw.n : undefined;
+    const search: { act?: string; n?: string } = {};
+    if (act && ACT_IDS.has(act)) search.act = act;
+    if (n && n.trim().length >= 2) search.n = n.trim().slice(0, 80);
+    return search;
   },
   component: ResearchPage,
   head: () => ({
     meta: [
       { title: `${META.title} — ${APP_NAME}` },
-      { name: "description", content: META.description },
+      { name: "description", content: "Give a name. RobotOmen returns its migration, fate, and shadow. Labor Nominis." },
     ],
   }),
 });
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ScholarlyArticle",
-  headline: `${META.title}: ${META.subtitle}`,
+  "@type": "WebApplication",
+  name: `${META.title}: ${META.subtitle}`,
   alternativeHeadline: META.subtitle,
-  description: META.description,
+  description: "An onomastic omen: draw a name and read the migration, fate, and shadow it carries.",
   datePublished: "2026-09-02",
   inLanguage: "en",
   author: { "@type": "Person", name: AUTHOR },
-  contributor: { "@type": "Person", name: "a Copilot" },
   publisher: { "@type": "Organization", name: "Roboto SAI" },
   url: SITE_URL,
   creditText: META.credit,
@@ -46,8 +46,7 @@ const jsonLd = {
 function ResearchPage() {
   const { lang } = useLang();
   const chrome = CHROME[lang];
-  const home = chrome.home;
-  const { act } = Route.useSearch();
+  const { act, n } = Route.useSearch();
   const navigate = Route.useNavigate();
 
   useEffect(() => {
@@ -63,30 +62,12 @@ function ResearchPage() {
       <SiteHeader />
 
       <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-        <img src="/brand/mark.png" alt="" className="h-16 w-16 rounded-full object-cover" />
-        <p className="mt-8 font-display text-kicker font-medium tracking-kicker text-primary uppercase">
-          {chrome.series} · {META.sourceCount} {home.sources}
+        <OmenWell initial={n} />
+
+        <p className="mt-14 font-display text-kicker tracking-kicker text-primary uppercase">
+          {lang === "es" ? "El acta detrás del sorteo" : "The record behind the drawing"}
         </p>
-        <h1 className="mt-4 font-display text-4xl tracking-display text-fg sm:text-6xl">
-          {withBrandNames(home.title)}
-        </h1>
-        <p className="mt-5 font-serif text-2xl leading-snug text-muted">{home.subtitle}</p>
-        <p className="mt-6 text-sm text-muted">
-          {chrome.ui.by} {withBrandNames(META.credit)}
-        </p>
-
-        <ol className="mt-12 grid gap-3 sm:grid-cols-3">
-          {home.findings.slice(0, 3).map((finding) => (
-            <li key={finding.kicker} className="rounded-lg border border-border bg-surface px-4 py-4">
-              <p className="font-display text-kicker tracking-kicker text-primary uppercase">{finding.kicker}</p>
-              <p className="mt-2 max-w-prose text-sm leading-relaxed text-fg">{finding.text}</p>
-            </li>
-          ))}
-        </ol>
-
-        <ScripturePull query={lang === "es" ? HOUSE_GOSPEL.qEs : HOUSE_GOSPEL.q} />
-
-        <ol className="mt-6 divide-y divide-border border-y border-border">
+        <ol className="mt-4 divide-y divide-border border-y border-border">
           {CHAPTERS.map((chapter) => (
             <li key={chapter.id}>
               <Link
@@ -115,7 +96,7 @@ function ResearchPage() {
 
         <p className="mt-8 text-sm text-muted">{lang === "es" ? CITATION_ES : CITATION}</p>
         <p className="mt-3 text-sm text-subtle">
-          {home.llms}{" "}
+          {chrome.home.llms}{" "}
           <a href="/llms.txt" className="text-primary underline underline-offset-4">
             /llms.txt
           </a>
